@@ -1,0 +1,510 @@
+{
+  "source": "groceries",
+  "generatedAt": "2026-11-04T10:29:53.157Z",
+  "products": [
+    {
+      "id": "receipt-37997",
+      "title": "Scontrino Decò: 13 prodotti",
+      "description": "Calippo Cola, 2 x Pai - patatine, 2 x Tonno al naturale, 2 x Fonte Buona Liscia 2x6 l, Mista saporita, Olio extra vergine di oliva, Panna da cucina, Fagiolini Fini, Piselli, Santa Lucia Tris Mozzarella, 2 x Yogurt alla fragola senza lattosio, Latte parzialmente scremato e altri 1.",
+      "condition": "",
+      "category": "",
+      "price": 37.35,
+      "currency": "EUR",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/872/270/023/1998/front_en.19.400.jpg",
+        "https://images.openfoodfacts.org/images/products/804/179/050/5827/front_it.16.400.jpg",
+        "https://images.openfoodfacts.org/images/products/803/325/600/2391/front_it.14.400.jpg",
+        "https://images.openfoodfacts.org/images/products/803/397/648/1193/front_it.3.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
+      "id": "receipt-13165",
+      "title": "Scontrino Decò: 10 prodotti",
+      "description": "Fonte Buona Liscia 2x6 l, Pasta Farfallette n.82, Spaghetti n. 3, Ditalini rigati n. 27, Uova fresche allevate a terra 10+2, Naturalmente, Mista saporita, Vino bianco deco, Corn Flakes, Sacchetto shoppers Bio Grande.",
+      "condition": "",
+      "category": "",
+      "price": 14.77,
+      "currency": "EUR",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/003/397/648/1193/front_it.13.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/706/600/5828/front_it.15.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/706/601/0037/front_it.28.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/706/601/0273/front_it.4.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
+      "id": "receipt-13603",
+      "title": "Scontrino Decò: 14 prodotti",
+      "description": "Tonno al naturale, Fagiolini Fini, Ceci Messicani, Uova fresche allevate a terra 10+2, Grissini friabili mb 300 gr, Plum cake preparato con yogurt alla greca, Croissant Crema Pasticcera, Petto di tacchino arrosto, Prosciutto cotto alta qualitá, Bresaola, Mista saporita, Pro High proteine crema dessert al cacao e altri 2.",
+      "condition": "",
+      "category": "",
+      "price": 25.72,
+      "currency": "EUR",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/803/325/600/2391/front_it.14.400.jpg",
+        "https://images.openfoodfacts.org/images/products/803/325/600/3657/front_it.3.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/628/003/0432/front_it.3.400.jpg",
+        "https://images.openfoodfacts.org/images/products/803/325/610/7256/front_it.3.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
+      "id": "receipt-8937",
+      "title": "Scontrino Decò: 15 prodotti",
+      "description": "Patatine Classiche, Tonno Mare aperto ectra gusto, Fagiolini Fini, Polpa di pomodoro a cubetti, Poiatti Penne rigate n. 41, Uova fresche allevate a terra 10+2, Tonno al naturale, Passata al Vapore, Bresaola, Prosciutto cotto alta qualitá, Mista saporita, Yogurt alla greca 0% senza lattosio fragola e altri 3.",
+      "condition": "",
+      "category": "",
+      "price": 30.95,
+      "currency": "EUR",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/803/325/600/2438/front_it.25.400.jpg",
+        "https://images.openfoodfacts.org/images/products/802/118/250/3778/front_it.3.400.jpg",
+        "https://images.openfoodfacts.org/images/products/803/325/600/3657/front_it.3.400.jpg",
+        "https://images.openfoodfacts.org/images/products/803/397/648/4033/front_it.3.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
+      "id": "receipt-8829",
+      "title": "Scontrino Decò: 11 prodotti",
+      "description": "Acqua Fonte Essenziale, sottilette le originali, Bevanda Di Riso, Uova fresche allevate a terra 10+2, Latte parzialmente scremato, Yogurt magro greco fragola, Pro High proteine crema dessert al cacao, Bianco crema di yogurt, Zymil fragola in pezzi e melograno, Naturalmente, Sacchetto shoppers Bio Grande.",
+      "condition": "",
+      "category": "",
+      "price": 16.77,
+      "currency": "EUR",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/800/629/080/2005/front_en.19.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/159/092/7366/front_en.40.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/318/000/0145/front_fr.21.400.jpg",
+        "https://images.openfoodfacts.org/images/products/803/325/610/7256/front_it.3.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
+      "id": "receipt-8821",
+      "title": "Scontrino Decò: 12 prodotti",
+      "description": "Acqua Fonte Essenziale, Riso integrale, Tonno al naturale, Prosciutto cotto alta qualitá, Bresaola, Yogurt magro greco fragola, Pro High proteine crema dessert al cacao, Patatine Classiche, Fette biscottate Integrali 315 gr, Le arricciate -  Sfogliatine di patate, Zymil fragola in pezzi e melograno, Sacchetto shoppers Bio Grande.",
+      "condition": "",
+      "category": "",
+      "price": 20.94,
+      "currency": "EUR",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/800/629/080/2005/front_en.19.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/186/019/0513/front_it.111.400.jpg",
+        "https://images.openfoodfacts.org/images/products/803/325/600/2391/front_it.14.400.jpg",
+        "https://images.openfoodfacts.org/images/products/803/325/600/9666/front_it.3.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
+      "id": "receipt-8820",
+      "title": "Scontrino Decò: 8 prodotti",
+      "description": "Bio Select Fagioli borlotti, Lenticchie Giganti, Sacchetto shoppers Bio Grande, Emmental, Bresaola, Zymil fragola in pezzi e melograno, Pro High proteine crema dessert al cacao, Yogurt magro greco fragola.",
+      "condition": "",
+      "category": "",
+      "price": 13.13,
+      "currency": "EUR",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/800/628/060/0673/front_it.3.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/628/001/0816/front_it.9.400.jpg",
+        "https://images.openproductsfacts.org/images/products/803/259/538/4540/front_it.6.400.jpg",
+        "https://images.openfoodfacts.org/images/products/803/325/600/9628/front_it.3.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
+      "id": "receipt-8425",
+      "title": "Scontrino Decò: 9 prodotti",
+      "description": "Eldorada l'amica d'oro Tradizionale, Decó Cola Zero, San carlo junior Patatine, Le arricciate -  Sfogliatine di patate, Eldorada l'amica d'oro - Olio di oliva, 1936 Antica Ricetta, Pro High proteine crema dessert al cacao, Lindahl’s, Sacchetto shoppers Bio Grande.",
+      "condition": "",
+      "category": "",
+      "price": 13.19,
+      "currency": "EUR",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/080/071/400/3661/front_it.5.400.jpg",
+        "https://images.openfoodfacts.org/images/products/803/325/611/0577/front_it.3.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/313/013/7860/front_it.32.400.jpg",
+        "https://images.openfoodfacts.org/images/products/803/325/600/2483/front_it.24.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
+      "id": "receipt-8422",
+      "title": "Scontrino Decò: 17 prodotti",
+      "description": "Gelato Zero Nocciola, Gelato Zero Cacao, Gelato artigianale fior di latte, Cipster, Fonzies, Fagiolini Fini, Sacchetto shoppers Bio Grande, Acqua Fonte Essenziale, Croissant Crema Pasticcera, Tonno al naturale, Bevanda Di Riso, Mista saporita e altri 5.",
+      "condition": "",
+      "category": "",
+      "price": 33.41,
+      "currency": "EUR",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/800/957/880/7327/front_it.3.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/957/880/5026/front_it.3.400.jpg",
+        "https://images.openfoodfacts.org/images/products/805/173/908/0155/front_it.25.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/009/060/0205/front_it.21.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
+      "id": "receipt-14152",
+      "title": "Scontrino Lidl: 8 prodotti",
+      "description": "Clémentines de Corse, Buo Cioccolato Fondente 70%, 1936 antica ricetta, Insalata ricca, Sugo pomodoro e basilico, Bevanda a base di &quot;clementine di Calabria igp&quot;, Chocolat au lait du pays alpin Milka, trofie di semola di grano duro.",
+      "condition": "",
+      "category": "",
+      "price": 12.78,
+      "currency": "EUR",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/000/002/056/2199/front_fr.17.400.jpg",
+        "https://images.openfoodfacts.org/images/products/000/004/089/6243/front_en.168.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/313/014/4462/front_fr.52.400.jpg",
+        "https://images.openfoodfacts.org/images/products/405/648/922/9117/front_it.3.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
+      "id": "receipt-14153",
+      "title": "Scontrino Lidl: 5 prodotti",
+      "description": "alcool éthylique, Limoncino, Zanzibar Pistacchi Gianduia, Carciofini a spicchi alla Contadina, Pistaziencreme.",
+      "condition": "",
+      "category": "",
+      "price": 29.35,
+      "currency": "EUR",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/800/971/011/4108/front_fr.9.400.jpg",
+        "https://images.openfoodfacts.org/images/products/000/002/041/9820/front_fr.10.400.jpg",
+        "https://images.openfoodfacts.org/images/products/801/339/916/2114/front_fr.3.400.jpg",
+        "https://images.openfoodfacts.org/images/products/000/002/005/2768/front_fr.9.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
+      "id": "receipt-132155",
+      "title": "Scontrino Esselunga: 13 prodotti",
+      "description": "insalatina, Alpiyo Valtellina, Kiwi Sungold, Feta formaggio dop, Zymil Benefit vitamina B12, Alpiyò Valtellina yogurt mirtillo, Oat No Sugars, Tonno All'olio Di Oliva, Cous cous integrale, Passata emiliana l'armoniosa, Acqua S. anna Natur. LT1.5 X6bott., Ceci bio e altri 1.",
+      "condition": "",
+      "category": "",
+      "price": 28.41,
+      "currency": "EUR",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/800/233/008/9894/front_it.3.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/871/900/1181/front_it.16.400.jpg",
+        "https://images.openfoodfacts.org/images/products/541/519/140/0310/front_it.3.400.jpg",
+        "https://images.openfoodfacts.org/images/products/802/378/804/5348/front_it.3.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
+      "id": "receipt-131855",
+      "title": "Scontrino Esselunga: 8 prodotti",
+      "description": "Mirtilli, insalatina, Sfogliavelo - Speck e Formaggio Tirolese, Sugo al pomodoro, Pera, Yogurt biologico magro da latte fieno STG - 150g - bianco, Sensitive Professional, Acqua naturale.",
+      "condition": "",
+      "category": "",
+      "price": 17.4,
+      "currency": "EUR",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/801/724/400/1016/front_it.3.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/233/008/9894/front_it.3.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/166/511/2888/front_it.49.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/233/010/6973/front_it.3.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
+      "id": "receipt-130961",
+      "title": "Scontrino Esselunga: 25 prodotti",
+      "description": "Kiwi Sungold, Uva da tavola bianca senza semi, More, insalatina, semi gran mix, Mozzarella, Yogurt biologico intero da latte fieno STG - 150g - naturale, Yogurt biologico intero da latte fieno STG -150g - vaniglia, Oat No Sugars, Uova fresche medie, Cioccolato Fondente e Nocciole, Yogurt biologico intero da latte fieno STG - 150g - caffè e altri 13.",
+      "condition": "",
+      "category": "",
+      "price": 48.79,
+      "currency": "EUR",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/541/519/140/0310/front_it.3.400.jpg",
+        "https://images.openfoodfacts.org/images/products/802/715/385/0292/front_it.4.400.jpg",
+        "https://images.openfoodfacts.org/images/products/801/636/400/1326/front_it.3.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/233/008/9894/front_it.3.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
+      "id": "receipt-14120",
+      "title": "Scontrino Carrefour: 5 prodotti",
+      "description": "Kaonuts, Baiocchi Pistacchio, Barista Soia, Succo ananas, Caffe' Gusto Classico.",
+      "condition": "",
+      "category": "",
+      "price": 13.87,
+      "currency": "EUR",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/356/007/148/3357/front_es.23.400.jpg",
+        "https://images.openfoodfacts.org/images/products/807/680/958/3039/front_en.19.400.jpg",
+        "https://images.openfoodfacts.org/images/products/801/266/607/1111/front_en.15.400.jpg",
+        "https://images.openfoodfacts.org/images/products/801/266/605/6835/front_it.3.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
+      "id": "receipt-29135",
+      "title": "Scontrino Esselunga: 11 prodotti",
+      "description": "Tortelli Piacentini, Kefir arancia zenzero e cardamomo, Kefir melograno e lampone, Squacquerone, Lasagne ricotta e spinaci, Le spremute - Arancia Rossa, Yogurt biologico intero da latte fieno STG senza lattosio - 150g - caramello, Hummus di barbabietola, Muesli con miglio avena e frutta, Bevanda vegetale soia, Pistacchi granella.",
+      "condition": "",
+      "category": "",
+      "price": 30.07,
+      "currency": "EUR",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/803/264/491/1123/front_it.18.400.jpg",
+        "https://images.openfoodfacts.org/images/products/803/406/630/7096/front_en.17.400.jpg",
+        "https://images.openfoodfacts.org/images/products/803/406/630/7188/front_it.46.400.jpg",
+        "https://images.openfoodfacts.org/images/products/801/589/500/0037/front_it.3.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
+      "id": "receipt-23823",
+      "title": "Scontrino Esselunga: 5 prodotti",
+      "description": "Le spremute - Arancia Rossa, Tortelli Piacentini, Grana Padano Dop grattugiato Esselunga, Bevanda vegetale soia, Esselunga — Yogurt greco.",
+      "condition": "",
+      "category": "",
+      "price": 13.42,
+      "currency": "EUR",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/800/233/009/5635/front_it.78.400.jpg",
+        "https://images.openfoodfacts.org/images/products/803/264/491/1123/front_it.18.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/233/001/0355/front_it.7.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/233/000/4132/front_en.4.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
+      "id": "receipt-13348",
+      "title": "Scontrino Esselunga: 5 prodotti",
+      "description": "Le spremute - Arancia Rossa, Bevanda vegetale soia, Tortelli Piacentini, Lasagne alle verdure, Amor polenta.",
+      "condition": "",
+      "category": "",
+      "price": 20.92,
+      "currency": "EUR",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/800/233/009/5635/front_it.78.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/233/000/4132/front_en.4.400.jpg",
+        "https://images.openfoodfacts.org/images/products/803/264/491/1123/front_it.18.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/233/000/5528/front_it.10.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
+      "id": "receipt-13237",
+      "title": "Scontrino Esselunga: 7 prodotti",
+      "description": "Bevanda vegetale soia, Yogurt magro bianco, Tortelli Piacentini, Le spremute - Arancia Rossa, Esselunga — Yogurt greco, Crème Caramel, Cassate siciliane.",
+      "condition": "",
+      "category": "",
+      "price": 17.7,
+      "currency": "EUR",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/800/233/000/4132/front_en.4.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/233/001/0317/front_it.3.400.jpg",
+        "https://images.openfoodfacts.org/images/products/803/264/491/1123/front_it.18.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/233/009/5635/front_it.78.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
+      "id": "receipt-13172",
+      "title": "Scontrino Esselunga: 10 prodotti",
+      "description": "Biraghini Gran Biraghi, Mozzarella di bufala campana, Squacquerone, Crème Caramel, Pandorino classico, Hummus di barbabietola, Tortelli Piacentini, Lasagne alle verdure, piadina, Salmone Affumucato.",
+      "condition": "",
+      "category": "",
+      "price": 35.21,
+      "currency": "EUR",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/800/200/421/5079/front_it.44.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/412/700/0693/front_it.3.400.jpg",
+        "https://images.openfoodfacts.org/images/products/801/589/500/0037/front_it.3.400.jpg",
+        "https://images.openfoodfacts.org/images/products/803/406/637/1868/front_fr.33.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
+      "id": "receipt-142967",
+      "title": "Scontrino Lidl: 25 prodotti",
+      "description": "choco moons, High Protein Crunchy Musli, 3 x latte parzialmente scremato, Bevanda avena cacao, Biscotti cereali e mirtilli rossi, High Protein Barretta Proteica, Stracciatella Pasta filata Käse, Burrata di Andria IGP, Pesto alla genovese, Pesto Radicchio E Speck, Tortilia wrap, Dessert alla ricotta amaretto&caramello e altri 13.",
+      "condition": "",
+      "category": "",
+      "price": 49.38,
+      "currency": "EUR",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/000/002/008/3960/front_en.79.400.jpg",
+        "https://images.openfoodfacts.org/images/products/405/648/993/6183/front_en.20.400.jpg",
+        "https://images.openfoodfacts.org/images/products/405/648/963/3051/front_it.14.400.jpg",
+        "https://images.openfoodfacts.org/images/products/405/648/971/9830/front_it.39.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
+      "id": "receipt-119989",
+      "title": "Scontrino Lidl: 13 prodotti",
+      "description": "Sport drink isotonico, Crostini integrali, Mini croissant XXL, Crostatine farcite con crema di cacao, Sfoglie croccanti, Biscotti cereali e mirtilli rossi, Biscotti con cereali e gocce di cioccolato, Petits toasts aperitifs, Seaweed Crisps sea salt, Proteine Cookies, Оризов бар от кафяв пълнозърнест ориз с бял шоколад, High Protein Dubai Chocolate e altri 1.",
+      "condition": "",
+      "category": "",
+      "price": 16.97,
+      "currency": "EUR",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/000/002/080/0161/front_it.10.400.jpg",
+        "https://images.openfoodfacts.org/images/products/000/002/082/3887/front_en.4.400.jpg",
+        "https://images.openfoodfacts.org/images/products/000/002/056/9938/front_it.10.400.jpg",
+        "https://images.openfoodfacts.org/images/products/000/002/053/1546/front_it.35.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
+      "id": "receipt-7966",
+      "title": "Scontrino Lidl: 11 prodotti",
+      "description": "olive nere denocciolate, Red Kidney Beans, Fagioli Borlotti, Pasta di semola, CousCous, Riso Roma, Spaghetti, Passata di pomodoro, gnocchi di patate, Gorgonzola, Mix Grattugiato Formaggio.",
+      "condition": "",
+      "category": "",
+      "price": 21.08,
+      "currency": "EUR",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/000/002/031/9229/front_it.33.400.jpg",
+        "https://images.openfoodfacts.org/images/products/000/002/016/6090/front_en.199.400.jpg",
+        "https://images.openfoodfacts.org/images/products/000/002/000/9809/front_it.8.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/112/985/0509/front_it.3.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
+      "id": "receipt-123603",
+      "title": "Scontrino Aldi: 5 prodotti",
+      "description": "le classiche croccanti dorate, 3 x tasty noodles, Gyoza Vegetables, MIX - Yogurt Bianco Più Fiocchi al Cioccolato, 4 x Monster Energy Ultra.",
+      "condition": "",
+      "category": "",
+      "price": 15,
+      "currency": "EUR",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/409/920/086/5843/front_it.3.400.jpg",
+        "https://images.openfoodfacts.org/images/products/406/146/103/4467/front_de.3.400.jpg",
+        "https://images.openfoodfacts.org/images/products/406/145/915/5778/front_de.23.400.jpg",
+        "https://images.openfoodfacts.org/images/products/402/550/015/1720/front_it.23.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
+      "id": "receipt-7611",
+      "title": "Scontrino Coop: 6 prodotti",
+      "description": "yogurt agli agrumi intero bio, Più Gusto vivace pomodoro, rafler gusti lemon, formaggio, Hamburger al sesamo, Prosciutto di Parma Dop.",
+      "condition": "",
+      "category": "",
+      "price": 14.5,
+      "currency": "EUR",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/800/112/067/5576/front_it.3.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/313/012/7922/front_it.92.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/112/072/7770/front_it.3.400.jpg",
+        "https://images.openfoodfacts.org/images/products/801/072/198/2891/front_it.3.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
+      "id": "receipt-118435",
+      "title": "Scontrino Il Gigante: 5 prodotti",
+      "description": "Lasagne gluten free, Meisterbäckers Mehrkorn, Le Bio Croccanti Risette 100% Riso, Le Bio Croccanti Risette Riso e Mais, Grano saraceno Senza Glutine.",
+      "condition": "",
+      "category": "",
+      "price": 11.32,
+      "currency": "EUR",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/800/991/500/8714/front_en.29.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/869/802/7424/front_de.55.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/186/035/5028/front_it.72.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/186/025/9869/front_it.32.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
+      "id": "receipt-116228",
+      "title": "Scontrino Superò: 6 prodotti",
+      "description": "Avena Bevanda Vegetale a Base di Avena, Acqua minerale, Kefir gusto mirtillo, Kiwi Polpa Gialla, Nescafe' Classic, 6 x Tartelle cuore di mela.",
+      "condition": "",
+      "category": "",
+      "price": 16.2,
+      "currency": "EUR",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/800/900/481/1133/front_fr.17.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/862/700/0030/front_en.3.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/163/001/1956/front_it.3.400.jpg",
+        "https://images.openfoodfacts.org/images/products/000/008/000/0822/front_it.23.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
+      "id": "receipt-136421",
+      "title": "Scontrino Coop: 6 prodotti",
+      "description": "Mais super sweet - coop - Cottu a vapore - Mais Dolce, Formaggini Parmigiano Reggiano Schmelzkäse, Scamorzine affumicate, valeriana, Il mio Dado vegetale, Riso soffiato al cioccolato.",
+      "condition": "",
+      "category": "",
+      "price": 16.21,
+      "currency": "EUR",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/800/112/071/0840/front_en.4.400.jpg",
+        "https://images.openfoodfacts.org/images/products/801/072/199/6812/front_en.28.400.jpg",
+        "https://images.openfoodfacts.org/images/products/801/227/300/1129/front_it.3.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/112/093/5991/front_it.3.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    }
+  ]
+}

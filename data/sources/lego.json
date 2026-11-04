@@ -1,0 +1,2256 @@
+{
+  "source": "lego",
+  "generatedAt": "2026-11-04T11:16:01.048Z",
+  "products": [
+    {
+      "id": "lego-48423",
+      "title": "Animal Train (10412)",
+      "description": "Set LEGO Duplo del 2024, 19 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 19.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10412-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10412-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-48425",
+      "title": "Daily Routines: Eating & Bedtime (10414)",
+      "description": "Set LEGO Duplo del 2024, 28 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 29.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10414-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10414-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-48426",
+      "title": "Big Feelings & Emotions (10415)",
+      "description": "Set LEGO Duplo del 2024, 23 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 29.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10415-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10415-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-48429",
+      "title": "Elsa & Bruni in the Enchanted Forest (10418)",
+      "description": "Set LEGO Duplo del 2024, 31 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 32.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10418-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10418-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-49137",
+      "title": "Ariel and Flounder's Café Stand (10420)",
+      "description": "Set LEGO Duplo del 2024, 22 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 19.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10420-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10420-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-48431",
+      "title": "Alphabet Truck (10421)",
+      "description": "Set LEGO Duplo del 2024, 36 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 39.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10421-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10421-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-48432",
+      "title": "3in1 Space Shuttle Adventure (10422)",
+      "description": "Set LEGO Duplo del 2024, 58 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 64.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10422-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10422-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-48433",
+      "title": "Buildable People with Big Emotions (10423)",
+      "description": "Set LEGO Duplo del 2024, 71 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 54.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10423-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10423-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-49138",
+      "title": "Spin's Motorcycle Adventure (10424)",
+      "description": "Set LEGO Duplo del 2024, 24 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 19.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10424-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10424-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-50541",
+      "title": "Train Tunnel and Tracks (10425)",
+      "description": "Set LEGO Duplo del 2025, 20 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 19.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10425-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10425-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-50542",
+      "title": "Train Bridge and Tracks (10426)",
+      "description": "Set LEGO Duplo del 2025, 42 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 39.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10426-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10426-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-50543",
+      "title": "Interactive Adventure Train (10427)",
+      "description": "Set LEGO Duplo del 2025, 57 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 79.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10427-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10427-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-50544",
+      "title": "Big Interactive Community Train (10428)",
+      "description": "Set LEGO Duplo del 2025, 103 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 139.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10428-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10428-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-49049",
+      "title": "Peppa Pig Garden and Tree House (10431)",
+      "description": "Set LEGO Duplo del 2024, 20 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 19.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10431-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10431-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-49048",
+      "title": "Peppa Pig Boat Trip (10432)",
+      "description": "Set LEGO Duplo del 2024, 23 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 29.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10432-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10432-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-49047",
+      "title": "Peppa Pig Birthday House (10433)",
+      "description": "Set LEGO Duplo del 2024, 59 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 44.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10433-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10433-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-49050",
+      "title": "Peppa Pig Supermarket (10434)",
+      "description": "Set LEGO Duplo del 2024, 70 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 69.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10434-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10434-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-49139",
+      "title": "Ariel's Magical Underwater Palace (10435)",
+      "description": "Set LEGO Duplo del 2024, 116 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 89.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10435-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10435-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-48780",
+      "title": "Visit to the Vet Clinic (10438)",
+      "description": "Set LEGO Duplo del 2024, 28 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 19.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10438-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10438-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-50208",
+      "title": "Cars and Trucks Brick Box (10439)",
+      "description": "Set LEGO Duplo del 2024, 80 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 49.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10439-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10439-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-50913",
+      "title": "Balancing & Stacking Tree (10440)",
+      "description": "Set LEGO Duplo del 2025, 27 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 19.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10440-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10440-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51360",
+      "title": "Shape Sorter: Puppy House (10441)",
+      "description": "Set LEGO Duplo del 2025, 17 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 29.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10441-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10441-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-50900",
+      "title": "First Time at the Airport (10443)",
+      "description": "Set LEGO Duplo del 2025, 23 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 29.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10443-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10443-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-50663",
+      "title": "Creative Garden & Flowers (10444)",
+      "description": "Set LEGO Duplo del 2025, 45 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 19.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10444-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10444-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-50662",
+      "title": "F1 Team Racing Cars & Drivers (10445)",
+      "description": "Set LEGO Duplo del 2025, 70 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 44.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10445-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10445-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-50912",
+      "title": "3in1 Wild Animal Families (10446)",
+      "description": "Set LEGO Duplo del 2025, 92 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 79.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10446-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10446-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-50664",
+      "title": "Ambulance Driver  (10447)",
+      "description": "Set LEGO Duplo del 2025, 19 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 19.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10447-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10447-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51361",
+      "title": "3in1 Animals on Wheels (10448)",
+      "description": "Set LEGO Duplo del 2025, 58 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 34.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10448-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10448-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-50665",
+      "title": "First Time: Visit with the Doctor  (10449)",
+      "description": "Set LEGO Duplo del 2025, 65 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 39.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10449-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10449-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51362",
+      "title": "Hopsy's Castle Game (10450)",
+      "description": "Set LEGO Duplo del 2025, 47 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 39.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10450-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10450-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51363",
+      "title": "3in1 Dinosaurs on Wheels (10451)",
+      "description": "Set LEGO Duplo del 2025, 108 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 69.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10451-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10451-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-50666",
+      "title": "Camping Trip (10452)",
+      "description": "Set LEGO Duplo del 2025, 32 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 19.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10452-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10452-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-50667",
+      "title": "Funfair (10453)",
+      "description": "Set LEGO Duplo del 2025, 53 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 49.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10453-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10453-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-50668",
+      "title": "Mickey Mouse Clubhouse & Car  (10454)",
+      "description": "Set LEGO Duplo del 2025, 27 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 19.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10454-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10454-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51364",
+      "title": "Anna and Elsa's Frozen Castle Party (10455)",
+      "description": "Set LEGO Duplo del 2025, 54 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 59.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10455-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10455-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51365",
+      "title": "McQueen's Visit to Doc's Garage (10456)",
+      "description": "Set LEGO Duplo del 2025, 35 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 29.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10456-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10456-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-50669",
+      "title": "Winnie the Pooh's Birthday Party (10457)",
+      "description": "Set LEGO Duplo del 2025, 22 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 19.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10457-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10457-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51015",
+      "title": "Ice Cream Trip with Bluey (10458)",
+      "description": "Set LEGO Duplo del 2025, 22 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 29.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10458-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10458-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51016",
+      "title": "Bluey's Family House with Memory Game (10459)",
+      "description": "Set LEGO Duplo del 2025, 83 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 69.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10459-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10459-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-50670",
+      "title": "Green Building Plate (10460)",
+      "description": "Set LEGO Duplo del 2025, 1 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 12.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10460-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10460-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51366",
+      "title": "Grandpa Pig's Garden and Greenhouse (10461)",
+      "description": "Set LEGO Duplo del 2025, 102 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 79.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10461-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10461-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52639",
+      "title": "Frozen Creative Box with Elsa and Olaf (10462)",
+      "description": "Set LEGO Duplo del 2026, 37 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 19.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10462-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10462-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52306",
+      "title": "Dinosaur Spidey-Rex vs. Green Goblin (10463)",
+      "description": "Set LEGO Duplo del 2026, 25 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 19.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10463-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10463-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52640",
+      "title": "Team Spidey Webquarters (10464)",
+      "description": "Set LEGO Duplo del 2026, 65 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 49.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10464-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10464-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52305",
+      "title": "Mickey Mouse Clubhouse with Minnie & Pluto (10465)",
+      "description": "Set LEGO Duplo del 2026, 87 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 49.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10465-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10465-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52432",
+      "title": "Train Ride with Grandpa Pig (10466)",
+      "description": "Set LEGO Duplo del 2026, 35 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 44.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10466-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10466-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52433",
+      "title": "Family House (10467)",
+      "description": "Set LEGO Duplo del 2026, 84 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 69.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10467-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10467-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52434",
+      "title": "Tractor and Market (10468)",
+      "description": "Set LEGO Duplo del 2026, 18 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 19.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10468-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10468-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52641",
+      "title": "Pizza Girls with Muffin and Bluey (10469)",
+      "description": "Set LEGO Duplo del 2026, 44 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 39.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10469-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10469-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51716",
+      "title": "3 in 1 Modern Family House with Figures (10470)",
+      "description": "Set LEGO Duplo del 2026, 166 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 79.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10470-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10470-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52642",
+      "title": "Animal Building Game (10472)",
+      "description": "Set LEGO Duplo del 2026, 94 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 49.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10472-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10472-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51718",
+      "title": "Fire Truck with Hose and Firefighter (10473)",
+      "description": "Set LEGO Duplo del 2026, 28 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 29.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10473-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10473-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51719",
+      "title": "Creative Vehicles (10474)",
+      "description": "Set LEGO Duplo del 2026, 42 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 19.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10474-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10474-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51720",
+      "title": "3 in 1 Construction Vehicles (10475)",
+      "description": "Set LEGO Duplo del 2026, 22 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 24.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10475-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10475-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51721",
+      "title": "3 in 1 Construction Site and Vehicles (10476)",
+      "description": "Set LEGO Duplo del 2026, 84 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 89.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10476-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10476-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52471",
+      "title": "3 in 1 Creative Ramps with Vehicles (10478)",
+      "description": "Set LEGO Duplo del 2026, 111 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 69.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10478-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10478-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52643",
+      "title": "Colourful Creative Box (10479)",
+      "description": "Set LEGO DUPLO del 2026, 80 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 19.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10479-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10479-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52644",
+      "title": "Discovery Forest with Wild Animals (10480)",
+      "description": "Set LEGO Duplo del 2026, 131 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 79.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10480-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10480-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-48977",
+      "title": "Gabby's Party Room (10797)",
+      "description": "Set LEGO Gabby's Dollhouse del 2024, 252 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 49.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10797-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10797-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-34324",
+      "title": "Alphabet Town (10935)",
+      "description": "Set LEGO Duplo del 2023, 87 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 49.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10935-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10935-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-34433",
+      "title": "Organic Market (10983)",
+      "description": "Set LEGO Duplo del 2023, 40 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 29.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10983-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10983-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-34434",
+      "title": "Organic Garden (10984)",
+      "description": "Set LEGO Duplo del 2023, 43 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 44.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10984-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10984-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-45469",
+      "title": "Water Park (10989)",
+      "description": "Set LEGO Duplo del 2023, 19 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 42.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10989-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10989-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-45470",
+      "title": "Life at the Day-Care Centre (10992)",
+      "description": "Set LEGO Duplo del 2023, 67 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 47.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10992-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10992-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-45471",
+      "title": "3in1 Tree House (10993)",
+      "description": "Set LEGO Duplo del 2023, 126 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 89.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10993-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10993-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-45472",
+      "title": "3in1 Family House (10994)",
+      "description": "Set LEGO Duplo del 2023, 218 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 139.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10994-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10994-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-34331",
+      "title": "Spider-Man's House (10995)",
+      "description": "Set LEGO Duplo del 2023, 25 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 24.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10995-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10995-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-45473",
+      "title": "Camping Adventure (10997)",
+      "description": "Set LEGO Duplo del 2023, 37 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 52.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/10997-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/10997-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-48730",
+      "title": "Vibrant Creative Brick Box (11038)",
+      "description": "Set LEGO Classic del 2024, 850 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 49.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/11038-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/11038-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-50645",
+      "title": "Creative Happy Box (11042)",
+      "description": "Set LEGO Classic del 2025, 680 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 39.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/11042-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/11042-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51182",
+      "title": "Cool Creative Box (11043)",
+      "description": "Set LEGO Classic del 2025, 510 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 29.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/11043-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/11043-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51160",
+      "title": "Creative Build-and-Play Box (11044)",
+      "description": "Set LEGO Classic del 2025, 750 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 49.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/11044-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/11044-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52619",
+      "title": "Creative Colourful Bricks (11045)",
+      "description": "Set LEGO Classic del 2026, 820 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 49.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/11045-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/11045-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51429",
+      "title": "Mermaid Gabby's Aquarium Adventure (11204)",
+      "description": "Set LEGO Gabby's Dollhouse del 2025, 103 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 19.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/11204-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/11204-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51428",
+      "title": "Sweet Treat Mountain & Kitty Garden (11205)",
+      "description": "Set LEGO Gabby's Dollhouse del 2025, 263 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 49.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/11205-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/11205-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51853",
+      "title": "Spidey: Underwater Vehicles (11207)",
+      "description": "Set LEGO Marvel Super Heroes del 2026, 154 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 34.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/11207-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/11207-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51854",
+      "title": "Team Spidey Pirate Ship (11208)",
+      "description": "Set LEGO Marvel Super Heroes del 2026, 201 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 49.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/11208-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/11208-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52666",
+      "title": "Ultron vs. Iron Man (11209)",
+      "description": "Set LEGO Marvel Super Heroes del 2026, 96 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 19.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/11209-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/11209-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52667",
+      "title": "Loki vs. Team Iron Man (11211)",
+      "description": "Set LEGO Marvel Super Heroes del 2026, 204 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 49.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/11211-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/11211-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52663",
+      "title": "Kitty Fairy's Garden House (11212)",
+      "description": "Set LEGO Gabby's Dollhouse del 2026, 103 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 14.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/11212-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/11212-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52758",
+      "title": "Fairy Roller Coaster and Tea Party (11214)",
+      "description": "Set LEGO Gabby's Dollhouse del 2026, 137 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 34.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/11214-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/11214-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51748",
+      "title": "Gabby's Brick-Built Cat Friends (11215)",
+      "description": "Set LEGO Gabby's Dollhouse del 2026, 324 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 49.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/11215-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/11215-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51973",
+      "title": "Grannies with Bingo and Bluey (11216)",
+      "description": "Set LEGO Bluey del 2026, 80 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 14.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/11216-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/11216-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51974",
+      "title": "Brick-Built Bluey Family (11217)",
+      "description": "Set LEGO Bluey del 2026, 466 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 69.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/11217-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/11217-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51975",
+      "title": "School with Rusty and Bluey (11221)",
+      "description": "Set LEGO Bluey del 2026, 106 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 24.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/11221-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/11221-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52539",
+      "title": "Bookshop: Book Nook (11379)",
+      "description": "Set LEGO Icons del 2026, 1690 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 129.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/11379-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/11379-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-53108",
+      "title": "Holiday House (11387)",
+      "description": "Set LEGO Icons del 2026, 1354 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 109.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/11387-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/11387-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-53352",
+      "title": "Venetian Neighbourhood (11388)",
+      "description": "Set LEGO Icons del 2026, 5682 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 499.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/11388-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/11388-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52991",
+      "title": "Dragon Ball: Shenron & Goku (11390)",
+      "description": "Set LEGO Icons del 2026, 1764 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 139.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/11390-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/11390-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52615",
+      "title": "Olivia Rodrigo's Flower Bouquet (11507)",
+      "description": "Set LEGO Botanicals del 2026, 400 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 44.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/11507-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/11507-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51648",
+      "title": "Sagrada Família (21065)",
+      "description": "Set LEGO Architecture del 2026, 12060 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 749.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/21065-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/21065-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51649",
+      "title": "New York City – The Big Apple (21066)",
+      "description": "Set LEGO Architecture del 2026, 1465 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 139.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/21066-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/21066-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51650",
+      "title": "Tower Bridge (21067)",
+      "description": "Set LEGO Architecture del 2026, 3745 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 299.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/21067-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/21067-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51158",
+      "title": "The Parrot Houses (21282)",
+      "description": "Set LEGO Minecraft del 2025, 535 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 69.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/21282-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/21282-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51763",
+      "title": "Floating Sea Otters (21366)",
+      "description": "Set LEGO Ideas del 2026, 1234 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 109.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/21366-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/21366-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52439",
+      "title": "E.T. the Extra-Terrestrial (21370)",
+      "description": "Set LEGO Ideas del 2026, 1226 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 129.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/21370-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/21370-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-53191",
+      "title": "Wallace & Gromit (21371)",
+      "description": "Set LEGO Ideas del 2026, 1038 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 99.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/21371-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/21371-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-53313",
+      "title": "Downton Abbey (21373)",
+      "description": "Set LEGO Ideas del 2026, 4711 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 299.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/21373-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/21373-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52671",
+      "title": "Chicken Jockey (21582)",
+      "description": "Set LEGO Minecraft del 2026, 344 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 29.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/21582-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/21582-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51766",
+      "title": "Chicken Farm (21585)",
+      "description": "Set LEGO Minecraft del 2026, 233 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 19.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/21585-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/21585-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51771",
+      "title": "Wither Battle (21590)",
+      "description": "Set LEGO Minecraft del 2026, 494 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 64.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/21590-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/21590-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51772",
+      "title": "The Twisted Warden Battle (21591)",
+      "description": "Set LEGO Minecraft del 2026, 438 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 49.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/21591-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/21591-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51773",
+      "title": "Chicken Jockey Desert Attack (21592)",
+      "description": "Set LEGO Minecraft del 2026, 428 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 24.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/21592-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/21592-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51774",
+      "title": "First Night Adventure (21593)",
+      "description": "Set LEGO Minecraft del 2026, 301 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 29.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/21593-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/21593-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51775",
+      "title": "The Skeleton (21594)",
+      "description": "Set LEGO Minecraft del 2026, 502 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 44.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/21594-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/21594-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51776",
+      "title": "The Ender Dragon (21595)",
+      "description": "Set LEGO Minecraft del 2026, 710 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 59.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/21595-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/21595-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51777",
+      "title": "Evoker Village Attack (21596)",
+      "description": "Set LEGO Minecraft del 2026, 607 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 89.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/21596-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/21596-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51778",
+      "title": "Ghast Station (21597)",
+      "description": "Set LEGO Minecraft del 2026, 754 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 99.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/21597-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/21597-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51779",
+      "title": "Underwater Adventure (21598)",
+      "description": "Set LEGO Minecraft del 2026, 310 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 29.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/21598-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/21598-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52926",
+      "title": "Gustav Klimt - The Kiss (31221)",
+      "description": "Set LEGO Art del 2026, 4000 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 299.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/31221-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/31221-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52622",
+      "title": "Floral Perfume Bottle (31383)",
+      "description": "Set LEGO Creator del 2026, 286 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 29.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/31383-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/31383-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52739",
+      "title": "Wild Animals: Family of Koalas (31388)",
+      "description": "Set LEGO Creator del 2026, 1536 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 119.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/31388-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/31388-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52626",
+      "title": "Floral Art Painting (31390)",
+      "description": "Set LEGO Creator del 2026, 348 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 29.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/31390-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/31390-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52627",
+      "title": "Fashion Bag with Storage (31391)",
+      "description": "Set LEGO Creator del 2026, 272 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 29.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/31391-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/31391-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52628",
+      "title": "Music Decor Piano (31392)",
+      "description": "Set LEGO Creator del 2026, 485 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 39.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/31392-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/31392-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52740",
+      "title": "Forest Animals: Grey Wolf (31393)",
+      "description": "Set LEGO Creator del 2026, 657 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 49.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/31393-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/31393-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52738",
+      "title": "Red Panda (31394)",
+      "description": "Set LEGO Creator del 2026, 297 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 29.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/31394-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/31394-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-48283",
+      "title": "Play with Braille – French Alphabet (40655)",
+      "description": "Set LEGO Miscellaneous del 2023, 287 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 89.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/40655-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/40655-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-48282",
+      "title": "Play with Braille – English Alphabet (40656)",
+      "description": "Set LEGO Miscellaneous del 2023, 287 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 89.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/40656-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/40656-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-48633",
+      "title": "Play with Braille - German Alphabet (40722)",
+      "description": "Set LEGO Miscellaneous del 2024, 287 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 89.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/40722-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/40722-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-48634",
+      "title": "Play with Braille - Italian Alphabet (40723)",
+      "description": "Set LEGO Miscellaneous del 2024, 287 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 89.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/40723-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/40723-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-48635",
+      "title": "Play with Braille - Spanish Alphabet (40724)",
+      "description": "Set LEGO Miscellaneous del 2024, 287 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 89.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/40724-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/40724-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51274",
+      "title": "Birthday Numbers (40807)",
+      "description": "Set LEGO Seasonal del 2025, 281 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 19.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/40807-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/40807-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51358",
+      "title": "Baby Elephant in the Sky (40814)",
+      "description": "Set LEGO Miscellaneous del 2025, 402 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 29.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/40814-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/40814-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52982",
+      "title": "SpongeBob SquarePants Figure (40858)",
+      "description": "Set LEGO BrickHeadz del 2026, 72 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 12.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/40858-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/40858-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52983",
+      "title": "Golden Age Superman and Batman (40859)",
+      "description": "Set LEGO BrickHeadz del 2026, 218 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 24.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/40859-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/40859-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-53192",
+      "title": "Holiday Ornament Selection 2 (40862)",
+      "description": "Set LEGO Seasonal del 2026, 179 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 12.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/40862-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/40862-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52993",
+      "title": "Buddy the Elf (40865)",
+      "description": "Set LEGO Seasonal del 2026, 713 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 39.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/40865-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/40865-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-53193",
+      "title": "Santa's Holiday Sleigh Adventure (40866)",
+      "description": "Set LEGO Seasonal del 2026, 187 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 29.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/40866-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/40866-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52985",
+      "title": "Up-Scaled Red Minifigure (40868)",
+      "description": "Set LEGO Pokémon del 2026, 930 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 79.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/40868-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/40868-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52500",
+      "title": "Gift Box Celebration (40871)",
+      "description": "Set LEGO Seasonal del 2026, 224 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 19.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/40871-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/40871-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52978",
+      "title": "Colourful Lantern (40873)",
+      "description": "Set LEGO Seasonal del 2026, 286 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 19.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/40873-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/40873-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-53194",
+      "title": "Santa's Holiday Countdown (40874)",
+      "description": "Set LEGO Seasonal del 2026, 873 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 59.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/40874-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/40874-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52990",
+      "title": "Avengers: Doomsday Heroes & Villain (40880)",
+      "description": "Set LEGO BrickHeadz del 2026, 467 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 39.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/40880-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/40880-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52989",
+      "title": "Gremlins: Gizmo and Stripe Figures (40919)",
+      "description": "Set LEGO BrickHeadz del 2026, 230 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 24.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/40919-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/40919-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52994",
+      "title": "Christmas Stocking (40958)",
+      "description": "Set LEGO Seasonal del 2026, 342 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 34.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/40958-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/40958-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-34484",
+      "title": "Hogwarts Desktop Kit (41811)",
+      "description": "Set LEGO Dots del 2023, 856 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 44.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/41811-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/41811-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52542",
+      "title": "Mitsubishi Eclipse (42229)",
+      "description": "Set LEGO Technic del 2026, 827 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 64.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/42229-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/42229-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52543",
+      "title": "Dodge Charger R/T (42231)",
+      "description": "Set LEGO Technic del 2026, 1516 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 149.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/42231-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/42231-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52545",
+      "title": "Dodge Viper GTS-R (42234)",
+      "description": "Set LEGO Technic del 2026, 805 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 64.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/42234-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/42234-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52546",
+      "title": "Ferrari 488 Pista (42235)",
+      "description": "Set LEGO Technic del 2026, 882 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 64.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/42235-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/42235-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52549",
+      "title": "Batmobile Tumbler (42239)",
+      "description": "Set LEGO Technic del 2026, 719 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 189.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/42239-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/42239-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52550",
+      "title": "Aston Martin Aramco AMR25 F1 Car (42240)",
+      "description": "Set LEGO Technic del 2026, 1547 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 229.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/42240-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/42240-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52551",
+      "title": "Bugatti Chiron Pur Sport (42241)",
+      "description": "Set LEGO Technic del 2026, 771 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 64.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/42241-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/42241-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-48919",
+      "title": "Heartlake City Preschool (42636)",
+      "description": "Set LEGO Friends del 2024, 239 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 49.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/42636-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/42636-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-50873",
+      "title": "Heartlake City Ice Cream Truck (42644)",
+      "description": "Set LEGO Friends del 2025, 92 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 19.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/42644-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/42644-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-50671",
+      "title": "Horse and Pet Vet Clinic (42651)",
+      "description": "Set LEGO Friends del 2025, 428 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 49.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/42651-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/42651-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-50878",
+      "title": "Friendship Tree House Hangout (42652)",
+      "description": "Set LEGO Friends del 2025, 701 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 69.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/42652-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/42652-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51376",
+      "title": "Pony Ranch & Stable (42654)",
+      "description": "Set LEGO Friends del 2025, 727 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 69.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/42654-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/42654-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-50673",
+      "title": "Creative Beach and Travel Suitcase (42672)",
+      "description": "Set LEGO Friends del 2025, 188 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 29.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/42672-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/42672-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    }
+  ]
+}

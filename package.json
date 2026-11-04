@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Gioco d'aste da salotto: comprate prodotti eBay e scoprite se avete fatto un affare.",
+  "description": "Gioco d'aste da salotto: comprate lotti veri e scoprite se avete fatto un affare.",
   "scripts": {
     "start": "python3 -m http.server 8000",
     "test": "node --test",
-    "mock:products": "node scripts/generate-mock-products.mjs"
+    "mock:products": "node scripts/generate-mock-products.mjs",
+    "sources:update": "node --env-file-if-exists=.env scripts/update-sources.mjs"
   }
 }

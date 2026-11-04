@@ -6,6 +6,7 @@ import {
   auctioneerTick,
   createAuctioneerAuction,
   createTurnAuction,
+  expireTurn,
   minimumNextBid,
   placeTurnBid,
   turnMinimumBid,
@@ -95,8 +96,43 @@ test('una nuova offerta azzera il conto alla rovescia', () => {
   assert.equal(auction.leaderId, 'b');
 });
 
-test('un prodotto economico parte comunque da almeno 5 euro', () => {
+test("il prezzo di partenza è tra il 10% e l'80% del valore", () => {
+  const startAt = (random) => createAuctioneerAuction({
+    valueCents: 10000,
+    minRaisePct: 5,
+    rng: () => random,
+  }).startCents;
+  assert.equal(startAt(0), 1000);
+  assert.equal(startAt(0.5), 4500);
+  assert.equal(startAt(0.999), 8000);
+});
+
+test('un prodotto economico parte comunque da almeno 1 euro', () => {
   const auction = createAuctioneerAuction({ valueCents: 100, minRaisePct: 5, rng: () => 0 });
-  assert.equal(auction.startCents, 500);
+  assert.equal(auction.startCents, 100);
   assert.ok(auction.stepCents > 0);
+});
+
+test("a tempo scaduto chi deve aprire offre il minimo, perché non può ritirarsi", () => {
+  const auction = expireTurn(createTurnAuction(ids, 5, firstPlayer));
+  assert.equal(auction.highBidCents, 100);
+  assert.equal(auction.leaderId, 'a');
+  assert.equal(auction.currentPlayerId, 'b');
+});
+
+test('a tempo scaduto chi deve rilanciare si ritira', () => {
+  let auction = placeTurnBid(createTurnAuction(ids, 5, firstPlayer), 'a', 1000);
+  auction = expireTurn(auction);
+  assert.deepEqual(auction.activeIds, ['a', 'c']);
+  auction = expireTurn(auction);
+  assert.equal(auction.status, 'sold');
+  assert.equal(auction.leaderId, 'a');
+  assert.equal(auction.highBidCents, 1000);
+});
+
+test('the auctioneer announces round figures for very expensive lots', () => {
+  const auction = createAuctioneerAuction({ valueCents: 40000000000, minRaisePct: 5, rng: () => 0.5 });
+  assert.equal(auction.startCents, 18000000000);
+  assert.equal(auction.stepCents, 1400000000);
+  assert.ok(auction.floorCents < auction.startCents);
 });
