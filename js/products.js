@@ -9,7 +9,7 @@ export const SOURCES = Object.freeze([
     text: 'I dipinti più costosi mai venduti. Con il punteggio in euro, un solo quadro può decidere la partita.',
     file: 'data/sources/paintings.json',
     linkLabel: 'Wikipedia',
-    priceNote: 'Prezzo di vendita in dollari, convertito in euro al cambio recente.',
+    priceNote: 'Prezzo di vendita in dollari.',
     glyph: '<rect x="6" y="4" width="36" height="32" rx="2"/><path d="M12 29l9-11 7 8 4-4 6 7"/>',
   },
   {
@@ -27,13 +27,13 @@ export const SOURCES = Object.freeze([
     text: 'Giochi per PC molto recensiti su Steam, a prezzo pieno.',
     file: 'data/sources/games.json',
     linkLabel: 'Steam',
-    priceNote: 'Prezzo pieno in dollari, convertito in euro al cambio recente.',
+    priceNote: 'Prezzo pieno su Steam, in dollari.',
     glyph: '<rect x="4" y="11" width="40" height="22" rx="10"/><path d="M15 17v10M10 22h10"/><circle cx="33" cy="22" r="3" class="fill"/>',
   },
   {
     id: 'groceries',
     name: 'La Spesa',
-    text: 'Scontrini veri di supermercati italiani: si offre sul totale di tutta la spesa.',
+    text: 'Scontrini veri di supermercati italiani e stranieri: si offre sul totale di tutta la spesa.',
     file: 'data/sources/groceries.json',
     linkLabel: 'Open Prices',
     priceNote: 'Somma dei prezzi registrati sullo scontrino.',
@@ -45,11 +45,12 @@ export const SOURCES = Object.freeze([
     text: 'Lotti delle aste del governo americano: camion, macchinari, a volte aerei.',
     file: 'data/sources/surplus.json',
     linkLabel: 'GSA Auctions',
-    priceNote: 'Offerta più alta rilevata ad asta ancora aperta, convertita da dollari in euro.',
+    priceNote: 'Offerta più alta rilevata ad asta ancora aperta.',
     glyph: '<path d="M4 29V12h24v17M28 18h9l7 7v4H4"/><circle cx="14" cy="32" r="4" class="fill"/><circle cx="35" cy="32" r="4" class="fill"/>',
   },
 ]);
 
+const NO_RATES = Object.freeze({ EUR: 1 });
 const DAY_MS = 86400000;
 const dayFormat = new Intl.DateTimeFormat('it-IT', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
 
@@ -77,10 +78,13 @@ export function auctionSummary(auction, now = new Date()) {
   return parts.join(' · ');
 }
 
-function normalizeProduct(raw, source) {
+// A lot in a currency without a rate has no euro value for the score, so it stays out.
+function normalizeProduct(raw, source, rates) {
   const priceCents = Math.round(Number(raw?.price) * 100);
   const images = Array.isArray(raw?.images) ? raw.images.filter(Boolean) : [];
-  if (!raw?.id || !raw?.title || !images.length || !(priceCents > 0)) return null;
+  const currency = String(raw?.currency ?? 'EUR');
+  const eurRate = rates[currency];
+  if (!raw?.id || !raw?.title || !images.length || !(priceCents > 0) || !(eurRate > 0)) return null;
   return {
     id: String(raw.id),
     source,
@@ -93,32 +97,48 @@ function normalizeProduct(raw, source) {
     credit: String(raw.credit ?? ''),
     creditUrl: raw.creditUrl ?? null,
     auction: raw.auction ?? null,
+    country: raw.country ?? null,
     priceCents,
+    currency,
+    eurRate,
   };
 }
 
-export function parseCatalog(data, source = data?.source ?? 'unknown') {
+export function parseCatalog(data, source = data?.source ?? 'unknown', rates = NO_RATES) {
   const rawProducts = Array.isArray(data?.products) ? data.products : [];
   return {
     source,
     generatedAt: data?.generatedAt ?? null,
-    products: rawProducts.map((raw) => normalizeProduct(raw, source)).filter(Boolean),
+    products: rawProducts.map((raw) => normalizeProduct(raw, source, rates)).filter(Boolean),
   };
 }
 
-async function loadSource(source) {
+async function loadRates() {
+  try {
+    const response = await fetch('data/rates.json', { cache: 'no-cache' });
+    if (!response.ok) return { date: null, rates: NO_RATES };
+    const { date, rates } = await response.json();
+    return { date: date ?? null, rates: { ...rates, ...NO_RATES } };
+  } catch {
+    return { date: null, rates: NO_RATES };
+  }
+}
+
+async function loadSource(source, rates) {
   try {
     const response = await fetch(source.file, { cache: 'no-cache' });
     if (!response.ok) return { generatedAt: null, products: [] };
-    return parseCatalog(await response.json(), source.id);
+    return parseCatalog(await response.json(), source.id, rates);
   } catch {
     return { generatedAt: null, products: [] };
   }
 }
 
 export async function loadCatalog() {
-  const loaded = await Promise.all(SOURCES.map(loadSource));
+  const { date, rates } = await loadRates();
+  const loaded = await Promise.all(SOURCES.map((source) => loadSource(source, rates)));
   return {
+    ratesDate: date,
     sources: SOURCES.map((source, index) => ({
       ...source,
       count: loaded[index].products.length,

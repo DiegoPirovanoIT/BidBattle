@@ -8,13 +8,15 @@ All'inizio della partita si scelgono le fonti dei lotti:
 
 | Fonte | Da dove arriva | Che prezzo è |
 |---|---|---|
-| Capolavori | Lista di Wikipedia dei dipinti più costosi, solo con immagini libere | Prezzo di vendita, da dollari a euro |
+| Capolavori | Lista di Wikipedia dei dipinti più costosi, solo con immagini libere | Prezzo di vendita, in dollari |
 | LEGO | Brickset, serve una chiave gratuita | Listino tedesco, in euro |
-| Videogiochi | CheapShark, solo Steam | Prezzo pieno, da dollari a euro |
-| La Spesa | Scontrini italiani di Open Prices | Somma dello scontrino |
-| Surplus USA | Aste del governo USA (GSA Auctions) | Offerta più alta ad asta aperta, da dollari a euro |
+| Videogiochi | CheapShark, solo Steam | Prezzo pieno, in dollari |
+| La Spesa | Scontrini di Open Prices, italiani e stranieri, con il Paese indicato sul lotto | Somma dello scontrino, nella sua valuta |
+| Surplus USA | Aste del governo USA (GSA Auctions) | Offerta più alta ad asta aperta, in dollari |
 
 I prodotti di eBay arriveranno quando ci saranno le credenziali.
+
+Le aste si fanno sempre in euro, con i prezzi convertiti al cambio BCE. Nelle impostazioni si può scegliere invece la valuta locale di ogni lotto.
 
 Il punteggio può essere in euro oppure in percentuale sul valore del lotto. In percentuale ogni lotto pesa uguale: comprare a metà del valore dà +50%, pagare il doppio dà −100%.
 
@@ -61,4 +63,4 @@ Le credenziali della API di eBay non vanno mai nel codice: saranno salvate nei G
 
 Lo stesso file `.env` contiene le chiavi usate da `npm run sources:update`: `BRICKSET_API_KEY` (obbligatoria per LEGO) e `GSA_API_KEY` (facoltativa: senza si usa la chiave dimostrativa di api.data.gov). La chiave Brickset si chiede su https://brickset.com/tools/webservices/requestkey.
 
-Online i cataloghi si aggiornano da soli con la GitHub Action `update-sources.yml`, che legge le stesse due chiavi dai GitHub Secrets: Surplus USA ogni giorno, Videogiochi, La Spesa e LEGO ogni lunedì, Capolavori il primo del mese. Dalla pagina Actions si può lanciare a mano: senza indicare fonti le aggiorna tutte.
+Online i cataloghi si aggiornano da soli con la GitHub Action `update-sources.yml`, che legge le stesse due chiavi dai GitHub Secrets: Surplus USA ogni giorno, tassi di cambio, Videogiochi, La Spesa e LEGO ogni lunedì, Capolavori il primo del mese. Dalla pagina Actions si può lanciare a mano: senza indicare fonti le aggiorna tutte.

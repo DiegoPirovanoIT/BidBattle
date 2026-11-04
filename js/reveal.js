@@ -59,14 +59,14 @@ function flapMarkup(char) {
   </span>`;
 }
 
-export function boardMarkup(cents, { staged }) {
+export function boardMarkup(cents, { staged, mark = '€' }) {
   const chars = flapChars(cents);
   const flaps = chars.map((char) => flapMarkup(staged ? BLANK : char));
   const euroCells = flaps.slice(0, -DECIMAL_CELLS).join('');
   const decimalCells = flaps.slice(-DECIMAL_CELLS).join('');
   return `
     <div class="board" style="--cells: ${chars.length}" aria-hidden="true">
-      ${euroCells}<span class="board-mark">,</span>${decimalCells}<span class="board-mark">€</span>
+      ${euroCells}<span class="board-mark">,</span>${decimalCells}<span class="board-mark">${mark}</span>
     </div>`;
 }
 

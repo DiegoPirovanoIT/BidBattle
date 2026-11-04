@@ -2,15 +2,18 @@ import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import { AUCTION_MODES, placeTurnBid, withdrawFromTurn } from '../js/auction.js';
 import {
+  AUCTION_CURRENCIES,
   DEFAULT_SETTINGS,
   REVEAL_TIMINGS,
   SCORE_MODES,
   availableProducts,
   createGame,
   currentProduct,
+  defaultPaddles,
   gameHighlights,
+  nextPaddle,
   nextRound,
-  parseEurosToCents,
+  parseAmountToCents,
   recordManualSale,
   revealPrice,
   setLotAside,
@@ -18,6 +21,7 @@ import {
   standings,
   startAuction,
   updateAuction,
+  validatePaddles,
   validatePlayerNames,
 } from '../js/game.js';
 import { parseCatalog } from '../js/products.js';
@@ -34,6 +38,46 @@ const newGame = (overrides = {}) => createGame({
   rng: () => 0.5,
 });
 
+test('le palette partono da 1 con un colore diverso a testa', () => {
+  assert.deepEqual(defaultPaddles(3), [
+    { number: '1', color: 0 },
+    { number: '2', color: 1 },
+    { number: '3', color: 2 },
+  ]);
+});
+
+test('una nuova palette prende il numero e il colore liberi', () => {
+  const paddles = [{ number: '1', color: 0 }, { number: '3', color: 1 }];
+  assert.deepEqual(nextPaddle(paddles), { number: '2', color: 2 });
+  assert.deepEqual(nextPaddle([{ number: '42', color: 3 }]), { number: '1', color: 0 });
+});
+
+test('i numeri delle palette vanno da 0 a 999 e non si ripetono', () => {
+  assert.equal(validatePaddles([{ number: '007', color: 0 }, { number: '999', color: 1 }]), null);
+  assert.ok(validatePaddles([{ number: '', color: 0 }, { number: '2', color: 1 }]));
+  assert.ok(validatePaddles([{ number: '1000', color: 0 }, { number: '2', color: 1 }]));
+  assert.ok(validatePaddles([{ number: 'a', color: 0 }, { number: '2', color: 1 }]));
+  assert.ok(validatePaddles([{ number: '7', color: 0 }, { number: '07', color: 1 }]));
+});
+
+test('due palette non possono avere lo stesso colore', () => {
+  assert.ok(validatePaddles([{ number: '1', color: 4 }, { number: '2', color: 4 }]));
+});
+
+test('i giocatori tengono numero e colore della loro palette', () => {
+  const game = createGame({
+    playerNames: ['Anna', 'Luca'],
+    paddles: [{ number: '42', color: 7 }, { number: '7', color: 0 }],
+    settings: { ...DEFAULT_SETTINGS, rounds: 2 },
+    products,
+  });
+  assert.deepEqual(game.players.map(({ number, color }) => ({ number, color })), [
+    { number: '42', color: 7 },
+    { number: '7', color: 0 },
+  ]);
+  assert.equal(game.players[0].id, 'p1');
+});
+
 test('i nomi devono essere da 2 a 6, non vuoti e diversi', () => {
   assert.ok(validatePlayerNames(['Anna']));
   assert.ok(validatePlayerNames(['a', 'b', 'c', 'd', 'e', 'f', 'g']));
@@ -47,12 +91,12 @@ test('i round non possono superare i prodotti disponibili', () => {
 });
 
 test('gli importi accettano virgola e punto e rifiutano il resto', () => {
-  assert.equal(parseEurosToCents('12,50'), 1250);
-  assert.equal(parseEurosToCents('12.5'), 1250);
-  assert.equal(parseEurosToCents('19.99'), 1999);
-  assert.equal(parseEurosToCents('abc'), null);
-  assert.equal(parseEurosToCents('-5'), null);
-  assert.equal(parseEurosToCents('1,234'), null);
+  assert.equal(parseAmountToCents('12,50'), 1250);
+  assert.equal(parseAmountToCents('12.5'), 1250);
+  assert.equal(parseAmountToCents('19.99'), 1999);
+  assert.equal(parseAmountToCents('abc'), null);
+  assert.equal(parseAmountToCents('-5'), null);
+  assert.equal(parseAmountToCents('1,234'), null);
 });
 
 test('comprare sotto il valore reale fa guadagnare la differenza', () => {
@@ -239,6 +283,13 @@ test('excluded sources stay out of the deck', () => {
     { id: '3', source: 'paintings', category: '', priceCents: 100 },
   ];
   assert.deepEqual(availableProducts(mixed, [], ['lego']).map((p) => p.id), ['1', '3']);
+  const shopping = [
+    { id: 'it', source: 'groceries', country: 'IT' },
+    { id: 'fr', source: 'groceries', country: 'FR' },
+    { id: 'lego', source: 'lego' },
+  ];
+  assert.deepEqual(availableProducts(shopping).map((p) => p.id), ['it', 'fr', 'lego']);
+  assert.deepEqual(availableProducts(shopping, [], [], 'italy').map((p) => p.id), ['it', 'lego']);
   assert.throws(() => createGame({
     playerNames: ['Anna', 'Bruno'],
     settings: { ...DEFAULT_SETTINGS, rounds: 3, excludedSources: ['lego'] },
@@ -287,4 +338,55 @@ test('an unsold lot scores nothing in percent', () => {
   });
   const done = revealPrice(recordManualSale(game, null, null));
   assert.deepEqual(done.players.map((player) => player.score), [0, 0]);
+});
+
+test('with local currencies bids stay in the lot currency and the score is in euros', () => {
+  const dollars = [
+    { id: 'usd', title: 'Camion', priceCents: 10000, currency: 'USD', eurRate: 0.8, images: ['a'] },
+    { id: 'eur', title: 'Pasta', priceCents: 5000, currency: 'EUR', eurRate: 1, images: ['a'] },
+  ];
+  const start = (scoreMode) => recordManualSale(createGame({
+    playerNames: ['Anna', 'Luca'],
+    settings: {
+      ...DEFAULT_SETTINGS,
+      rounds: 1,
+      mode: AUCTION_MODES.MANUAL,
+      scoreMode,
+      auctionCurrency: AUCTION_CURRENCIES.LOCAL,
+    },
+    products: dollars.slice(0, 1),
+    rng: () => 0.5,
+  }), 'p1', 7500);
+
+  const euros = revealPrice(start(SCORE_MODES.EUROS));
+  assert.equal(euros.history[0].priceCents, 7500, 'the bid is not converted');
+  assert.equal(euros.history[0].deltaCents, 2500, 'the gain in dollars');
+  assert.equal(euros.players[0].score, 2000, 'the gain in euros');
+  assert.equal(revealPrice(start(SCORE_MODES.PERCENT)).players[0].score, 2500, 'percent ignores the rate');
+  assert.equal(spentCents(start(SCORE_MODES.EUROS), 'p1'), 6000, 'spending is in euros');
+});
+
+test('by default every lot is auctioned in euros and keeps its original price', () => {
+  assert.equal(DEFAULT_SETTINGS.auctionCurrency, AUCTION_CURRENCIES.EUROS);
+  const lots = [
+    { id: 'usd', title: 'Camion', priceCents: 10000, currency: 'USD', eurRate: 0.8, images: ['a'] },
+    { id: 'eur', title: 'Pasta', priceCents: 5000, currency: 'EUR', eurRate: 1, images: ['a'] },
+  ];
+  const game = createGame({
+    playerNames: ['Anna', 'Luca'],
+    settings: { ...DEFAULT_SETTINGS, rounds: 2, mode: AUCTION_MODES.MANUAL },
+    products: lots,
+    rng: () => 0.5,
+  });
+  const truck = game.deck.find(({ id }) => id === 'usd');
+  assert.equal(truck.priceCents, 8000);
+  assert.equal(truck.currency, 'EUR');
+  assert.equal(truck.eurRate, 1);
+  assert.deepEqual(truck.original, { priceCents: 10000, currency: 'USD' });
+  assert.equal(game.deck.find(({ id }) => id === 'eur').original, undefined);
+
+  const onTruck = { ...game, roundIndex: game.deck.indexOf(truck) };
+  const revealed = revealPrice(recordManualSale(onTruck, 'p1', 6000));
+  assert.equal(revealed.players[0].score, 2000, 'the bid is already in euros');
+  assert.equal(lots[0].priceCents, 10000, 'the catalog is left alone');
 });

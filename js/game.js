@@ -1,6 +1,9 @@
 // Pure game flow: setup, rounds, settlement and final standings.
 // Budgets are unlimited: a player's score is only the total profit or loss.
 // A score is an integer: cents of a euro, or hundredths of a percentage point.
+// Bids and prices are in hundredths of the lot's currency. By default a game turns
+// every lot into euros when it starts. With local currencies only the score is
+// converted, because lots in different currencies add up to it.
 
 import {
   AUCTION_MODES,
@@ -10,6 +13,12 @@ import {
 
 export const MIN_PLAYERS = 2;
 export const MAX_PLAYERS = 6;
+
+// A paddle's colour is its position here, and css/style.css has a class .pN for each one.
+export const PADDLE_COLORS = Object.freeze([
+  'Corallo', 'Cielo', 'Sole', 'Menta', 'Lilla', 'Rosa',
+  'Lime', 'Arancio', 'Turchese', 'Pervinca', 'Sabbia', 'Ghiaccio',
+]);
 
 export const SETTING_LIMITS = Object.freeze({
   rounds: { min: 1, max: 30 },
@@ -26,6 +35,10 @@ export const REVEAL_TIMINGS = Object.freeze({ EACH_ROUND: 'each-round', AT_END: 
 
 export const SCORE_MODES = Object.freeze({ EUROS: 'euros', PERCENT: 'percent' });
 
+export const AUCTION_CURRENCIES = Object.freeze({ EUROS: 'euros', LOCAL: 'local' });
+
+export const GROCERY_SCOPES = Object.freeze({ ALL: 'all', ITALY: 'italy' });
+
 export const DEFAULT_SETTINGS = Object.freeze({
   mode: AUCTION_MODES.TURNS,
   rounds: 8,
@@ -35,11 +48,13 @@ export const DEFAULT_SETTINGS = Object.freeze({
   revealPace: REVEAL_PACES.FULL,
   revealTiming: REVEAL_TIMINGS.EACH_ROUND,
   scoreMode: SCORE_MODES.EUROS,
+  auctionCurrency: AUCTION_CURRENCIES.EUROS,
   excludedCategories: Object.freeze([]),
   excludedSources: Object.freeze([]),
+  groceryScope: GROCERY_SCOPES.ALL,
 });
 
-export function parseEurosToCents(text) {
+export function parseAmountToCents(text) {
   const normalized = String(text).trim().replace(',', '.');
   if (!/^\d+(\.\d{1,2})?$/.test(normalized)) return null;
   return Math.round(Number(normalized) * 100);
@@ -65,28 +80,96 @@ export function validatePlayerNames(names) {
   return null;
 }
 
+// The number stays text, so a paddle can read 007.
+export function validatePaddles(paddles) {
+  if (paddles.some(({ number }) => !/^\d{1,3}$/.test(number))) {
+    return 'Ogni palette deve avere un numero da 0 a 999.';
+  }
+  if (new Set(paddles.map(({ number }) => Number(number))).size !== paddles.length) {
+    return 'I numeri delle palette devono essere diversi.';
+  }
+  if (new Set(paddles.map(({ color }) => color)).size !== paddles.length) {
+    return 'I colori delle palette devono essere diversi.';
+  }
+  return null;
+}
+
+// A new paddle takes the lowest number and the first colour still free.
+export function nextPaddle(paddles) {
+  const numbers = new Set(paddles.map(({ number }) => Number(number)));
+  const colors = new Set(paddles.map(({ color }) => color));
+  let number = 1;
+  while (numbers.has(number)) number += 1;
+  return {
+    number: String(number),
+    color: PADDLE_COLORS.findIndex((_, color) => !colors.has(color)),
+  };
+}
+
+export function defaultPaddles(count) {
+  const paddles = [];
+  while (paddles.length < count) paddles.push(nextPaddle(paddles));
+  return paddles;
+}
+
 // Categories and sources are stored as exclusions, so new ones start enabled.
-export function availableProducts(products, excludedCategories = [], excludedSources = []) {
+export function availableProducts(
+  products,
+  excludedCategories = [],
+  excludedSources = [],
+  groceryScope = GROCERY_SCOPES.ALL,
+) {
+  const italyOnly = groceryScope === GROCERY_SCOPES.ITALY;
   return products.filter((product) => (
-    !excludedCategories.includes(product.category) && !excludedSources.includes(product.source)
+    !excludedCategories.includes(product.category)
+    && !excludedSources.includes(product.source)
+    && !(italyOnly && product.source === 'groceries' && product.country !== 'IT')
   ));
 }
 
-export function createGame({ playerNames, settings, products, rng = Math.random }) {
-  const nameError = validatePlayerNames(playerNames);
-  if (nameError) throw new Error(nameError);
-  const pool = availableProducts(products, settings.excludedCategories, settings.excludedSources);
+export const toEuroCents = (cents, { eurRate = 1 }) => Math.round(cents * eurRate);
+
+// The original price stays on the lot, so the reveal can show what it really was.
+function inEuros(product) {
+  const { priceCents, currency = 'EUR' } = product;
+  if (currency === 'EUR') return product;
+  return {
+    ...product,
+    priceCents: toEuroCents(priceCents, product),
+    currency: 'EUR',
+    eurRate: 1,
+    original: { priceCents, currency },
+  };
+}
+
+export function createGame({
+  playerNames,
+  paddles = defaultPaddles(playerNames.length),
+  settings,
+  products,
+  rng = Math.random,
+}) {
+  const playerError = validatePlayerNames(playerNames) ?? validatePaddles(paddles);
+  if (playerError) throw new Error(playerError);
+  const pool = availableProducts(
+    products,
+    settings.excludedCategories,
+    settings.excludedSources,
+    settings.groceryScope,
+  );
   if (settings.rounds > pool.length) {
     throw new Error(`Ci sono solo ${pool.length} prodotti disponibili.`);
   }
+  const lots = shuffled(pool, rng).slice(0, settings.rounds);
   return {
     settings: { ...settings },
     players: playerNames.map((name, index) => ({
       id: `p${index + 1}`,
       name: name.trim(),
+      ...paddles[index],
       score: 0,
     })),
-    deck: shuffled(pool, rng).slice(0, settings.rounds),
+    deck: settings.auctionCurrency === AUCTION_CURRENCIES.EUROS ? lots.map(inEuros) : lots,
     roundIndex: 0,
     phase: 'preview',
     auction: null,
@@ -108,12 +191,15 @@ export function revealsAtEnd(game) {
   return game.settings.revealTiming === REVEAL_TIMINGS.AT_END;
 }
 
-// Money committed so far, including a lot that has just been knocked down.
+// Euros committed so far, including a lot that has just been knocked down.
 export function spentCents(game, playerId) {
-  const openSale = game.sale && !game.sales.includes(game.sale) ? [game.sale] : [];
-  return [...game.sales, ...openSale]
-    .filter((sale) => sale.buyerId === playerId)
-    .reduce((total, sale) => total + sale.priceCents, 0);
+  const lots = game.sales.map((sale, index) => ({ sale, product: game.deck[index] }));
+  if (game.sale && !game.sales.includes(game.sale)) {
+    lots.push({ sale: game.sale, product: currentProduct(game) });
+  }
+  return lots
+    .filter(({ sale }) => sale.buyerId === playerId)
+    .reduce((total, { sale, product }) => total + toEuroCents(sale.priceCents, product), 0);
 }
 
 export function startAuction(game, rng = Math.random) {
@@ -156,17 +242,17 @@ export function recordManualSale(game, buyerId, priceCents) {
 
 // In percent the gain is measured on the real value, so a painting and a receipt
 // weigh the same: half price is +50%, double price is -100%.
-function lotScore(deltaCents, valueCents, scoreMode) {
+function lotScore(deltaCents, product, scoreMode) {
   return scoreMode === SCORE_MODES.PERCENT
-    ? Math.round((deltaCents / valueCents) * 10000)
-    : deltaCents;
+    ? Math.round((deltaCents / product.priceCents) * 10000)
+    : toEuroCents(deltaCents, product);
 }
 
 export function revealPrice(game) {
   const product = currentProduct(game);
   const { buyerId, priceCents } = game.sale;
   const deltaCents = buyerId === null ? 0 : product.priceCents - priceCents;
-  const scoreDelta = lotScore(deltaCents, product.priceCents, game.settings.scoreMode);
+  const scoreDelta = lotScore(deltaCents, product, game.settings.scoreMode);
   return {
     ...game,
     phase: 'reveal',

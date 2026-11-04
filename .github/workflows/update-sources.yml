@@ -28,7 +28,8 @@ jobs:
         with:
           node-version: 22
 
-      # Surplus lots close within days, the other catalogs change slowly.
+      # Surplus lots close within days, the other catalogs and the rates change slowly.
+      # Rates go first: La Spesa reads them.
       - name: Scegli le fonti
         id: pick
         env:
@@ -38,7 +39,7 @@ jobs:
             sources="$REQUESTED"
           else
             sources="surplus"
-            if [ "$(date -u +%u)" = "1" ]; then sources="$sources games groceries lego"; fi
+            if [ "$(date -u +%u)" = "1" ]; then sources="rates $sources games groceries lego"; fi
             if [ "$(date -u +%d)" = "01" ]; then sources="$sources paintings"; fi
           fi
           echo "sources=$sources" >> "$GITHUB_OUTPUT"
@@ -58,7 +59,7 @@ jobs:
       - name: Salva i cataloghi
         id: save
         run: |
-          git add data/sources
+          git add data
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
