@@ -11,13 +11,6 @@ export async function fetchJson(url) {
   return response.json();
 }
 
-export async function usdToEurRate() {
-  const { rates } = await fetchJson('https://api.frankfurter.dev/v1/latest?base=USD&symbols=EUR');
-  return rates.EUR;
-}
-
-export const toEuros = (dollars, rate) => Math.round(dollars * rate * 100) / 100;
-
 export function stripHtml(html) {
   return String(html).replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
 }

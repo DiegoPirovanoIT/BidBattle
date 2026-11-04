@@ -10,8 +10,9 @@ Il progetto è interamente su GitHub e non ha un backend (opzione A).
 |---|---|
 | Gioco | HTML, CSS e JavaScript senza build, pubblicati su GitHub Pages |
 | Prodotti | Un file per fonte in `data/sources`, letti dal gioco all'avvio. I prodotti inventati di `data/products.json` non sono più usati |
-| Aggiornamento fonti | GitHub Action `update-sources.yml`: Surplus USA ogni giorno, Videogiochi, La Spesa e LEGO ogni lunedì, Capolavori il primo del mese. I file generati vanno nel repository. A mano: `npm run sources:update` |
+| Aggiornamento fonti | GitHub Action `update-sources.yml`: Surplus USA ogni giorno, tassi di cambio, Videogiochi, La Spesa e LEGO ogni lunedì, Capolavori il primo del mese. I file generati vanno nel repository. A mano: `npm run sources:update` |
 | Aggiornamento prodotti | GitHub Action programmata che chiama la Browse API di eBay e pubblica il catalogo senza salvarlo nel repository |
+| Valute | Impostazione `auctionCurrency`. Di base ogni lotto è convertito in euro all'inizio della partita e la rivelazione mostra il prezzo originale. Con "Valuta locale" offerte e prezzi restano nella valuta del lotto, con la stima in euro accanto. Il punteggio è comunque in euro, perché somma lotti in valute diverse. I tassi stanno in `data/rates.json` (BCE, tramite Frankfurter) e il gioco li applica al caricamento. Un lotto senza tasso resta fuori |
 | Chiave eBay | GitHub Secrets, usata solo dalla Action e mai inviata al browser |
 
 ## Regole del gioco
@@ -60,6 +61,7 @@ Queste regole non erano nella descrizione iniziale. Sono state decise per far fu
 - **Tempo scaduto nella modalità a turni:** chi deve rilanciare si ritira, chi deve aprire offre il minimo perché non può ritirarsi.
 - **Verdetti della rivelazione:** "Affarone!" da un guadagno del 50% sul prezzo pagato, "Bidone!" se si è pagato almeno il 50% più del valore.
 - **Impostazioni scartate:** il budget limitato cambierebbe la regola del budget illimitato e l'indizio sul prezzo toglierebbe il gusto di stimare. Si possono rivalutare dopo le prime partite vere.
+- **Palette personalizzabili:** ogni giocatore sceglie il numero (da 0 a 999) e uno dei 12 colori della propria palette. Numeri e colori non si ripetono: i colori presi da un altro giocatore non si possono scegliere.
 - **Pulsanti del battitore:** ogni giocatore ha un pulsante a schermo e un tasto (Q, Z, T, B, P, M).
 
 ## Fonti dei lotti
@@ -71,7 +73,7 @@ La scelta delle fonti è un'impostazione della schermata iniziale. Le fonti sono
 | Capolavori | `paintings.mjs` | Prezzo originale, non quello rivalutato. Solo immagini con licenza libera su Commons, con il credito sul lotto. Prezzo arrotondato a 100.000 €. | Le opere moderne protette restano fuori: entrano 54 opere su 127. |
 | LEGO | `lego.mjs` | Listino tedesco, perché è in euro. | Serve `BRICKSET_API_KEY`. Lo script non è ancora stato provato sulla API vera. |
 | Videogiochi | `games.mjs` | Solo Steam, a prezzo pieno, con almeno 2.000 recensioni. | Prezzo in dollari convertito, non il listino italiano. Termini di CheapShark non trovati. |
-| La Spesa | `groceries.mjs` | Un lotto è uno scontrino intero, con almeno 5 prodotti e 10 €: un prodotto solo costa meno del rilancio minimo. Restano fuori i prodotti a peso. | I filtri per Paese della API lasciano passare negozi stranieri, quindi lo script controlla ogni negozio. Dati ODbL: va citata la fonte. |
+| La Spesa | `groceries.mjs` | Un lotto è uno scontrino intero, con almeno 5 prodotti e 10 €: un prodotto solo costa meno del rilancio minimo. Restano fuori i prodotti a peso. | Ogni scontrino resta nella sua valuta. Al massimo 10 negozi e 40 lotti per Paese straniero, 80 lotti per l'Italia. Nelle impostazioni si può scegliere "Solo Italia". I filtri per Paese della API lasciano passare negozi stranieri, quindi lo script controlla ogni negozio. Dati ODbL: va citata la fonte. |
 | Surplus USA | `surplus.mjs` | Almeno 3 offerenti, prima le aste che chiudono prima. Prezzo: offerta più alta al momento della rilevazione, non quella finale. Il lotto mostra date dell'asta e offerenti. | Le note dei lotti hanno nomi e telefoni di funzionari: non vanno mai copiate. Le foto sono link esterni e potrebbero sparire dopo l'asta: il gioco mostra un'immagine sostitutiva. Licenza dei dati non chiara. |
 
 I prezzi in dollari sono convertiti con il cambio del giorno in cui si genera il catalogo (frankfurter.dev). La schermata di rivelazione spiega sempre che tipo di prezzo è.
@@ -146,6 +148,7 @@ Con l'autorizzazione di eBay:
 
 - [x] Nuova grafica: sala d'aste blu, palette dei giocatori, font ospitati in `css/fonts`
 - [x] Rivelazione del prezzo con tabellone a palette, timbro del verdetto e nuove impostazioni di partita
+- [x] Numero e colore della palette scelti da ogni giocatore
 - [x] Podio animato nella schermata finale
 - [ ] Suoni per battitore e aggiudicazione
 - [ ] Ripresa della partita dopo un ricaricamento della pagina

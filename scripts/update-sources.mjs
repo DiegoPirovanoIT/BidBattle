@@ -7,9 +7,11 @@ import { buildGames } from './sources/games.mjs';
 import { buildGroceries } from './sources/groceries.mjs';
 import { buildLego } from './sources/lego.mjs';
 import { buildPaintings } from './sources/paintings.mjs';
+import { updateRates } from './sources/rates.mjs';
 import { buildSurplus } from './sources/surplus.mjs';
 
 const BUILDERS = {
+  rates: null,
   paintings: buildPaintings,
   lego: buildLego,
   games: buildGames,
@@ -20,6 +22,10 @@ const BUILDERS = {
 const requested = process.argv.slice(2);
 for (const id of requested.length ? requested : Object.keys(BUILDERS)) {
   try {
+    if (id === 'rates') {
+      console.log(`rates: ${await updateRates()} valute`);
+      continue;
+    }
     const products = await BUILDERS[id]();
     if (products.length === 0) throw new Error('nessun lotto utilizzabile');
     await writeSource(id, products);

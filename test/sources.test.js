@@ -1,10 +1,11 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import { gameProduct, isPlayableDeal } from '../scripts/sources/games.mjs';
-import { receiptLots } from '../scripts/sources/groceries.mjs';
+import { limitPerCountry, pickLocations, receiptLots } from '../scripts/sources/groceries.mjs';
 import { isPlayableSet, setProduct } from '../scripts/sources/lego.mjs';
 import { paintingProduct, parsePaintings } from '../scripts/sources/paintings.mjs';
-import { auctionSummary } from '../js/products.js';
+import { auctionSummary, parseCatalog } from '../js/products.js';
+import { eurosPerUnit } from '../scripts/sources/rates.mjs';
 import { isPlayableLot, lotCategory, lotProduct } from '../scripts/sources/surplus.mjs';
 
 const WIKITEXT = `Intro
@@ -50,9 +51,8 @@ test('a painting credits its image and does not show its price', () => {
   const product = paintingProduct(
     { title: 'Opera', file: 'A b.jpg', priceUsd: 100123456, saleYear: '2017', artist: 'Tiziano', year: '1550' },
     { url: 'https://img/a.jpg', pageUrl: 'https://commons/a', license: 'Public domain', artist: '<a href="x">Tiziano</a>' },
-    0.9,
   );
-  assert.equal(product.price, 90100000);
+  assert.deepEqual([product.price, product.currency], [100100000, 'USD']);
   assert.equal(product.description, 'Dipinto di Tiziano, 1550. Venduto nel 2017.');
   assert.match(product.credit, /^Immagine: Tiziano, Public domain/);
 });
@@ -70,7 +70,7 @@ test('games use the full price, not the sale price', () => {
     gameID: '1', title: 'Portal 2', normalPrice: '10.00', salePrice: '1.00',
     steamAppID: '620', steamRatingCount: '5000', steamRatingPercent: '98', releaseDate: 1303171200,
   };
-  assert.equal(gameProduct(deal, 'https://img', 0.9).price, 9);
+  assert.equal(gameProduct(deal, 'https://img').price, 10);
 });
 
 const receiptPrice = (overrides = {}) => ({
@@ -93,9 +93,46 @@ test('a receipt becomes one lot worth the sum of its lines', () => {
   assert.match(lot.description, /^2 x Pasta, Pasta/);
 });
 
-test('foreign shops, price tags and short receipts are left out', () => {
+test('a receipt keeps the country of its shop', () => {
+  const five = (location) => Array.from({ length: 5 }, () => receiptPrice({ location }));
+  assert.equal(receiptLots(five({ osm_address_country_code: 'FR', osm_brand: 'Carrefour' }))[0].country, 'FR');
+  assert.equal(receiptLots(five({ osm_brand: 'Senza paese' })).length, 0, 'the country must be on the lot');
+});
+
+test('a receipt stays in its currency and the minimum is measured in euros', () => {
+  const five = (overrides) => Array.from({ length: 5 }, () => receiptPrice({ currency: 'NOK', ...overrides }));
+  const rates = { EUR: 1, NOK: 0.1 };
+  const [lot] = receiptLots(five({ price: 30 }), rates);
+  assert.deepEqual([lot.price, lot.currency], [150, 'NOK']);
+  assert.equal(receiptLots(five({ price: 10 }), rates).length, 0, 'worth 5 euros');
+});
+
+test('rates say what one unit is worth in euros', () => {
+  assert.deepEqual(eurosPerUnit({ USD: 1.25, NOK: 10 }), { EUR: 1, USD: 0.8, NOK: 0.1 });
+});
+
+test('a lot needs a rate for its currency', () => {
+  const raw = { id: 'a', title: 'A', images: ['i'], price: 10 };
+  const data = { products: [{ ...raw, currency: 'USD' }, { ...raw, id: 'b', currency: 'XXX' }, { ...raw, id: 'c' }] };
+  const { products } = parseCatalog(data, 'test', { EUR: 1, USD: 0.8 });
+  assert.deepEqual(products.map(({ id, currency, eurRate }) => [id, currency, eurRate]), [['a', 'USD', 0.8], ['c', 'EUR', 1]]);
+});
+
+test('every country gets a limited share of shops and lots', () => {
+  const shops = (country, count) => Array.from({ length: count }, () => ({ osm_address_country_code: country }));
+  const picked = pickLocations([...shops('IT', 2), ...shops('DE', 1)], [...shops('FR', 15), ...shops('IT', 1), ...shops('DE', 1)]);
+  const count = (list, country) => list.filter((item) => item.osm_address_country_code === country).length;
+  assert.deepEqual([count(picked, 'IT'), count(picked, 'FR'), count(picked, 'DE')], [2, 10, 1]);
+
+  const lots = (country, length) => Array.from({ length }, () => ({ country }));
+  const limited = limitPerCountry([...lots('FR', 50), ...lots('IT', 50)]);
+  assert.equal(limited.filter(({ country }) => country === 'FR').length, 40);
+  assert.equal(limited.filter(({ country }) => country === 'IT').length, 50);
+});
+
+test('price tags, other currencies and short receipts are left out', () => {
   const five = (overrides) => Array.from({ length: 5 }, () => receiptPrice(overrides));
-  assert.equal(receiptLots(five({ location: { osm_address_country_code: 'DE' } })).length, 0);
+  assert.equal(receiptLots(five({ currency: 'USD' })).length, 0, 'a currency without a rate');
   assert.equal(receiptLots(five({ proof: { type: 'PRICE_TAG' } })).length, 0);
   assert.equal(receiptLots(five({}).slice(0, 4)).length, 0);
   assert.equal(receiptLots(five({ price: 1 })).length, 0, 'under the minimum total');
@@ -113,8 +150,9 @@ test('surplus lots never copy contact details', () => {
     saleNo: 'S', lotNo: '1', itemName: '2020 Ford F150 ', highBidAmount: 1000,
     imageURL: 'https://img', agencyName: 'Forest Service (Code 12)', propertyCity: 'Reno ', propertyState: 'NV',
     lotInfo: 'Call Jane at 520-228-8880', coEmail: 'jane@gsa.gov', contractOfficer: 'Jane', coPhone: '5202288880',
-  }, 0.9);
-  assert.equal(product.price, 900);
+  });
+  assert.equal(product.price, 1000);
+  assert.equal(product.currency, 'USD');
   assert.equal(product.description, "Messo all'asta da Forest Service, a Reno (NV).");
   assert.doesNotMatch(JSON.stringify(product), /Jane|jane|520/);
 });
@@ -123,7 +161,7 @@ test('surplus lots keep the auction dates and bidders', () => {
   const { auction } = lotProduct({
     saleNo: 'S', lotNo: '1', itemName: 'Truck', highBidAmount: 1000, imageURL: 'https://img',
     aucStartDt: '2026-11-01T12:00:00Z', aucEndDt: '2026-11-10T12:00:00Z', biddersCount: 7,
-  }, 0.9);
+  });
   assert.deepEqual(auction, { startsAt: '2026-11-01T12:00:00Z', endsAt: '2026-11-10T12:00:00Z', bidders: 7 });
 });
 

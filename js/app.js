@@ -11,9 +11,12 @@ import {
   withdrawFromTurn,
 } from './auction.js';
 import {
+  AUCTION_CURRENCIES,
   DEFAULT_SETTINGS,
+  GROCERY_SCOPES,
   MAX_PLAYERS,
   MIN_PLAYERS,
+  PADDLE_COLORS,
   REVEAL_PACES,
   REVEAL_TIMINGS,
   SCORE_MODES,
@@ -22,18 +25,22 @@ import {
   availableProducts,
   createGame,
   currentProduct,
+  defaultPaddles,
   gameHighlights,
   isLastRound,
+  nextPaddle,
   nextRound,
-  parseEurosToCents,
+  parseAmountToCents,
   recordManualSale,
   revealPrice,
   revealsAtEnd,
   setLotAside,
   spentCents,
+  toEuroCents,
   standings,
   startAuction,
   updateAuction,
+  validatePaddles,
   validatePlayerNames,
 } from './game.js';
 import { playPodium, podiumSlots } from './podium.js';
@@ -102,8 +109,21 @@ const SCORE_MODE_CHOICES = [
   { value: SCORE_MODES.PERCENT, label: 'In percentuale' },
 ];
 
-const euroFormat = new Intl.NumberFormat('it-IT', { style: 'currency', currency: 'EUR' });
-const wholeEuroFormat = new Intl.NumberFormat('it-IT', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 });
+const AUCTION_CURRENCY_CHOICES = [
+  { value: AUCTION_CURRENCIES.EUROS, label: 'Sempre in euro' },
+  { value: AUCTION_CURRENCIES.LOCAL, label: 'Valuta locale' },
+];
+
+const GROCERY_SCOPE_CHOICES = [
+  { value: GROCERY_SCOPES.ALL, label: 'Tutti i paesi' },
+  { value: GROCERY_SCOPES.ITALY, label: 'Solo Italia' },
+];
+
+const countryNames = new Intl.DisplayNames('it', { type: 'region' });
+
+const currencyNames = new Intl.DisplayNames('it', { type: 'currency' });
+const rateFormat = new Intl.NumberFormat('it-IT', { maximumSignificantDigits: 3 });
+const shortDateFormat = new Intl.DateTimeFormat('it-IT', { dateStyle: 'medium', timeZone: 'UTC' });
 const percentFormat = new Intl.NumberFormat('it-IT', { maximumFractionDigits: 1 });
 const dateFormat = new Intl.DateTimeFormat('it-IT', { dateStyle: 'medium', timeStyle: 'short' });
 
@@ -124,13 +144,19 @@ let showRunning = false;
 // True while the reveal plays: the board starts blank and the buyer's old score stays up.
 let revealStaged = false;
 
+function withPaddles(names) {
+  return defaultPaddles(names.length).map((paddle, index) => ({ name: names[index], ...paddle }));
+}
+
 function loadSetup() {
-  const defaults = { names: ['', ''], settings: { ...DEFAULT_SETTINGS } };
+  const defaults = { players: withPaddles(['', '']), settings: { ...DEFAULT_SETTINGS } };
   try {
     const saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
-    if (!Array.isArray(saved?.names)) return defaults;
+    // Setups saved before paddles could be customised hold only the names.
+    const players = saved?.players ?? (Array.isArray(saved?.names) ? withPaddles(saved.names) : null);
+    if (!Array.isArray(players)) return defaults;
     return {
-      names: saved.names.slice(0, MAX_PLAYERS),
+      players: players.slice(0, MAX_PLAYERS),
       settings: { ...DEFAULT_SETTINGS, ...saved.settings },
     };
   } catch {
@@ -158,17 +184,52 @@ function esc(value) {
   return String(value).replace(/[&<>"']/g, (char) => `&#${char.charCodeAt(0)};`);
 }
 
+const moneyFormats = new Map();
+
+function moneyFormat(currency, whole) {
+  const key = `${currency}${whole}`;
+  if (!moneyFormats.has(key)) {
+    moneyFormats.set(key, new Intl.NumberFormat('it-IT', {
+      style: 'currency',
+      currency,
+      currencyDisplay: 'narrowSymbol',
+      ...(whole ? { maximumFractionDigits: 0 } : {}),
+    }));
+  }
+  return moneyFormats.get(key);
+}
+
 // Cents mean nothing on a painting, and they would not fit on a phone.
-const money = (cents) => (
-  (Math.abs(cents) >= WHOLE_EURO_CENTS ? wholeEuroFormat : euroFormat).format(cents / 100)
+const money = (cents, currency = 'EUR') => (
+  moneyFormat(currency, Math.abs(cents) >= WHOLE_EURO_CENTS).format(cents / 100)
 );
+
+const currencyMark = (currency) => (
+  moneyFormat(currency, false).formatToParts(0).find(({ type }) => type === 'currency').value
+);
+
+// What a lot's amount reads on screen, and its estimate in euros when it needs one.
+const lotMoney = (cents, product) => money(cents, product.currency);
+const euroEstimate = (cents, product) => (
+  product.currency === 'EUR' ? '' : `≈ ${money(toEuroCents(cents, product))}`
+);
+const euroHint = (cents, product) => {
+  const estimate = euroEstimate(cents, product);
+  return estimate ? `<small class="euro-hint">${estimate}</small>` : '';
+};
+
+function currencyTag({ currency, eurRate }) {
+  if (currency === 'EUR') return '';
+  const name = currencyNames.of(currency);
+  const label = name[0].toUpperCase() + name.slice(1);
+  return `${label}: 1 ${currencyMark(currency)} ≈ ${rateFormat.format(eurRate)} €`;
+}
 const signedMoney = (cents) => `${cents > 0 ? '+' : ''}${money(cents)}`;
 const signedPercent = (points) => `${points > 0 ? '+' : ''}${percentFormat.format(points / 100)}%`;
 const signedScore = (score) => (
   game.settings.scoreMode === SCORE_MODES.PERCENT ? signedPercent(score) : signedMoney(score)
 );
 const playerById = (id) => game.players.find((player) => player.id === id);
-const playerIndex = (id) => game.players.findIndex((player) => player.id === id);
 const deltaClass = (cents) => {
   if (cents > 0) return 'gain';
   return cents < 0 ? 'loss' : '';
@@ -182,8 +243,8 @@ const catalogCategories = (excludedSources) => [
     .map((product) => product.category).filter(Boolean)),
 ].sort((a, b) => a.localeCompare(b, 'it'));
 
-const productCount = ({ excludedCategories, excludedSources }) => (
-  availableProducts(catalog.products, excludedCategories, excludedSources).length
+const productCount = ({ excludedCategories, excludedSources, groceryScope }) => (
+  availableProducts(catalog.products, excludedCategories, excludedSources, groceryScope).length
 );
 
 const maxRoundsFor = (settings) => Math.min(SETTING_LIMITS.rounds.max, productCount(settings));
@@ -192,16 +253,19 @@ const poolText = (count) => (count === 1 ? '1 prodotto disponibile' : `${count} 
 
 // Screens
 
-function disc(index) {
-  return `<span class="disc p${index}" aria-hidden="true">${index + 1}</span>`;
+function disc({ number, color }) {
+  return `<span class="disc p${color}" aria-hidden="true">${esc(number)}</span>`;
 }
 
-function paddleInput(name, index, canRemove) {
+function paddleInput({ name, number, color }, index, canRemove) {
   const isNew = index === newPaddleIndex;
   return `
-    <div class="paddle p${index} ${isNew ? 'rising' : ''}" style="--i: ${index}">
+    <div class="paddle p${color} ${isNew ? 'rising' : ''}" style="--i: ${index}">
       <div class="paddle-head">
-        <span class="paddle-number" aria-hidden="true">${index + 1}</span>
+        <button type="button" class="paddle-color" data-action="open-colors" data-index="${index}"
+          aria-label="Cambia colore giocatore ${index + 1}: ${PADDLE_COLORS[color]}"></button>
+        <input class="paddle-number" name="paddleNumber" value="${esc(number)}" maxlength="3" inputmode="numeric"
+          aria-label="Numero palette giocatore ${index + 1}" autocomplete="off">
         <input name="player" value="${esc(name)}" maxlength="16" required ${isNew ? 'data-autofocus' : ''}
           aria-label="Nome giocatore ${index + 1}" placeholder="Nome" autocomplete="off">
         ${canRemove
@@ -219,6 +283,29 @@ function addPaddle(index) {
       <span class="paddle-head"><span class="paddle-plus" aria-hidden="true">+</span>Aggiungi giocatore</span>
       <span class="paddle-handle" aria-hidden="true"></span>
     </button>`;
+}
+
+// A colour taken by another player shows that player's number and cannot be picked.
+function colorDialog(index) {
+  const swatches = PADDLE_COLORS.map((label, color) => {
+    const owner = setup.players.find((player) => player.color === color);
+    const mine = owner === setup.players[index];
+    const taken = owner && !mine;
+    return `
+      <button type="button" class="swatch p${color}" data-action="pick-color" data-index="${index}" data-color="${color}"
+        aria-label="${label}${taken ? ', già scelto' : ''}" aria-pressed="${mine}" ${taken ? 'disabled' : ''} ${mine ? 'autofocus' : ''}>
+        ${mine ? '✓' : esc(owner?.number ?? '')}
+      </button>`;
+  }).join('');
+  const name = setup.players[index].name.trim();
+  return `
+    <dialog class="color-dialog" aria-labelledby="color-title">
+      <div class="color-sheet">
+        <h2 id="color-title">${name ? `Il colore di ${esc(name)}` : 'Il colore della palette'}</h2>
+        <div class="swatches">${swatches}</div>
+        <button type="button" class="secondary" data-action="close-colors">Annulla</button>
+      </div>
+    </dialog>`;
 }
 
 function settingSlider(key, value, max, mode) {
@@ -274,6 +361,12 @@ function sourceCard(source, excludedSources) {
     </label>`;
 }
 
+// The choice only means something while La Spesa is in the game.
+function groceryScopeField({ excludedSources, groceryScope }) {
+  if (excludedSources.includes('groceries') || !sourceById('groceries')?.count) return '';
+  return settingChoice('groceryScope', 'Scontrini de La Spesa', GROCERY_SCOPE_CHOICES, groceryScope);
+}
+
 function categoryField(settings) {
   const { excludedCategories, excludedSources } = settings;
   const categories = catalogCategories(excludedSources);
@@ -292,11 +385,11 @@ function categoryField(settings) {
 }
 
 function setupScreen() {
-  const { names, settings } = setup;
+  const { players, settings } = setup;
   const maxRounds = Math.max(SETTING_LIMITS.rounds.min, maxRoundsFor(settings));
-  const canAdd = names.length < MAX_PLAYERS;
-  const slots = names.length + (canAdd ? 1 : 0);
-  const paddles = names.map((name, index) => paddleInput(name, index, names.length > MIN_PLAYERS)).join('');
+  const canAdd = players.length < MAX_PLAYERS;
+  const slots = players.length + (canAdd ? 1 : 0);
+  const paddles = players.map((player, index) => paddleInput(player, index, players.length > MIN_PLAYERS)).join('');
 
   const modeCards = Object.entries(MODE_INFO).map(([mode, info]) => `
     <label class="mode-card">
@@ -312,13 +405,13 @@ function setupScreen() {
       <div class="hall">
         <header class="masthead">
           <h1>BidBattle</h1>
-          <p>Aggiudicato. Ma era davvero un affare?</p>
+          <p>Sviluppato da Diego Pirovano</p>
         </header>
         <fieldset class="crowd-field">
-          <legend>Scrivete i nomi sulle palette</legend>
+          <legend>Personalizzate le vostre palette</legend>
           <div class="crowd" style="--slots: ${slots}; --spread: ${slots > 3 ? 1.32 : 0.84}; --stagger: ${slots > 3 ? 0.84 : 0.16}">
             ${paddles}
-            ${canAdd ? addPaddle(names.length) : ''}
+            ${canAdd ? addPaddle(players.length) : ''}
           </div>
         </fieldset>
       </div>
@@ -332,6 +425,7 @@ function setupScreen() {
           <div class="source-list">
             ${catalog.sources.map((source) => sourceCard(source, settings.excludedSources)).join('')}
           </div>
+          ${groceryScopeField(settings)}
           <p class="muted pool-note" data-pool-note>${poolText(productCount(settings))}</p>
         </fieldset>
         <fieldset>
@@ -340,6 +434,7 @@ function setupScreen() {
             ${settingSlider('rounds', settings.rounds, maxRounds, settings.mode)}
             ${settingSlider('minRaisePct', settings.minRaisePct, SETTING_LIMITS.minRaisePct.max, settings.mode)}
             ${settingSlider('tickSeconds', settings.tickSeconds, SETTING_LIMITS.tickSeconds.max, settings.mode)}
+            ${settingChoice('auctionCurrency', 'Valuta delle aste', AUCTION_CURRENCY_CHOICES, settings.auctionCurrency)}
             ${settingChoice('scoreMode', 'Punteggio', SCORE_MODE_CHOICES, settings.scoreMode)}
             <p class="muted pool-note">In percentuale ogni lotto pesa uguale, quadro o scontrino: a metà del valore fai +50%, al doppio fai −100%.</p>
           </div>
@@ -370,7 +465,7 @@ function scoreboard() {
   const stagedLot = revealStaged ? game.history.at(-1) : null;
   // Until the first price is out there is no profit to show, only what each player has spent.
   const showSpending = revealsAtEnd(game) && game.phase !== 'reveal';
-  const cards = game.players.map((player, index) => {
+  const cards = game.players.map((player) => {
     const buying = stagedLot?.buyerId === player.id;
     const shownScore = buying ? player.score - stagedLot.scoreDelta : player.score;
     const out = auction?.mode === AUCTION_MODES.TURNS && !auction.activeIds.includes(player.id);
@@ -379,7 +474,7 @@ function scoreboard() {
     const state = (out && 'Ritirato') || (turn && 'Di turno') || (leading && 'In testa') || '';
     const classes = [
       'score',
-      `p${index}`,
+      `p${player.color}`,
       leading ? 'leading' : '',
       turn ? 'turn' : '',
       out ? 'out' : '',
@@ -387,7 +482,7 @@ function scoreboard() {
     ].join(' ');
     return `
       <li class="${classes}" data-player="${player.id}">
-        ${disc(index)}
+        ${disc(player)}
         <span class="score-name">${esc(player.name)}</span>
         ${showSpending
           ? `<span class="amount">Speso ${money(spentCents(game, player.id))}</span>`
@@ -408,7 +503,9 @@ function productPanel(product) {
           <img src="${esc(src)}" alt="">
         </button>`).join('')}
     </div>`;
-  const tags = [sourceById(product.source)?.name, product.category, product.condition].filter(Boolean)
+  const country = product.country ? countryNames.of(product.country) : '';
+  const tags = [sourceById(product.source)?.name, country, product.category, product.condition, currencyTag(product)]
+    .filter(Boolean)
     .map((tag) => `<span class="tag">${esc(tag)}</span>`).join('');
 
   return `
@@ -460,19 +557,21 @@ function turnClock(seconds) {
 }
 
 function turnPanel(auction) {
+  const product = currentProduct(game);
   const player = playerById(auction.currentPlayerId);
   const minimum = turnMinimumBid(auction);
   const opening = auction.highBidCents === null;
   const leader = auction.leaderId ? playerById(auction.leaderId) : null;
   return `
-    <div class="panel flood p${playerIndex(player.id)}">
+    <div class="panel flood p${player.color}">
       <p class="eyebrow">${opening ? 'Offerta iniziale' : 'Tocca a'}</p>
-      <h3 class="turn-name">${disc(playerIndex(player.id))}${esc(player.name)}</h3>
+      <h3 class="turn-name">${disc(player)}${esc(player.name)}</h3>
       ${turnClock(game.settings.turnSeconds)}
-      <p class="big-price">${opening ? 'Nessuna offerta' : money(auction.highBidCents)}</p>
+      <p class="big-price">${opening ? 'Nessuna offerta' : lotMoney(auction.highBidCents, product)}</p>
+      ${opening ? '' : euroHint(auction.highBidCents, product)}
       ${leader ? `<p class="muted">In testa: ${esc(leader.name)}</p>` : '<p class="muted">Sei stato estratto per aprire l\'asta.</p>'}
       <form id="bid-form" class="bid-form">
-        <label>La tua offerta (minimo ${money(minimum)})
+        <label>La tua offerta (minimo ${lotMoney(minimum, product)}) ${euroHint(minimum, product)}
           <input name="amount" inputmode="decimal" autocomplete="off" required
             value="${(minimum / 100).toFixed(2).replace('.', ',')}">
         </label>
@@ -492,18 +591,20 @@ function auctioneerLine(auction) {
       : 'Scendo ancora. Chi offre?';
   }
   const leader = esc(playerById(auction.leaderId).name);
-  if (auction.hammerCount === 0) return `${money(auction.highBidCents)} da ${leader}. Chi rilancia?`;
-  return `${money(auction.highBidCents)} a ${auction.hammerCount === 1 ? 'uno' : 'due'}…`;
+  const bid = lotMoney(auction.highBidCents, currentProduct(game));
+  if (auction.hammerCount === 0) return `${bid} da ${leader}. Chi rilancia?`;
+  return `${bid} a ${auction.hammerCount === 1 ? 'uno' : 'due'}…`;
 }
 
 function auctioneerPanel(auction) {
+  const product = currentProduct(game);
   const pips = Array.from({ length: HAMMER_COUNT }, (_, index) => (
     `<span class="pip ${index < auction.hammerCount ? 'on' : ''}"></span>`
   )).join('');
   const buttons = game.players.map((player, index) => {
     const leading = player.id === auction.leaderId;
     return `
-      <button class="bid-button p${index}" data-bid-player="${player.id}" ${leading ? 'disabled' : ''}>
+      <button class="bid-button p${player.color}" data-bid-player="${player.id}" ${leading ? 'disabled' : ''}>
         <span class="bid-name">${esc(player.name)}</span>
         <small>${leading ? 'In testa' : 'Offro'}</small>
         <kbd aria-label="Tasto ${PLAYER_KEYS[index].toUpperCase()}">${PLAYER_KEYS[index].toUpperCase()}</kbd>
@@ -512,7 +613,8 @@ function auctioneerPanel(auction) {
   return `
     <div class="panel auctioneer ${auction.phase}">
       <p class="eyebrow">${auction.phase === 'descending' ? 'Il prezzo scende' : 'Il prezzo sale'}</p>
-      <p class="big-price" aria-live="polite">${money(auction.announcedCents)}</p>
+      <p class="big-price" aria-live="polite">${lotMoney(auction.announcedCents, product)}</p>
+      ${euroHint(auction.announcedCents, product)}
       <p class="call">${auctioneerLine(auction)}</p>
       <div class="pips" aria-hidden="true">${pips}</div>
       <div class="bid-grid">${buttons}</div>
@@ -520,10 +622,10 @@ function auctioneerPanel(auction) {
 }
 
 function manualPanel() {
-  const options = game.players.map((player, index) => `
+  const options = game.players.map((player) => `
     <label class="choice">
       <input type="radio" name="buyer" value="${player.id}">
-      <span>${disc(index)}${esc(player.name)}</span>
+      <span>${disc(player)}${esc(player.name)}</span>
     </label>`).join('');
   return `
     <div class="panel">
@@ -537,7 +639,7 @@ function manualPanel() {
             <span>Nessuno, invenduto</span>
           </label>
         </div>
-        <label>Prezzo di vendita (€)
+        <label>Prezzo di vendita (${currencyMark(currentProduct(game).currency)})
           <input name="price" inputmode="decimal" autocomplete="off">
         </label>
         ${errorLine()}
@@ -558,13 +660,15 @@ function hammerAction() {
 
 function hammerPanel() {
   const { buyerId, priceCents } = game.sale;
-  const sold = buyerId !== null;
+  const buyer = playerById(buyerId);
+  const product = currentProduct(game);
   return `
-    <div class="panel hammer ${sold ? `flood p${playerIndex(buyerId)}` : ''}">
-      <h3 class="stamp">${sold ? 'Aggiudicato!' : 'Invenduto'}</h3>
-      ${sold
-        ? `<p class="turn-name">${disc(playerIndex(buyerId))}${esc(playerById(buyerId).name)}</p>
-           <p class="big-price">${money(priceCents)}</p>`
+    <div class="panel hammer ${buyer ? `flood p${buyer.color}` : ''}">
+      <h3 class="stamp">${buyer ? 'Aggiudicato!' : 'Invenduto'}</h3>
+      ${buyer
+        ? `<p class="turn-name">${disc(buyer)}${esc(buyer.name)}</p>
+           <p class="big-price">${lotMoney(priceCents, product)}</p>
+           ${euroHint(priceCents, product)}`
         : '<p>Nessuno ha comprato questo lotto.</p>'}
       ${hammerAction()}
     </div>`;
@@ -579,6 +683,14 @@ function verdictClass({ buyerId, deltaCents }) {
   return buyerId === null ? '' : `verdict-${deltaClass(deltaCents) || 'even'}`;
 }
 
+function rateNote({ currency, original }) {
+  if (!catalog.ratesDate || (currency === 'EUR' && !original)) return '';
+  const date = shortDateFormat.format(new Date(catalog.ratesDate));
+  return original
+    ? `In origine ${money(original.priceCents, original.currency)}, convertito al cambio del ${date}.`
+    : `Euro stimati al cambio del ${date}.`;
+}
+
 function revealPanel() {
   const lot = game.history.at(-1);
   const { product, buyerId, priceCents, deltaCents, scoreDelta } = lot;
@@ -586,9 +698,9 @@ function revealPanel() {
   const verdict = revealVerdict(lot);
   const paid = buyerId === null ? '' : `
     <p class="paid">
-      ${disc(playerIndex(buyerId))}
+      ${disc(playerById(buyerId))}
       <span class="paid-who">${esc(playerById(buyerId).name)} ha pagato</span>
-      <strong class="paid-amount">${money(priceCents)}</strong>
+      <strong class="paid-amount">${lotMoney(priceCents, product)} ${euroHint(priceCents, product)}</strong>
     </p>`;
   const outcome = buyerId === null
     ? '<p class="muted">Lotto invenduto: nessuno guadagna o perde.</p>'
@@ -604,11 +716,12 @@ function revealPanel() {
     <div class="panel reveal ${revealStaged ? 'staged' : verdictClass(lot)}">
       <p class="eyebrow">Prezzo vero</p>
       <p class="verdict-stamp">${verdict.label}</p>
-      ${boardMarkup(product.priceCents, { staged: revealStaged })}
+      ${boardMarkup(product.priceCents, { staged: revealStaged, mark: currencyMark(product.currency) })}
+      <small class="euro-hint" data-value-estimate>${revealStaged ? '' : euroEstimate(product.priceCents, product)}</small>
       ${paid}
-      <p class="sr-only" aria-live="polite">${revealStaged ? '' : money(product.priceCents)}</p>
+      <p class="sr-only" aria-live="polite">${revealStaged ? '' : lotMoney(product.priceCents, product)}</p>
       ${outcome}
-      <p class="reveal-link">${esc(source.priceNote)} ${link}</p>
+      <p class="reveal-link">${esc(source.priceNote)} ${rateNote(product)} ${link}</p>
       <div class="reveal-foot">
         <button class="primary" data-action="next-round" data-autofocus>${isLastRound(game) ? 'Classifica finale' : nextLabel}</button>
         <p class="skip-hint">Tocca lo schermo per saltare</p>
@@ -637,10 +750,9 @@ function highlightCards(bestDeal, worstBuy) {
 }
 
 function podiumSlot(player) {
-  const index = playerIndex(player.id);
   return `
-    <li class="podium-slot rank-${player.rank} p${index}" data-rank="${player.rank}">
-      <div class="paddle p${index}">
+    <li class="podium-slot rank-${player.rank} p${player.color}" data-rank="${player.rank}">
+      <div class="paddle p${player.color}">
         <div class="paddle-head">
           <span class="paddle-name">${esc(player.name)}</span>
         </div>
@@ -660,7 +772,7 @@ function finishedScreen() {
   const rows = ranking.slice(slots.length).map((player) => `
     <li class="${player.rank === 1 ? 'winner' : ''}">
       <span class="rank">${player.rank}</span>
-      ${disc(playerIndex(player.id))}
+      ${disc(player)}
       <span class="score-name">${esc(player.name)}</span>
       <span class="amount ${deltaClass(player.score)}">${signedScore(player.score)}</span>
     </li>`).join('');
@@ -669,8 +781,8 @@ function finishedScreen() {
     <tr>
       <td>${esc(product.title)}</td>
       <td>${buyerId ? esc(playerById(buyerId).name) : '—'}</td>
-      <td class="num">${priceCents === null ? '—' : money(priceCents)}</td>
-      <td class="num">${money(product.priceCents)}</td>
+      <td class="num">${priceCents === null ? '—' : `${lotMoney(priceCents, product)} ${euroHint(priceCents, product)}`}</td>
+      <td class="num">${lotMoney(product.priceCents, product)} ${euroHint(product.priceCents, product)}</td>
       <td class="num ${deltaClass(scoreDelta)}">${buyerId ? signedScore(scoreDelta) : '—'}</td>
     </tr>`).join('');
 
@@ -806,7 +918,8 @@ function startReveal() {
     onDone: () => {
       showRunning = false;
       revealStaged = false;
-      panel.querySelector('.sr-only').textContent = money(lot.product.priceCents);
+      panel.querySelector('.sr-only').textContent = lotMoney(lot.product.priceCents, lot.product);
+      panel.querySelector('[data-value-estimate]').textContent = euroEstimate(lot.product.priceCents, lot.product);
       panel.querySelector('[data-autofocus]').focus({ preventScroll: true });
     },
   });
@@ -871,8 +984,10 @@ function readSetupForm() {
   if (!form) return;
   const data = new FormData(form);
   extrasOpen = form.querySelector('.extras').open;
+  const names = data.getAll('player').map(String);
+  const numbers = data.getAll('paddleNumber').map((number) => number.trim());
   setup = {
-    names: data.getAll('player').map(String),
+    players: setup.players.map((player, index) => ({ ...player, name: names[index], number: numbers[index] })),
     settings: {
       mode: data.get('mode'),
       rounds: Number(data.get('rounds')),
@@ -882,8 +997,11 @@ function readSetupForm() {
       revealPace: data.get('revealPace'),
       revealTiming: data.get('revealTiming'),
       scoreMode: data.get('scoreMode'),
+      auctionCurrency: data.get('auctionCurrency'),
       excludedCategories: excludedCategoriesFrom(data),
       excludedSources: excludedSourcesFrom(data),
+      // Hidden with La Spesa, the choice waits for the source to come back.
+      groceryScope: data.get('groceryScope') ?? setup.settings.groceryScope,
     },
   };
 }
@@ -907,6 +1025,7 @@ function syncCategories(form) {
   const settings = {
     excludedCategories: excludedCategoriesFrom(data),
     excludedSources: excludedSourcesFrom(data),
+    groceryScope: data.get('groceryScope') ?? setup.settings.groceryScope,
   };
   form.querySelector('[data-pool-note]').textContent = poolText(productCount(settings));
   const slider = form.elements.rounds;
@@ -943,26 +1062,30 @@ function settingsError(settings) {
 
 function startGame() {
   readSetupForm();
-  const problem = validatePlayerNames(setup.names) ?? settingsError(setup.settings);
+  const { players } = setup;
+  const problem = validatePlayerNames(players.map(({ name }) => name))
+    ?? validatePaddles(players)
+    ?? settingsError(setup.settings);
   if (problem) {
     showError(problem);
     return;
   }
   saveSetup();
   setGame(createGame({
-    playerNames: setup.names,
+    playerNames: players.map(({ name }) => name),
+    paddles: players.map(({ number, color }) => ({ number, color })),
     settings: setup.settings,
     products: catalog.products,
   }));
 }
 
 function submitBid(form) {
-  const amount = parseEurosToCents(new FormData(form).get('amount'));
+  const amount = parseAmountToCents(new FormData(form).get('amount'));
   const { auction } = game;
   if (amount === null) {
     showError('Inserisci un importo valido, ad esempio 25,50.');
   } else if (amount < turnMinimumBid(auction)) {
-    showError(`L'offerta minima è ${money(turnMinimumBid(auction))}.`);
+    showError(`L'offerta minima è ${lotMoney(turnMinimumBid(auction), currentProduct(game))}.`);
   } else {
     setGame(updateAuction(game, placeTurnBid(auction, auction.currentPlayerId, amount)));
   }
@@ -976,7 +1099,7 @@ function submitManualSale(form) {
   } else if (buyer === '') {
     setGame(recordManualSale(game, null, null));
   } else {
-    const price = parseEurosToCents(data.get('price'));
+    const price = parseAmountToCents(data.get('price'));
     if (!price) showError('Inserisci il prezzo di vendita, ad esempio 25,50.');
     else setGame(recordManualSale(game, buyer, price));
   }
@@ -985,16 +1108,30 @@ function submitManualSale(form) {
 const actions = {
   'add-player': () => {
     readSetupForm();
-    setup.names.push('');
-    newPaddleIndex = setup.names.length - 1;
+    setup.players.push({ name: '', ...nextPaddle(setup.players) });
+    newPaddleIndex = setup.players.length - 1;
     render();
     newPaddleIndex = null;
   },
   'remove-player': (element) => {
     readSetupForm();
-    setup.names.splice(Number(element.dataset.index), 1);
+    setup.players.splice(Number(element.dataset.index), 1);
     render();
   },
+  'open-colors': (element) => {
+    readSetupForm();
+    root.insertAdjacentHTML('beforeend', colorDialog(Number(element.dataset.index)));
+    const dialog = root.querySelector('.color-dialog');
+    dialog.addEventListener('close', () => dialog.remove());
+    dialog.showModal();
+  },
+  'pick-color': (element) => {
+    const { index, color } = element.dataset;
+    setup.players[index].color = Number(color);
+    render();
+    root.querySelector(`.paddle-color[data-index="${index}"]`).focus({ preventScroll: true });
+  },
+  'close-colors': () => root.querySelector('.color-dialog').close(),
   'select-image': (element) => {
     imageIndex = Number(element.dataset.index);
     const { images } = currentProduct(game);
@@ -1028,6 +1165,11 @@ function leaveGame() {
 }
 
 root.addEventListener('click', (event) => {
+  // Only a click on the backdrop lands on the dialog itself: its content covers the rest.
+  if (event.target.matches('.color-dialog')) {
+    event.target.close();
+    return;
+  }
   const element = event.target.closest('[data-action]');
   if (element) {
     actions[element.dataset.action](element);
@@ -1062,7 +1204,7 @@ root.addEventListener('input', (event) => {
 
 // Only the settings that affect the chosen auction stay on screen.
 root.addEventListener('change', (event) => {
-  if (event.target.name === 'category') syncCategories(event.target.form);
+  if (event.target.name === 'category' || event.target.name === 'groceryScope') syncCategories(event.target.form);
   if (event.target.name === 'source') changeSources(event.target);
   if (event.target.name !== 'mode') return;
   root.querySelectorAll('.setting[data-modes]').forEach((setting) => {

@@ -1,6 +1,6 @@
 {
   "source": "surplus",
-  "generatedAt": "2026-11-04T11:22:48.869Z",
+  "generatedAt": "2026-11-04T12:14:18.446Z",
   "products": [
     {
       "id": "gsa-4-1-QSC-I-27-032-003",
@@ -8,8 +8,8 @@
       "description": "Messo all'asta da Natural Resources Conservation Service, a DOUGLAS (AZ).",
       "condition": "",
       "category": "Veicoli",
-      "price": 16656.15,
-      "currency": "EUR",
+      "price": 18620,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27032003.jpg"
       ],
@@ -28,8 +28,8 @@
       "description": "Messo all'asta da Natural Resources Conservation Service, a TUCSON (AZ).",
       "condition": "",
       "category": "Veicoli",
-      "price": 13695.25,
-      "currency": "EUR",
+      "price": 15310,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27032004.jpg"
       ],
@@ -48,8 +48,8 @@
       "description": "Messo all'asta da Fish and Wildlife Service, a Los Banos (CA).",
       "condition": "",
       "category": "Veicoli",
-      "price": 3408.16,
-      "currency": "EUR",
+      "price": 3810,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27032014.jpg"
       ],
@@ -68,8 +68,8 @@
       "description": "Messo all'asta da Fish and Wildlife Service, a Tulelake (CA).",
       "condition": "",
       "category": "Veicoli",
-      "price": 11727.29,
-      "currency": "EUR",
+      "price": 13110,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27032016.jpg"
       ],
@@ -88,8 +88,8 @@
       "description": "Messo all'asta da Bureau of Land Management, a SACRAMENTO (CA).",
       "condition": "",
       "category": "Elettronica",
-      "price": 246.89,
-      "currency": "EUR",
+      "price": 276,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27032018.jpg"
       ],
@@ -108,8 +108,8 @@
       "description": "Messo all'asta da Bureau of Land Management, a REDDING (CA).",
       "condition": "",
       "category": "Elettronica",
-      "price": 287.14,
-      "currency": "EUR",
+      "price": 321,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27032019.jpg"
       ],
@@ -128,8 +128,8 @@
       "description": "Messo all'asta da Bureau of Land Management, a RENO (NV).",
       "condition": "",
       "category": "Elettronica",
-      "price": 3815.17,
-      "currency": "EUR",
+      "price": 4265,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27032022.jpg"
       ],
@@ -148,8 +148,8 @@
       "description": "Messo all'asta da Bureau of Reclamation, a Yuma (AZ).",
       "condition": "",
       "category": "Macchinari",
-      "price": 138652.15,
-      "currency": "EUR",
+      "price": 155000,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27032023.jpg"
       ],
@@ -168,8 +168,8 @@
       "description": "Messo all'asta da Bureau of Reclamation, a Yuma (AZ).",
       "condition": "",
       "category": "Macchinari",
-      "price": 58153.4,
-      "currency": "EUR",
+      "price": 65010,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27032024.jpg"
       ],
@@ -188,8 +188,8 @@
       "description": "Messo all'asta da National Park Service, a Boulder City (NV).",
       "condition": "",
       "category": "Veicoli",
-      "price": 207.53,
-      "currency": "EUR",
+      "price": 232,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27032026.jpg"
       ],
@@ -208,8 +208,8 @@
       "description": "Messo all'asta da National Institute of Food and Agriculture, a Davis (CA).",
       "condition": "",
       "category": "Varie",
-      "price": 921.37,
-      "currency": "EUR",
+      "price": 1030,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27032027.jpg"
       ],
@@ -228,8 +228,8 @@
       "description": "Messo all'asta da National Institute of Food and Agriculture, a Davis (CA).",
       "condition": "",
       "category": "Varie",
-      "price": 143.12,
-      "currency": "EUR",
+      "price": 160,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27032028.jpg"
       ],
@@ -248,8 +248,8 @@
       "description": "Messo all'asta da Department of Defense, a Immokalee (FL).",
       "condition": "",
       "category": "Aerei",
-      "price": 1619.99,
-      "currency": "EUR",
+      "price": 1811,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27047001.jpg"
       ],
@@ -268,8 +268,8 @@
       "description": "Messo all'asta da Department of Defense, a Immokalee (FL).",
       "condition": "",
       "category": "Aerei",
-      "price": 1602.1,
-      "currency": "EUR",
+      "price": 1791,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27047002.jpg"
       ],
@@ -288,8 +288,8 @@
       "description": "Messo all'asta da Bureau of Land Management, a Monticello (UT).",
       "condition": "",
       "category": "Barche",
-      "price": 193.22,
-      "currency": "EUR",
+      "price": 216,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27055002.jpg"
       ],
@@ -308,8 +308,8 @@
       "description": "Messo all'asta da Federal Aviation Administration, a BENNETT (CO).",
       "condition": "",
       "category": "Macchinari",
-      "price": 4490.54,
-      "currency": "EUR",
+      "price": 5020,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27055005.jpg"
       ],
@@ -328,8 +328,8 @@
       "description": "Messo all'asta da Federal Railroad Administration, a Pueblo (CO).",
       "condition": "",
       "category": "Varie",
-      "price": 148.49,
-      "currency": "EUR",
+      "price": 166,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27055022.jpg"
       ],
@@ -348,8 +348,8 @@
       "description": "Messo all'asta da Federal Aviation Administration, a CASCADE (ID).",
       "condition": "",
       "category": "Macchinari",
-      "price": 2005.54,
-      "currency": "EUR",
+      "price": 2242,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27055004.jpg"
       ],
@@ -368,8 +368,8 @@
       "description": "Messo all'asta da Federal Aviation Administration, a HOUSTON (TX).",
       "condition": "",
       "category": "Varie",
-      "price": 139.55,
-      "currency": "EUR",
+      "price": 156,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27055027.jpg"
       ],
@@ -388,8 +388,8 @@
       "description": "Messo all'asta da National Institute of Food and Agriculture, a Hopland (CA).",
       "condition": "",
       "category": "Veicoli",
-      "price": 903.48,
-      "currency": "EUR",
+      "price": 1010,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27057009.jpg"
       ],
@@ -408,8 +408,8 @@
       "description": "Messo all'asta da Bureau of Reclamation, a Page (AZ).",
       "condition": "",
       "category": "Elettronica",
-      "price": 306.82,
-      "currency": "EUR",
+      "price": 343,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27057022.jpg"
       ],
@@ -428,8 +428,8 @@
       "description": "Messo all'asta da National Park Service, a Phoenix (AZ).",
       "condition": "",
       "category": "Elettronica",
-      "price": 143.12,
-      "currency": "EUR",
+      "price": 160,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27057023.jpg"
       ],
@@ -448,8 +448,8 @@
       "description": "Messo all'asta da National Park Service, a CRESCENT CITY (CA).",
       "condition": "",
       "category": "Elettronica",
-      "price": 53.67,
-      "currency": "EUR",
+      "price": 60,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27057024.jpg"
       ],
@@ -468,8 +468,8 @@
       "description": "Messo all'asta da National Park Service, a CRESCENT CITY (CA).",
       "condition": "",
       "category": "Elettronica",
-      "price": 232.58,
-      "currency": "EUR",
+      "price": 260,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27057025.jpg"
       ],
@@ -488,8 +488,8 @@
       "description": "Messo all'asta da National Park Service, a CRESCENT CITY (CA).",
       "condition": "",
       "category": "Elettronica",
-      "price": 98.4,
-      "currency": "EUR",
+      "price": 110,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27057026.jpg"
       ],
@@ -508,8 +508,8 @@
       "description": "Messo all'asta da Bureau of Indian Affairs, a Carson City (NV).",
       "condition": "",
       "category": "Veicoli",
-      "price": 3873.31,
-      "currency": "EUR",
+      "price": 4330,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27057028.jpg"
       ],
@@ -528,8 +528,8 @@
       "description": "Messo all'asta da Fish and Wildlife Service, a PINETOP (AZ).",
       "condition": "",
       "category": "Veicoli",
-      "price": 10296.04,
-      "currency": "EUR",
+      "price": 11510,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27057031.jpg"
       ],
@@ -548,8 +548,8 @@
       "description": "Messo all'asta da Forest Service, a WILLOW RIVER (MN).",
       "condition": "",
       "category": "Veicoli",
-      "price": 626.17,
-      "currency": "EUR",
+      "price": 700,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040005.jpg"
       ],
@@ -568,8 +568,8 @@
       "description": "Messo all'asta da Natural Resources Conservation Service, a Bad Axe (MI).",
       "condition": "",
       "category": "Veicoli",
-      "price": 2045.79,
-      "currency": "EUR",
+      "price": 2287,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040006.jpg"
       ],
@@ -588,8 +588,8 @@
       "description": "Messo all'asta da Natural Resources Conservation Service, a Medina (OH).",
       "condition": "",
       "category": "Veicoli",
-      "price": 2325.78,
-      "currency": "EUR",
+      "price": 2600,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040008.jpg"
       ],
@@ -608,8 +608,8 @@
       "description": "Messo all'asta da Natural Resources Conservation Service, a Medina (OH).",
       "condition": "",
       "category": "Veicoli",
-      "price": 9282.54,
-      "currency": "EUR",
+      "price": 10377,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040009.jpg"
       ],
@@ -628,8 +628,8 @@
       "description": "Messo all'asta da Animal and Plant Health Inspection Service, a OKEMOS (MI).",
       "condition": "",
       "category": "Veicoli",
-      "price": 5188.27,
-      "currency": "EUR",
+      "price": 5800,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040010.jpg"
       ],
@@ -648,8 +648,8 @@
       "description": "Messo all'asta da Animal and Plant Health Inspection Service, a OKEMOS (MI).",
       "condition": "",
       "category": "Veicoli",
-      "price": 3377.75,
-      "currency": "EUR",
+      "price": 3776,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040011.jpg"
       ],
@@ -668,8 +668,8 @@
       "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Thomasville (GA).",
       "condition": "",
       "category": "Veicoli",
-      "price": 7245.69,
-      "currency": "EUR",
+      "price": 8100,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040012.jpg"
       ],
@@ -688,8 +688,8 @@
       "description": "Messo all'asta da Animal and Plant Health Inspection Service, a WEST BOYLSTON (MA).",
       "condition": "",
       "category": "Veicoli",
-      "price": 3130.86,
-      "currency": "EUR",
+      "price": 3500,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040014.jpg"
       ],
@@ -708,8 +708,8 @@
       "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Poland (OH).",
       "condition": "",
       "category": "Veicoli",
-      "price": 3667.57,
-      "currency": "EUR",
+      "price": 4100,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040015.jpg"
       ],
@@ -728,8 +728,8 @@
       "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Groveport (OH).",
       "condition": "",
       "category": "Veicoli",
-      "price": 1370.42,
-      "currency": "EUR",
+      "price": 1532,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040016.jpg"
       ],
@@ -748,8 +748,8 @@
       "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Groveport (OH).",
       "condition": "",
       "category": "Veicoli",
-      "price": 3220.31,
-      "currency": "EUR",
+      "price": 3600,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040018.jpg"
       ],
@@ -768,8 +768,8 @@
       "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Gainesville (FL).",
       "condition": "",
       "category": "Veicoli",
-      "price": 2951.95,
-      "currency": "EUR",
+      "price": 3300,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040019.jpg"
       ],
@@ -788,8 +788,8 @@
       "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Gaylord (MI).",
       "condition": "",
       "category": "Veicoli",
-      "price": 3975.29,
-      "currency": "EUR",
+      "price": 4444,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040020.jpg"
       ],
@@ -808,8 +808,8 @@
       "description": "Messo all'asta da Animal and Plant Health Inspection Service, a RHINELANDER (WI).",
       "condition": "",
       "category": "Veicoli",
-      "price": 3220.31,
-      "currency": "EUR",
+      "price": 3600,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040021.jpg"
       ],
@@ -828,8 +828,8 @@
       "description": "Messo all'asta da Animal and Plant Health Inspection Service, a RHINELANDER (WI).",
       "condition": "",
       "category": "Veicoli",
-      "price": 3667.57,
-      "currency": "EUR",
+      "price": 4100,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040022.jpg"
       ],
@@ -848,8 +848,8 @@
       "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Groveport (OH).",
       "condition": "",
       "category": "Veicoli",
-      "price": 4204.29,
-      "currency": "EUR",
+      "price": 4700,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040017.jpg"
       ],
@@ -868,8 +868,8 @@
       "description": "Messo all'asta da Animal and Plant Health Inspection Service, a RHINELANDER (WI).",
       "condition": "",
       "category": "Veicoli",
-      "price": 4562.1,
-      "currency": "EUR",
+      "price": 5100,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040023.jpg"
       ],
@@ -888,8 +888,8 @@
       "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Harrisburg (PA).",
       "condition": "",
       "category": "Veicoli",
-      "price": 7692.96,
-      "currency": "EUR",
+      "price": 8600,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040024.jpg"
       ],
@@ -908,8 +908,8 @@
       "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Madison (TN).",
       "condition": "",
       "category": "Veicoli",
-      "price": 1162.89,
-      "currency": "EUR",
+      "price": 1300,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040025.jpg"
       ],
@@ -928,8 +928,8 @@
       "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Northport (AL).",
       "condition": "",
       "category": "Veicoli",
-      "price": 7255.53,
-      "currency": "EUR",
+      "price": 8111,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040026.jpg"
       ],
@@ -948,8 +948,8 @@
       "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Augusta (ME).",
       "condition": "",
       "category": "Veicoli",
-      "price": 4383.2,
-      "currency": "EUR",
+      "price": 4900,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040027.jpg"
       ],
@@ -968,8 +968,8 @@
       "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Augusta (ME).",
       "condition": "",
       "category": "Veicoli",
-      "price": 4472.65,
-      "currency": "EUR",
+      "price": 5000,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040028.jpg"
       ],
@@ -988,8 +988,8 @@
       "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Waupun (WI).",
       "condition": "",
       "category": "Veicoli",
-      "price": 3916.25,
-      "currency": "EUR",
+      "price": 4378,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040029.jpg"
       ],
@@ -1008,8 +1008,8 @@
       "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Auburn (AL).",
       "condition": "",
       "category": "Veicoli",
-      "price": 10376.55,
-      "currency": "EUR",
+      "price": 11600,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040030.jpg"
       ],
@@ -1028,8 +1028,8 @@
       "description": "Messo all'asta da Animal and Plant Health Inspection Service, a MADISON (TN).",
       "condition": "",
       "category": "Veicoli",
-      "price": 4362.62,
-      "currency": "EUR",
+      "price": 4877,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040031.jpg"
       ],
@@ -1048,8 +1048,8 @@
       "description": "Messo all'asta da National Institute of Food and Agriculture, a COLUMBIA (SC).",
       "condition": "",
       "category": "Veicoli",
-      "price": 894.53,
-      "currency": "EUR",
+      "price": 1000,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040032.jpg"
       ],
@@ -1068,8 +1068,8 @@
       "description": "Messo all'asta da Forest Service, a ASHEVILLE (NC).",
       "condition": "",
       "category": "Veicoli",
-      "price": 5724.99,
-      "currency": "EUR",
+      "price": 6400,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040033.jpg"
       ],
@@ -1088,8 +1088,8 @@
       "description": "Messo all'asta da Agricultural Research Service, a Urbana (IL).",
       "condition": "",
       "category": "Veicoli",
-      "price": 1878.51,
-      "currency": "EUR",
+      "price": 2100,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040034.jpg"
       ],
@@ -1108,8 +1108,8 @@
       "description": "Messo all'asta da Agricultural Research Service, a Madison (WI).",
       "condition": "",
       "category": "Veicoli",
-      "price": 6132.9,
-      "currency": "EUR",
+      "price": 6856,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040035.jpg"
       ],
@@ -1128,8 +1128,8 @@
       "description": "Messo all'asta da Animal and Plant Health Inspection Service, a AMHERST (MA).",
       "condition": "",
       "category": "Veicoli",
-      "price": 5456.63,
-      "currency": "EUR",
+      "price": 6100,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040036.jpg"
       ],
@@ -1148,8 +1148,8 @@
       "description": "Messo all'asta da Animal and Plant Health Inspection Service, a MADISON (TN).",
       "condition": "",
       "category": "Veicoli",
-      "price": 1977.81,
-      "currency": "EUR",
+      "price": 2211,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040037.jpg"
       ],
@@ -1168,8 +1168,8 @@
       "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Raleigh (NC).",
       "condition": "",
       "category": "Veicoli",
-      "price": 4562.1,
-      "currency": "EUR",
+      "price": 5100,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040038.jpg"
       ],
@@ -1188,8 +1188,8 @@
       "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Raleigh (NC).",
       "condition": "",
       "category": "Veicoli",
-      "price": 2403.6,
-      "currency": "EUR",
+      "price": 2687,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040039.jpg"
       ],
@@ -1208,8 +1208,8 @@
       "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Statesville (NC).",
       "condition": "",
       "category": "Veicoli",
-      "price": 5903,
-      "currency": "EUR",
+      "price": 6599,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040040.jpg"
       ],
@@ -1228,8 +1228,8 @@
       "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Statesville (NC).",
       "condition": "",
       "category": "Veicoli",
-      "price": 1073.44,
-      "currency": "EUR",
+      "price": 1200,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040041.jpg"
       ],
@@ -1248,8 +1248,8 @@
       "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Brewerton (NY).",
       "condition": "",
       "category": "Veicoli",
-      "price": 1878.51,
-      "currency": "EUR",
+      "price": 2100,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040042.jpg"
       ],
@@ -1268,8 +1268,8 @@
       "description": "Messo all'asta da Animal and Plant Health Inspection Service, a STATESVILLE (NC).",
       "condition": "",
       "category": "Veicoli",
-      "price": 1341.8,
-      "currency": "EUR",
+      "price": 1500,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040044.jpg"
       ],
@@ -1288,8 +1288,8 @@
       "description": "Messo all'asta da Natural Resources Conservation Service, a Portage (MI).",
       "condition": "",
       "category": "Veicoli",
-      "price": 14401.93,
-      "currency": "EUR",
+      "price": 16100,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040051.jpg"
       ],
@@ -1308,8 +1308,8 @@
       "description": "Messo all'asta da Natural Resources Conservation Service, a MILL HALL (PA).",
       "condition": "",
       "category": "Veicoli",
-      "price": 5058.57,
-      "currency": "EUR",
+      "price": 5655,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040052.jpg"
       ],
@@ -1328,8 +1328,8 @@
       "description": "Messo all'asta da Animal and Plant Health Inspection Service, a East Lansing (MI).",
       "condition": "",
       "category": "Veicoli",
-      "price": 5456.63,
-      "currency": "EUR",
+      "price": 6100,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040049.jpg"
       ],
@@ -1348,8 +1348,8 @@
       "description": "Messo all'asta da Animal and Plant Health Inspection Service, a East Lansing (MI).",
       "condition": "",
       "category": "Veicoli",
-      "price": 5456.63,
-      "currency": "EUR",
+      "price": 6100,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040050.jpg"
       ],
@@ -1368,8 +1368,8 @@
       "description": "Messo all'asta da Animal and Plant Health Inspection Service, a MERCEDITA (PR).",
       "condition": "",
       "category": "Veicoli",
-      "price": 2325.78,
-      "currency": "EUR",
+      "price": 2600,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040045.jpg"
       ],
@@ -1388,8 +1388,8 @@
       "description": "Messo all'asta da Animal and Plant Health Inspection Service, a BLOOMINGTON (MN).",
       "condition": "",
       "category": "Veicoli",
-      "price": 3130.86,
-      "currency": "EUR",
+      "price": 3500,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040046.jpg"
       ],
@@ -1408,8 +1408,8 @@
       "description": "Messo all'asta da Animal and Plant Health Inspection Service, a East Lansing (MI).",
       "condition": "",
       "category": "Veicoli",
-      "price": 4472.65,
-      "currency": "EUR",
+      "price": 5000,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040048.jpg"
       ],
@@ -1428,8 +1428,8 @@
       "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Rensselaer (NY).",
       "condition": "",
       "category": "Veicoli",
-      "price": 2348.14,
-      "currency": "EUR",
+      "price": 2625,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040047.jpg"
       ],
@@ -1448,8 +1448,8 @@
       "description": "Messo all'asta da Natural Resources Conservation Service, a EUGENE (OR).",
       "condition": "",
       "category": "Veicoli",
-      "price": 8954.25,
-      "currency": "EUR",
+      "price": 10010,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27042003.jpg"
       ],
@@ -1468,8 +1468,8 @@
       "description": "Messo all'asta da Forest Service, a Hines (OR).",
       "condition": "",
       "category": "Veicoli",
-      "price": 313.09,
-      "currency": "EUR",
+      "price": 350,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27042005.jpg"
       ],
@@ -1488,8 +1488,8 @@
       "description": "Messo all'asta da Forest Service, a SALEM (OR).",
       "condition": "",
       "category": "Veicoli",
-      "price": 1856.15,
-      "currency": "EUR",
+      "price": 2075,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27042011.jpg"
       ],
@@ -1508,8 +1508,8 @@
       "description": "Messo all'asta da Forest Service, a SHANIKO (OR).",
       "condition": "",
       "category": "Veicoli",
-      "price": 1363.26,
-      "currency": "EUR",
+      "price": 1524,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27042013.jpg"
       ],
@@ -1528,8 +1528,8 @@
       "description": "Messo all'asta da Fish and Wildlife Service, a Lakeview (OR).",
       "condition": "",
       "category": "Veicoli",
-      "price": 15229.37,
-      "currency": "EUR",
+      "price": 17025,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27042014.jpg"
       ],
@@ -1548,8 +1548,8 @@
       "description": "Messo all'asta da Fish and Wildlife Service, a Lakeview (OR).",
       "condition": "",
       "category": "Veicoli",
-      "price": 11293.44,
-      "currency": "EUR",
+      "price": 12625,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27042016.jpg"
       ],
@@ -1568,8 +1568,8 @@
       "description": "Messo all'asta da Bureau of Land Management, a SPRINGFIELD (OR).",
       "condition": "",
       "category": "Veicoli",
-      "price": 559.08,
-      "currency": "EUR",
+      "price": 625,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27042017.jpg"
       ],
@@ -1588,8 +1588,8 @@
       "description": "Messo all'asta da Forest Service, a JOHN DAY (OR).",
       "condition": "",
       "category": "Veicoli",
-      "price": 44748.86,
-      "currency": "EUR",
+      "price": 50025,
+      "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27042018.jpg"
       ],

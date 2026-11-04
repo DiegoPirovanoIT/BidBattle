@@ -1,6 +1,6 @@
 // Videogiochi: well reviewed PC games from CheapShark, at their full Steam price.
 
-import { USER_AGENT, fetchJson, toEuros, usdToEurRate } from './common.mjs';
+import { USER_AGENT, fetchJson } from './common.mjs';
 
 const API = 'https://www.cheapshark.com/api/1.0/deals';
 const STEAM_STORE_ID = '1';
@@ -16,7 +16,7 @@ export function isPlayableDeal(deal) {
     && Number(deal.steamRatingCount) >= MIN_REVIEWS;
 }
 
-export function gameProduct(deal, image, rate) {
+export function gameProduct(deal, image) {
   const reviews = Number(deal.steamRatingCount).toLocaleString('it-IT');
   const year = deal.releaseDate ? `Uscito nel ${new Date(deal.releaseDate * 1000).getUTCFullYear()}. ` : '';
   return {
@@ -25,8 +25,8 @@ export function gameProduct(deal, image, rate) {
     description: `${year}Recensioni positive su Steam: ${deal.steamRatingPercent}% di ${reviews}.`,
     condition: '',
     category: '',
-    price: toEuros(Number(deal.normalPrice), rate),
-    currency: 'EUR',
+    price: Number(deal.normalPrice),
+    currency: 'USD',
     images: [image],
     url: `https://store.steampowered.com/app/${deal.steamAppID}`,
     credit: 'Dati: CheapShark. Immagine: Steam',
@@ -55,7 +55,6 @@ export async function buildGames() {
       if (isPlayableDeal(deal)) deals.set(deal.gameID, deal);
     }
   }
-  const rate = await usdToEurRate();
   const chosen = [...deals.values()].slice(0, MAX_GAMES);
-  return Promise.all(chosen.map(async (deal) => gameProduct(deal, await bestImage(deal), rate)));
+  return Promise.all(chosen.map(async (deal) => gameProduct(deal, await bestImage(deal))));
 }

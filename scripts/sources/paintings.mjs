@@ -1,12 +1,12 @@
 // Capolavori: Wikipedia's list of the most expensive paintings. Only paintings
 // whose image is freely licensed on Wikimedia Commons make it into the game.
 
-import { fetchJson, stripHtml, toEuros, usdToEurRate } from './common.mjs';
+import { fetchJson, stripHtml } from './common.mjs';
 
 const API = 'https://en.wikipedia.org/w/api.php';
 const PAGE = 'List_of_most_expensive_paintings';
 const IMAGE_WIDTH = 900;
-const PRICE_STEP_EUR = 100000;
+const PRICE_STEP_USD = 100000;
 const TITLES_PER_REQUEST = 50;
 const FREE_LICENSE = /public domain|^pd|^cc/i;
 
@@ -87,7 +87,7 @@ export function parsePaintings(wikitext) {
   return [...paintings.values()];
 }
 
-export function paintingProduct(painting, image, rate) {
+export function paintingProduct(painting, image) {
   const author = stripHtml(image.artist).slice(0, 60);
   const sold = painting.saleYear ? ` Venduto nel ${painting.saleYear}.` : '';
   return {
@@ -97,8 +97,8 @@ export function paintingProduct(painting, image, rate) {
     condition: '',
     category: '',
     // Sale prices are known to a fraction of a million: anything finer would be invented.
-    price: Math.round(toEuros(painting.priceUsd, rate) / PRICE_STEP_EUR) * PRICE_STEP_EUR,
-    currency: 'EUR',
+    price: Math.round(painting.priceUsd / PRICE_STEP_USD) * PRICE_STEP_USD,
+    currency: 'USD',
     images: [image.url],
     url: `https://en.wikipedia.org/wiki/${PAGE}`,
     credit: `Immagine: ${author ? `${author}, ` : ''}${image.license}, da Wikimedia Commons`,
@@ -144,7 +144,6 @@ export async function buildPaintings() {
   const { parse } = await fetchJson(`${API}?${query}`);
   const paintings = parsePaintings(parse.wikitext);
   const images = await freeImages(paintings.map(({ file }) => file));
-  const rate = await usdToEurRate();
   return paintings.filter(({ file }) => images.has(file))
-    .map((painting) => paintingProduct(painting, images.get(painting.file), rate));
+    .map((painting) => paintingProduct(painting, images.get(painting.file)));
 }

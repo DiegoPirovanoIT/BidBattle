@@ -1,4 +1,5 @@
-// Pure auction rules. Every amount is an integer number of cents.
+// Pure auction rules. Every amount is an integer number of hundredths of the lot's
+// currency: the names say euro, the rules work the same in any currency.
 // Each function returns a new state and never mutates its input.
 
 export const AUCTION_MODES = Object.freeze({

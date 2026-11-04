@@ -1,6 +1,6 @@
 {
   "source": "games",
-  "generatedAt": "2026-11-04T10:29:37.118Z",
+  "generatedAt": "2026-11-04T12:13:46.529Z",
   "products": [
     {
       "id": "game-331996",
@@ -8,8 +8,8 @@
       "description": "Uscito nel 2026. Recensioni positive su Steam: 99% di 14.433.",
       "condition": "",
       "category": "",
-      "price": 13.41,
-      "currency": "EUR",
+      "price": 14.99,
+      "currency": "USD",
       "images": [
         "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4019220/7f07d1dd7a97e00694481ee7747940989dc5820c/capsule_231x87.jpg?t=1792401675"
       ],
@@ -23,8 +23,8 @@
       "description": "Uscito nel 2019. Recensioni positive su Steam: 99% di 12.743.",
       "condition": "",
       "category": "",
-      "price": 7.15,
-      "currency": "EUR",
+      "price": 7.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1055540/header.jpg"
       ],
@@ -38,8 +38,8 @@
       "description": "Uscito nel 2023. Recensioni positive su Steam: 99% di 9574.",
       "condition": "",
       "category": "",
-      "price": 5.36,
-      "currency": "EUR",
+      "price": 5.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/2291760/header.jpg"
       ],
@@ -53,8 +53,8 @@
       "description": "Uscito nel 2026. Recensioni positive su Steam: 99% di 7892.",
       "condition": "",
       "category": "",
-      "price": 7.15,
-      "currency": "EUR",
+      "price": 7.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/3097300/header.jpg"
       ],
@@ -68,27 +68,12 @@
       "description": "Uscito nel 2022. Recensioni positive su Steam: 99% di 2286.",
       "condition": "",
       "category": "",
-      "price": 17.88,
-      "currency": "EUR",
+      "price": 19.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1260520/header.jpg"
       ],
       "url": "https://store.steampowered.com/app/1260520",
-      "credit": "Dati: CheapShark. Immagine: Steam",
-      "creditUrl": "https://www.cheapshark.com"
-    },
-    {
-      "id": "game-144767",
-      "title": "oO",
-      "description": "Uscito nel 2023. Recensioni positive su Steam: 99% di 2258.",
-      "condition": "",
-      "category": "",
-      "price": 8.94,
-      "currency": "EUR",
-      "images": [
-        "https://cdn.akamai.steamstatic.com/steam/apps/367570/header.jpg"
-      ],
-      "url": "https://store.steampowered.com/app/367570",
       "credit": "Dati: CheapShark. Immagine: Steam",
       "creditUrl": "https://www.cheapshark.com"
     },
@@ -98,8 +83,8 @@
       "description": "Uscito nel 2026. Recensioni positive su Steam: 99% di 2244.",
       "condition": "",
       "category": "",
-      "price": 17.88,
-      "currency": "EUR",
+      "price": 19.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1696770/header.jpg"
       ],
@@ -113,8 +98,8 @@
       "description": "Uscito nel 2022. Recensioni positive su Steam: 99% di 2178.",
       "condition": "",
       "category": "",
-      "price": 8.94,
-      "currency": "EUR",
+      "price": 9.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1717770/header.jpg"
       ],
@@ -128,8 +113,8 @@
       "description": "Uscito nel 2016. Recensioni positive su Steam: 98% di 396.747.",
       "condition": "",
       "category": "",
-      "price": 13.41,
-      "currency": "EUR",
+      "price": 14.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/413150/header.jpg"
       ],
@@ -143,8 +128,8 @@
       "description": "Uscito nel 2011. Recensioni positive su Steam: 98% di 174.821.",
       "condition": "",
       "category": "",
-      "price": 8.94,
-      "currency": "EUR",
+      "price": 9.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/620/header.jpg"
       ],
@@ -158,8 +143,8 @@
       "description": "Uscito nel 2020. Recensioni positive su Steam: 98% di 143.270.",
       "condition": "",
       "category": "",
-      "price": 22.35,
-      "currency": "EUR",
+      "price": 24.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1145360/header.jpg"
       ],
@@ -173,8 +158,8 @@
       "description": "Uscito nel 2020. Recensioni positive su Steam: 98% di 118.793.",
       "condition": "",
       "category": "",
-      "price": 31.31,
-      "currency": "EUR",
+      "price": 35,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/427520/header.jpg"
       ],
@@ -188,8 +173,8 @@
       "description": "Uscito nel 2024. Recensioni positive su Steam: 98% di 105.559.",
       "condition": "",
       "category": "",
-      "price": 13.41,
-      "currency": "EUR",
+      "price": 14.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/2379780/header.jpg"
       ],
@@ -203,8 +188,8 @@
       "description": "Uscito nel 2019. Recensioni positive su Steam: 98% di 85.243.",
       "condition": "",
       "category": "",
-      "price": 17.88,
-      "currency": "EUR",
+      "price": 19.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/508440/header.jpg"
       ],
@@ -218,8 +203,8 @@
       "description": "Uscito nel 2007. Recensioni positive su Steam: 98% di 85.154.",
       "condition": "",
       "category": "",
-      "price": 8.94,
-      "currency": "EUR",
+      "price": 9.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/400/header.jpg"
       ],
@@ -233,8 +218,8 @@
       "description": "Uscito nel 2017. Recensioni positive su Steam: 98% di 66.043.",
       "condition": "",
       "category": "",
-      "price": 17.88,
-      "currency": "EUR",
+      "price": 19.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/433340/header.jpg"
       ],
@@ -248,8 +233,8 @@
       "description": "Uscito nel 2020. Recensioni positive su Steam: 98% di 61.917.",
       "condition": "",
       "category": "",
-      "price": 53.66,
-      "currency": "EUR",
+      "price": 59.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/546560/header.jpg"
       ],
@@ -263,8 +248,8 @@
       "description": "Uscito nel 2025. Recensioni positive su Steam: 98% di 56.401.",
       "condition": "",
       "category": "",
-      "price": 22.35,
-      "currency": "EUR",
+      "price": 24.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1671210/header.jpg"
       ],
@@ -278,8 +263,8 @@
       "description": "Uscito nel 2023. Recensioni positive su Steam: 98% di 45.662.",
       "condition": "",
       "category": "",
-      "price": 17.88,
-      "currency": "EUR",
+      "price": 19.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/2231450/header.jpg"
       ],
@@ -293,8 +278,8 @@
       "description": "Uscito nel 2020. Recensioni positive su Steam: 98% di 41.105.",
       "condition": "",
       "category": "",
-      "price": 13.41,
-      "currency": "EUR",
+      "price": 14.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1089980/header.jpg"
       ],
@@ -308,8 +293,8 @@
       "description": "Uscito nel 2014. Recensioni positive su Steam: 98% di 33.122.",
       "condition": "",
       "category": "",
-      "price": 8.94,
-      "currency": "EUR",
+      "price": 9.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/420530/header.jpg"
       ],
@@ -323,8 +308,8 @@
       "description": "Uscito nel 2017. Recensioni positive su Steam: 98% di 29.396.",
       "condition": "",
       "category": "",
-      "price": 26.83,
-      "currency": "EUR",
+      "price": 29.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/253230/header.jpg"
       ],
@@ -338,8 +323,8 @@
       "description": "Uscito nel 2023. Recensioni positive su Steam: 98% di 23.223.",
       "condition": "",
       "category": "",
-      "price": 8.94,
-      "currency": "EUR",
+      "price": 9.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/774801/header.jpg"
       ],
@@ -353,8 +338,8 @@
       "description": "Recensioni positive su Steam: 98% di 17.164.",
       "condition": "",
       "category": "",
-      "price": 26.83,
-      "currency": "EUR",
+      "price": 29.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/667970/header.jpg"
       ],
@@ -368,8 +353,8 @@
       "description": "Uscito nel 2024. Recensioni positive su Steam: 98% di 15.812.",
       "condition": "",
       "category": "",
-      "price": 44.71,
-      "currency": "EUR",
+      "price": 49.98,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1040200/header.jpg"
       ],
@@ -383,8 +368,8 @@
       "description": "Uscito nel 2021. Recensioni positive su Steam: 98% di 15.756.",
       "condition": "",
       "category": "",
-      "price": 8.94,
-      "currency": "EUR",
+      "price": 9.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1082430/header.jpg"
       ],
@@ -398,8 +383,8 @@
       "description": "Uscito nel 2023. Recensioni positive su Steam: 98% di 13.430.",
       "condition": "",
       "category": "",
-      "price": 17.88,
-      "currency": "EUR",
+      "price": 19.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1931770/header.jpg"
       ],
@@ -413,8 +398,8 @@
       "description": "Uscito nel 2022. Recensioni positive su Steam: 98% di 12.766.",
       "condition": "",
       "category": "",
-      "price": 22.35,
-      "currency": "EUR",
+      "price": 24.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1533420/header.jpg"
       ],
@@ -428,8 +413,8 @@
       "description": "Recensioni positive su Steam: 98% di 12.064.",
       "condition": "",
       "category": "",
-      "price": 17.88,
-      "currency": "EUR",
+      "price": 19.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1424330/header.jpg"
       ],
@@ -443,8 +428,8 @@
       "description": "Recensioni positive su Steam: 98% di 10.609.",
       "condition": "",
       "category": "",
-      "price": 15.2,
-      "currency": "EUR",
+      "price": 16.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/3195790/header.jpg"
       ],
@@ -458,8 +443,8 @@
       "description": "Uscito nel 2023. Recensioni positive su Steam: 98% di 10.454.",
       "condition": "",
       "category": "",
-      "price": 35.77,
-      "currency": "EUR",
+      "price": 39.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1353230/header.jpg"
       ],
@@ -473,8 +458,8 @@
       "description": "Uscito nel 2025. Recensioni positive su Steam: 98% di 10.121.",
       "condition": "",
       "category": "",
-      "price": 8.94,
-      "currency": "EUR",
+      "price": 9.99,
+      "currency": "USD",
       "images": [
         "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3373660/e0dae146ff3f347de7f3d26d3cc59977a675cfd9/capsule_231x87.jpg?t=1789016414"
       ],
@@ -488,8 +473,8 @@
       "description": "Uscito nel 2021. Recensioni positive su Steam: 98% di 9121.",
       "condition": "",
       "category": "",
-      "price": 8.04,
-      "currency": "EUR",
+      "price": 8.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1361320/header.jpg"
       ],
@@ -503,8 +488,8 @@
       "description": "Uscito nel 2017. Recensioni positive su Steam: 98% di 8708.",
       "condition": "",
       "category": "",
-      "price": 9.83,
-      "currency": "EUR",
+      "price": 10.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/597220/header.jpg"
       ],
@@ -518,8 +503,8 @@
       "description": "Uscito nel 2015. Recensioni positive su Steam: 98% di 8144.",
       "condition": "",
       "category": "",
-      "price": 13.41,
-      "currency": "EUR",
+      "price": 14.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/341800/header.jpg"
       ],
@@ -533,8 +518,8 @@
       "description": "Uscito nel 2022. Recensioni positive su Steam: 98% di 7193.",
       "condition": "",
       "category": "",
-      "price": 13.41,
-      "currency": "EUR",
+      "price": 14.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1059990/header.jpg"
       ],
@@ -548,8 +533,8 @@
       "description": "Uscito nel 2026. Recensioni positive su Steam: 98% di 6957.",
       "condition": "",
       "category": "",
-      "price": 14.76,
-      "currency": "EUR",
+      "price": 16.5,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/2684630/header.jpg"
       ],
@@ -563,8 +548,8 @@
       "description": "Uscito nel 2022. Recensioni positive su Steam: 98% di 6627.",
       "condition": "",
       "category": "",
-      "price": 16.09,
-      "currency": "EUR",
+      "price": 17.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1677770/header.jpg"
       ],
@@ -578,8 +563,8 @@
       "description": "Uscito nel 2025. Recensioni positive su Steam: 98% di 5173.",
       "condition": "",
       "category": "",
-      "price": 13.41,
-      "currency": "EUR",
+      "price": 14.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/3084280/header.jpg"
       ],
@@ -593,8 +578,8 @@
       "description": "Uscito nel 2017. Recensioni positive su Steam: 98% di 5086.",
       "condition": "",
       "category": "",
-      "price": 8.94,
-      "currency": "EUR",
+      "price": 9.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/337340/header.jpg"
       ],
@@ -608,8 +593,8 @@
       "description": "Uscito nel 2023. Recensioni positive su Steam: 98% di 4469.",
       "condition": "",
       "category": "",
-      "price": 19.66,
-      "currency": "EUR",
+      "price": 21.98,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1201270/header.jpg"
       ],
@@ -623,8 +608,8 @@
       "description": "Uscito nel 2019. Recensioni positive su Steam: 98% di 4449.",
       "condition": "",
       "category": "",
-      "price": 13.41,
-      "currency": "EUR",
+      "price": 14.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1067850/header.jpg"
       ],
@@ -638,8 +623,8 @@
       "description": "Uscito nel 2025. Recensioni positive su Steam: 98% di 4276.",
       "condition": "",
       "category": "",
-      "price": 26.83,
-      "currency": "EUR",
+      "price": 29.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1609230/header.jpg"
       ],
@@ -653,8 +638,8 @@
       "description": "Uscito nel 2024. Recensioni positive su Steam: 98% di 4221.",
       "condition": "",
       "category": "",
-      "price": 13.41,
-      "currency": "EUR",
+      "price": 14.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1634860/header.jpg"
       ],
@@ -668,8 +653,8 @@
       "description": "Uscito nel 2022. Recensioni positive su Steam: 98% di 4047.",
       "condition": "",
       "category": "",
-      "price": 17.88,
-      "currency": "EUR",
+      "price": 19.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1586800/header.jpg"
       ],
@@ -683,8 +668,8 @@
       "description": "Uscito nel 2024. Recensioni positive su Steam: 98% di 3723.",
       "condition": "",
       "category": "",
-      "price": 9.83,
-      "currency": "EUR",
+      "price": 10.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/2299900/header.jpg"
       ],
@@ -698,8 +683,8 @@
       "description": "Uscito nel 2021. Recensioni positive su Steam: 98% di 3618.",
       "condition": "",
       "category": "",
-      "price": 5.36,
-      "currency": "EUR",
+      "price": 5.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1584090/header.jpg"
       ],
@@ -713,8 +698,8 @@
       "description": "Recensioni positive su Steam: 98% di 3464.",
       "condition": "",
       "category": "",
-      "price": 17.88,
-      "currency": "EUR",
+      "price": 19.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1307580/header.jpg"
       ],
@@ -728,8 +713,8 @@
       "description": "Uscito nel 2024. Recensioni positive su Steam: 98% di 3103.",
       "condition": "",
       "category": "",
-      "price": 12.51,
-      "currency": "EUR",
+      "price": 13.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/2302660/header.jpg"
       ],
@@ -743,8 +728,8 @@
       "description": "Uscito nel 2023. Recensioni positive su Steam: 98% di 3003.",
       "condition": "",
       "category": "",
-      "price": 17.88,
-      "currency": "EUR",
+      "price": 19.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1644940/header.jpg"
       ],
@@ -758,8 +743,8 @@
       "description": "Uscito nel 2018. Recensioni positive su Steam: 98% di 2860.",
       "condition": "",
       "category": "",
-      "price": 22.35,
-      "currency": "EUR",
+      "price": 24.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/432350/header.jpg"
       ],
@@ -773,8 +758,8 @@
       "description": "Uscito nel 2024. Recensioni positive su Steam: 98% di 2613.",
       "condition": "",
       "category": "",
-      "price": 8.94,
-      "currency": "EUR",
+      "price": 9.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/2915460/header.jpg"
       ],
@@ -788,8 +773,8 @@
       "description": "Uscito nel 2016. Recensioni positive su Steam: 98% di 2594.",
       "condition": "",
       "category": "",
-      "price": 8.94,
-      "currency": "EUR",
+      "price": 9.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/483980/header.jpg"
       ],
@@ -803,8 +788,8 @@
       "description": "Uscito nel 2026. Recensioni positive su Steam: 98% di 2577.",
       "condition": "",
       "category": "",
-      "price": 11.62,
-      "currency": "EUR",
+      "price": 12.99,
+      "currency": "USD",
       "images": [
         "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4064510/49a44315e2f4f5bf302fd564287039e4663dd3e1/capsule_231x87_alt_assets_0.jpg?t=1793036499"
       ],
@@ -818,8 +803,8 @@
       "description": "Uscito nel 2022. Recensioni positive su Steam: 98% di 2470.",
       "condition": "",
       "category": "",
-      "price": 10.73,
-      "currency": "EUR",
+      "price": 11.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1665190/header.jpg"
       ],
@@ -833,8 +818,8 @@
       "description": "Uscito nel 2024. Recensioni positive su Steam: 98% di 2469.",
       "condition": "",
       "category": "",
-      "price": 5.36,
-      "currency": "EUR",
+      "price": 5.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/3259470/header.jpg"
       ],
@@ -848,8 +833,8 @@
       "description": "Uscito nel 2025. Recensioni positive su Steam: 98% di 2259.",
       "condition": "",
       "category": "",
-      "price": 22.35,
-      "currency": "EUR",
+      "price": 24.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/2097570/header.jpg"
       ],
@@ -863,8 +848,8 @@
       "description": "Uscito nel 2026. Recensioni positive su Steam: 98% di 2222.",
       "condition": "",
       "category": "",
-      "price": 17.88,
-      "currency": "EUR",
+      "price": 19.99,
+      "currency": "USD",
       "images": [
         "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2524850/03fd4f8c99606d9c446804bb9475b4d2de12f2d3/capsule_231x87.jpg?t=1790601329"
       ],
@@ -878,8 +863,8 @@
       "description": "Uscito nel 2022. Recensioni positive su Steam: 98% di 2162.",
       "condition": "",
       "category": "",
-      "price": 8.94,
-      "currency": "EUR",
+      "price": 9.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1574270/header.jpg"
       ],
@@ -893,8 +878,8 @@
       "description": "Uscito nel 2025. Recensioni positive su Steam: 98% di 2086.",
       "condition": "",
       "category": "",
-      "price": 14.9,
-      "currency": "EUR",
+      "price": 16.66,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/3054820/header.jpg"
       ],
@@ -908,8 +893,8 @@
       "description": "Uscito nel 2026. Recensioni positive su Steam: 98% di 2019.",
       "condition": "",
       "category": "",
-      "price": 17.88,
-      "currency": "EUR",
+      "price": 19.99,
+      "currency": "USD",
       "images": [
         "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3699590/ab956a6e275e2ab5909ffd811a057035eddd042c/capsule_231x87.jpg?t=1790314621"
       ],
@@ -923,8 +908,8 @@
       "description": "Uscito nel 2011. Recensioni positive su Steam: 97% di 605.322.",
       "condition": "",
       "category": "",
-      "price": 8.94,
-      "currency": "EUR",
+      "price": 9.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/105600/header.jpg"
       ],
@@ -938,8 +923,8 @@
       "description": "Uscito nel 2004. Recensioni positive su Steam: 97% di 542.795.",
       "condition": "",
       "category": "",
-      "price": 8.94,
-      "currency": "EUR",
+      "price": 9.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/4000/header.jpg"
       ],
@@ -953,8 +938,8 @@
       "description": "Recensioni positive su Steam: 97% di 276.848.",
       "condition": "",
       "category": "",
-      "price": 8.94,
-      "currency": "EUR",
+      "price": 9.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1966720/header.jpg"
       ],
@@ -968,8 +953,8 @@
       "description": "Uscito nel 2009. Recensioni positive su Steam: 97% di 234.794.",
       "condition": "",
       "category": "",
-      "price": 8.94,
-      "currency": "EUR",
+      "price": 9.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/550/header.jpg"
       ],
@@ -983,8 +968,8 @@
       "description": "Uscito nel 2018. Recensioni positive su Steam: 97% di 232.458.",
       "condition": "",
       "category": "",
-      "price": 12.51,
-      "currency": "EUR",
+      "price": 13.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/960090/header.jpg"
       ],
@@ -998,8 +983,8 @@
       "description": "Uscito nel 2024. Recensioni positive su Steam: 97% di 214.547.",
       "condition": "",
       "category": "",
-      "price": 22.35,
-      "currency": "EUR",
+      "price": 24.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/284160/header.jpg"
       ],
@@ -1013,8 +998,8 @@
       "description": "Recensioni positive su Steam: 97% di 204.558.",
       "condition": "",
       "category": "",
-      "price": 17.88,
-      "currency": "EUR",
+      "price": 19.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/3164500/header.jpg"
       ],
@@ -1028,8 +1013,8 @@
       "description": "Uscito nel 2017. Recensioni positive su Steam: 97% di 186.067.",
       "condition": "",
       "category": "",
-      "price": 13.41,
-      "currency": "EUR",
+      "price": 14.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/367520/header.jpg"
       ],
@@ -1043,8 +1028,8 @@
       "description": "Uscito nel 2019. Recensioni positive su Steam: 97% di 179.443.",
       "condition": "",
       "category": "",
-      "price": 8.94,
-      "currency": "EUR",
+      "price": 9.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1118200/header.jpg"
       ],
@@ -1058,8 +1043,8 @@
       "description": "Uscito nel 2020. Recensioni positive su Steam: 97% di 171.606.",
       "condition": "",
       "category": "",
-      "price": 26.83,
-      "currency": "EUR",
+      "price": 29.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/548430/header.jpg"
       ],
@@ -1073,8 +1058,8 @@
       "description": "Uscito nel 2020. Recensioni positive su Steam: 97% di 152.377.",
       "condition": "",
       "category": "",
-      "price": 26.83,
-      "currency": "EUR",
+      "price": 29.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1229490/header.jpg"
       ],
@@ -1088,8 +1073,8 @@
       "description": "Uscito nel 2013. Recensioni positive su Steam: 97% di 147.265.",
       "condition": "",
       "category": "",
-      "price": 17.88,
-      "currency": "EUR",
+      "price": 19.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/227300/header.jpg"
       ],
@@ -1103,8 +1088,8 @@
       "description": "Uscito nel 2024. Recensioni positive su Steam: 97% di 138.701.",
       "condition": "",
       "category": "",
-      "price": 35.77,
-      "currency": "EUR",
+      "price": 39.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/526870/header.jpg"
       ],
@@ -1118,8 +1103,8 @@
       "description": "Uscito nel 2018. Recensioni positive su Steam: 97% di 120.434.",
       "condition": "",
       "category": "",
-      "price": 31.3,
-      "currency": "EUR",
+      "price": 34.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/294100/header.jpg"
       ],
@@ -1133,8 +1118,8 @@
       "description": "Uscito nel 2025. Recensioni positive su Steam: 97% di 109.731.",
       "condition": "",
       "category": "",
-      "price": 26.83,
-      "currency": "EUR",
+      "price": 29.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/2592160/header.jpg"
       ],
@@ -1148,8 +1133,8 @@
       "description": "Uscito nel 2016. Recensioni positive su Steam: 97% di 96.048.",
       "condition": "",
       "category": "",
-      "price": 17.88,
-      "currency": "EUR",
+      "price": 19.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/270880/header.jpg"
       ],
@@ -1163,8 +1148,8 @@
       "description": "Uscito nel 2004. Recensioni positive su Steam: 97% di 91.872.",
       "condition": "",
       "category": "",
-      "price": 8.94,
-      "currency": "EUR",
+      "price": 9.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/220/header.jpg"
       ],
@@ -1178,8 +1163,8 @@
       "description": "Uscito nel 2022. Recensioni positive su Steam: 97% di 80.044.",
       "condition": "",
       "category": "",
-      "price": 26.83,
-      "currency": "EUR",
+      "price": 29.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1332010/header.jpg"
       ],
@@ -1193,8 +1178,8 @@
       "description": "Uscito nel 2019. Recensioni positive su Steam: 97% di 77.448.",
       "condition": "",
       "category": "",
-      "price": 22.35,
-      "currency": "EUR",
+      "price": 24.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/646570/header.jpg"
       ],
@@ -1208,8 +1193,8 @@
       "description": "Uscito nel 2018. Recensioni positive su Steam: 97% di 62.823.",
       "condition": "",
       "category": "",
-      "price": 17.88,
-      "currency": "EUR",
+      "price": 19.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/504230/header.jpg"
       ],
@@ -1223,8 +1208,8 @@
       "description": "Uscito nel 2010. Recensioni positive su Steam: 97% di 55.100.",
       "condition": "",
       "category": "",
-      "price": 17.88,
-      "currency": "EUR",
+      "price": 19.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/48700/header.jpg"
       ],
@@ -1238,8 +1223,8 @@
       "description": "Uscito nel 2020. Recensioni positive su Steam: 97% di 54.668.",
       "condition": "",
       "category": "",
-      "price": 17.88,
-      "currency": "EUR",
+      "price": 19.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1150690/header.jpg"
       ],
@@ -1253,8 +1238,8 @@
       "description": "Recensioni positive su Steam: 97% di 46.638.",
       "condition": "",
       "category": "",
-      "price": 16.09,
-      "currency": "EUR",
+      "price": 17.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/636480/header.jpg"
       ],
@@ -1268,8 +1253,8 @@
       "description": "Uscito nel 2012. Recensioni positive su Steam: 97% di 46.570.",
       "condition": "",
       "category": "",
-      "price": 13.41,
-      "currency": "EUR",
+      "price": 14.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/204360/header.jpg"
       ],
@@ -1283,8 +1268,8 @@
       "description": "Uscito nel 2020. Recensioni positive su Steam: 97% di 46.168.",
       "condition": "",
       "category": "",
-      "price": 17.88,
-      "currency": "EUR",
+      "price": 19.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1113000/header.jpg"
       ],
@@ -1298,8 +1283,8 @@
       "description": "Uscito nel 2003. Recensioni positive su Steam: 97% di 43.898.",
       "condition": "",
       "category": "",
-      "price": 8.94,
-      "currency": "EUR",
+      "price": 9.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/223470/header.jpg"
       ],
@@ -1313,8 +1298,8 @@
       "description": "Uscito nel 2012. Recensioni positive su Steam: 97% di 40.129.",
       "condition": "",
       "category": "",
-      "price": 8.94,
-      "currency": "EUR",
+      "price": 9.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/205100/header.jpg"
       ],
@@ -1328,8 +1313,8 @@
       "description": "Uscito nel 2013. Recensioni positive su Steam: 97% di 39.844.",
       "condition": "",
       "category": "",
-      "price": 8.94,
-      "currency": "EUR",
+      "price": 9.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/239030/header.jpg"
       ],
@@ -1343,8 +1328,8 @@
       "description": "Uscito nel 2022. Recensioni positive su Steam: 97% di 38.626.",
       "condition": "",
       "category": "",
-      "price": 22.35,
-      "currency": "EUR",
+      "price": 24.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1290000/header.jpg"
       ],
@@ -1358,8 +1343,8 @@
       "description": "Uscito nel 2014. Recensioni positive su Steam: 97% di 31.102.",
       "condition": "",
       "category": "",
-      "price": 26.83,
-      "currency": "EUR",
+      "price": 29.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/213670/header.jpg"
       ],
@@ -1373,8 +1358,8 @@
       "description": "Uscito nel 2007. Recensioni positive su Steam: 97% di 26.938.",
       "condition": "",
       "category": "",
-      "price": 17.88,
-      "currency": "EUR",
+      "price": 19.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/32470/header.jpg"
       ],
@@ -1388,8 +1373,8 @@
       "description": "Uscito nel 2024. Recensioni positive su Steam: 97% di 26.278.",
       "condition": "",
       "category": "",
-      "price": 13.41,
-      "currency": "EUR",
+      "price": 14.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/2527500/header.jpg"
       ],
@@ -1403,8 +1388,8 @@
       "description": "Uscito nel 2026. Recensioni positive su Steam: 97% di 26.213.",
       "condition": "",
       "category": "",
-      "price": 12.51,
-      "currency": "EUR",
+      "price": 13.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/2142790/header.jpg"
       ],
@@ -1418,8 +1403,8 @@
       "description": "Recensioni positive su Steam: 97% di 25.175.",
       "condition": "",
       "category": "",
-      "price": 13.41,
-      "currency": "EUR",
+      "price": 14.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/207610/header.jpg"
       ],
@@ -1433,8 +1418,8 @@
       "description": "Uscito nel 2014. Recensioni positive su Steam: 97% di 23.682.",
       "condition": "",
       "category": "",
-      "price": 13.41,
-      "currency": "EUR",
+      "price": 14.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/238460/header.jpg"
       ],
@@ -1448,8 +1433,8 @@
       "description": "Uscito nel 2019. Recensioni positive su Steam: 97% di 22.843.",
       "condition": "",
       "category": "",
-      "price": 13.41,
-      "currency": "EUR",
+      "price": 14.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/460950/header.jpg"
       ],
@@ -1463,8 +1448,8 @@
       "description": "Uscito nel 2016. Recensioni positive su Steam: 97% di 19.773.",
       "condition": "",
       "category": "",
-      "price": 17.88,
-      "currency": "EUR",
+      "price": 19.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/450540/header.jpg"
       ],
@@ -1478,8 +1463,8 @@
       "description": "Uscito nel 2013. Recensioni positive su Steam: 97% di 19.245.",
       "condition": "",
       "category": "",
-      "price": 13.41,
-      "currency": "EUR",
+      "price": 14.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/250320/header.jpg"
       ],
@@ -1493,8 +1478,8 @@
       "description": "Uscito nel 2025. Recensioni positive su Steam: 97% di 18.498.",
       "condition": "",
       "category": "",
-      "price": 22.35,
-      "currency": "EUR",
+      "price": 24.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1211020/header.jpg"
       ],
@@ -1508,8 +1493,8 @@
       "description": "Uscito nel 2023. Recensioni positive su Steam: 97% di 17.351.",
       "condition": "",
       "category": "",
-      "price": 8.94,
-      "currency": "EUR",
+      "price": 9.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1686940/header.jpg"
       ],
@@ -1523,8 +1508,8 @@
       "description": "Uscito nel 2018. Recensioni positive su Steam: 97% di 17.087.",
       "condition": "",
       "category": "",
-      "price": 35.76,
-      "currency": "EUR",
+      "price": 39.98,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/519860/header.jpg"
       ],
@@ -1538,8 +1523,8 @@
       "description": "Uscito nel 2026. Recensioni positive su Steam: 97% di 16.526.",
       "condition": "",
       "category": "",
-      "price": 53.66,
-      "currency": "EUR",
+      "price": 59.99,
+      "currency": "USD",
       "images": [
         "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3357650/3e7cf55cf72a980ac94cf45d4212e8f0cb566f7f/capsule_231x87.jpg?t=1791454600"
       ],
@@ -1553,8 +1538,8 @@
       "description": "Uscito nel 2023. Recensioni positive su Steam: 97% di 16.309.",
       "condition": "",
       "category": "",
-      "price": 26.83,
-      "currency": "EUR",
+      "price": 29.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1817230/header.jpg"
       ],
@@ -1568,8 +1553,8 @@
       "description": "Uscito nel 2023. Recensioni positive su Steam: 97% di 14.190.",
       "condition": "",
       "category": "",
-      "price": 5.36,
-      "currency": "EUR",
+      "price": 5.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/2365810/header.jpg"
       ],
@@ -1583,8 +1568,8 @@
       "description": "Uscito nel 2019. Recensioni positive su Steam: 97% di 14.110.",
       "condition": "",
       "category": "",
-      "price": 44.72,
-      "currency": "EUR",
+      "price": 49.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1449690/header.jpg"
       ],
@@ -1598,8 +1583,8 @@
       "description": "Uscito nel 2024. Recensioni positive su Steam: 97% di 14.067.",
       "condition": "",
       "category": "",
-      "price": 13.41,
-      "currency": "EUR",
+      "price": 14.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/2198150/header.jpg"
       ],
@@ -1613,8 +1598,8 @@
       "description": "Uscito nel 2018. Recensioni positive su Steam: 97% di 13.578.",
       "condition": "",
       "category": "",
-      "price": 17.88,
-      "currency": "EUR",
+      "price": 19.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/531510/header.jpg"
       ],
@@ -1628,8 +1613,8 @@
       "description": "Uscito nel 2019. Recensioni positive su Steam: 97% di 12.725.",
       "condition": "",
       "category": "",
-      "price": 13.41,
-      "currency": "EUR",
+      "price": 14.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/736260/header.jpg"
       ],
@@ -1643,8 +1628,8 @@
       "description": "Uscito nel 2021. Recensioni positive su Steam: 97% di 11.391.",
       "condition": "",
       "category": "",
-      "price": 13.41,
-      "currency": "EUR",
+      "price": 14.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1388880/header.jpg"
       ],
@@ -1658,8 +1643,8 @@
       "description": "Uscito nel 2015. Recensioni positive su Steam: 97% di 11.099.",
       "condition": "",
       "category": "",
-      "price": 11.62,
-      "currency": "EUR",
+      "price": 12.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/312530/header.jpg"
       ],
@@ -1673,8 +1658,8 @@
       "description": "Uscito nel 2025. Recensioni positive su Steam: 97% di 11.011.",
       "condition": "",
       "category": "",
-      "price": 14.3,
-      "currency": "EUR",
+      "price": 15.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1520370/header.jpg"
       ],
@@ -1688,8 +1673,8 @@
       "description": "Uscito nel 2024. Recensioni positive su Steam: 97% di 10.546.",
       "condition": "",
       "category": "",
-      "price": 17.88,
-      "currency": "EUR",
+      "price": 19.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1043810/header.jpg"
       ],
@@ -1703,8 +1688,8 @@
       "description": "Uscito nel 2019. Recensioni positive su Steam: 97% di 10.370.",
       "condition": "",
       "category": "",
-      "price": 26.83,
-      "currency": "EUR",
+      "price": 29.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/787480/header.jpg"
       ],
@@ -1718,8 +1703,8 @@
       "description": "Recensioni positive su Steam: 97% di 10.264.",
       "condition": "",
       "category": "",
-      "price": 26.83,
-      "currency": "EUR",
+      "price": 29.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/926990/header.jpg"
       ],
@@ -1733,8 +1718,8 @@
       "description": "Uscito nel 2024. Recensioni positive su Steam: 97% di 9737.",
       "condition": "",
       "category": "",
-      "price": 28.61,
-      "currency": "EUR",
+      "price": 31.98,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1574820/header.jpg"
       ],
@@ -1748,8 +1733,8 @@
       "description": "Uscito nel 2020. Recensioni positive su Steam: 97% di 9733.",
       "condition": "",
       "category": "",
-      "price": 11.62,
-      "currency": "EUR",
+      "price": 12.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1240210/header.jpg"
       ],
@@ -1763,8 +1748,8 @@
       "description": "Uscito nel 2024. Recensioni positive su Steam: 97% di 9217.",
       "condition": "",
       "category": "",
-      "price": 10.73,
-      "currency": "EUR",
+      "price": 11.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/2113850/header.jpg"
       ],
@@ -1778,8 +1763,8 @@
       "description": "Uscito nel 2026. Recensioni positive su Steam: 97% di 9008.",
       "condition": "",
       "category": "",
-      "price": 35.77,
-      "currency": "EUR",
+      "price": 39.99,
+      "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/2162800/header.jpg"
       ],
@@ -1793,12 +1778,27 @@
       "description": "Recensioni positive su Steam: 97% di 8860.",
       "condition": "",
       "category": "",
-      "price": 22.35,
-      "currency": "EUR",
+      "price": 24.99,
+      "currency": "USD",
       "images": [
         "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3404260/c047bcb51618b08b5764cc3a5c15f1b50511e4ee/capsule_231x87.jpg?t=1790698491"
       ],
       "url": "https://store.steampowered.com/app/3404260",
+      "credit": "Dati: CheapShark. Immagine: Steam",
+      "creditUrl": "https://www.cheapshark.com"
+    },
+    {
+      "id": "game-328461",
+      "title": "IRON NEST: Heavy Turret Simulator",
+      "description": "Uscito nel 2026. Recensioni positive su Steam: 97% di 8349.",
+      "condition": "",
+      "category": "",
+      "price": 19.99,
+      "currency": "USD",
+      "images": [
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2950790/bf03649fac670faa45fa4fad684c43a3aeda04b3/capsule_231x87_alt_assets_1.jpg?t=1793491660"
+      ],
+      "url": "https://store.steampowered.com/app/2950790",
       "credit": "Dati: CheapShark. Immagine: Steam",
       "creditUrl": "https://www.cheapshark.com"
     }
