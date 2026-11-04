@@ -10,11 +10,10 @@ export const AUCTION_MODES = Object.freeze({
 export const HAMMER_COUNT = 3;
 
 const EURO = 100;
-const START_MULTIPLIER_MIN = 0.8;
-const START_MULTIPLIER_RANGE = 2.2;
+const START_RATIO_MIN = 0.1;
+const START_RATIO_RANGE = 0.7;
 const DESCENDING_STEP_RATIO = 0.08;
 const FLOOR_RATIO = 0.1;
-const MIN_START_CENTS = 5 * EURO;
 
 export function minimumNextBid(currentCents, minRaisePct) {
   const raiseInWholeEuros = Math.ceil((currentCents * minRaisePct) / 100 / EURO) * EURO;
@@ -28,6 +27,7 @@ function roundToNiceAmount(cents) {
   else if (euros < 100) unit = 5;
   else if (euros < 500) unit = 10;
   else if (euros < 2000) unit = 50;
+  else if (euros >= 20000) unit = 10 ** (Math.floor(Math.log10(euros)) - 1);
   return Math.max(unit, Math.round(euros / unit) * unit) * EURO;
 }
 
@@ -97,11 +97,19 @@ export function withdrawFromTurn(state, playerId) {
   };
 }
 
+// When the clock runs out the opener bids the minimum, because the opener cannot
+// withdraw. Everyone else is out of the round.
+export function expireTurn(state) {
+  return state.highBidCents === null
+    ? placeTurnBid(state, state.currentPlayerId, turnMinimumBid(state))
+    : withdrawFromTurn(state, state.currentPlayerId);
+}
+
 // Mode 2: the auctioneer lowers the price until someone bids, then raises it.
 
 export function createAuctioneerAuction({ valueCents, minRaisePct, rng = Math.random }) {
-  const multiplier = START_MULTIPLIER_MIN + rng() * START_MULTIPLIER_RANGE;
-  const startCents = Math.max(MIN_START_CENTS, roundToNiceAmount(valueCents * multiplier));
+  const ratio = START_RATIO_MIN + rng() * START_RATIO_RANGE;
+  const startCents = roundToNiceAmount(valueCents * ratio);
   return {
     mode: AUCTION_MODES.AUCTIONEER,
     phase: 'descending',

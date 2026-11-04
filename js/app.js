@@ -5,6 +5,7 @@ import {
   HAMMER_COUNT,
   auctioneerBid,
   auctioneerTick,
+  expireTurn,
   placeTurnBid,
   turnMinimumBid,
   withdrawFromTurn,
@@ -13,40 +14,97 @@ import {
   DEFAULT_SETTINGS,
   MAX_PLAYERS,
   MIN_PLAYERS,
+  REVEAL_PACES,
+  REVEAL_TIMINGS,
+  SCORE_MODES,
   SETTING_LIMITS,
+  TURN_TIMER_OPTIONS,
+  availableProducts,
   createGame,
   currentProduct,
   gameHighlights,
+  isLastRound,
   nextRound,
   parseEurosToCents,
   recordManualSale,
   revealPrice,
+  revealsAtEnd,
+  setLotAside,
+  spentCents,
   standings,
   startAuction,
   updateAuction,
   validatePlayerNames,
 } from './game.js';
-import { loadCatalog } from './products.js';
+import { playPodium, podiumSlots } from './podium.js';
+import { auctionSummary, loadCatalog } from './products.js';
+import { boardMarkup, playReveal, revealVerdict } from './reveal.js';
 
 const STORAGE_KEY = 'bidbattle.setup.v1';
 const PLAYER_KEYS = ['q', 'z', 't', 'b', 'p', 'm'];
+const URGENT_SECONDS = 5;
+const SKIP_KEYS = ['Enter', ' ', 'Escape'];
+const WHOLE_EURO_CENTS = 100000000;
+const MISSING_IMAGE = `data:image/svg+xml,${encodeURIComponent(
+  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450"><rect width="600" height="450" fill="#d9dde6"/>'
+  + '<text x="300" y="235" font-family="sans-serif" font-size="30" text-anchor="middle" fill="#55607a">Foto non disponibile</text></svg>',
+)}`;
 
+// Each glyph sketches how the price moves during that kind of auction.
 const MODE_INFO = {
   [AUCTION_MODES.TURNS]: {
     name: 'A turni',
     text: 'Un giocatore estratto a caso apre, gli altri rilanciano o si ritirano. Vince l\'ultimo rimasto.',
+    glyph: '<path d="M4 34h10V24h10V14h10V6h10"/>',
   },
   [AUCTION_MODES.AUCTIONEER]: {
     name: 'Battitore',
     text: 'Il gioco abbassa il prezzo finché qualcuno offre, poi lo alza. Vince chi resta in testa al tre.',
+    glyph: '<path d="M4 6l18 26L44 10"/><circle cx="22" cy="32" r="4" class="fill"/>',
   },
   [AUCTION_MODES.MANUAL]: {
     name: 'Libera',
     text: 'Gestite l\'asta tra di voi, poi inserite chi ha comprato e a quale prezzo.',
+    glyph: '<path d="M4 28c6-20 10-20 14-8s8 12 12 0 8-12 14 2"/>',
   },
 };
 
+const BIDDING_MODES = [AUCTION_MODES.TURNS, AUCTION_MODES.AUCTIONEER];
+
+const SETTING_INFO = {
+  rounds: { label: 'Round', step: 1, format: String, modes: Object.values(AUCTION_MODES) },
+  minRaisePct: { label: 'Rilancio minimo', step: 1, format: (value) => `${value}%`, modes: BIDDING_MODES },
+  tickSeconds: {
+    label: 'Secondi tra gli annunci',
+    step: 0.5,
+    format: (value) => `${String(value).replace('.', ',')} s`,
+    modes: [AUCTION_MODES.AUCTIONEER],
+  },
+};
+
+const TURN_TIMER_CHOICES = TURN_TIMER_OPTIONS.map((seconds) => ({
+  value: seconds,
+  label: seconds === 0 ? 'Nessuno' : `${seconds} s`,
+}));
+
+const REVEAL_PACE_CHOICES = [
+  { value: REVEAL_PACES.FULL, label: 'Con suspense' },
+  { value: REVEAL_PACES.QUICK, label: 'Rapida' },
+];
+
+const REVEAL_TIMING_CHOICES = [
+  { value: REVEAL_TIMINGS.EACH_ROUND, label: 'Subito' },
+  { value: REVEAL_TIMINGS.AT_END, label: 'Alla fine' },
+];
+
+const SCORE_MODE_CHOICES = [
+  { value: SCORE_MODES.EUROS, label: 'In euro' },
+  { value: SCORE_MODES.PERCENT, label: 'In percentuale' },
+];
+
 const euroFormat = new Intl.NumberFormat('it-IT', { style: 'currency', currency: 'EUR' });
+const wholeEuroFormat = new Intl.NumberFormat('it-IT', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 });
+const percentFormat = new Intl.NumberFormat('it-IT', { maximumFractionDigits: 1 });
 const dateFormat = new Intl.DateTimeFormat('it-IT', { dateStyle: 'medium', timeStyle: 'short' });
 
 const root = document.querySelector('#app');
@@ -57,6 +115,14 @@ let game = null;
 let imageIndex = 0;
 let errorMessage = '';
 let tickTimer = null;
+let introPlayed = false;
+let newPaddleIndex = null;
+let extrasOpen = hasCustomExtras(setup.settings);
+// The reveal or podium on screen, and whether it can still be skipped.
+let show = null;
+let showRunning = false;
+// True while the reveal plays: the board starts blank and the buyer's old score stays up.
+let revealStaged = false;
 
 function loadSetup() {
   const defaults = { names: ['', ''], settings: { ...DEFAULT_SETTINGS } };
@@ -72,6 +138,14 @@ function loadSetup() {
   }
 }
 
+// The extra options start open when they are in use, so nothing active stays out of sight.
+function hasCustomExtras(settings) {
+  return settings.excludedCategories.length > 0
+    || settings.turnSeconds !== DEFAULT_SETTINGS.turnSeconds
+    || settings.revealPace !== DEFAULT_SETTINGS.revealPace
+    || settings.revealTiming !== DEFAULT_SETTINGS.revealTiming;
+}
+
 function saveSetup() {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(setup));
@@ -84,8 +158,15 @@ function esc(value) {
   return String(value).replace(/[&<>"']/g, (char) => `&#${char.charCodeAt(0)};`);
 }
 
-const money = (cents) => euroFormat.format(cents / 100);
+// Cents mean nothing on a painting, and they would not fit on a phone.
+const money = (cents) => (
+  (Math.abs(cents) >= WHOLE_EURO_CENTS ? wholeEuroFormat : euroFormat).format(cents / 100)
+);
 const signedMoney = (cents) => `${cents > 0 ? '+' : ''}${money(cents)}`;
+const signedPercent = (points) => `${points > 0 ? '+' : ''}${percentFormat.format(points / 100)}%`;
+const signedScore = (score) => (
+  game.settings.scoreMode === SCORE_MODES.PERCENT ? signedPercent(score) : signedMoney(score)
+);
 const playerById = (id) => game.players.find((player) => player.id === id);
 const playerIndex = (id) => game.players.findIndex((player) => player.id === id);
 const deltaClass = (cents) => {
@@ -93,78 +174,191 @@ const deltaClass = (cents) => {
   return cents < 0 ? 'loss' : '';
 };
 
+const sourceById = (id) => catalog.sources.find((source) => source.id === id);
+
+// Only the categories of the chosen sources are on offer.
+const catalogCategories = (excludedSources) => [
+  ...new Set(availableProducts(catalog.products, [], excludedSources)
+    .map((product) => product.category).filter(Boolean)),
+].sort((a, b) => a.localeCompare(b, 'it'));
+
+const productCount = ({ excludedCategories, excludedSources }) => (
+  availableProducts(catalog.products, excludedCategories, excludedSources).length
+);
+
+const maxRoundsFor = (settings) => Math.min(SETTING_LIMITS.rounds.max, productCount(settings));
+
+const poolText = (count) => (count === 1 ? '1 prodotto disponibile' : `${count} prodotti disponibili`);
+
 // Screens
+
+function disc(index) {
+  return `<span class="disc p${index}" aria-hidden="true">${index + 1}</span>`;
+}
+
+function paddleInput(name, index, canRemove) {
+  const isNew = index === newPaddleIndex;
+  return `
+    <div class="paddle p${index} ${isNew ? 'rising' : ''}" style="--i: ${index}">
+      <div class="paddle-head">
+        <span class="paddle-number" aria-hidden="true">${index + 1}</span>
+        <input name="player" value="${esc(name)}" maxlength="16" required ${isNew ? 'data-autofocus' : ''}
+          aria-label="Nome giocatore ${index + 1}" placeholder="Nome" autocomplete="off">
+        ${canRemove
+          ? `<button type="button" class="paddle-remove" data-action="remove-player" data-index="${index}"
+              aria-label="Rimuovi giocatore ${index + 1}">✕</button>`
+          : ''}
+      </div>
+      <span class="paddle-handle" aria-hidden="true"></span>
+    </div>`;
+}
+
+function addPaddle(index) {
+  return `
+    <button type="button" class="paddle paddle-add" style="--i: ${index}" data-action="add-player">
+      <span class="paddle-head"><span class="paddle-plus" aria-hidden="true">+</span>Aggiungi giocatore</span>
+      <span class="paddle-handle" aria-hidden="true"></span>
+    </button>`;
+}
+
+function settingSlider(key, value, max, mode) {
+  const { label, step, format, modes } = SETTING_INFO[key];
+  const { min } = SETTING_LIMITS[key];
+  const shown = Math.min(Math.max(value, min), max);
+  return `
+    <label class="setting" data-modes="${modes.join(' ')}" ${modes.includes(mode) ? '' : 'hidden'}>
+      <span class="setting-label">${label}</span>
+      <output class="setting-value">${format(shown)}</output>
+      <input type="range" name="${key}" value="${shown}" min="${min}" max="${max}" step="${step}"
+        style="--fill: ${sliderFill(shown, min, max)}">
+    </label>`;
+}
+
+function sliderFill(value, min, max) {
+  return `${max === min ? 100 : ((value - min) / (max - min)) * 100}%`;
+}
+
+function settingChoice(name, label, choices, selected, modes = Object.values(AUCTION_MODES), mode = null) {
+  const options = choices.map(({ value, label: text }) => `
+    <label class="choice">
+      <input type="radio" name="${name}" value="${value}" ${value === selected ? 'checked' : ''}>
+      <span>${text}</span>
+    </label>`).join('');
+  return `
+    <div class="setting" role="radiogroup" aria-label="${label}" data-modes="${modes.join(' ')}"
+      ${mode === null || modes.includes(mode) ? '' : 'hidden'}>
+      <span class="setting-label">${label}</span>
+      <div class="segments">${options}</div>
+    </div>`;
+}
+
+function sourceMeta({ count, generatedAt }) {
+  if (count === 0) return 'Non ancora disponibile';
+  const lots = count === 1 ? '1 lotto' : `${count} lotti`;
+  return generatedAt ? `${lots}, aggiornati al ${dateFormat.format(new Date(generatedAt))}` : lots;
+}
+
+function sourceCard(source, excludedSources) {
+  const available = source.count > 0;
+  return `
+    <label class="mode-card source-card ${available ? '' : 'unavailable'}">
+      <input type="checkbox" name="source" value="${source.id}"
+        ${available && !excludedSources.includes(source.id) ? 'checked' : ''} ${available ? '' : 'disabled'}>
+      <span class="mode-body">
+        <svg viewBox="0 0 48 40" aria-hidden="true">${source.glyph}</svg>
+        <span>
+          <strong>${source.name}</strong>${source.text}
+          <small class="source-meta">${esc(sourceMeta(source))}</small>
+        </span>
+      </span>
+    </label>`;
+}
+
+function categoryField(settings) {
+  const { excludedCategories, excludedSources } = settings;
+  const categories = catalogCategories(excludedSources);
+  if (categories.length < 2) return '';
+  const chips = categories.map((category) => `
+    <label class="choice">
+      <input type="checkbox" name="category" value="${esc(category)}"
+        ${excludedCategories.includes(category) ? '' : 'checked'}>
+      <span>${esc(category)}</span>
+    </label>`).join('');
+  return `
+    <div class="setting" role="group" aria-label="Categorie">
+      <span class="setting-label">Categorie</span>
+      <div class="segments">${chips}</div>
+    </div>`;
+}
 
 function setupScreen() {
   const { names, settings } = setup;
-  const maxRounds = Math.min(SETTING_LIMITS.rounds.max, catalog.products.length);
-  const limits = SETTING_LIMITS;
-
-  const playerRows = names.map((name, index) => `
-    <div class="player-row">
-      <span class="dot p${index}" aria-hidden="true"></span>
-      <input name="player" value="${esc(name)}" maxlength="16" required
-        aria-label="Nome giocatore ${index + 1}" placeholder="Giocatore ${index + 1}" autocomplete="off">
-      ${names.length > MIN_PLAYERS
-        ? `<button type="button" class="ghost" data-action="remove-player" data-index="${index}"
-            aria-label="Rimuovi giocatore ${index + 1}">✕</button>`
-        : ''}
-    </div>`).join('');
+  const maxRounds = Math.max(SETTING_LIMITS.rounds.min, maxRoundsFor(settings));
+  const canAdd = names.length < MAX_PLAYERS;
+  const slots = names.length + (canAdd ? 1 : 0);
+  const paddles = names.map((name, index) => paddleInput(name, index, names.length > MIN_PLAYERS)).join('');
 
   const modeCards = Object.entries(MODE_INFO).map(([mode, info]) => `
     <label class="mode-card">
       <input type="radio" name="mode" value="${mode}" ${settings.mode === mode ? 'checked' : ''}>
-      <span><strong>${info.name}</strong>${info.text}</span>
+      <span class="mode-body">
+        <svg viewBox="0 0 48 40" aria-hidden="true">${info.glyph}</svg>
+        <span><strong>${info.name}</strong>${info.text}</span>
+      </span>
     </label>`).join('');
 
   return `
-    <section class="setup">
-      <header class="masthead">
-        <h1>BidBattle</h1>
-        <p>Aggiudicato. Ma era davvero un affare?</p>
-      </header>
-      <form id="setup-form" class="sheet" novalidate>
-        <fieldset>
-          <legend>Giocatori</legend>
-          ${playerRows}
-          ${names.length < MAX_PLAYERS
-            ? '<button type="button" class="ghost add" data-action="add-player">+ Aggiungi giocatore</button>'
-            : ''}
+    <form id="setup-form" class="setup ${introPlayed ? '' : 'intro'}" novalidate>
+      <div class="hall">
+        <header class="masthead">
+          <h1>BidBattle</h1>
+          <p>Aggiudicato. Ma era davvero un affare?</p>
+        </header>
+        <fieldset class="crowd-field">
+          <legend>Scrivete i nomi sulle palette</legend>
+          <div class="crowd" style="--slots: ${slots}; --spread: ${slots > 3 ? 1.32 : 0.84}; --stagger: ${slots > 3 ? 0.84 : 0.16}">
+            ${paddles}
+            ${canAdd ? addPaddle(names.length) : ''}
+          </div>
         </fieldset>
+      </div>
+      <div class="setup-sheet">
         <fieldset>
           <legend>Tipo di asta</legend>
-          <div class="mode-grid">${modeCards}</div>
+          <div class="mode-list">${modeCards}</div>
+        </fieldset>
+        <fieldset>
+          <legend>Fonti dei lotti</legend>
+          <div class="source-list">
+            ${catalog.sources.map((source) => sourceCard(source, settings.excludedSources)).join('')}
+          </div>
+          <p class="muted pool-note" data-pool-note>${poolText(productCount(settings))}</p>
         </fieldset>
         <fieldset>
           <legend>Impostazioni</legend>
-          <div class="settings-grid">
-            <label>Round
-              <input type="number" name="rounds" value="${settings.rounds}" required
-                min="${limits.rounds.min}" max="${maxRounds}">
-            </label>
-            <label>Rilancio minimo (%)
-              <input type="number" name="minRaisePct" value="${settings.minRaisePct}" required
-                min="${limits.minRaisePct.min}" max="${limits.minRaisePct.max}">
-            </label>
-            <label>Secondi tra gli annunci
-              <input type="number" name="tickSeconds" value="${settings.tickSeconds}" required step="0.5"
-                min="${limits.tickSeconds.min}" max="${limits.tickSeconds.max}">
-            </label>
+          <div class="settings">
+            ${settingSlider('rounds', settings.rounds, maxRounds, settings.mode)}
+            ${settingSlider('minRaisePct', settings.minRaisePct, SETTING_LIMITS.minRaisePct.max, settings.mode)}
+            ${settingSlider('tickSeconds', settings.tickSeconds, SETTING_LIMITS.tickSeconds.max, settings.mode)}
+            ${settingChoice('scoreMode', 'Punteggio', SCORE_MODE_CHOICES, settings.scoreMode)}
+            <p class="muted pool-note">In percentuale ogni lotto pesa uguale, quadro o scontrino: a metà del valore fai +50%, al doppio fai −100%.</p>
           </div>
+          <details class="extras" ${extrasOpen ? 'open' : ''}>
+            <summary>Altre opzioni</summary>
+            <div class="settings">
+              ${categoryField(settings)}
+              ${settingChoice('turnSeconds', 'Tempo per ogni offerta', TURN_TIMER_CHOICES, settings.turnSeconds, [AUCTION_MODES.TURNS], settings.mode)}
+              ${settingChoice('revealTiming', 'Quando rivelare i prezzi', REVEAL_TIMING_CHOICES, settings.revealTiming)}
+              ${settingChoice('revealPace', 'Rivelazione del prezzo', REVEAL_PACE_CHOICES, settings.revealPace)}
+            </div>
+          </details>
         </fieldset>
-        ${errorLine()}
-        <button class="primary" type="submit">Apri l'asta</button>
-      </form>
-      ${catalogNote()}
-    </section>`;
-}
-
-function catalogNote() {
-  if (catalog.source === 'mock') {
-    return '<p class="catalog-note">Prodotti e prezzi di prova, inventati.</p>';
-  }
-  if (!catalog.generatedAt) return '';
-  return `<p class="catalog-note">Prezzi eBay aggiornati al ${esc(dateFormat.format(new Date(catalog.generatedAt)))}.</p>`;
+        <div class="setup-end">
+          ${errorLine()}
+          <button class="primary open-auction" type="submit">Apri l'asta</button>
+        </div>
+      </div>
+    </form>`;
 }
 
 function errorLine() {
@@ -173,22 +367,35 @@ function errorLine() {
 
 function scoreboard() {
   const auction = game.phase === 'auction' ? game.auction : null;
+  const stagedLot = revealStaged ? game.history.at(-1) : null;
+  // Until the first price is out there is no profit to show, only what each player has spent.
+  const showSpending = revealsAtEnd(game) && game.phase !== 'reveal';
   const cards = game.players.map((player, index) => {
+    const buying = stagedLot?.buyerId === player.id;
+    const shownScore = buying ? player.score - stagedLot.scoreDelta : player.score;
     const out = auction?.mode === AUCTION_MODES.TURNS && !auction.activeIds.includes(player.id);
+    const leading = auction?.leaderId === player.id;
+    const turn = auction?.currentPlayerId === player.id;
+    const state = (out && 'Ritirato') || (turn && 'Di turno') || (leading && 'In testa') || '';
     const classes = [
       'score',
-      auction?.leaderId === player.id ? 'leading' : '',
-      auction?.currentPlayerId === player.id ? 'turn' : '',
+      `p${index}`,
+      leading ? 'leading' : '',
+      turn ? 'turn' : '',
       out ? 'out' : '',
+      buying ? 'lit' : '',
     ].join(' ');
     return `
-      <li class="${classes}">
-        <span class="dot p${index}" aria-hidden="true"></span>
+      <li class="${classes}" data-player="${player.id}">
+        ${disc(index)}
         <span class="score-name">${esc(player.name)}</span>
-        <span class="amount ${deltaClass(player.profitCents)}">${signedMoney(player.profitCents)}</span>
+        ${showSpending
+          ? `<span class="amount">Speso ${money(spentCents(game, player.id))}</span>`
+          : `<span class="amount ${deltaClass(shownScore)}">${signedScore(shownScore)}</span>`}
+        ${state ? `<span class="score-state">${state}</span>` : ''}
       </li>`;
   }).join('');
-  return `<ol class="scoreboard" aria-label="Guadagni dei giocatori">${cards}</ol>`;
+  return `<ol class="scoreboard" aria-label="${showSpending ? 'Spese' : 'Guadagni'} dei giocatori">${cards}</ol>`;
 }
 
 function productPanel(product) {
@@ -201,30 +408,54 @@ function productPanel(product) {
           <img src="${esc(src)}" alt="">
         </button>`).join('')}
     </div>`;
-  const tags = [product.category, product.condition].filter(Boolean)
+  const tags = [sourceById(product.source)?.name, product.category, product.condition].filter(Boolean)
     .map((tag) => `<span class="tag">${esc(tag)}</span>`).join('');
 
   return `
     <article class="lot">
+      <p class="lot-number">Lotto ${game.roundIndex + 1}</p>
       <img class="lot-image" src="${esc(product.images[safeIndex])}" alt="${esc(product.title)}">
       ${thumbs}
       <div class="lot-text">
         <div class="tags">${tags}</div>
         <h2>${esc(product.title)}</h2>
         <p>${esc(product.description)}</p>
+        ${auctionLine(product)}
+        ${creditLine(product)}
       </div>
     </article>`;
+}
+
+function auctionLine({ auction }) {
+  const summary = auctionSummary(auction);
+  return summary ? `<p class="lot-auction">${esc(summary)}</p>` : '';
+}
+
+function creditLine({ credit, creditUrl }) {
+  if (!credit) return '';
+  const text = esc(credit);
+  return `<p class="lot-credit">${creditUrl
+    ? `<a href="${esc(creditUrl)}" target="_blank" rel="noopener noreferrer">${text}</a>`
+    : text}</p>`;
 }
 
 function previewPanel() {
   const mode = MODE_INFO[game.settings.mode];
   return `
     <div class="panel">
-      <p class="eyebrow">Lotto ${game.roundIndex + 1}</p>
       <h3>Guardate bene il prodotto</h3>
-      <p>Sfogliate le immagini e leggete la descrizione. Il prezzo vero resta nascosto fino alla fine del round.</p>
+      <p>Sfogliate le immagini e leggete la descrizione. Il prezzo vero resta nascosto fino alla fine ${revealsAtEnd(game) ? 'della partita' : 'del round'}.</p>
       <p class="muted">Asta: ${mode.name}</p>
       <button class="primary" data-action="start-auction" data-autofocus>Inizia l'asta</button>
+    </div>`;
+}
+
+function turnClock(seconds) {
+  if (!seconds) return '';
+  return `
+    <div class="turn-clock" role="timer" style="--clock: ${seconds}s">
+      <span class="turn-clock-track"><span class="turn-clock-bar"></span></span>
+      <span class="turn-clock-time"><span data-clock>${seconds}</span> s</span>
     </div>`;
 }
 
@@ -234,9 +465,10 @@ function turnPanel(auction) {
   const opening = auction.highBidCents === null;
   const leader = auction.leaderId ? playerById(auction.leaderId) : null;
   return `
-    <div class="panel">
+    <div class="panel flood p${playerIndex(player.id)}">
       <p class="eyebrow">${opening ? 'Offerta iniziale' : 'Tocca a'}</p>
-      <h3 class="turn-name"><span class="dot p${playerIndex(player.id)}" aria-hidden="true"></span>${esc(player.name)}</h3>
+      <h3 class="turn-name">${disc(playerIndex(player.id))}${esc(player.name)}</h3>
+      ${turnClock(game.settings.turnSeconds)}
       <p class="big-price">${opening ? 'Nessuna offerta' : money(auction.highBidCents)}</p>
       ${leader ? `<p class="muted">In testa: ${esc(leader.name)}</p>` : '<p class="muted">Sei stato estratto per aprire l\'asta.</p>'}
       <form id="bid-form" class="bid-form">
@@ -272,12 +504,13 @@ function auctioneerPanel(auction) {
     const leading = player.id === auction.leaderId;
     return `
       <button class="bid-button p${index}" data-bid-player="${player.id}" ${leading ? 'disabled' : ''}>
-        <span>${esc(player.name)}</span>
-        <small>${leading ? 'In testa' : `Offro · tasto ${PLAYER_KEYS[index].toUpperCase()}`}</small>
+        <span class="bid-name">${esc(player.name)}</span>
+        <small>${leading ? 'In testa' : 'Offro'}</small>
+        <kbd aria-label="Tasto ${PLAYER_KEYS[index].toUpperCase()}">${PLAYER_KEYS[index].toUpperCase()}</kbd>
       </button>`;
   }).join('');
   return `
-    <div class="panel auctioneer">
+    <div class="panel auctioneer ${auction.phase}">
       <p class="eyebrow">${auction.phase === 'descending' ? 'Il prezzo scende' : 'Il prezzo sale'}</p>
       <p class="big-price" aria-live="polite">${money(auction.announcedCents)}</p>
       <p class="call">${auctioneerLine(auction)}</p>
@@ -290,7 +523,7 @@ function manualPanel() {
   const options = game.players.map((player, index) => `
     <label class="choice">
       <input type="radio" name="buyer" value="${player.id}">
-      <span><span class="dot p${index}" aria-hidden="true"></span>${esc(player.name)}</span>
+      <span>${disc(index)}${esc(player.name)}</span>
     </label>`).join('');
   return `
     <div class="panel">
@@ -313,41 +546,73 @@ function manualPanel() {
     </div>`;
 }
 
+function hammerAction() {
+  if (!revealsAtEnd(game)) {
+    return '<button class="primary" data-action="reveal" data-autofocus>Rivela il prezzo vero</button>';
+  }
+  return isLastRound(game)
+    ? '<button class="primary" data-action="set-lot-aside" data-autofocus>Rivela i prezzi</button>'
+    : `<p class="muted">Il prezzo resta nascosto fino alla fine della partita.</p>
+       <button class="primary" data-action="set-lot-aside" data-autofocus>Prossimo lotto</button>`;
+}
+
 function hammerPanel() {
   const { buyerId, priceCents } = game.sale;
   const sold = buyerId !== null;
   return `
-    <div class="panel hammer">
-      <p class="eyebrow">${sold ? 'Aggiudicato' : 'Invenduto'}</p>
+    <div class="panel hammer ${sold ? `flood p${playerIndex(buyerId)}` : ''}">
+      <h3 class="stamp">${sold ? 'Aggiudicato!' : 'Invenduto'}</h3>
       ${sold
-        ? `<h3>${esc(playerById(buyerId).name)}</h3><p class="big-price">${money(priceCents)}</p>`
-        : '<h3>Nessuno ha comprato questo lotto</h3>'}
-      <button class="primary" data-action="reveal" data-autofocus>Rivela il prezzo vero</button>
+        ? `<p class="turn-name">${disc(playerIndex(buyerId))}${esc(playerById(buyerId).name)}</p>
+           <p class="big-price">${money(priceCents)}</p>`
+        : '<p>Nessuno ha comprato questo lotto.</p>'}
+      ${hammerAction()}
     </div>`;
 }
 
+function deltaLabel(cents) {
+  if (cents > 0) return 'Guadagno';
+  return cents < 0 ? 'Perdita' : 'Saldo';
+}
+
+function verdictClass({ buyerId, deltaCents }) {
+  return buyerId === null ? '' : `verdict-${deltaClass(deltaCents) || 'even'}`;
+}
+
 function revealPanel() {
-  const { product, buyerId, priceCents, deltaCents } = game.history.at(-1);
-  const last = game.roundIndex + 1 >= game.settings.rounds;
-  const verdict = deltaCents > 0 ? 'Affare!' : deltaCents < 0 ? 'Pagato troppo!' : 'Pari.';
+  const lot = game.history.at(-1);
+  const { product, buyerId, priceCents, deltaCents, scoreDelta } = lot;
+  const nextLabel = revealsAtEnd(game) ? 'Prossimo prezzo' : 'Prossimo lotto';
+  const verdict = revealVerdict(lot);
+  const paid = buyerId === null ? '' : `
+    <p class="paid">
+      ${disc(playerIndex(buyerId))}
+      <span class="paid-who">${esc(playerById(buyerId).name)} ha pagato</span>
+      <strong class="paid-amount">${money(priceCents)}</strong>
+    </p>`;
   const outcome = buyerId === null
     ? '<p class="muted">Lotto invenduto: nessuno guadagna o perde.</p>'
     : `
       <dl class="ledger">
-        <div><dt>Compratore</dt><dd>${esc(playerById(buyerId).name)}</dd></div>
-        <div><dt>Pagato</dt><dd>${money(priceCents)}</dd></div>
-        <div class="total ${deltaClass(deltaCents)}"><dt>${verdict}</dt><dd>${signedMoney(deltaCents)}</dd></div>
+        <div class="total ${deltaClass(deltaCents)}"><dt>${deltaLabel(deltaCents)}</dt><dd data-delta>${signedScore(scoreDelta)}</dd></div>
       </dl>`;
+  const source = sourceById(product.source);
   const link = product.url
-    ? `<p><a href="${esc(product.url)}" target="_blank" rel="noopener noreferrer">Vedi su eBay</a></p>`
+    ? `<a href="${esc(product.url)}" target="_blank" rel="noopener noreferrer">Vedi su ${esc(source.linkLabel)}</a>`
     : '';
   return `
-    <div class="panel reveal">
+    <div class="panel reveal ${revealStaged ? 'staged' : verdictClass(lot)}">
       <p class="eyebrow">Prezzo vero</p>
-      <p class="big-price">${money(product.priceCents)}</p>
+      <p class="verdict-stamp">${verdict.label}</p>
+      ${boardMarkup(product.priceCents, { staged: revealStaged })}
+      ${paid}
+      <p class="sr-only" aria-live="polite">${revealStaged ? '' : money(product.priceCents)}</p>
       ${outcome}
-      ${link}
-      <button class="primary" data-action="next-round" data-autofocus>${last ? 'Classifica finale' : 'Prossimo lotto'}</button>
+      <p class="reveal-link">${esc(source.priceNote)} ${link}</p>
+      <div class="reveal-foot">
+        <button class="primary" data-action="next-round" data-autofocus>${isLastRound(game) ? 'Classifica finale' : nextLabel}</button>
+        <p class="skip-hint">Tocca lo schermo per saltare</p>
+      </div>
     </div>`;
 }
 
@@ -358,7 +623,7 @@ function highlightCard(label, lot) {
       <p class="eyebrow">${label}</p>
       <h3>${esc(playerById(lot.buyerId).name)}</h3>
       <p>${esc(lot.product.title)}</p>
-      <p class="amount ${deltaClass(lot.deltaCents)}">${signedMoney(lot.deltaCents)}</p>
+      <p class="amount ${deltaClass(lot.scoreDelta)}">${signedScore(lot.scoreDelta)}</p>
     </div>`;
 }
 
@@ -371,41 +636,63 @@ function highlightCards(bestDeal, worstBuy) {
     </div>`;
 }
 
+function podiumSlot(player) {
+  const index = playerIndex(player.id);
+  return `
+    <li class="podium-slot rank-${player.rank} p${index}" data-rank="${player.rank}">
+      <div class="paddle p${index}">
+        <div class="paddle-head">
+          <span class="paddle-name">${esc(player.name)}</span>
+        </div>
+        <span class="paddle-handle" aria-hidden="true"></span>
+      </div>
+      <div class="podium-step">
+        <span class="podium-rank">${player.rank}</span>
+        <span class="amount ${deltaClass(player.score)}" data-score="${player.score}">${signedScore(0)}</span>
+      </div>
+    </li>`;
+}
+
 function finishedScreen() {
   const ranking = standings(game);
   const winners = ranking.filter((player) => player.rank === 1);
-  const rows = ranking.map((player) => `
+  const slots = podiumSlots(ranking);
+  const rows = ranking.slice(slots.length).map((player) => `
     <li class="${player.rank === 1 ? 'winner' : ''}">
       <span class="rank">${player.rank}</span>
-      <span class="dot p${playerIndex(player.id)}" aria-hidden="true"></span>
+      ${disc(playerIndex(player.id))}
       <span class="score-name">${esc(player.name)}</span>
-      <span class="amount ${deltaClass(player.profitCents)}">${signedMoney(player.profitCents)}</span>
+      <span class="amount ${deltaClass(player.score)}">${signedScore(player.score)}</span>
     </li>`).join('');
   const { bestDeal, worstBuy } = gameHighlights(game);
-  const lots = game.history.map(({ product, buyerId, priceCents, deltaCents }) => `
+  const lots = game.history.map(({ product, buyerId, priceCents, scoreDelta }) => `
     <tr>
       <td>${esc(product.title)}</td>
       <td>${buyerId ? esc(playerById(buyerId).name) : '—'}</td>
       <td class="num">${priceCents === null ? '—' : money(priceCents)}</td>
       <td class="num">${money(product.priceCents)}</td>
-      <td class="num ${deltaClass(deltaCents)}">${buyerId ? signedMoney(deltaCents) : '—'}</td>
+      <td class="num ${deltaClass(scoreDelta)}">${buyerId ? signedScore(scoreDelta) : '—'}</td>
     </tr>`).join('');
 
   return `
-    <section class="final">
-      <header class="masthead">
-        <p class="eyebrow">Fine dell'asta</p>
-        <h1>${winners.length > 1 ? 'Pareggio' : `Vince ${esc(winners[0].name)}`}</h1>
+    <section class="final staged">
+      <header class="final-head">
+        <p>Fine dell'asta</p>
+        <h1 class="final-title">${winners.length > 1 ? 'Pareggio' : `Vince ${esc(winners[0].name)}`}</h1>
       </header>
-      <ol class="ranking">${rows}</ol>
-      ${highlightCards(bestDeal, worstBuy)}
-      <div class="sheet table-wrap">
-        <table>
-          <thead><tr><th>Lotto</th><th>Compratore</th><th class="num">Pagato</th><th class="num">Valore</th><th class="num">Esito</th></tr></thead>
-          <tbody>${lots}</tbody>
-        </table>
+      <ol class="podium" style="--slots: ${slots.length}" aria-label="Podio">${slots.map(podiumSlot).join('')}</ol>
+      <p class="podium-hint">Tocca lo schermo per saltare</p>
+      <div class="final-rest">
+        ${rows ? `<ol class="ranking" start="${slots.length + 1}">${rows}</ol>` : ''}
+        ${highlightCards(bestDeal, worstBuy)}
+        <div class="sheet table-wrap">
+          <table>
+            <thead><tr><th>Lotto</th><th>Compratore</th><th class="num">Pagato</th><th class="num">Valore</th><th class="num">Esito</th></tr></thead>
+            <tbody>${lots}</tbody>
+          </table>
+        </div>
+        <button class="primary" data-action="new-game" data-autofocus>Nuova partita</button>
       </div>
-      <button class="primary" data-action="new-game" data-autofocus>Nuova partita</button>
     </section>`;
 }
 
@@ -418,23 +705,41 @@ function actionPanel() {
   return manualPanel();
 }
 
+function roundProgress() {
+  const { rounds } = game.settings;
+  const steps = Array.from({ length: rounds }, (_, index) => (
+    `<span class="${index <= game.roundIndex ? 'done' : ''}"></span>`
+  )).join('');
+  return `<span class="progress" aria-hidden="true">${steps}</span>`;
+}
+
 function gameScreen() {
   if (game.phase === 'finished') return finishedScreen();
+  const roundWord = revealsAtEnd(game) && game.phase === 'reveal' ? 'Prezzo' : 'Round';
   return `
-    <header class="topbar">
-      <span class="brand">BidBattle</span>
-      <span class="round">Round ${game.roundIndex + 1} di ${game.settings.rounds}</span>
-      <button class="ghost" data-action="quit">Esci</button>
-    </header>
-    ${scoreboard()}
-    <div class="stage ${game.phase === 'preview' ? '' : 'action-first'}">
-      ${productPanel(currentProduct(game))}
-      ${actionPanel()}
+    <div class="game">
+      <header class="topbar">
+        <span class="brand">BidBattle</span>
+        <span class="round">${roundWord} ${game.roundIndex + 1} di ${game.settings.rounds}</span>
+        ${roundProgress()}
+        <button class="ghost" data-action="quit">Esci</button>
+      </header>
+      ${scoreboard()}
+      <div class="stage ${game.phase === 'preview' ? '' : 'action-first'}">
+        ${productPanel(currentProduct(game))}
+        ${actionPanel()}
+      </div>
     </div>`;
 }
 
 function render() {
+  // The sheet scrolls on its own, so drawing it again must not send it back to the top.
+  const sheetScroll = root.querySelector('.setup-sheet')?.scrollTop ?? 0;
   root.innerHTML = game ? gameScreen() : setupScreen();
+  if (!game) {
+    introPlayed = true;
+    root.querySelector('.setup-sheet').scrollTop = sheetScroll;
+  }
   const focusTarget = root.querySelector('#bid-form input[name="amount"]')
     ?? root.querySelector('[data-autofocus]');
   focusTarget?.focus({ preventScroll: true });
@@ -446,12 +751,65 @@ function render() {
 
 function setGame(nextGame) {
   const phaseChanged = nextGame.phase !== game?.phase;
+  // At the end of the game one reveal follows another, so the phase alone is not enough.
+  const newReveal = nextGame.history.length > (game?.history.length ?? 0);
   const roundChanged = nextGame.roundIndex !== game?.roundIndex;
   game = nextGame;
   errorMessage = '';
   if (roundChanged) imageIndex = 0;
+  stopShow();
+  revealStaged = newReveal;
   render();
-  if (phaseChanged) window.scrollTo(0, 0);
+  if (phaseChanged || newReveal) window.scrollTo(0, 0);
+  if (revealStaged) startReveal();
+  else if (phaseChanged && game.phase === 'finished') startPodium();
+}
+
+function stopShow() {
+  show?.cancel();
+  show = null;
+  showRunning = false;
+  revealStaged = false;
+}
+
+function startPodium() {
+  showRunning = true;
+  show = playPodium({
+    section: root.querySelector('.final'),
+    format: signedScore,
+    onDone: () => {
+      showRunning = false;
+      root.querySelector('[data-autofocus]').focus({ preventScroll: true });
+    },
+  });
+}
+
+function startReveal() {
+  const lot = game.history.at(-1);
+  const panel = root.querySelector('.reveal');
+  const buyer = lot.buyerId === null ? null : playerById(lot.buyerId);
+  showRunning = true;
+  show = playReveal({
+    panel,
+    valueCents: lot.product.priceCents,
+    delta: lot.scoreDelta,
+    verdict: revealVerdict(lot),
+    verdictClass: verdictClass(lot),
+    pace: game.settings.revealPace,
+    score: buyer && {
+      card: root.querySelector(`[data-player="${buyer.id}"]`),
+      from: buyer.score - lot.scoreDelta,
+      to: buyer.score,
+    },
+    formatSigned: signedScore,
+    toneClass: deltaClass,
+    onDone: () => {
+      showRunning = false;
+      revealStaged = false;
+      panel.querySelector('.sr-only').textContent = money(lot.product.priceCents);
+      panel.querySelector('[data-autofocus]').focus({ preventScroll: true });
+    },
+  });
 }
 
 function showError(message) {
@@ -467,10 +825,38 @@ function clearTick() {
 
 function scheduleTick() {
   clearTick();
-  if (game?.phase !== 'auction' || game.auction.mode !== AUCTION_MODES.AUCTIONEER) return;
-  tickTimer = setTimeout(() => {
-    setGame(updateAuction(game, auctioneerTick(game.auction)));
-  }, game.settings.tickSeconds * 1000);
+  if (game?.phase !== 'auction') return;
+  if (game.auction.mode === AUCTION_MODES.AUCTIONEER) {
+    tickTimer = setTimeout(() => {
+      setGame(updateAuction(game, auctioneerTick(game.auction)));
+    }, game.settings.tickSeconds * 1000);
+  } else if (game.auction.mode === AUCTION_MODES.TURNS && game.settings.turnSeconds > 0) {
+    runTurnClock(game.settings.turnSeconds);
+  }
+}
+
+// Only the clock's own text changes, so a half-typed bid is never redrawn.
+function runTurnClock(seconds) {
+  let left = seconds;
+  const tick = () => {
+    left -= 1;
+    if (left <= 0) {
+      expireCurrentTurn();
+      return;
+    }
+    root.querySelector('[data-clock]').textContent = left;
+    root.querySelector('.turn-clock').classList.toggle('urgent', left <= URGENT_SECONDS);
+    tickTimer = setTimeout(tick, 1000);
+  };
+  tickTimer = setTimeout(tick, 1000);
+}
+
+function expireCurrentTurn() {
+  const { auction } = game;
+  const { name } = playerById(auction.currentPlayerId);
+  const opening = auction.highBidCents === null;
+  setGame(updateAuction(game, expireTurn(auction)));
+  showError(`Tempo scaduto: ${name} ${opening ? 'apre con il minimo' : 'si ritira'}.`);
 }
 
 function bidAsAuctioneerPlayer(playerId) {
@@ -484,6 +870,7 @@ function readSetupForm() {
   const form = root.querySelector('#setup-form');
   if (!form) return;
   const data = new FormData(form);
+  extrasOpen = form.querySelector('.extras').open;
   setup = {
     names: data.getAll('player').map(String),
     settings: {
@@ -491,17 +878,58 @@ function readSetupForm() {
       rounds: Number(data.get('rounds')),
       minRaisePct: Number(data.get('minRaisePct')),
       tickSeconds: Number(data.get('tickSeconds')),
+      turnSeconds: Number(data.get('turnSeconds')),
+      revealPace: data.get('revealPace'),
+      revealTiming: data.get('revealTiming'),
+      scoreMode: data.get('scoreMode'),
+      excludedCategories: excludedCategoriesFrom(data),
+      excludedSources: excludedSourcesFrom(data),
     },
   };
 }
 
+function excludedSourcesFrom(data) {
+  const chosen = data.getAll('source');
+  return catalog.sources.map(({ id }) => id).filter((id) => !chosen.includes(id));
+}
+
+// Categories hidden with their source keep their state for when the source returns.
+function excludedCategoriesFrom(data) {
+  const chosen = data.getAll('category');
+  const shown = [...root.querySelectorAll('input[name="category"]')].map((input) => input.value);
+  const hidden = setup.settings.excludedCategories.filter((category) => !shown.includes(category));
+  return [...hidden, ...shown.filter((category) => !chosen.includes(category))];
+}
+
+// The rounds slider cannot go past the products left in the chosen categories.
+function syncCategories(form) {
+  const data = new FormData(form);
+  const settings = {
+    excludedCategories: excludedCategoriesFrom(data),
+    excludedSources: excludedSourcesFrom(data),
+  };
+  form.querySelector('[data-pool-note]').textContent = poolText(productCount(settings));
+  const slider = form.elements.rounds;
+  slider.max = Math.max(SETTING_LIMITS.rounds.min, maxRoundsFor(settings));
+  syncSlider(slider);
+}
+
+// Changing a source changes the categories on offer, so the form is drawn again.
+function changeSources(input) {
+  readSetupForm();
+  render();
+  root.querySelector(`input[name="source"][value="${input.value}"]`).focus({ preventScroll: true });
+}
+
 function settingsError(settings) {
+  if (productCount({ ...settings, excludedCategories: [] }) === 0) return 'Scegli almeno una fonte.';
+  if (productCount(settings) === 0) return 'Scegli almeno una categoria.';
   const labels = {
     rounds: 'I round',
     minRaisePct: 'Il rilancio minimo',
     tickSeconds: 'I secondi tra gli annunci',
   };
-  const maxRounds = Math.min(SETTING_LIMITS.rounds.max, catalog.products.length);
+  const maxRounds = maxRoundsFor(settings);
   for (const [key, label] of Object.entries(labels)) {
     const { min } = SETTING_LIMITS[key];
     const max = key === 'rounds' ? maxRounds : SETTING_LIMITS[key].max;
@@ -558,7 +986,9 @@ const actions = {
   'add-player': () => {
     readSetupForm();
     setup.names.push('');
+    newPaddleIndex = setup.names.length - 1;
     render();
+    newPaddleIndex = null;
   },
   'remove-player': (element) => {
     readSetupForm();
@@ -579,6 +1009,7 @@ const actions = {
     setGame(updateAuction(game, withdrawFromTurn(auction, auction.currentPlayerId)));
   },
   reveal: () => setGame(revealPrice(game)),
+  'set-lot-aside': () => setGame(setLotAside(game)),
   'next-round': () => setGame(nextRound(game)),
   'new-game': () => leaveGame(),
   quit: () => {
@@ -588,6 +1019,7 @@ const actions = {
 
 function leaveGame() {
   clearTick();
+  stopShow();
   game = null;
   errorMessage = '';
   imageIndex = 0;
@@ -612,6 +1044,32 @@ root.addEventListener('pointerdown', (event) => {
   if (bidButton && !bidButton.disabled) bidAsAuctioneerPlayer(bidButton.dataset.bidPlayer);
 });
 
+// Lot photos live on other sites, and a closed auction can take its photo away.
+root.addEventListener('error', (event) => {
+  const image = event.target;
+  if (image.tagName === 'IMG' && image.src !== MISSING_IMAGE) image.src = MISSING_IMAGE;
+}, true);
+
+function syncSlider(slider) {
+  const value = Number(slider.value);
+  slider.style.setProperty('--fill', sliderFill(value, Number(slider.min), Number(slider.max)));
+  slider.closest('.setting').querySelector('output').textContent = SETTING_INFO[slider.name].format(value);
+}
+
+root.addEventListener('input', (event) => {
+  if (event.target.type === 'range') syncSlider(event.target);
+});
+
+// Only the settings that affect the chosen auction stay on screen.
+root.addEventListener('change', (event) => {
+  if (event.target.name === 'category') syncCategories(event.target.form);
+  if (event.target.name === 'source') changeSources(event.target);
+  if (event.target.name !== 'mode') return;
+  root.querySelectorAll('.setting[data-modes]').forEach((setting) => {
+    setting.hidden = !setting.dataset.modes.split(' ').includes(event.target.value);
+  });
+});
+
 root.addEventListener('submit', (event) => {
   event.preventDefault();
   if (event.target.id === 'setup-form') startGame();
@@ -619,7 +1077,20 @@ root.addEventListener('submit', (event) => {
   if (event.target.id === 'manual-form') submitManualSale(event.target);
 });
 
+// While a show plays, a click anywhere skips it instead of reaching the page.
+document.addEventListener('click', (event) => {
+  if (!showRunning || event.target.closest('[data-action="quit"]')) return;
+  event.preventDefault();
+  event.stopPropagation();
+  show.skip();
+}, true);
+
 document.addEventListener('keydown', (event) => {
+  if (showRunning && SKIP_KEYS.includes(event.key)) {
+    event.preventDefault();
+    show.skip();
+    return;
+  }
   if (event.repeat || event.ctrlKey || event.metaKey || event.altKey) return;
   const player = game?.players[PLAYER_KEYS.indexOf(event.key.toLowerCase())];
   if (player) bidAsAuctioneerPlayer(player.id);

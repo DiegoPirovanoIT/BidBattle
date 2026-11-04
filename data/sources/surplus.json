@@ -1,0 +1,1606 @@
+{
+  "source": "surplus",
+  "generatedAt": "2026-11-04T11:10:12.201Z",
+  "products": [
+    {
+      "id": "gsa-4-1-QSC-I-27-032-003",
+      "title": "2020 Ford F150",
+      "description": "Messo all'asta da Natural Resources Conservation Service, a DOUGLAS (AZ).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 16656.15,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27032003.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/380871",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-21",
+        "endsAt": "2026-11-04",
+        "bidders": 9
+      }
+    },
+    {
+      "id": "gsa-4-1-QSC-I-27-032-004",
+      "title": "2017 Ford F150",
+      "description": "Messo all'asta da Natural Resources Conservation Service, a TUCSON (AZ).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 13695.25,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27032004.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/380872",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-21",
+        "endsAt": "2026-11-04",
+        "bidders": 11
+      }
+    },
+    {
+      "id": "gsa-4-1-QSC-I-27-032-014",
+      "title": "2020 Ford F150",
+      "description": "Messo all'asta da Fish and Wildlife Service, a Los Banos (CA).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 3408.16,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27032014.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/380882",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-21",
+        "endsAt": "2026-11-04",
+        "bidders": 4
+      }
+    },
+    {
+      "id": "gsa-4-1-QSC-I-27-032-016",
+      "title": "2009 International WorkStar 7400",
+      "description": "Messo all'asta da Fish and Wildlife Service, a Tulelake (CA).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 11727.29,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27032016.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/380883",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-21",
+        "endsAt": "2026-11-04",
+        "bidders": 4
+      }
+    },
+    {
+      "id": "gsa-4-1-QSC-I-27-032-018",
+      "title": "One Lot of Laptops (Est 4 ea)",
+      "description": "Messo all'asta da Bureau of Land Management, a SACRAMENTO (CA).",
+      "condition": "",
+      "category": "Elettronica",
+      "price": 246.89,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27032018.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/380885",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-21",
+        "endsAt": "2026-11-04",
+        "bidders": 4
+      }
+    },
+    {
+      "id": "gsa-4-1-QSC-I-27-032-019",
+      "title": "One Lot of Laptops (Est 7 ea)",
+      "description": "Messo all'asta da Bureau of Land Management, a REDDING (CA).",
+      "condition": "",
+      "category": "Elettronica",
+      "price": 287.14,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27032019.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/380886",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-21",
+        "endsAt": "2026-11-04",
+        "bidders": 5
+      }
+    },
+    {
+      "id": "gsa-4-1-QSC-I-27-032-022",
+      "title": "One Lot Of Desktop, Laptop, And Excess Network Equipment",
+      "description": "Messo all'asta da Bureau of Land Management, a RENO (NV).",
+      "condition": "",
+      "category": "Elettronica",
+      "price": 3815.17,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27032022.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/380889",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-21",
+        "endsAt": "2026-11-04",
+        "bidders": 7
+      }
+    },
+    {
+      "id": "gsa-4-1-QSC-I-27-032-023",
+      "title": "Mining, Rock Drilling, Earth Boring & Equipment",
+      "description": "Messo all'asta da Bureau of Reclamation, a Yuma (AZ).",
+      "condition": "",
+      "category": "Macchinari",
+      "price": 138652.15,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27032023.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/380890",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-21",
+        "endsAt": "2026-11-04",
+        "bidders": 7
+      }
+    },
+    {
+      "id": "gsa-4-1-QSC-I-27-032-024",
+      "title": "Screening Plant Sand Gravel",
+      "description": "Messo all'asta da Bureau of Reclamation, a Yuma (AZ).",
+      "condition": "",
+      "category": "Macchinari",
+      "price": 58153.4,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27032024.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/380891",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-21",
+        "endsAt": "2026-11-04",
+        "bidders": 7
+      }
+    },
+    {
+      "id": "gsa-4-1-QSC-I-27-032-026",
+      "title": "2012 Polaris ATV (Scrap)",
+      "description": "Messo all'asta da National Park Service, a Boulder City (NV).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 207.53,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27032026.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/380893",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-21",
+        "endsAt": "2026-11-04",
+        "bidders": 3
+      }
+    },
+    {
+      "id": "gsa-4-1-QSC-I-27-032-027",
+      "title": "2 ea Finn Model hydroseeders (Salvage)",
+      "description": "Messo all'asta da National Institute of Food and Agriculture, a Davis (CA).",
+      "condition": "",
+      "category": "Varie",
+      "price": 921.37,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27032027.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/380894",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-21",
+        "endsAt": "2026-11-04",
+        "bidders": 3
+      }
+    },
+    {
+      "id": "gsa-4-1-QSC-I-27-032-028",
+      "title": "Diesel Tank",
+      "description": "Messo all'asta da National Institute of Food and Agriculture, a Davis (CA).",
+      "condition": "",
+      "category": "Varie",
+      "price": 143.12,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27032028.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/380895",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-21",
+        "endsAt": "2026-11-04",
+        "bidders": 3
+      }
+    },
+    {
+      "id": "gsa-4-1-QSC-I-27-047-001",
+      "title": "Scrap Bell OH58A Aircraft, SN: 71-20595",
+      "description": "Messo all'asta da Department of Defense, a Immokalee (FL).",
+      "condition": "",
+      "category": "Aerei",
+      "price": 1619.99,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27047001.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/380957",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-21",
+        "endsAt": "2026-11-04",
+        "bidders": 3
+      }
+    },
+    {
+      "id": "gsa-4-1-QSC-I-27-047-002",
+      "title": "Scrap, Bell OH58A, Airframe, SN: 71-20763",
+      "description": "Messo all'asta da Department of Defense, a Immokalee (FL).",
+      "condition": "",
+      "category": "Aerei",
+      "price": 1602.1,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27047002.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/380958",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-21",
+        "endsAt": "2026-11-04",
+        "bidders": 3
+      }
+    },
+    {
+      "id": "gsa-3-1-QSC-I-27-055-002",
+      "title": "1974 Boat Trailer",
+      "description": "Messo all'asta da Bureau of Land Management, a Monticello (UT).",
+      "condition": "",
+      "category": "Barche",
+      "price": 193.22,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27055002.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381835",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-28",
+        "endsAt": "2026-11-04",
+        "bidders": 5
+      }
+    },
+    {
+      "id": "gsa-3-1-QSC-I-27-055-005",
+      "title": "Diesel Engine Generator",
+      "description": "Messo all'asta da Federal Aviation Administration, a BENNETT (CO).",
+      "condition": "",
+      "category": "Macchinari",
+      "price": 4490.54,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27055005.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381837",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-28",
+        "endsAt": "2026-11-04",
+        "bidders": 6
+      }
+    },
+    {
+      "id": "gsa-3-1-QSC-I-27-055-022",
+      "title": "Tents and Flooring",
+      "description": "Messo all'asta da Federal Railroad Administration, a Pueblo (CO).",
+      "condition": "",
+      "category": "Varie",
+      "price": 148.49,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27055022.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381849",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-28",
+        "endsAt": "2026-11-04",
+        "bidders": 3
+      }
+    },
+    {
+      "id": "gsa-3-1-QSC-I-27-055-004",
+      "title": "Articulated Loader",
+      "description": "Messo all'asta da Federal Aviation Administration, a CASCADE (ID).",
+      "condition": "",
+      "category": "Macchinari",
+      "price": 2005.54,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27055004.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381851",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-28",
+        "endsAt": "2026-11-04",
+        "bidders": 8
+      }
+    },
+    {
+      "id": "gsa-3-1-QSC-I-27-055-027",
+      "title": "Spectrum Analyzer",
+      "description": "Messo all'asta da Federal Aviation Administration, a HOUSTON (TX).",
+      "condition": "",
+      "category": "Varie",
+      "price": 139.55,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27055027.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381934",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-28",
+        "endsAt": "2026-11-04",
+        "bidders": 4
+      }
+    },
+    {
+      "id": "gsa-4-1-QSC-I-27-057-009",
+      "title": "1991 Chevrolet Suburban",
+      "description": "Messo all'asta da National Institute of Food and Agriculture, a Hopland (CA).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 903.48,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27057009.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381811",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 4
+      }
+    },
+    {
+      "id": "gsa-4-1-QSC-I-27-057-022",
+      "title": "One Lot of Laptops (Est 6 ea)",
+      "description": "Messo all'asta da Bureau of Reclamation, a Page (AZ).",
+      "condition": "",
+      "category": "Elettronica",
+      "price": 306.82,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27057022.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381824",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 5
+      }
+    },
+    {
+      "id": "gsa-4-1-QSC-I-27-057-023",
+      "title": "One Lot of Desktops",
+      "description": "Messo all'asta da National Park Service, a Phoenix (AZ).",
+      "condition": "",
+      "category": "Elettronica",
+      "price": 143.12,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27057023.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381825",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 5
+      }
+    },
+    {
+      "id": "gsa-4-1-QSC-I-27-057-024",
+      "title": "One Lot Of Micro Desktops",
+      "description": "Messo all'asta da National Park Service, a CRESCENT CITY (CA).",
+      "condition": "",
+      "category": "Elettronica",
+      "price": 53.67,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27057024.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381826",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 3
+      }
+    },
+    {
+      "id": "gsa-4-1-QSC-I-27-057-025",
+      "title": "One Lto of IPADs and Tablets",
+      "description": "Messo all'asta da National Park Service, a CRESCENT CITY (CA).",
+      "condition": "",
+      "category": "Elettronica",
+      "price": 232.58,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27057025.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381827",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 6
+      }
+    },
+    {
+      "id": "gsa-4-1-QSC-I-27-057-026",
+      "title": "2 ea Samsung Galaxy Tab",
+      "description": "Messo all'asta da National Park Service, a CRESCENT CITY (CA).",
+      "condition": "",
+      "category": "Elettronica",
+      "price": 98.4,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27057026.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381828",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 3
+      }
+    },
+    {
+      "id": "gsa-4-1-QSC-I-27-057-028",
+      "title": "2022 CHEVROLET TAHOE",
+      "description": "Messo all'asta da Bureau of Indian Affairs, a Carson City (NV).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 3873.31,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27057028.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381830",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 8
+      }
+    },
+    {
+      "id": "gsa-4-1-QSC-I-27-057-031",
+      "title": "2020 Ford F150",
+      "description": "Messo all'asta da Fish and Wildlife Service, a PINETOP (AZ).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 10296.04,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27057031.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381833",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 4
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-005",
+      "title": "1970 KAISER JEEP",
+      "description": "Messo all'asta da Forest Service, a WILLOW RIVER (MN).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 626.17,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040005.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381971",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 3
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-006",
+      "title": "2016 Chevrolet Silverado",
+      "description": "Messo all'asta da Natural Resources Conservation Service, a Bad Axe (MI).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 2045.79,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040006.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381972",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 6
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-008",
+      "title": "2016 Chevrolet Silverado",
+      "description": "Messo all'asta da Natural Resources Conservation Service, a Medina (OH).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 2325.78,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040008.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381974",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 6
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-009",
+      "title": "2020 Ram 1500",
+      "description": "Messo all'asta da Natural Resources Conservation Service, a Medina (OH).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 9282.54,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040009.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381975",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 8
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-010",
+      "title": "2020 Chevrolet Silverado 1500 4X4 Double Cab",
+      "description": "Messo all'asta da Animal and Plant Health Inspection Service, a OKEMOS (MI).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 5188.27,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040010.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381976",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 6
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-011",
+      "title": "2020 Chevrolet Silverado 1500",
+      "description": "Messo all'asta da Animal and Plant Health Inspection Service, a OKEMOS (MI).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 3377.75,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040011.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381977",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 10
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-012",
+      "title": "2019 Ram 1500 4x4 Crew Cab",
+      "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Thomasville (GA).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 7245.69,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040012.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381978",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 6
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-014",
+      "title": "2016 Chevrolet Silverado 2500 HD Double Cab",
+      "description": "Messo all'asta da Animal and Plant Health Inspection Service, a WEST BOYLSTON (MA).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 3130.86,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040014.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381979",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 4
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-015",
+      "title": "2018 Chevrolet Silverado 1500 Crew Cab",
+      "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Poland (OH).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 3667.57,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040015.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381980",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 7
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-016",
+      "title": "2014 Ford F150 Supercrew Cab XL",
+      "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Groveport (OH).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 1370.42,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040016.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381981",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 4
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-018",
+      "title": "2018 Chevrolet Silverado 1500",
+      "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Groveport (OH).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 3220.31,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040018.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381982",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 5
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-019",
+      "title": "2019 Ram 1500 Classic Quad Cab",
+      "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Gainesville (FL).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 2951.95,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040019.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381983",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 6
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-020",
+      "title": "2019 Chevrolet Silverado 2500",
+      "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Gaylord (MI).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 3975.29,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040020.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381984",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 3
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-021",
+      "title": "2020 Ram 1500",
+      "description": "Messo all'asta da Animal and Plant Health Inspection Service, a RHINELANDER (WI).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 3220.31,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040021.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381985",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 4
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-022",
+      "title": "2019 Ram 1500",
+      "description": "Messo all'asta da Animal and Plant Health Inspection Service, a RHINELANDER (WI).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 3667.57,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040022.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381986",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 4
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-017",
+      "title": "2016 Chevrolet Silverado 1500 Crew Cab LT",
+      "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Groveport (OH).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 4204.29,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040017.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381987",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 6
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-023",
+      "title": "2019 Ram 1500",
+      "description": "Messo all'asta da Animal and Plant Health Inspection Service, a RHINELANDER (WI).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 4562.1,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040023.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381988",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 5
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-024",
+      "title": "2017 Ford F-250",
+      "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Harrisburg (PA).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 7692.96,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040024.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381989",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 7
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-025",
+      "title": "2014 Ford F-150 4WD",
+      "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Madison (TN).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 1162.89,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040025.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381990",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 4
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-026",
+      "title": "2022 Chevrolet Silverado",
+      "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Northport (AL).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 7255.53,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040026.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381991",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 10
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-027",
+      "title": "2019 Chevrolet Silverado 2500HD",
+      "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Augusta (ME).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 4383.2,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040027.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381992",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 3
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-028",
+      "title": "2019 Ford F-150 XL 4WD Super Cab",
+      "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Augusta (ME).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 4472.65,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040028.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381993",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 7
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-029",
+      "title": "2019 Ram 1500 Classic Tradesman",
+      "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Waupun (WI).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 3916.25,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040029.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381994",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 5
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-030",
+      "title": "2022 Ford Super Duty F-250 XL 4WD Super Cab",
+      "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Auburn (AL).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 10376.55,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040030.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381995",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 11
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-031",
+      "title": "2013 Ford F-150 2WD 2 DR",
+      "description": "Messo all'asta da Animal and Plant Health Inspection Service, a MADISON (TN).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 4362.62,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040031.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381996",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 6
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-032",
+      "title": "2008 CHEVROLET SILVERADO 1500",
+      "description": "Messo all'asta da National Institute of Food and Agriculture, a COLUMBIA (SC).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 894.53,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040032.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381997",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 3
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-033",
+      "title": "2016 Ford Explorer",
+      "description": "Messo all'asta da Forest Service, a ASHEVILLE (NC).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 5724.99,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040033.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381998",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 14
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-034",
+      "title": "2003 Chevrolet Silverado",
+      "description": "Messo all'asta da Agricultural Research Service, a Urbana (IL).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 1878.51,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040034.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/381999",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 9
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-035",
+      "title": "2015 Chevrolet Silverado 1500 4WD Crew Cab",
+      "description": "Messo all'asta da Agricultural Research Service, a Madison (WI).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 6132.9,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040035.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/382000",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 10
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-036",
+      "title": "2017 Chevrolet Silverado 2500HD 4WD Double Cab",
+      "description": "Messo all'asta da Animal and Plant Health Inspection Service, a AMHERST (MA).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 5456.63,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040036.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/382001",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 8
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-037",
+      "title": "2014 Ford F-150 4WD 4DR",
+      "description": "Messo all'asta da Animal and Plant Health Inspection Service, a MADISON (TN).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 1977.81,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040037.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/382002",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 6
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-038",
+      "title": "2020 Ford Super Duty F-250 XL 4WD Super Cab",
+      "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Raleigh (NC).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 4562.1,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040038.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/382003",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 8
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-039",
+      "title": "2020 Ford F-150 XL 4WD SuperCab",
+      "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Raleigh (NC).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 2403.6,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040039.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/382004",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 8
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-040",
+      "title": "2019 Ford Super Duty F-250 XL 4WD Super Cab",
+      "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Statesville (NC).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 5903,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040040.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/382005",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 3
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-041",
+      "title": "2018 Ram 1500 Tradesman 4x4 Crew Cab",
+      "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Statesville (NC).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 1073.44,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040041.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/382006",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 6
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-042",
+      "title": "2019 Ford F-150 XL 4WD Super Crew",
+      "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Brewerton (NY).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 1878.51,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040042.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/382007",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 7
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-044",
+      "title": "2018 Ram 1500 Tradesman 4x4 Crew Cab",
+      "description": "Messo all'asta da Animal and Plant Health Inspection Service, a STATESVILLE (NC).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 1341.8,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040044.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/382009",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 4
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-051",
+      "title": "2023 Ford Mustang Mach-E AWD",
+      "description": "Messo all'asta da Natural Resources Conservation Service, a Portage (MI).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 14401.93,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040051.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/382010",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 12
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-052",
+      "title": "2015 Ford Explorer 4WD 4dr Base",
+      "description": "Messo all'asta da Natural Resources Conservation Service, a MILL HALL (PA).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 5058.57,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040052.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/382011",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 7
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-049",
+      "title": "2021 Ford F-150 XL 4WD SuperCrew",
+      "description": "Messo all'asta da Animal and Plant Health Inspection Service, a East Lansing (MI).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 5456.63,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040049.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/382012",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 7
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-050",
+      "title": "2020 Ford F-150 XL 4WD Super Crew",
+      "description": "Messo all'asta da Animal and Plant Health Inspection Service, a East Lansing (MI).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 5456.63,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040050.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/382013",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 5
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-045",
+      "title": "2012 Chevrolet Colorado 4WD 4 DR",
+      "description": "Messo all'asta da Animal and Plant Health Inspection Service, a MERCEDITA (PR).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 2325.78,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040045.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/382014",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 8
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-046",
+      "title": "2010 Ford Taurus",
+      "description": "Messo all'asta da Animal and Plant Health Inspection Service, a BLOOMINGTON (MN).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 3130.86,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040046.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/382015",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 5
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-048",
+      "title": "2020 Chevrolet Silverado 1500 4WD Double Cab",
+      "description": "Messo all'asta da Animal and Plant Health Inspection Service, a East Lansing (MI).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 4472.65,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040048.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/382036",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 8
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-040-047",
+      "title": "2015 Ford F-150 4WD SuperCrew",
+      "description": "Messo all'asta da Animal and Plant Health Inspection Service, a Rensselaer (NY).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 2348.14,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27040047.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/382072",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 4
+      }
+    },
+    {
+      "id": "gsa-4-1-QSC-I-27-042-003",
+      "title": "2016 CHEVROLET K1500 SILVERADO DOUBLE CAB",
+      "description": "Messo all'asta da Natural Resources Conservation Service, a EUGENE (OR).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 8954.25,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27042003.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/382151",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 5
+      }
+    },
+    {
+      "id": "gsa-4-1-QSC-I-27-042-005",
+      "title": "PROLINE TRUCK BUMPER-SILVER",
+      "description": "Messo all'asta da Forest Service, a Hines (OR).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 313.09,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27042005.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/382153",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 3
+      }
+    },
+    {
+      "id": "gsa-4-1-QSC-I-27-042-011",
+      "title": "1984 CHEVROLET MILITARY BLAZER",
+      "description": "Messo all'asta da Forest Service, a SALEM (OR).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 1856.15,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27042011.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/382156",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 4
+      }
+    },
+    {
+      "id": "gsa-4-1-QSC-I-27-042-013",
+      "title": "1979 INTERNATIONAL 1854 TRUCK",
+      "description": "Messo all'asta da Forest Service, a SHANIKO (OR).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 1363.26,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27042013.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/382158",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 3
+      }
+    },
+    {
+      "id": "gsa-4-1-QSC-I-27-042-014",
+      "title": "2019 CHEVROLET K2500HD SILVERADO DOUBLE CAB-WT",
+      "description": "Messo all'asta da Fish and Wildlife Service, a Lakeview (OR).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 15229.37,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27042014.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/382159",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 3
+      }
+    },
+    {
+      "id": "gsa-4-1-QSC-I-27-042-016",
+      "title": "2019 CHEVROLET K1500 DOUBLE CAB-WT",
+      "description": "Messo all'asta da Fish and Wildlife Service, a Lakeview (OR).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 11293.44,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27042016.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/382161",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 3
+      }
+    },
+    {
+      "id": "gsa-4-1-QSC-I-27-042-017",
+      "title": "2013 POLARIS RZR 570 UTV",
+      "description": "Messo all'asta da Bureau of Land Management, a SPRINGFIELD (OR).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 559.08,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27042017.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/382162",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 6
+      }
+    },
+    {
+      "id": "gsa-4-1-QSC-I-27-042-018",
+      "title": "2018 MACK GU713 DUMP TRUCK",
+      "description": "Messo all'asta da Forest Service, a JOHN DAY (OR).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 44748.86,
+      "currency": "EUR",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27042018.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/382163",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-10-29",
+        "endsAt": "2026-11-05",
+        "bidders": 8
+      }
+    }
+  ]
+}

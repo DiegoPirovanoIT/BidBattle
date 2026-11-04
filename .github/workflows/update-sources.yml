@@ -1,0 +1,84 @@
+name: Aggiorna le fonti
+
+on:
+  schedule:
+    - cron: '17 22 * * *'
+  workflow_dispatch:
+    inputs:
+      sources:
+        description: 'Fonti da aggiornare, separate da spazi (vuoto: tutte)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: update-sources
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # Surplus lots close within days, the other catalogs change slowly.
+      - name: Scegli le fonti
+        id: pick
+        env:
+          REQUESTED: ${{ inputs.sources }}
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ]; then
+            sources="$REQUESTED"
+          else
+            sources="surplus"
+            if [ "$(date -u +%u)" = "1" ]; then sources="$sources games groceries lego"; fi
+            if [ "$(date -u +%d)" = "01" ]; then sources="$sources paintings"; fi
+          fi
+          echo "sources=$sources" >> "$GITHUB_OUTPUT"
+
+      # A failed source keeps its old file: the ones that worked are still published.
+      - name: Aggiorna i cataloghi
+        id: update
+        continue-on-error: true
+        env:
+          GSA_API_KEY: ${{ secrets.GSA_API_KEY }}
+          BRICKSET_API_KEY: ${{ secrets.BRICKSET_API_KEY }}
+          SOURCES: ${{ steps.pick.outputs.sources }}
+        run: npm run sources:update -- $SOURCES
+
+      - run: npm test
+
+      - name: Salva i cataloghi
+        id: save
+        run: |
+          git add data/sources
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Update source catalogs'
+          git pull --rebase origin main
+          git push origin HEAD:main
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      # A push made with this token starts no workflow, so the deploy is asked for by name.
+      - name: Pubblica il sito
+        if: steps.save.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy-pages.yml --ref main
+
+      - name: Segnala le fonti non aggiornate
+        if: steps.update.outcome == 'failure'
+        run: |
+          echo '::error::Almeno una fonte non è stata aggiornata: vedi il passo "Aggiorna i cataloghi".'
+          exit 1
