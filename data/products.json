@@ -1,0 +1,546 @@
+{
+  "source": "mock",
+  "generatedAt": null,
+  "products": [
+    {
+      "id": "mock-001",
+      "title": "Chitarra acustica in abete con custodia morbida",
+      "description": "Top in abete e fasce in mogano. Qualche segno d'uso sul retro, corde cambiate da poco. Suona bene e tiene l'accordatura.",
+      "condition": "Usato",
+      "category": "Musica",
+      "price": 145,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23e9c9a8%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%8E%B8%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%237a3b2e%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%8E%B8%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23e9c9a8%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%F0%9F%8E%B8%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    },
+    {
+      "id": "mock-002",
+      "title": "Tastiera digitale 88 tasti pesati",
+      "description": "Tasti pesati, 12 timbri, uscita cuffie e USB. Alimentatore e leggio inclusi, manca il pedale.",
+      "condition": "Usato",
+      "category": "Musica",
+      "price": 289.9,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23e9c9a8%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%8E%B9%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%237a3b2e%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%8E%B9%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23e9c9a8%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%F0%9F%8E%B9%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    },
+    {
+      "id": "mock-003",
+      "title": "Tromba in Sib laccata con astuccio",
+      "description": "Revisionata da un liutaio: pistoni nuovi e pulizia completa. Astuccio rigido con bocchino 7C.",
+      "condition": "Ricondizionato",
+      "category": "Musica",
+      "price": 412,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23e9c9a8%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%8E%BA%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%237a3b2e%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%8E%BA%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23e9c9a8%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%F0%9F%8E%BA%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    },
+    {
+      "id": "mock-004",
+      "title": "Rullante in acero 14 pollici",
+      "description": "Fusto in acero a 8 strati. Pelle superiore da sostituire, cordiera in buono stato.",
+      "condition": "Usato",
+      "category": "Musica",
+      "price": 74.5,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23e9c9a8%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%A5%81%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%237a3b2e%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%A5%81%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23e9c9a8%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%F0%9F%A5%81%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    },
+    {
+      "id": "mock-005",
+      "title": "Radio a valvole anni Cinquanta da restaurare",
+      "description": "Mobile in legno originale con piccole crepe. Si accende, ma riceve solo in onde medie.",
+      "condition": "Usato",
+      "category": "Musica",
+      "price": 58,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23e9c9a8%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%93%BB%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%237a3b2e%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%93%BB%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23e9c9a8%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%F0%9F%93%BB%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    },
+    {
+      "id": "mock-006",
+      "title": "Coppia di sedie in faggio curvato",
+      "description": "Seduta in paglia di Vienna integra, struttura solida. Una delle due ha un graffio sullo schienale.",
+      "condition": "Usato",
+      "category": "Casa",
+      "price": 95,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23d5e3d3%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%AA%91%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%233f5f58%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%AA%91%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23d5e3d3%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%F0%9F%AA%91%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    },
+    {
+      "id": "mock-007",
+      "title": "Divano due posti in velluto verde",
+      "description": "Tessuto in velluto a coste, gambe in ottone. Da ritirare a mano, nessun animale in casa.",
+      "condition": "Usato",
+      "category": "Casa",
+      "price": 320,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23d5e3d3%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%9B%8B%EF%B8%8F%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%233f5f58%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%9B%8B%EF%B8%8F%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23d5e3d3%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%F0%9F%9B%8B%EF%B8%8F%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    },
+    {
+      "id": "mock-008",
+      "title": "Orologio da parete a pendolo in noce",
+      "description": "Meccanismo a carica di 8 giorni, suona le ore. Funzionante, con chiave originale.",
+      "condition": "Usato",
+      "category": "Casa",
+      "price": 180,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23d5e3d3%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%95%B0%EF%B8%8F%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%233f5f58%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%95%B0%EF%B8%8F%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23d5e3d3%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%F0%9F%95%B0%EF%B8%8F%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    },
+    {
+      "id": "mock-009",
+      "title": "Padella in ghisa da 28 cm pre-stagionata",
+      "description": "Adatta a tutti i piani cottura, induzione compresa. Mai usata, ancora nell'imballo.",
+      "condition": "Nuovo",
+      "category": "Casa",
+      "price": 38.9,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23d5e3d3%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%8D%B3%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%233f5f58%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%8D%B3%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23d5e3d3%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%F0%9F%8D%B3%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    },
+    {
+      "id": "mock-010",
+      "title": "Macchina da caffè a leva per casa",
+      "description": "Guarnizioni nuove e caldaia decalcificata. Portafiltro doppio e pressino inclusi.",
+      "condition": "Ricondizionato",
+      "category": "Casa",
+      "price": 129,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23d5e3d3%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%E2%98%95%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%233f5f58%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%E2%98%95%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23d5e3d3%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%E2%98%95%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    },
+    {
+      "id": "mock-011",
+      "title": "Set di tre cesti in vimini intrecciati",
+      "description": "Fatti a mano, con manici e fodera lavabile in cotone. Misure 25, 30 e 35 cm.",
+      "condition": "Nuovo",
+      "category": "Casa",
+      "price": 22.5,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23d5e3d3%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%A7%BA%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%233f5f58%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%A7%BA%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23d5e3d3%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%F0%9F%A7%BA%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    },
+    {
+      "id": "mock-012",
+      "title": "Lampada da tavolo in ottone con paralume in vetro",
+      "description": "Paralume verde intatto, impianto elettrico rifatto. Patina dell'ottone originale.",
+      "condition": "Usato",
+      "category": "Casa",
+      "price": 68,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23d5e3d3%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%92%A1%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%233f5f58%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%92%A1%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23d5e3d3%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%F0%9F%92%A1%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    },
+    {
+      "id": "mock-013",
+      "title": "Fotocamera mirrorless con obiettivo 15-45 mm",
+      "description": "Circa 8.000 scatti, sensore pulito. Due batterie, caricatore e tracolla inclusi.",
+      "condition": "Usato",
+      "category": "Elettronica",
+      "price": 245,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23c6d4e8%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%93%B7%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%232c3e5c%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%93%B7%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23c6d4e8%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%F0%9F%93%B7%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    },
+    {
+      "id": "mock-014",
+      "title": "Cuffie wireless con cancellazione del rumore",
+      "description": "Cuscinetti nuovi e batteria testata: circa 25 ore di autonomia. Custodia rigida inclusa.",
+      "condition": "Ricondizionato",
+      "category": "Elettronica",
+      "price": 89,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23c6d4e8%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%8E%A7%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%232c3e5c%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%8E%A7%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23c6d4e8%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%F0%9F%8E%A7%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    },
+    {
+      "id": "mock-015",
+      "title": "Portatile 14 pollici 16 GB RAM 512 GB SSD",
+      "description": "Ricondizionato di grado A, tastiera italiana, batteria all'88%. Garanzia di 12 mesi.",
+      "condition": "Ricondizionato",
+      "category": "Elettronica",
+      "price": 430,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23c6d4e8%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%92%BB%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%232c3e5c%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%92%BB%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23c6d4e8%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%F0%9F%92%BB%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    },
+    {
+      "id": "mock-016",
+      "title": "Stampante laser monocromatica Wi-Fi",
+      "description": "Circa 3.000 pagine stampate, toner al 60%. Cavo di alimentazione incluso.",
+      "condition": "Usato",
+      "category": "Elettronica",
+      "price": 49.9,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23c6d4e8%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%96%A8%EF%B8%8F%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%232c3e5c%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%96%A8%EF%B8%8F%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23c6d4e8%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%F0%9F%96%A8%EF%B8%8F%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    },
+    {
+      "id": "mock-017",
+      "title": "Televisore 43 pollici 4K smart",
+      "description": "Nessun pixel difettoso, telecomando originale. Piedini inclusi, senza scatola.",
+      "condition": "Usato",
+      "category": "Elettronica",
+      "price": 199,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23c6d4e8%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%93%BA%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%232c3e5c%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%93%BA%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23c6d4e8%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%F0%9F%93%BA%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    },
+    {
+      "id": "mock-018",
+      "title": "Mini cabinato arcade da tavolo",
+      "description": "Joystick e pulsanti da sala giochi, schermo da 10 pollici. Funziona, adesivi un po' consumati.",
+      "condition": "Usato",
+      "category": "Elettronica",
+      "price": 118,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23c6d4e8%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%95%B9%EF%B8%8F%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%232c3e5c%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%95%B9%EF%B8%8F%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23c6d4e8%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%F0%9F%95%B9%EF%B8%8F%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    },
+    {
+      "id": "mock-019",
+      "title": "Lotto di 40 monete italiane in lire",
+      "description": "Monete dal 1951 al 2001, stato misto. Nessuna in argento, raccolte in un album.",
+      "condition": "Usato",
+      "category": "Collezionismo",
+      "price": 62,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23e0d0ea%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%AA%99%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%235a3e70%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%AA%99%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23e0d0ea%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%F0%9F%AA%99%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    },
+    {
+      "id": "mock-020",
+      "title": "Enciclopedia illustrata in 12 volumi del 1962",
+      "description": "Rilegatura in tela con titoli dorati. Dorsi leggermente scoloriti, pagine integre.",
+      "condition": "Usato",
+      "category": "Collezionismo",
+      "price": 155,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23e0d0ea%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%93%9A%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%235a3e70%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%93%9A%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23e0d0ea%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%F0%9F%93%9A%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    },
+    {
+      "id": "mock-021",
+      "title": "Carta geografica d'Italia stampata nel 1890",
+      "description": "Stampa su carta telata, 70 x 100 cm. Qualche piega, colori ancora vivi.",
+      "condition": "Usato",
+      "category": "Collezionismo",
+      "price": 88,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23e0d0ea%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%97%BA%EF%B8%8F%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%235a3e70%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%97%BA%EF%B8%8F%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23e0d0ea%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%F0%9F%97%BA%EF%B8%8F%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    },
+    {
+      "id": "mock-022",
+      "title": "Proiettore Super 8 con tre pellicole",
+      "description": "Lampada funzionante, cinghia da sostituire. Le pellicole sono filmini di famiglia anni Settanta.",
+      "condition": "Usato",
+      "category": "Collezionismo",
+      "price": 34,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23e0d0ea%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%8E%9E%EF%B8%8F%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%235a3e70%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%8E%9E%EF%B8%8F%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23e0d0ea%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%F0%9F%8E%9E%EF%B8%8F%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    },
+    {
+      "id": "mock-023",
+      "title": "Orsetto di peluche in mohair anni Trenta",
+      "description": "Articolato su braccia e gambe, occhi in vetro. Pelo consumato sul muso.",
+      "condition": "Usato",
+      "category": "Collezionismo",
+      "price": 240,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23e0d0ea%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%A7%B8%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%235a3e70%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%A7%B8%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23e0d0ea%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%F0%9F%A7%B8%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    },
+    {
+      "id": "mock-024",
+      "title": "Penna stilografica in celluloide con pennino in oro",
+      "description": "Pennino 14 carati, caricamento a stantuffo. Revisionata e pronta all'uso.",
+      "condition": "Usato",
+      "category": "Collezionismo",
+      "price": 76,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23e0d0ea%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%96%8B%EF%B8%8F%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%235a3e70%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%96%8B%EF%B8%8F%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23e0d0ea%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%F0%9F%96%8B%EF%B8%8F%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    },
+    {
+      "id": "mock-025",
+      "title": "Bicicletta da corsa in acciaio anni Ottanta",
+      "description": "Telaio taglia 56, cambio a 12 velocità. Copertoni nuovi, freni regolati.",
+      "condition": "Usato",
+      "category": "Sport",
+      "price": 360,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23cfe8d3%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%9A%B2%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%232f6b4f%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%9A%B2%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23cfe8d3%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%F0%9F%9A%B2%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    },
+    {
+      "id": "mock-026",
+      "title": "Sci all-mountain 170 cm con attacchi",
+      "description": "Lamine affilate e soletta sciolinata a fine stagione. Attacchi regolabili.",
+      "condition": "Usato",
+      "category": "Sport",
+      "price": 110,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23cfe8d3%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%8E%BF%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%232f6b4f%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%8E%BF%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23cfe8d3%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%F0%9F%8E%BF%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    },
+    {
+      "id": "mock-027",
+      "title": "Tavolo da ping pong pieghevole da interno",
+      "description": "Piano da 16 mm, ruote con freno. Rete e due racchette incluse, da montare.",
+      "condition": "Nuovo",
+      "category": "Sport",
+      "price": 149,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23cfe8d3%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%8F%93%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%232f6b4f%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%8F%93%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23cfe8d3%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%F0%9F%8F%93%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    },
+    {
+      "id": "mock-028",
+      "title": "Sacco da boxe da 25 kg con catene",
+      "description": "Rivestimento in similpelle senza strappi. Catene e gancio da soffitto inclusi.",
+      "condition": "Usato",
+      "category": "Sport",
+      "price": 45,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23cfe8d3%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%A5%8A%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%232f6b4f%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%A5%8A%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23cfe8d3%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%F0%9F%A5%8A%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    },
+    {
+      "id": "mock-029",
+      "title": "Tenda da campeggio per tre persone",
+      "description": "Doppio telo impermeabile, usata in due vacanze. Picchetti completi e sacca.",
+      "condition": "Usato",
+      "category": "Sport",
+      "price": 79.9,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23cfe8d3%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%E2%9B%BA%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%232f6b4f%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%E2%9B%BA%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23cfe8d3%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%E2%9B%BA%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    },
+    {
+      "id": "mock-030",
+      "title": "Canna da pesca telescopica con mulinello",
+      "description": "Fibra di carbonio, lunghezza 3 metri. Mulinello a 5 cuscinetti già montato.",
+      "condition": "Nuovo",
+      "category": "Sport",
+      "price": 54,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23cfe8d3%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%8E%A3%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%232f6b4f%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%8E%A3%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23cfe8d3%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%F0%9F%8E%A3%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    },
+    {
+      "id": "mock-031",
+      "title": "Sneakers in pelle bianca taglia 42",
+      "description": "Mai indossate, con scatola. Suola in gomma e soletta estraibile.",
+      "condition": "Nuovo",
+      "category": "Moda",
+      "price": 72,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23f0cfd9%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%91%9F%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%238a3a55%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%91%9F%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23f0cfd9%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%F0%9F%91%9F%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    },
+    {
+      "id": "mock-032",
+      "title": "Cappotto in lana taglia 48",
+      "description": "Taglio dritto, fodera integra, appena lavato a secco. Mancano solo due bottoni di ricambio.",
+      "condition": "Usato",
+      "category": "Moda",
+      "price": 135,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23f0cfd9%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%A7%A5%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%238a3a55%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%A7%A5%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23f0cfd9%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%F0%9F%A7%A5%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    },
+    {
+      "id": "mock-033",
+      "title": "Orologio automatico da uomo con cinturino in pelle",
+      "description": "Movimento automatico revisionato due anni fa. Vetro zaffiro con un piccolo graffio.",
+      "condition": "Usato",
+      "category": "Moda",
+      "price": 215,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23f0cfd9%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%E2%8C%9A%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%238a3a55%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%E2%8C%9A%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23f0cfd9%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%E2%8C%9A%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    },
+    {
+      "id": "mock-034",
+      "title": "Borsa a mano in cuoio fatta a mano",
+      "description": "Cuoio conciato al vegetale, tracolla regolabile. Angoli appena consumati.",
+      "condition": "Usato",
+      "category": "Moda",
+      "price": 98,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23f0cfd9%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%91%9C%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%238a3a55%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%91%9C%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23f0cfd9%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%F0%9F%91%9C%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    },
+    {
+      "id": "mock-035",
+      "title": "Gioco da tavolo di strategia per 2-5 giocatori",
+      "description": "Confezione sigillata, regolamento in italiano. Durata di circa 90 minuti a partita.",
+      "condition": "Nuovo",
+      "category": "Giochi",
+      "price": 41.9,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23f3dcae%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%8E%B2%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23a0612a%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%F0%9F%8E%B2%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23f3dcae%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%F0%9F%8E%B2%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    },
+    {
+      "id": "mock-036",
+      "title": "Scacchiera in legno intarsiato con pezzi pesati",
+      "description": "Scacchiera pieghevole da 45 cm, set completo. Re alto 9 cm.",
+      "condition": "Usato",
+      "category": "Giochi",
+      "price": 66,
+      "currency": "EUR",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23f3dcae%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22310%22%20font-size%3D%22280%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%E2%99%9F%EF%B8%8F%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23a0612a%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22370%22%20font-size%3D%22460%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(0%20300%20225)%22%3E%E2%99%9F%EF%B8%8F%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20450%22%3E%3Crect%20width%3D%22600%22%20height%3D%22450%22%20fill%3D%22%23f3dcae%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20font-size%3D%22220%22%20text-anchor%3D%22middle%22%20transform%3D%22rotate(-14%20300%20225)%22%3E%E2%99%9F%EF%B8%8F%3C%2Ftext%3E%3C%2Fsvg%3E"
+      ],
+      "url": null
+    }
+  ]
+}
