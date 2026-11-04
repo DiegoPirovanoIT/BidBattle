@@ -70,7 +70,7 @@ La scelta delle fonti è un'impostazione della schermata iniziale. Le fonti sono
 
 | Fonte | Script | Regole | Da tenere d'occhio |
 |---|---|---|---|
-| Capolavori | `paintings.mjs` | Prezzo originale, non quello rivalutato. Solo immagini con licenza libera su Commons, con il credito sul lotto. Prezzo arrotondato a 100.000 €. | Le opere moderne protette restano fuori: entrano 54 opere su 127. |
+| Capolavori | `paintings.mjs` | Prezzo originale, non quello rivalutato. Solo immagini con licenza libera su Commons, con il credito sul lotto. Prezzo in dollari, arrotondato a 100.000 $. | Le opere moderne protette restano fuori: entrano 54 opere su 127. |
 | LEGO | `lego.mjs` | Listino tedesco, perché è in euro. | Serve `BRICKSET_API_KEY`. Lo script non è ancora stato provato sulla API vera. |
 | Videogiochi | `games.mjs` | Solo Steam, a prezzo pieno, con almeno 2.000 recensioni. | Prezzo in dollari convertito, non il listino italiano. Termini di CheapShark non trovati. |
 | La Spesa | `groceries.mjs` | Un lotto è uno scontrino intero, con almeno 5 prodotti e 10 €: un prodotto solo costa meno del rilancio minimo. Restano fuori i prodotti a peso. | Ogni scontrino resta nella sua valuta. Al massimo 10 negozi e 40 lotti per Paese straniero, 80 lotti per l'Italia. Nelle impostazioni si può scegliere "Solo Italia". I filtri per Paese della API lasciano passare negozi stranieri, quindi lo script controlla ogni negozio. Dati ODbL: va citata la fonte. |
