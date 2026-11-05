@@ -276,6 +276,19 @@ test('i lotti invenduti non contano nella spesa e nessuna vendita viene contata 
   assert.equal(spentCents(game, 'p1'), 700);
 });
 
+test('every category comes up before any repeats, whatever its size', () => {
+  const lots = (category, count, source = 'ebay') => Array.from({ length: count }, (_, index) => ({
+    ...products[0], id: `${source}-${category}-${index}`, category, source,
+  }));
+  const big = [...lots('Grande', 900), ...lots('Media', 50), ...lots('Rara', 1), ...lots('Grande', 3, 'surplus')];
+  const game = createGame({ playerNames: ['Anna', 'Luca'], settings: { ...DEFAULT_SETTINGS, rounds: 4 }, products: big });
+  const drawn = game.deck.map(({ source, category }) => `${source}|${category}`);
+  assert.equal(new Set(drawn).size, 4, 'the same name in two sources counts twice');
+  const long = createGame({ playerNames: ['Anna', 'Luca'], settings: { ...DEFAULT_SETTINGS, rounds: 30 }, products: big });
+  assert.equal(new Set(long.deck.map(({ id }) => id)).size, 30, 'no lot comes up twice');
+  assert.equal(long.deck.filter(({ category }) => category === 'Rara').length, 1);
+});
+
 test('excluded sources stay out of the deck', () => {
   const mixed = [
     { id: '1', source: 'games', category: '', priceCents: 100 },

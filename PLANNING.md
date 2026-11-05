@@ -55,6 +55,7 @@ Queste regole non erano nella descrizione iniziale. Sono state decise per far fu
 - **Prezzo di partenza del battitore:** è un valore casuale tra il 10% e l'80% del prezzo eBay, arrotondato a una cifra tonda e di almeno 1 €.
 - **Discesa del battitore:** ogni annuncio abbassa il prezzo dell'8% circa di quello di partenza. Sotto il 10% il lotto resta invenduto.
 - **Lotti invenduti:** nessuno guadagna o perde.
+- **Estrazione dei lotti:** le categorie escono a turno, con lo stesso peso qualunque sia il numero di lotti. Una categoria si ripete solo quando sono uscite tutte. Le fonti senza categorie contano come una categoria sola, quindi eBay, che ne ha 25, dà circa il 73% dei lotti.
 - **Premi finali:** la classifica mostra il miglior affare e il peggior acquisto della partita.
 - **Prezzi rivelati alla fine:** si giocano tutte le aste senza scoprire i prezzi, poi i lotti si rivedono nell'ordine di gioco, uno per volta, invenduti compresi. Durante le aste le schede dei giocatori mostrano quanto ha speso ognuno, poi passano ai guadagni con la prima rivelazione.
 - **Podio finale:** salgono i primi tre, dal terzo al primo, e i pari merito salgono insieme. Gli altri restano nell'elenco sotto il podio.
@@ -74,7 +75,7 @@ La scelta delle fonti è un'impostazione della schermata iniziale. Le fonti sono
 | LEGO | `lego.mjs` | Listino tedesco, perché è in euro. | Serve `BRICKSET_API_KEY`. Lo script non è ancora stato provato sulla API vera. |
 | Videogiochi | `games.mjs` | Solo Steam, a prezzo pieno, con almeno 2.000 recensioni. | Prezzo in dollari convertito, non il listino italiano. Termini di CheapShark non trovati. |
 | La Spesa | `groceries.mjs` | Un lotto è uno scontrino intero, con almeno 5 prodotti e 10 €: un prodotto solo costa meno del rilancio minimo. Restano fuori i prodotti a peso. | Ogni scontrino resta nella sua valuta. Al massimo 10 negozi e 40 lotti per Paese straniero, 80 lotti per l'Italia. Nelle impostazioni si può scegliere "Solo Italia". I filtri per Paese della API lasciano passare negozi stranieri, quindi lo script controlla ogni negozio. Dati ODbL: va citata la fonte. |
-| eBay | `ebay.mjs` | Prezzo fisso, venditori in Italia, spedizione esclusa. Oggetti comuni tra 10 e 1.500 €, collezionismo prezioso senza tetto. Il catalogo non entra mai in Git. | Circa 7.800 lotti, di cui solo circa 600 con descrizione. Vedi "Piano API eBay". |
+| eBay | `ebay.mjs` | Prezzo fisso, venditori in Italia, spedizione esclusa. Oggetti comuni tra 10 e 1.500 €, collezionismo prezioso senza tetto. Il catalogo non entra mai in Git. | Circa 12.500 lotti, di cui solo circa 500 con descrizione. Vedi "Piano API eBay". |
 | Surplus USA | `surplus.mjs` | Almeno 3 offerenti, prima le aste che chiudono prima. Prezzo: offerta più alta al momento della rilevazione, non quella finale. Il lotto mostra date dell'asta e offerenti. | Le note dei lotti hanno nomi e telefoni di funzionari: non vanno mai copiate. Le foto sono link esterni e potrebbero sparire dopo l'asta: il gioco mostra un'immagine sostitutiva. Licenza dei dati non chiara. |
 
 I prezzi in dollari sono convertiti con il cambio del giorno in cui si genera il catalogo (frankfurter.dev). La schermata di rivelazione spiega sempre che tipo di prezzo è.
@@ -176,8 +177,8 @@ Con l'autorizzazione di eBay:
 | 1. Token | `oauth2/token` | 1 |
 | 2. Controllo del limite residuo | `getRateLimits` | 1 |
 | 3. Albero delle categorie | `get_default_category_tree_id` e `category_tree/{id}` con gzip | 2 |
-| 4. Ricerca | `item_summary/search`, una per categoria, più le ricerche del collezionismo prezioso | 40 più al massimo 10 di riserva, più al massimo 22 pagine |
-| 5. Dettaglio | `item/{item_id}`, per i primi 12 prodotti di ogni ricerca | Al massimo circa 750 |
+| 4. Ricerca | `item_summary/search`, una per categoria, più le ricerche del collezionismo prezioso | 40 più al massimo 10 di riserva, più circa 50 pagine |
+| 5. Dettaglio | `item/{item_id}`, per i primi 6 prodotti di ogni ricerca | Al massimo circa 570 |
 
 La ricerca usa questi parametri, con l'intestazione `X-EBAY-C-MARKETPLACE-ID: EBAY_IT`:
 
@@ -197,7 +198,7 @@ Gli aggiornamenti sono 4 al giorno, ogni 6 ore.
 
 | API | Limite al giorno | Per aggiornamento | Al giorno | Uso del limite |
 |---|---|---|---|---|
-| Browse (ricerca e dettaglio) | 5.000 | Circa 640, al massimo circa 830 | Circa 2.560, al massimo circa 3.320 | 51% |
+| Browse (ricerca e dettaglio) | 5.000 | Circa 570, al massimo circa 680 | Circa 2.280, al massimo circa 2.720 | 46% |
 | Taxonomy | 5.000 | 2 | 8 | Meno dell'1% |
 | Analytics | 5.000 | 1 | 4 | Meno dell'1% |
 
@@ -218,7 +219,7 @@ Le richieste partono al massimo 5 alla volta.
 
 **Etichette stabili, categorie che cambiano.** I giocatori vedono sempre 8 famiglie: Musica, Casa, Elettronica, Collezionismo, Sport, Moda, Giochi, Arte e libri. Sotto ogni famiglia ruotano le sottocategorie eBay di livello 3. Così i filtri nella schermata iniziale non cambiano, ma i prodotti sì.
 
-**Numeri.** Ogni aggiornamento prende 5 sottocategorie per famiglia: 8 × 5 = 40 ricerche. Una ricerca restituisce fino a 200 inserzioni con una sola chiamata, quindi si tengono tutte quelle valide. Il dettaglio costa una chiamata per prodotto e serve solo per la descrizione: lo hanno i primi 12 di ogni ricerca, gli altri lotti mostrano titolo e foto.
+**Numeri.** Ogni aggiornamento prende 5 sottocategorie per famiglia: 8 × 5 = 40 ricerche. Una ricerca restituisce fino a 200 inserzioni con una sola chiamata, quindi si tengono tutte quelle valide. Il dettaglio costa una chiamata per prodotto e serve solo per la descrizione: lo hanno i primi 6 di ogni ricerca, gli altri lotti mostrano titolo e foto.
 
 **Rotazione senza memoria.** Il catalogo non viene salvato nel repository, quindi la rotazione non può leggere uno stato. La calcola dall'orario:
 
@@ -237,16 +238,27 @@ Una sottocategoria torna solo quando la famiglia le ha usate tutte, poi l'ordine
 
 **Categorie povere.** Se una famiglia ha meno di 60 prodotti dopo le 5 ricerche, si passa alla sottocategoria successiva nell'ordine, fino a 10 ricerche di riserva per aggiornamento.
 
-**Collezionismo prezioso.** Sei famiglie in più non ruotano: usano ricerche fisse, anche su più pagine, con un prezzo minimo e senza tetto. Un'inserzione trovata da due ricerche conta una volta sola.
+**Famiglie speciali.** Altre 17 famiglie non ruotano: usano ricerche fisse, anche su più pagine, con un prezzo minimo e senza tetto. Un'inserzione trovata da due ricerche conta una volta sola.
 
 | Famiglia | Ricerche | Prezzo minimo |
 |---|---|---|
 | Carte Pokémon | Giochi di carte collezionabili con "pokemon" | 50 € |
 | Carte rare | Magic, Yu-Gi-Oh, One Piece, Lorcana; carte sportive | 50 € |
 | Monete e lingotti | Monete antiche; monete con "oro"; lingotti | 100-200 € |
-| Lusso | Gioielli di lusso; orologi delle grandi marche | 500 € |
+| Lusso | Gioielli di lusso; orologi delle grandi marche; penne stilografiche | 100-500 € |
 | Auto e moto d'epoca | Auto e moto con "epoca", "storica" o "asi", annunci compresi | 1.000 € auto, 500 € moto |
 | Antiquariato | Arredamento antico, sculture, argento, autografi | 100-200 € |
+| Meteoriti e fossili | Meteoriti, fossili, minerali e cristalli | 20-50 € |
+| Barche | Barche a motore, barche a vela, gommoni, annunci compresi | 500 € |
+| Mezzi insoliti | Go-kart, camper, acquascooter, mini moto, annunci compresi | 100-1.000 € |
+| Sala giochi | Flipper, arcade, jukebox, calcio balilla | 50-100 € |
+| Retrogaming | Videogiochi e console con i nomi delle console storiche | 50 € |
+| Vinili da collezione | Vinili | 50 € |
+| Set LEGO | LEGO | 100 € |
+| Robot e cult | Robot, Star Wars, action figure di anime e manga | 30-50 € |
+| Tecnologia vintage | Macchine da scrivere, computer vintage, radio d'epoca, telefoni fissi vintage | 30-50 € |
+| Cimeli sportivi | Collezionismo di calcio, maglie da calcio | 50 € |
+| Scienza | Telescopi, microscopi, strumenti scientifici | 50-100 € |
 
 Sulle auto eBay ha pochi prodotti a prezzo fisso: quasi tutte sono annunci, e il prezzo è quello chiesto dal venditore.
 
@@ -289,7 +301,7 @@ Un prodotto entra nel catalogo solo se:
 | `images` | `image.imageUrl` e `additionalImages`, massimo 6, sempre come link a eBay |
 | `url` | `itemWebUrl` |
 
-Il file pesa circa 6 MB, circa 1 MB compresso. **Nome del venditore e altri dati personali non vengono mai salvati:** è ciò che giustifica l'esenzione dalle notifiche di cancellazione account.
+Il file pesa circa 10 MB, circa 1,4 MB compresso. **Nome del venditore e altri dati personali non vengono mai salvati:** è ciò che giustifica l'esenzione dalle notifiche di cancellazione account.
 
 ### Pubblicazione
 
@@ -318,7 +330,7 @@ Se la rigenerazione fallisce resta il catalogo pubblicato. Senza GitHub Secrets 
 
 - Il keyset standard chiama la Browse API senza altre approvazioni tecniche. Il limite di Browse è 5.000 chiamate al giorno.
 - Gli ID delle categorie e l'albero 101 sono gli stessi della sandbox.
-- Un aggiornamento reale ha dato 7.854 lotti con circa 640 chiamate Browse, cioè circa 2.560 al giorno, il 51% del limite. Dura poco più di un minuto.
+- Un aggiornamento reale ha dato 12.527 lotti con circa 570 chiamate Browse, cioè circa 2.280 al giorno, il 46% del limite. Dura poco più di un minuto.
 - `additionalImages` e `seller.username` arrivano già dalla ricerca: solo la descrizione richiede `getItem`.
 - Alcune inserzioni in asta non hanno `price`: vengono scartate.
 - Il dettaglio contiene `seller.sellerLegalInfo`, con dati personali: non viene mai copiato.

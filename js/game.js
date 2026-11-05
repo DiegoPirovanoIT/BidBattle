@@ -142,6 +142,25 @@ function inEuros(product) {
   };
 }
 
+// Categories are drawn in turns, whatever their size: otherwise a category with a
+// thousand lots would come up every round. One repeats only when all have come up.
+// The same name in two sources is two categories, because the lots are unrelated.
+function balancedLots(pool, count, rng) {
+  const groups = new Map();
+  for (const product of shuffled(pool, rng)) {
+    const key = `${product.source}|${product.category}`;
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(product);
+  }
+  const lots = [];
+  let turn = shuffled([...groups.values()], rng);
+  while (lots.length < count) {
+    for (const group of turn.slice(0, count - lots.length)) lots.push(group.pop());
+    turn = shuffled(turn.filter((group) => group.length), rng);
+  }
+  return lots;
+}
+
 export function createGame({
   playerNames,
   paddles = defaultPaddles(playerNames.length),
@@ -160,7 +179,7 @@ export function createGame({
   if (settings.rounds > pool.length) {
     throw new Error(`Ci sono solo ${pool.length} prodotti disponibili.`);
   }
-  const lots = shuffled(pool, rng).slice(0, settings.rounds);
+  const lots = balancedLots(pool, settings.rounds, rng);
   return {
     settings: { ...settings },
     players: playerNames.map((name, index) => ({
