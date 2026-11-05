@@ -759,6 +759,8 @@ td .euro-hint, label .euro-hint { display: inline; }
 
 .lot-auction { font-size: 0.9rem; font-weight: 700; }
 
+.expert-hint { font-weight: 600; }
+
 .lot-credit { color: var(--ink-soft); font-size: 0.78rem; overflow-wrap: anywhere; }
 
 .tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }

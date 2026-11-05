@@ -3,6 +3,7 @@ import { test } from 'node:test';
 import { AUCTION_MODES, placeTurnBid, withdrawFromTurn } from '../js/auction.js';
 import {
   AUCTION_CURRENCIES,
+  EXPERT_HINTS,
   DEFAULT_SETTINGS,
   REVEAL_TIMINGS,
   SCORE_MODES,
@@ -287,6 +288,19 @@ test('every category comes up before any repeats, whatever its size', () => {
   const long = createGame({ playerNames: ['Anna', 'Luca'], settings: { ...DEFAULT_SETTINGS, rounds: 30 }, products: big });
   assert.equal(new Set(long.deck.map(({ id }) => id)).size, 30, 'no lot comes up twice');
   assert.equal(long.deck.filter(({ category }) => category === 'Rara').length, 1);
+});
+
+test('the expert estimate is on the lot only when it is turned on, in the auction currency', () => {
+  assert.equal(newGame().deck[0].estimate, undefined);
+  const game = newGame({ expertHint: EXPERT_HINTS.ON });
+  for (const { estimate, priceCents } of game.deck) {
+    assert.ok(estimate.lowCents <= priceCents && priceCents <= estimate.highCents);
+  }
+});
+
+test('the auctioneer starts from the range in the settings', () => {
+  const game = startAuction(newGame({ mode: AUCTION_MODES.AUCTIONEER, startMinPct: 200, startMaxPct: 200 }));
+  assert.equal(game.auction.startCents, currentProduct(game).priceCents * 2);
 });
 
 test('excluded sources stay out of the deck', () => {

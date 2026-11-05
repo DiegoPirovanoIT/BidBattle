@@ -9,6 +9,9 @@ import {
   AUCTION_MODES,
   createAuctioneerAuction,
   createTurnAuction,
+  expertEstimate,
+  START_MAX_PCT,
+  START_MIN_PCT,
 } from './auction.js';
 
 export const MIN_PLAYERS = 2;
@@ -24,6 +27,8 @@ export const SETTING_LIMITS = Object.freeze({
   rounds: { min: 1, max: 30 },
   minRaisePct: { min: 1, max: 50 },
   tickSeconds: { min: 1, max: 10 },
+  startMinPct: { min: 5, max: 300 },
+  startMaxPct: { min: 5, max: 300 },
 });
 
 // Seconds a player has to bid in the turn mode. Zero means no limit.
@@ -39,11 +44,16 @@ export const AUCTION_CURRENCIES = Object.freeze({ EUROS: 'euros', LOCAL: 'local'
 
 export const GROCERY_SCOPES = Object.freeze({ ALL: 'all', ITALY: 'italy' });
 
+export const EXPERT_HINTS = Object.freeze({ OFF: 'off', ON: 'on' });
+
 export const DEFAULT_SETTINGS = Object.freeze({
   mode: AUCTION_MODES.TURNS,
   rounds: 8,
   minRaisePct: 5,
   tickSeconds: 2.5,
+  startMinPct: START_MIN_PCT,
+  startMaxPct: START_MAX_PCT,
+  expertHint: EXPERT_HINTS.OFF,
   turnSeconds: 0,
   revealPace: REVEAL_PACES.FULL,
   revealTiming: REVEAL_TIMINGS.EACH_ROUND,
@@ -180,6 +190,7 @@ export function createGame({
     throw new Error(`Ci sono solo ${pool.length} prodotti disponibili.`);
   }
   const lots = balancedLots(pool, settings.rounds, rng);
+  const priced = settings.auctionCurrency === AUCTION_CURRENCIES.EUROS ? lots.map(inEuros) : lots;
   return {
     settings: { ...settings },
     players: playerNames.map((name, index) => ({
@@ -188,7 +199,10 @@ export function createGame({
       ...paddles[index],
       score: 0,
     })),
-    deck: settings.auctionCurrency === AUCTION_CURRENCIES.EUROS ? lots.map(inEuros) : lots,
+    // Drawn once here, so the estimate stays the same however often the page redraws.
+    deck: settings.expertHint === EXPERT_HINTS.ON
+      ? priced.map((lot) => ({ ...lot, estimate: expertEstimate(lot.priceCents, rng) }))
+      : priced,
     roundIndex: 0,
     phase: 'preview',
     auction: null,
@@ -222,7 +236,7 @@ export function spentCents(game, playerId) {
 }
 
 export function startAuction(game, rng = Math.random) {
-  const { mode, minRaisePct } = game.settings;
+  const { mode, minRaisePct, startMinPct, startMaxPct } = game.settings;
   const playerIds = game.players.map((player) => player.id);
   let auction = { mode: AUCTION_MODES.MANUAL, status: 'open' };
   if (mode === AUCTION_MODES.TURNS) {
@@ -231,6 +245,8 @@ export function startAuction(game, rng = Math.random) {
     auction = createAuctioneerAuction({
       valueCents: currentProduct(game).priceCents,
       minRaisePct,
+      startMinPct,
+      startMaxPct,
       rng,
     });
   }

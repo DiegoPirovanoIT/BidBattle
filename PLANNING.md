@@ -41,6 +41,8 @@ I giocatori hanno budget illimitato: possono offrire qualsiasi cifra. Il puntegg
 | Round | 8 | Da 1 a 30, senza superare i prodotti disponibili |
 | Rilancio minimo | 5% | Da 1 a 50% |
 | Secondi tra gli annunci | 2,5 | Da 1 a 10 |
+| Partenza del battitore, sul valore | Dal 10% al 150% | Dal 5 al 300%, a passi di 5 |
+| Stima di un esperto prima dell'asta | No | Sì o no |
 | Categorie | Tutte | Almeno una; i round non superano i prodotti rimasti |
 | Tempo per ogni offerta (a turni) | Nessuno | Nessuno, 15, 30 o 60 secondi |
 | Quando rivelare i prezzi | Subito | Subito o alla fine |
@@ -52,7 +54,8 @@ Queste regole non erano nella descrizione iniziale. Sono state decise per far fu
 
 - **Rilancio minimo:** è arrotondato per eccesso all'euro intero e vale almeno 1 €.
 - **Offerta iniziale nella modalità a turni:** è di almeno 1 €.
-- **Prezzo di partenza del battitore:** è un valore casuale tra il 10% e l'80% del prezzo eBay, arrotondato a una cifra tonda e di almeno 1 €.
+- **Prezzo di partenza del battitore:** è un valore casuale tra il 10% e il 150% del valore del lotto, arrotondato a una cifra tonda e di almeno 1 €. Può quindi partire sopra il valore: chi offre subito rischia di pagare troppo.
+- **Stima dell'esperto:** un intervallo largo dal 50% al 90% del valore, arrotondato verso l'esterno. Contiene sempre il valore, in un punto casuale: se fosse al centro, basterebbe fare la media. Si vede prima dell'asta.
 - **Discesa del battitore:** ogni annuncio abbassa il prezzo dell'8% circa di quello di partenza. Sotto il 10% il lotto resta invenduto.
 - **Lotti invenduti:** nessuno guadagna o perde.
 - **Estrazione dei lotti:** le categorie escono a turno, con lo stesso peso qualunque sia il numero di lotti. Una categoria si ripete solo quando sono uscite tutte. Le fonti senza categorie contano come una categoria sola, quindi eBay, che ne ha 25, dà circa il 73% dei lotti.
@@ -61,7 +64,7 @@ Queste regole non erano nella descrizione iniziale. Sono state decise per far fu
 - **Podio finale:** salgono i primi tre, dal terzo al primo, e i pari merito salgono insieme. Gli altri restano nell'elenco sotto il podio.
 - **Tempo scaduto nella modalità a turni:** chi deve rilanciare si ritira, chi deve aprire offre il minimo perché non può ritirarsi.
 - **Verdetti della rivelazione:** "Affarone!" da un guadagno del 50% sul prezzo pagato, "Bidone!" se si è pagato almeno il 50% più del valore.
-- **Impostazioni scartate:** il budget limitato cambierebbe la regola del budget illimitato e l'indizio sul prezzo toglierebbe il gusto di stimare. Si possono rivalutare dopo le prime partite vere.
+- **Impostazioni scartate:** il budget limitato cambierebbe la regola del budget illimitato. Si può rivalutare dopo le prime partite vere.
 - **Palette personalizzabili:** ogni giocatore sceglie il numero (da 0 a 999) e uno dei 12 colori della propria palette. Numeri e colori non si ripetono: i colori presi da un altro giocatore non si possono scegliere.
 - **Pulsanti del battitore:** ogni giocatore ha un pulsante a schermo e un tasto (Q, Z, T, B, P, M).
 
@@ -366,6 +369,6 @@ Il supporto eBay, citato in una discussione del forum, afferma: "We typically do
 | La licenza eBay non consente questo uso dei dati | Il catalogo eBay non è pubblicabile | Chiedere a eBay per iscritto prima di scrivere lo script; il formato di `products.json` permette di cambiare fonte |
 | Le Buy API richiedono l'approvazione di eBay | Tempi lunghi o accesso negato | Provare il keyset standard, poi seguire la procedura eBay Partner Network |
 | Le esecuzioni programmate si fermano dopo 60 giorni | Il catalogo invecchia | Riattivarle o fare un commit periodico; la data resta visibile |
-| Il prezzo di partenza del battitore suggerisce il valore | Il gioco diventa più facile | Rivedere l'intervallo dopo le prime partite |
+| Il prezzo di partenza del battitore suggerisce il valore | Il gioco diventa più facile | L'intervallo arriva al 150% e si cambia nelle impostazioni |
 | I prezzi sono leggibili nel file pubblico | Un giocatore può barare | Accettato: è un gioco tra amici |
 | Le esecuzioni programmate di GitHub partono in ritardo | I dati superano le 6 ore | La data del catalogo resta visibile |
