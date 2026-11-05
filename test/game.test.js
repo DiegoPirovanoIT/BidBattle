@@ -16,6 +16,7 @@ import {
   nextRound,
   parseAmountToCents,
   recordManualSale,
+  hidesScores,
   revealPrice,
   setLotAside,
   spentCents,
@@ -233,6 +234,12 @@ test('alla fine i prezzi si rivelano uno per volta, nello stesso ordine dei lott
   game = setLotAside(recordManualSale(startAuction(game), 'p1', 100));
   game = setLotAside(recordManualSale(startAuction(game), 'p2', 200));
 
+  assert.equal(game.phase, 'recall');
+  assert.equal(game.history.length, 0);
+  assert.equal(currentProduct(game).id, first.id);
+  assert.deepEqual(game.players.map((p) => p.score), [0, 0]);
+
+  game = revealPrice(game);
   assert.equal(game.phase, 'reveal');
   assert.equal(game.history.length, 1);
   assert.equal(currentProduct(game).id, first.id);
@@ -240,6 +247,12 @@ test('alla fine i prezzi si rivelano uno per volta, nello stesso ordine dei lott
   assert.equal(game.players[1].score, 0);
 
   game = nextRound(game);
+  assert.equal(game.phase, 'recall');
+  assert.equal(game.history.length, 1);
+  assert.equal(currentProduct(game).id, second.id);
+  assert.equal(game.players[1].score, 0);
+
+  game = revealPrice(game);
   assert.equal(game.phase, 'reveal');
   assert.equal(game.history.length, 2);
   assert.equal(currentProduct(game).id, second.id);
@@ -250,15 +263,34 @@ test('alla fine i prezzi si rivelano uno per volta, nello stesso ordine dei lott
 
 test('alla fine un lotto invenduto viene rivelato senza cambiare i guadagni', () => {
   let game = setLotAside(recordManualSale(startAuction(atEnd()), null, null));
-  game = setLotAside(recordManualSale(startAuction(game), null, null));
+  game = revealPrice(setLotAside(recordManualSale(startAuction(game), null, null)));
   assert.equal(game.history[0].buyerId, null);
   assert.deepEqual(game.players.map((p) => p.score), [0, 0]);
 });
 
-test('con un solo round il prezzo si rivela subito dopo la vendita', () => {
+test('con un solo round il lotto si rivede subito dopo la vendita', () => {
   const game = setLotAside(recordManualSale(startAuction(atEnd({ rounds: 1 })), 'p1', 100));
-  assert.equal(game.phase, 'reveal');
-  assert.equal(nextRound(game).phase, 'finished');
+  assert.equal(game.phase, 'recall');
+  assert.equal(nextRound(revealPrice(game)).phase, 'finished');
+});
+
+test('alla fine i guadagni restano coperti dal ritorno dell\'ultimo lotto fino al podio', () => {
+  let game = setLotAside(recordManualSale(startAuction(atEnd()), 'p1', 100));
+  assert.equal(hidesScores(game), false, 'the auctions are still running');
+  game = recordManualSale(startAuction(game), 'p2', 200);
+  assert.equal(hidesScores(game), false, 'the last hammer shows no price');
+  game = revealPrice(setLotAside(game));
+  assert.equal(hidesScores(game), false, 'the first lot is not the last');
+  game = nextRound(game);
+  assert.equal(hidesScores(game), true);
+  game = revealPrice(game);
+  assert.equal(hidesScores(game), true);
+  assert.equal(hidesScores(nextRound(game)), false);
+});
+
+test('con i prezzi subito i guadagni restano sempre in vista', () => {
+  const game = revealPrice(recordManualSale(startAuction(newGame({ rounds: 1 })), 'p1', 100));
+  assert.equal(hidesScores(game), false);
 });
 
 test('con i prezzi alla fine si tiene il conto di quanto ha speso ogni giocatore', () => {
@@ -273,7 +305,7 @@ test('i lotti invenduti non contano nella spesa e nessuna vendita viene contata 
   let game = setLotAside(recordManualSale(startAuction(atEnd()), null, null));
   game = recordManualSale(startAuction(game), 'p1', 700);
   assert.equal(spentCents(game, 'p1'), 700);
-  game = nextRound(setLotAside(game));
+  game = nextRound(revealPrice(setLotAside(game)));
   assert.equal(spentCents(game, 'p1'), 700);
 });
 
