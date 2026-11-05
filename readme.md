@@ -14,7 +14,7 @@ All'inizio della partita si scelgono le fonti dei lotti:
 | La Spesa | Scontrini di Open Prices, italiani e stranieri, con il Paese indicato sul lotto | Somma dello scontrino, nella sua valuta |
 | Surplus USA | Aste del governo USA (GSA Auctions) | Offerta più alta ad asta aperta, in dollari |
 
-I prodotti di eBay arriveranno quando ci saranno le credenziali.
+La fonte eBay è pronta e provata in locale, ma non è online: si accende quando il keyset di produzione è nei GitHub Secrets. Prima serve il via libera scritto di eBay.
 
 Le aste si fanno sempre in euro, con i prezzi convertiti al cambio BCE. Nelle impostazioni si può scegliere invece la valuta locale di ogni lotto.
 
@@ -41,6 +41,7 @@ Poi apri http://localhost:8000. Il gioco non funziona aprendo direttamente `inde
 | `npm run mock:products` | Rigenera `data/products.json`, il vecchio catalogo inventato che il gioco non usa più |
 | `npm run sources:update` | Rigenera i cataloghi delle fonti in `data/sources` |
 | `npm run sources:update -- games lego` | Rigenera solo le fonti indicate |
+| `npm run sources:update -- ebay` | Rigenera il catalogo eBay: parte solo se lo si chiede per nome e il file resta fuori da Git |
 
 ## Struttura
 
@@ -59,8 +60,10 @@ Poi apri http://localhost:8000. Il gioco non funziona aprendo direttamente `inde
 
 ## Configurazione
 
-Le credenziali della API di eBay non vanno mai nel codice: saranno salvate nei GitHub Secrets. Per le prove in locale si usa un file `.env`, che è escluso dal repository.
+Le credenziali della API di eBay non vanno mai nel codice. Per le prove in locale stanno nel file `.env`, escluso dal repository, come `EBAY_CLIENT_ID` e `EBAY_CLIENT_SECRET`. Online si usano gli stessi nomi nei GitHub Secrets. Lo script riconosce un keyset sandbox dalla sigla `SBX` e chiama la sandbox, dove i pochi articoli finti non bastano a generare un catalogo. Nei GitHub Secrets va solo il keyset di produzione.
 
 Lo stesso file `.env` contiene le chiavi usate da `npm run sources:update`: `BRICKSET_API_KEY` (obbligatoria per LEGO) e `GSA_API_KEY` (facoltativa: senza si usa la chiave dimostrativa di api.data.gov). La chiave Brickset si chiede su https://brickset.com/tools/webservices/requestkey.
 
-Online i cataloghi si aggiornano da soli con la GitHub Action `update-sources.yml`, che legge le stesse due chiavi dai GitHub Secrets: Surplus USA ogni giorno, tassi di cambio, Videogiochi, La Spesa e LEGO ogni lunedì, Capolavori il primo del mese. Dalla pagina Actions si può lanciare a mano: senza indicare fonti le aggiorna tutte.
+Online i cataloghi si aggiornano da soli con la GitHub Action `update-sources.yml`, che legge le stesse due chiavi dai GitHub Secrets: Surplus USA ogni giorno, tassi di cambio, Videogiochi, La Spesa e LEGO ogni lunedì, Capolavori il primo del mese. Dalla pagina Actions si può lanciare a mano: senza indicare fonti le aggiorna tutte, tranne eBay.
+
+Il catalogo eBay si rigenera ogni 6 ore dentro `deploy-pages.yml` e finisce solo nel sito pubblicato. Gli altri deploy riusano quello già online.

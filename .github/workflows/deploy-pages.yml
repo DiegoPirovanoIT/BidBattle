@@ -3,7 +3,14 @@ name: Pubblica su GitHub Pages
 on:
   push:
     branches: [main]
+  schedule:
+    - cron: '17 */6 * * *'
   workflow_dispatch:
+    inputs:
+      ebay:
+        description: 'Rigenera il catalogo eBay (altrimenti riusa quello pubblicato)'
+        type: boolean
+        default: true
 
 permissions:
   contents: read
@@ -23,6 +30,26 @@ jobs:
         with:
           node-version: 22
       - run: npm test
+
+      # The eBay catalog never enters the repository: every deploy either rebuilds it or
+      # carries over the published one. Without the credentials the source stays off.
+      - name: Catalogo eBay
+        env:
+          EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
+          EBAY_CLIENT_SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
+          REBUILD: ${{ github.event_name == 'schedule' || inputs.ebay == true }}
+          PUBLISHED: https://diegopirovanoit.github.io/BidBattle/data/sources/ebay.json
+        run: |
+          if [ -z "$EBAY_CLIENT_ID" ]; then
+            echo 'Credenziali eBay assenti: fonte non pubblicata.'
+            exit 0
+          fi
+          if [ "$REBUILD" = "true" ]; then
+            npm run sources:update -- ebay && exit 0
+            echo '::warning::Catalogo eBay non aggiornato: resta quello pubblicato.'
+          fi
+          curl -fsSL "$PUBLISHED" -o data/sources/ebay.json || rm -f data/sources/ebay.json
+
       - name: Prepara i file del sito
         run: |
           mkdir _site
