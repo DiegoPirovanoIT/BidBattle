@@ -11,6 +11,7 @@ import {
   withdrawFromTurn,
 } from './auction.js';
 import {
+  EXPERT_HINTS,
   AUCTION_CURRENCIES,
   DEFAULT_SETTINGS,
   GROCERY_SCOPES,
@@ -87,12 +88,29 @@ const SETTING_INFO = {
     format: (value) => `${String(value).replace('.', ',')} s`,
     modes: [AUCTION_MODES.AUCTIONEER],
   },
+  startMinPct: {
+    label: 'Partenza minima, sul valore',
+    step: 5,
+    format: (value) => `${value}%`,
+    modes: [AUCTION_MODES.AUCTIONEER],
+  },
+  startMaxPct: {
+    label: 'Partenza massima, sul valore',
+    step: 5,
+    format: (value) => `${value}%`,
+    modes: [AUCTION_MODES.AUCTIONEER],
+  },
 };
 
 const TURN_TIMER_CHOICES = TURN_TIMER_OPTIONS.map((seconds) => ({
   value: seconds,
   label: seconds === 0 ? 'Nessuno' : `${seconds} s`,
 }));
+
+const EXPERT_HINT_CHOICES = [
+  { value: EXPERT_HINTS.OFF, label: 'No' },
+  { value: EXPERT_HINTS.ON, label: 'Sì' },
+];
 
 const REVEAL_PACE_CHOICES = [
   { value: REVEAL_PACES.FULL, label: 'Con suspense' },
@@ -434,6 +452,9 @@ function setupScreen() {
             ${settingSlider('rounds', settings.rounds, maxRounds, settings.mode)}
             ${settingSlider('minRaisePct', settings.minRaisePct, SETTING_LIMITS.minRaisePct.max, settings.mode)}
             ${settingSlider('tickSeconds', settings.tickSeconds, SETTING_LIMITS.tickSeconds.max, settings.mode)}
+            ${settingSlider('startMinPct', settings.startMinPct, SETTING_LIMITS.startMinPct.max, settings.mode)}
+            ${settingSlider('startMaxPct', settings.startMaxPct, SETTING_LIMITS.startMaxPct.max, settings.mode)}
+            ${settingChoice('expertHint', 'Stima di un esperto prima dell\'asta', EXPERT_HINT_CHOICES, settings.expertHint)}
             ${settingChoice('auctionCurrency', 'Valuta delle aste', AUCTION_CURRENCY_CHOICES, settings.auctionCurrency)}
             ${settingChoice('scoreMode', 'Punteggio', SCORE_MODE_CHOICES, settings.scoreMode)}
             <p class="muted pool-note">In percentuale ogni lotto pesa uguale, quadro o scontrino: a metà del valore fai +50%, al doppio fai −100%.</p>
@@ -536,12 +557,19 @@ function creditLine({ credit, creditUrl }) {
     : text}</p>`;
 }
 
+function expertLine(product) {
+  if (!product.estimate) return '';
+  const { lowCents, highCents } = product.estimate;
+  return `<p class="expert-hint">L'esperto stima tra <strong>${lotMoney(lowCents, product)}</strong> e <strong>${lotMoney(highCents, product)}</strong>.</p>`;
+}
+
 function previewPanel() {
   const mode = MODE_INFO[game.settings.mode];
   return `
     <div class="panel">
       <h3>Guardate bene il prodotto</h3>
       <p>Sfogliate le immagini e leggete la descrizione. Il prezzo vero resta nascosto fino alla fine ${revealsAtEnd(game) ? 'della partita' : 'del round'}.</p>
+      ${expertLine(currentProduct(game))}
       <p class="muted">Asta: ${mode.name}</p>
       <button class="primary" data-action="start-auction" data-autofocus>Inizia l'asta</button>
     </div>`;
@@ -993,6 +1021,9 @@ function readSetupForm() {
       rounds: Number(data.get('rounds')),
       minRaisePct: Number(data.get('minRaisePct')),
       tickSeconds: Number(data.get('tickSeconds')),
+      startMinPct: Number(data.get('startMinPct')),
+      startMaxPct: Number(data.get('startMaxPct')),
+      expertHint: data.get('expertHint'),
       turnSeconds: Number(data.get('turnSeconds')),
       revealPace: data.get('revealPace'),
       revealTiming: data.get('revealTiming'),
@@ -1040,6 +1071,15 @@ function changeSources(input) {
   root.querySelector(`input[name="source"][value="${input.value}"]`).focus({ preventScroll: true });
 }
 
+// The two ends of the range cannot cross: the one being moved pushes the other.
+function syncStartRange(input) {
+  const { startMinPct, startMaxPct } = input.form.elements;
+  if (Number(startMinPct.value) <= Number(startMaxPct.value)) return;
+  const other = input === startMinPct ? startMaxPct : startMinPct;
+  other.value = input.value;
+  syncSlider(other);
+}
+
 function settingsError(settings) {
   if (productCount({ ...settings, excludedCategories: [] }) === 0) return 'Scegli almeno una fonte.';
   if (productCount(settings) === 0) return 'Scegli almeno una categoria.';
@@ -1047,6 +1087,8 @@ function settingsError(settings) {
     rounds: 'I round',
     minRaisePct: 'Il rilancio minimo',
     tickSeconds: 'I secondi tra gli annunci',
+    startMinPct: 'La partenza minima',
+    startMaxPct: 'La partenza massima',
   };
   const maxRounds = maxRoundsFor(settings);
   for (const [key, label] of Object.entries(labels)) {
@@ -1200,6 +1242,7 @@ function syncSlider(slider) {
 
 root.addEventListener('input', (event) => {
   if (event.target.type === 'range') syncSlider(event.target);
+  if (event.target.name === 'startMinPct' || event.target.name === 'startMaxPct') syncStartRange(event.target);
 });
 
 // Only the settings that affect the chosen auction stay on screen.

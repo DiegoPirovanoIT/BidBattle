@@ -5,6 +5,7 @@ import {
   auctioneerBid,
   auctioneerTick,
   createAuctioneerAuction,
+  expertEstimate,
   createTurnAuction,
   expireTurn,
   minimumNextBid,
@@ -96,15 +97,45 @@ test('una nuova offerta azzera il conto alla rovescia', () => {
   assert.equal(auction.leaderId, 'b');
 });
 
-test("il prezzo di partenza è tra il 10% e l'80% del valore", () => {
+test("il prezzo di partenza è tra il 10% e il 150% del valore", () => {
   const startAt = (random) => createAuctioneerAuction({
     valueCents: 10000,
     minRaisePct: 5,
     rng: () => random,
   }).startCents;
   assert.equal(startAt(0), 1000);
-  assert.equal(startAt(0.5), 4500);
-  assert.equal(startAt(0.999), 8000);
+  assert.equal(startAt(0.5), 8000);
+  assert.equal(startAt(0.999), 15000);
+});
+
+test('il prezzo di partenza segue i valori scelti nelle impostazioni', () => {
+  const startAt = (random) => createAuctioneerAuction({
+    valueCents: 10000, minRaisePct: 5, startMinPct: 50, startMaxPct: 70, rng: () => random,
+  }).startCents;
+  assert.equal(startAt(0), 5000);
+  assert.equal(startAt(0.999), 7000);
+});
+
+test("la stima dell'esperto contiene sempre il valore ed è larga almeno il 50%", () => {
+  for (const valueCents of [1010, 4750, 18300, 99900, 750000, 15900000]) {
+    for (const first of [0, 0.3, 0.999]) {
+      for (const second of [0, 0.5, 0.999]) {
+        const draws = [first, second];
+        const { lowCents, highCents } = expertEstimate(valueCents, () => draws.shift());
+        assert.ok(lowCents > 0 && lowCents <= valueCents && valueCents <= highCents);
+        assert.ok(highCents - lowCents >= valueCents * 0.5);
+      }
+    }
+  }
+});
+
+test("il valore non è al centro della stima dell'esperto", () => {
+  const middle = (position) => {
+    const draws = [0, position];
+    const { lowCents, highCents } = expertEstimate(100000, () => draws.shift());
+    return (lowCents + highCents) / 2;
+  };
+  assert.notEqual(middle(0), middle(0.999));
 });
 
 test('un prodotto economico parte comunque da almeno 1 euro', () => {
@@ -132,7 +163,7 @@ test('a tempo scaduto chi deve rilanciare si ritira', () => {
 
 test('the auctioneer announces round figures for very expensive lots', () => {
   const auction = createAuctioneerAuction({ valueCents: 40000000000, minRaisePct: 5, rng: () => 0.5 });
-  assert.equal(auction.startCents, 18000000000);
-  assert.equal(auction.stepCents, 1400000000);
+  assert.equal(auction.startCents, 32000000000);
+  assert.equal(auction.stepCents, 2600000000);
   assert.ok(auction.floorCents < auction.startCents);
 });

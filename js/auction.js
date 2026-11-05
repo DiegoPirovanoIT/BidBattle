@@ -11,8 +11,10 @@ export const AUCTION_MODES = Object.freeze({
 export const HAMMER_COUNT = 3;
 
 const EURO = 100;
-const START_RATIO_MIN = 0.1;
-const START_RATIO_RANGE = 0.7;
+export const START_MIN_PCT = 10;
+export const START_MAX_PCT = 150;
+const ESTIMATE_MIN_WIDTH = 0.5;
+const ESTIMATE_WIDTH_RANGE = 0.4;
 const DESCENDING_STEP_RATIO = 0.08;
 const FLOOR_RATIO = 0.1;
 
@@ -21,15 +23,31 @@ export function minimumNextBid(currentCents, minRaisePct) {
   return currentCents + Math.max(EURO, raiseInWholeEuros);
 }
 
+function niceUnit(euros) {
+  if (euros < 20) return 1;
+  if (euros < 100) return 5;
+  if (euros < 500) return 10;
+  if (euros < 2000) return 50;
+  if (euros < 20000) return 100;
+  return 10 ** (Math.floor(Math.log10(euros)) - 1);
+}
+
 function roundToNiceAmount(cents) {
   const euros = cents / EURO;
-  let unit = 100;
-  if (euros < 20) unit = 1;
-  else if (euros < 100) unit = 5;
-  else if (euros < 500) unit = 10;
-  else if (euros < 2000) unit = 50;
-  else if (euros >= 20000) unit = 10 ** (Math.floor(Math.log10(euros)) - 1);
+  const unit = niceUnit(euros);
   return Math.max(unit, Math.round(euros / unit) * unit) * EURO;
+}
+
+// The expert's range always holds the value, somewhere random inside it: a range
+// centred on the value would give it away. Rounding only ever widens the range.
+export function expertEstimate(valueCents, rng = Math.random) {
+  const width = valueCents * (ESTIMATE_MIN_WIDTH + rng() * ESTIMATE_WIDTH_RANGE);
+  const lowCents = valueCents - width * rng();
+  const unitCents = niceUnit(valueCents / EURO) * EURO;
+  return {
+    lowCents: Math.max(unitCents, Math.floor(lowCents / unitCents) * unitCents),
+    highCents: Math.ceil((lowCents + width) / unitCents) * unitCents,
+  };
 }
 
 function assertOpen(state) {
@@ -108,9 +126,15 @@ export function expireTurn(state) {
 
 // Mode 2: the auctioneer lowers the price until someone bids, then raises it.
 
-export function createAuctioneerAuction({ valueCents, minRaisePct, rng = Math.random }) {
-  const ratio = START_RATIO_MIN + rng() * START_RATIO_RANGE;
-  const startCents = roundToNiceAmount(valueCents * ratio);
+export function createAuctioneerAuction({
+  valueCents,
+  minRaisePct,
+  startMinPct = START_MIN_PCT,
+  startMaxPct = START_MAX_PCT,
+  rng = Math.random,
+}) {
+  const pct = startMinPct + rng() * (startMaxPct - startMinPct);
+  const startCents = roundToNiceAmount((valueCents * pct) / 100);
   return {
     mode: AUCTION_MODES.AUCTIONEER,
     phase: 'descending',
