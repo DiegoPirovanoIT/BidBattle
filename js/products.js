@@ -48,6 +48,15 @@ export const SOURCES = Object.freeze([
     priceNote: 'Offerta più alta rilevata ad asta ancora aperta.',
     glyph: '<path d="M4 29V12h24v17M28 18h9l7 7v4H4"/><circle cx="14" cy="32" r="4" class="fill"/><circle cx="35" cy="32" r="4" class="fill"/>',
   },
+  {
+    id: 'ebay',
+    name: 'eBay',
+    text: 'Inserzioni di venditori italiani, sempre diverse: dagli oggetti di casa alle carte Pokémon, ai lingotti e alle auto d\'epoca.',
+    file: 'data/sources/ebay.json',
+    linkLabel: 'eBay',
+    priceNote: 'Prezzo chiesto dal venditore su eBay, spedizione esclusa.',
+    glyph: '<path d="M8 17h32l-3 21H11z"/><path d="M17 17v-5a7 7 0 0 1 14 0v5"/>',
+  },
 ]);
 
 const NO_RATES = Object.freeze({ EUR: 1 });

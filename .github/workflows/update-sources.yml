@@ -72,11 +72,12 @@ jobs:
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
       # A push made with this token starts no workflow, so the deploy is asked for by name.
+      # It keeps the published eBay catalog: only its own schedule spends eBay calls.
       - name: Pubblica il sito
         if: steps.save.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run deploy-pages.yml --ref main
+        run: gh workflow run deploy-pages.yml --ref main -f ebay=false
 
       - name: Segnala le fonti non aggiornate
         if: steps.update.outcome == 'failure'

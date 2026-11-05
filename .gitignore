@@ -3,6 +3,9 @@
 .env.*
 !.env.example
 
+# The eBay licence forbids keeping listings: this catalog only goes into the published site
+data/sources/ebay.json
+
 # Dependencies and build output
 node_modules/
 dist/

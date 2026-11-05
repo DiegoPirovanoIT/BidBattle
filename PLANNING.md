@@ -11,7 +11,7 @@ Il progetto è interamente su GitHub e non ha un backend (opzione A).
 | Gioco | HTML, CSS e JavaScript senza build, pubblicati su GitHub Pages |
 | Prodotti | Un file per fonte in `data/sources`, letti dal gioco all'avvio. I prodotti inventati di `data/products.json` non sono più usati |
 | Aggiornamento fonti | GitHub Action `update-sources.yml`: Surplus USA ogni giorno, tassi di cambio, Videogiochi, La Spesa e LEGO ogni lunedì, Capolavori il primo del mese. I file generati vanno nel repository. A mano: `npm run sources:update` |
-| Aggiornamento prodotti | GitHub Action programmata che chiama la Browse API di eBay e pubblica il catalogo senza salvarlo nel repository |
+| Aggiornamento prodotti | `deploy-pages.yml`, ogni 6 ore, chiama la Browse API di eBay e pubblica il catalogo senza salvarlo nel repository. Si accende con i GitHub Secrets |
 | Valute | Impostazione `auctionCurrency`. Di base ogni lotto è convertito in euro all'inizio della partita e la rivelazione mostra il prezzo originale. Con "Valuta locale" offerte e prezzi restano nella valuta del lotto, con la stima in euro accanto. Il punteggio è comunque in euro, perché somma lotti in valute diverse. I tassi stanno in `data/rates.json` (BCE, tramite Frankfurter) e il gioco li applica al caricamento. Un lotto senza tasso resta fuori |
 | Chiave eBay | GitHub Secrets, usata solo dalla Action e mai inviata al browser |
 
@@ -74,6 +74,7 @@ La scelta delle fonti è un'impostazione della schermata iniziale. Le fonti sono
 | LEGO | `lego.mjs` | Listino tedesco, perché è in euro. | Serve `BRICKSET_API_KEY`. Lo script non è ancora stato provato sulla API vera. |
 | Videogiochi | `games.mjs` | Solo Steam, a prezzo pieno, con almeno 2.000 recensioni. | Prezzo in dollari convertito, non il listino italiano. Termini di CheapShark non trovati. |
 | La Spesa | `groceries.mjs` | Un lotto è uno scontrino intero, con almeno 5 prodotti e 10 €: un prodotto solo costa meno del rilancio minimo. Restano fuori i prodotti a peso. | Ogni scontrino resta nella sua valuta. Al massimo 10 negozi e 40 lotti per Paese straniero, 80 lotti per l'Italia. Nelle impostazioni si può scegliere "Solo Italia". I filtri per Paese della API lasciano passare negozi stranieri, quindi lo script controlla ogni negozio. Dati ODbL: va citata la fonte. |
+| eBay | `ebay.mjs` | Prezzo fisso, venditori in Italia, spedizione esclusa. Oggetti comuni tra 10 e 1.500 €, collezionismo prezioso senza tetto. Il catalogo non entra mai in Git. | Circa 7.800 lotti, di cui solo circa 600 con descrizione. Vedi "Piano API eBay". |
 | Surplus USA | `surplus.mjs` | Almeno 3 offerenti, prima le aste che chiudono prima. Prezzo: offerta più alta al momento della rilevazione, non quella finale. Il lotto mostra date dell'asta e offerenti. | Le note dei lotti hanno nomi e telefoni di funzionari: non vanno mai copiate. Le foto sono link esterni e potrebbero sparire dopo l'asta: il gioco mostra un'immagine sostitutiva. Licenza dei dati non chiara. |
 
 I prezzi in dollari sono convertiti con il cambio del giorno in cui si genera il catalogo (frankfurter.dev). La schermata di rivelazione spiega sempre che tipo di prezzo è.
@@ -122,27 +123,32 @@ Il gioco legge lo stesso formato con i prodotti falsi e con quelli reali.
 - [x] Aggiungere la GitHub Action che esegue i test e pubblica il sito
 - [x] Provare il gioco dall'indirizzo pubblico
 
-### Fase 3: prodotti reali da eBay (bloccata dalle credenziali e dalla risposta di eBay)
+### Fase 3: prodotti reali da eBay (provata in locale, eBay ha approvato la pubblicazione)
 
 Prima di scrivere codice:
 
-- [ ] Creare l'account sviluppatore e il keyset di produzione
-- [ ] Dichiarare l'esenzione dalle notifiche di cancellazione account: senza questo passo il keyset resta disattivato
+- [x] Creare l'account sviluppatore e il keyset sandbox
+- [x] Creare il keyset di produzione
+- [x] Dichiarare l'esenzione dalle notifiche di cancellazione account: senza questo passo il keyset resta disattivato e il token dà 401
 - [ ] Leggere per intero la licenza attuale, aggiornata il 24 giugno 2025
-- [ ] Chiedere a eBay per iscritto se il gioco è un uso consentito e se serve l'approvazione per le Buy API
+- [x] Chiedere a eBay per iscritto se il gioco è un uso consentito e se serve l'approvazione per le Buy API
 
-Con il keyset attivo, una prova manuale deve confermare i punti aperti (vedi "Da confermare alla prima prova"):
+Prova sulla sandbox, fatta il 5 novembre 2026:
 
-- [ ] Leggere i limiti reali con `getRateLimits`
-- [ ] Scaricare l'albero delle categorie e fissare le 8 famiglie con i loro ID
-- [ ] Controllare su 2 o 3 categorie che i risultati e i campi siano quelli previsti
+- [x] Scaricare l'albero delle categorie e fissare le 8 famiglie con i loro ID
+- [x] Controllare che i campi siano quelli previsti, con il catalogo generato per intero su una categoria
+
+Prova con il keyset di produzione, in locale con `npm run sources:update -- ebay`, fatta il 5 novembre 2026:
+
+- [x] Leggere i limiti reali con `getRateLimits`
+- [x] Controllare che risultati e prodotti validi siano quelli previsti
 
 Con l'autorizzazione di eBay:
 
 - [ ] Salvare le credenziali nei GitHub Secrets
-- [ ] Scrivere lo script che genera `products.json` secondo il piano qui sotto, con test su risposte di esempio
-- [ ] Aggiornare la GitHub Action: programmazione, catalogo fuori dal repository, riuso del catalogo pubblicato
-- [ ] Verificare i dati su un catalogo reale, compresi i prodotti con una sola foto
+- [x] Scrivere lo script `scripts/sources/ebay.mjs` secondo il piano qui sotto, con i test
+- [x] Aggiornare la GitHub Action: programmazione, catalogo fuori dal repository, riuso del catalogo pubblicato
+- [x] Verificare i dati su un catalogo reale, compresi i prodotti con una sola foto
 
 ### Fase 4: rifinitura
 
@@ -161,7 +167,7 @@ Con l'autorizzazione di eBay:
 
 - **Credenziali:** servono Client ID e Client Secret del keyset di produzione. Stanno nei GitHub Secrets `EBAY_CLIENT_ID` e `EBAY_CLIENT_SECRET`.
 - **Token:** `POST https://api.ebay.com/identity/v1/oauth2/token` con autenticazione Basic, `grant_type=client_credentials` e scope `https://api.ebay.com/oauth/api_scope`. Non serve il login di un utente. Ogni aggiornamento chiede un token nuovo.
-- **Sandbox:** i dati sono finti, quindi serve solo a provare il token.
+- **Sandbox:** i dati sono finti e pochi: nella prova solo la categoria 9355 (telefoni) aveva articoli, 6 in tutto. Serve a provare token, campi e flusso, non a generare un catalogo. Il limite resta di 300 prodotti, quindi un keyset sandbox non può pubblicare nulla. Lo script riconosce il keyset dalla sigla `SBX` nel Client ID.
 
 ### Cosa fa ogni aggiornamento
 
@@ -170,8 +176,8 @@ Con l'autorizzazione di eBay:
 | 1. Token | `oauth2/token` | 1 |
 | 2. Controllo del limite residuo | `getRateLimits` | 1 |
 | 3. Albero delle categorie | `get_default_category_tree_id` e `category_tree/{id}` con gzip | 2 |
-| 4. Ricerca | `item_summary/search`, una per categoria | 40, più al massimo 10 di riserva |
-| 5. Dettaglio | `item/{item_id}`, una per prodotto | 480 |
+| 4. Ricerca | `item_summary/search`, una per categoria, più le ricerche del collezionismo prezioso | 40 più al massimo 10 di riserva, più al massimo 22 pagine |
+| 5. Dettaglio | `item/{item_id}`, per i primi 12 prodotti di ogni ricerca | Al massimo circa 750 |
 
 La ricerca usa questi parametri, con l'intestazione `X-EBAY-C-MARKETPLACE-ID: EBAY_IT`:
 
@@ -191,11 +197,11 @@ Gli aggiornamenti sono 4 al giorno, ogni 6 ore.
 
 | API | Limite al giorno | Per aggiornamento | Al giorno | Uso del limite |
 |---|---|---|---|---|
-| Browse (ricerca e dettaglio) | 5.000 | 520, al massimo 530 | 2.080, al massimo 2.120 | 42% |
+| Browse (ricerca e dettaglio) | 5.000 | Circa 640, al massimo circa 830 | Circa 2.560, al massimo circa 3.320 | 51% |
 | Taxonomy | 5.000 | 2 | 8 | Meno dell'1% |
 | Analytics | 5.000 | 1 | 4 | Meno dell'1% |
 
-**Tetto di sicurezza.** Con i nuovi tentativi un aggiornamento potrebbe arrivare a 1.590 chiamate, cioè 6.360 al giorno. Per questo ogni aggiornamento si ferma a **1.000 chiamate Browse**. Il massimo diventa 4.000 al giorno e ne restano 1.000 per le prove manuali.
+**Tetto di sicurezza.** Con i nuovi tentativi un aggiornamento potrebbe superare il limite giornaliero. Per questo ogni aggiornamento si ferma a **1.000 chiamate Browse**. Il massimo diventa 4.000 al giorno e ne restano 1.000 per le prove manuali.
 
 **Errori.** La Growth Check di eBay valuta anche questo comportamento.
 
@@ -212,7 +218,7 @@ Le richieste partono al massimo 5 alla volta.
 
 **Etichette stabili, categorie che cambiano.** I giocatori vedono sempre 8 famiglie: Musica, Casa, Elettronica, Collezionismo, Sport, Moda, Giochi, Arte e libri. Sotto ogni famiglia ruotano le sottocategorie eBay di livello 3. Così i filtri nella schermata iniziale non cambiano, ma i prodotti sì.
 
-**Numeri.** Ogni aggiornamento prende 5 sottocategorie per famiglia e 12 prodotti per sottocategoria: 8 × 5 = 40 ricerche e 40 × 12 = 480 prodotti.
+**Numeri.** Ogni aggiornamento prende 5 sottocategorie per famiglia: 8 × 5 = 40 ricerche. Una ricerca restituisce fino a 200 inserzioni con una sola chiamata, quindi si tengono tutte quelle valide. Il dettaglio costa una chiamata per prodotto e serve solo per la descrizione: lo hanno i primi 12 di ogni ricerca, gli altri lotti mostrano titolo e foto.
 
 **Rotazione senza memoria.** Il catalogo non viene salvato nel repository, quindi la rotazione non può leggere uno stato. La calcola dall'orario:
 
@@ -227,37 +233,63 @@ scelte     = ordine[posizione * 5 ... posizione * 5 + 4]
 
 Una sottocategoria torna solo quando la famiglia le ha usate tutte, poi l'ordine cambia. Fa eccezione il passaggio tra due cicli, dove può capitare una ripetizione. Con 60 sottocategorie in una famiglia il ciclo dura 12 aggiornamenti, cioè 3 giorni.
 
-**Prodotti diversi anche nella stessa categoria.** `sort=newlyListed` restituisce le inserzioni più recenti, quindi cambiano da sole a ogni passaggio. Tra le 200 ricevute se ne pescano 12 a caso.
+**Prodotti diversi anche nella stessa categoria.** `sort=newlyListed` restituisce le inserzioni più recenti, quindi cambiano da sole a ogni passaggio.
 
-**Categorie povere.** Se una sottocategoria dà meno di 12 prodotti validi, si passa alla successiva nell'ordine, fino a 10 ricerche di riserva per aggiornamento.
+**Categorie povere.** Se una famiglia ha meno di 60 prodotti dopo le 5 ricerche, si passa alla sottocategoria successiva nell'ordine, fino a 10 ricerche di riserva per aggiornamento.
 
-**Categorie escluse.** Si escludono per ID, da fissare dopo aver letto l'albero: veicoli, ricambi auto, immobili, biglietti, servizi, buoni, contenuti per adulti e "Altre categorie". Le categorie di livello 1 non si possono cercare senza parola chiave, quindi la rotazione usa solo sottocategorie.
+**Collezionismo prezioso.** Sei famiglie in più non ruotano: usano ricerche fisse, anche su più pagine, con un prezzo minimo e senza tetto. Un'inserzione trovata da due ricerche conta una volta sola.
+
+| Famiglia | Ricerche | Prezzo minimo |
+|---|---|---|
+| Carte Pokémon | Giochi di carte collezionabili con "pokemon" | 50 € |
+| Carte rare | Magic, Yu-Gi-Oh, One Piece, Lorcana; carte sportive | 50 € |
+| Monete e lingotti | Monete antiche; monete con "oro"; lingotti | 100-200 € |
+| Lusso | Gioielli di lusso; orologi delle grandi marche | 500 € |
+| Auto e moto d'epoca | Auto e moto con "epoca", "storica" o "asi", annunci compresi | 1.000 € auto, 500 € moto |
+| Antiquariato | Arredamento antico, sculture, argento, autografi | 100-200 € |
+
+Sulle auto eBay ha pochi prodotti a prezzo fisso: quasi tutte sono annunci, e il prezzo è quello chiesto dal venditore.
+
+**Categorie ammesse.** Ogni famiglia elenca per ID le sue categorie di livello 1. Tutto il resto resta fuori: veicoli, ricambi auto, nautica, biglietti, cibo, salute, infanzia, attrezzatura da ufficio, hobby creativi e "Altre categorie". Dentro le famiglie si scartano per nome le sottocategorie di ricambi, lotti, stock e contenuti per adulti. Le categorie di livello 1 non si possono cercare senza parola chiave, quindi la rotazione usa solo sottocategorie.
+
+| Famiglia | Categorie di livello 1 | Sottocategorie prima dello scarto |
+|---|---|---|
+| Musica | Musica, CD e vinili; Strumenti musicali | 127 |
+| Casa | Casa, arredamento e bricolage; Elettrodomestici; Giardino e arredamento esterni | 670 |
+| Elettronica | Informatica; Telefonia fissa e mobile; TV, audio e video; Fotografia e video | 442 |
+| Collezionismo | Collezionismo; Monete e banconote; Francobolli; Fumetti e memorabilia | 563 |
+| Sport | Sport e viaggi | 118 |
+| Moda | Abbigliamento e accessori; Orologi e gioielli | 178 |
+| Giochi | Giocattoli e modellismo; Videogiochi e console | 230 |
+| Arte e libri | Arte e antiquariato; Libri e riviste; Film e DVD | 200 |
 
 ### Filtri sui prodotti
 
 Un prodotto entra nel catalogo solo se:
 
-- ha `FIXED_PRICE` tra le opzioni di acquisto;
+- ha `FIXED_PRICE` tra le opzioni di acquisto, o `CLASSIFIED_AD` per auto e moto d'epoca;
 - non ha `itemGroupType`, perché le inserzioni con varianti hanno più prezzi;
 - ha almeno una foto;
+- non ha `adultOnly` né `lotSize` maggiore di zero;
 - non è venduto "per ricambi o non funzionante";
 - il titolo non contiene parole da lotto o da ricambio, come "lotto", "stock", "per ricambi", "leggere descrizione";
-- il venditore non ha già 2 prodotti nel catalogo.
+- il venditore non ha già 25 prodotti nel catalogo, perché un solo negozio non riempia una categoria;
+- ha un prezzo: un'asta senza prezzo fisso non ha nulla da rivelare.
 
 ### Conversione nel formato del gioco
 
 | Campo del gioco | Origine |
 |---|---|
 | `id` | `itemId` |
-| `title` | `title` |
-| `description` | `description` senza HTML, tagliata a 600 caratteri; se è vuota, `shortDescription` |
+| `title` | `title`, senza email, link, cellulari e prezzi con i centesimi |
+| `description` | `description` senza HTML, stili, script, email, telefoni e link, tagliata a 600 caratteri; se è vuota, `shortDescription` |
 | `condition` | `condition` |
 | `category` | Nome della famiglia |
 | `price` | `Number(price.value)`, spedizione esclusa |
 | `images` | `image.imageUrl` e `additionalImages`, massimo 6, sempre come link a eBay |
 | `url` | `itemWebUrl` |
 
-Il file dovrebbe pesare circa 700 KB, da misurare sul primo catalogo reale. **Nome del venditore e altri dati personali non vengono mai salvati:** è ciò che giustifica l'esenzione dalle notifiche di cancellazione account.
+Il file pesa circa 6 MB, circa 1 MB compresso. **Nome del venditore e altri dati personali non vengono mai salvati:** è ciò che giustifica l'esenzione dalle notifiche di cancellazione account.
 
 ### Pubblicazione
 
@@ -265,24 +297,39 @@ Il file dovrebbe pesare circa 700 KB, da misurare sul primo catalogo reale. **No
 |---|---|---|
 | Programmato, `17 */6 * * *` | Circa 530 | Nuovo |
 | Push su `main` | 0 | Scaricato dal sito pubblicato |
-| Avvio manuale | Circa 530 | Nuovo |
+| Deploy chiesto da `update-sources.yml` | 0 | Scaricato dal sito pubblicato |
+| Avvio manuale | Circa 530 | Nuovo, o riuso se si toglie la spunta |
+
+Se la rigenerazione fallisce resta il catalogo pubblicato. Senza GitHub Secrets il passo non chiama eBay e la fonte appare non disponibile.
 
 - **Niente commit del catalogo.** `products.json` reale va solo nel pacchetto di GitHub Pages. Se finisse nel repository, la cronologia di Git conserverebbe per sempre inserzioni che la licenza chiede di cancellare.
 - **Minuto 17.** GitHub segnala i picchi di carico all'inizio di ogni ora e le esecuzioni possono ritardare.
 - **Sospensione dopo 60 giorni.** Nei repository pubblici GitHub disattiva le esecuzioni programmate dopo 60 giorni senza attività. Il catalogo non produce commit, quindi serve una nota in agenda per riattivarle o un commit periodico.
-- **Niente mescolanza.** Un catalogo è tutto eBay o tutto inventato: la licenza vieta di unire contenuti eBay e non eBay.
+- **Niente mescolanza.** Un catalogo è tutto eBay o tutto inventato: la licenza vieta di unire contenuti eBay e non eBay. **Da decidere:** il file eBay è separato, ma nella stessa partita i lotti eBay possono comparire accanto a quelli delle altre fonti. Se eBay non lo ammette, la fonte dovrà giocarsi da sola.
 
-### Da confermare alla prima prova
+### Confermato sulla sandbox
 
-Questi punti non si possono verificare senza chiavi:
+- La Browse API risponde con un token applicativo e lo scope di base. Il token dura 7.200 secondi.
+- La ricerca accetta `category_ids` senza `q` e il filtro del piano.
+- `getItem` restituisce la descrizione in HTML. Un articolo inesistente dà 404.
+- L'albero di `EBAY_IT` è il numero 101, con 31 categorie di livello 1 e 3.354 di livello 3.
 
-1. Il keyset standard riesce a chiamare la Browse API in produzione, o serve l'approvazione.
-2. Il limite reale di Browse è 5.000 chiamate al giorno.
-3. La ricerca accetta `category_ids` senza `q` nelle categorie di livello 2 e 3.
-4. `additionalImages` arriva già dalla ricerca. In quel caso `getItem` serve solo per la descrizione e si può valutare di togliere fino a 480 chiamate.
-5. Quante sottocategorie di livello 3 restano in ogni famiglia dopo le esclusioni.
-6. Quanti prodotti restano dopo i filtri con `itemLocationCountry:IT`.
-7. Il token dura circa 2 ore, come riportano fonti non ufficiali.
+### Confermato in produzione
+
+- Il keyset standard chiama la Browse API senza altre approvazioni tecniche. Il limite di Browse è 5.000 chiamate al giorno.
+- Gli ID delle categorie e l'albero 101 sono gli stessi della sandbox.
+- Un aggiornamento reale ha dato 7.854 lotti con circa 640 chiamate Browse, cioè circa 2.560 al giorno, il 51% del limite. Dura poco più di un minuto.
+- `additionalImages` e `seller.username` arrivano già dalla ricerca: solo la descrizione richiede `getItem`.
+- Alcune inserzioni in asta non hanno `price`: vengono scartate.
+- Il dettaglio contiene `seller.sellerLegalInfo`, con dati personali: non viene mai copiato.
+- I venditori scrivono prezzi e stime nelle descrizioni: lo script li sostituisce con "…", perché altrimenti svelerebbero la risposta durante l'asta.
+
+### Da tenere d'occhio
+
+- `conditionId` 7000 indica "per ricambi o non funzionante". Non è stato verificato sulla documentazione, che non era leggibile: il filtro controlla anche il testo della condizione.
+- Circa il 7% delle descrizioni inizia con testo di servizio del negozio, come spedizioni e garanzie. Non è un errore, ma si legge male.
+- Con il punteggio in euro un'auto o un gioiello da decine di migliaia di euro può decidere la partita, come un quadro.
+- Una descrizione può contenere il nome di un venditore scritto a mano: email, telefoni e link sono tolti, i nomi no.
 
 ### Licenza: cosa dice
 
