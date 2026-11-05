@@ -224,6 +224,17 @@ export function revealsAtEnd(game) {
   return game.settings.revealTiming === REVEAL_TIMINGS.AT_END;
 }
 
+// True while a lot's price is about to be shown or is on screen.
+export function isPricePhase(game) {
+  return game.phase === 'recall' || game.phase === 'reveal';
+}
+
+// With prices kept for the end, the last lot would settle the ranking on screen
+// before the podium, so the scores stay covered until then.
+export function hidesScores(game) {
+  return revealsAtEnd(game) && isLastRound(game) && isPricePhase(game);
+}
+
 // Euros committed so far, including a lot that has just been knocked down.
 export function spentCents(game, playerId) {
   const lots = game.sales.map((sale, index) => ({ sale, product: game.deck[index] }));
@@ -300,22 +311,24 @@ export function revealPrice(game) {
   };
 }
 
-function revealLot(game, roundIndex) {
-  return revealPrice({ ...game, roundIndex, sale: game.sales[roundIndex] });
+// The lot comes back on screen with its price still covered, so the players
+// can remember what it was before they see what it is worth.
+function recallLot(game, roundIndex) {
+  return { ...game, roundIndex, sale: game.sales[roundIndex], phase: 'recall' };
 }
 
 // With prices kept for the end, a closed lot is set aside unrevealed. After the
-// last auction the game goes back to the first lot and reveals them in order.
+// last auction the game goes back to the first lot and shows them again in order.
 export function setLotAside(game) {
   const sales = [...game.sales, game.sale];
   const next = { ...game, sales, auction: null, sale: null };
-  if (isLastRound(game)) return revealLot(next, 0);
+  if (isLastRound(game)) return recallLot(next, 0);
   return { ...next, roundIndex: game.roundIndex + 1, phase: 'preview' };
 }
 
 export function nextRound(game) {
   if (isLastRound(game)) return { ...game, phase: 'finished' };
-  if (revealsAtEnd(game)) return revealLot(game, game.roundIndex + 1);
+  if (revealsAtEnd(game)) return recallLot(game, game.roundIndex + 1);
   return {
     ...game,
     roundIndex: game.roundIndex + 1,

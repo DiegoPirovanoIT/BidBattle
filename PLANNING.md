@@ -60,7 +60,7 @@ Queste regole non erano nella descrizione iniziale. Sono state decise per far fu
 - **Lotti invenduti:** nessuno guadagna o perde.
 - **Estrazione dei lotti:** le categorie escono a turno, con lo stesso peso qualunque sia il numero di lotti. Una categoria si ripete solo quando sono uscite tutte. Le fonti senza categorie contano come una categoria sola, quindi eBay, che ne ha 25, dà circa il 73% dei lotti.
 - **Premi finali:** la classifica mostra il miglior affare e il peggior acquisto della partita.
-- **Prezzi rivelati alla fine:** si giocano tutte le aste senza scoprire i prezzi, poi i lotti si rivedono nell'ordine di gioco, uno per volta, invenduti compresi. Durante le aste le schede dei giocatori mostrano quanto ha speso ognuno, poi passano ai guadagni con la prima rivelazione.
+- **Prezzi rivelati alla fine:** si giocano tutte le aste senza scoprire i prezzi, poi i lotti si rivedono nell'ordine di gioco, uno per volta, invenduti compresi. Ogni lotto torna prima a schermo con il compratore e quanto ha pagato, e il prezzo si scopre solo con "Mostra prezzo". Durante le aste le schede dei giocatori mostrano quanto ha speso ognuno, poi passano ai guadagni con la prima rivelazione. Dal ritorno dell'ultimo lotto mostrano "???", così la classifica si scopre solo sul podio.
 - **Podio finale:** salgono i primi tre, dal terzo al primo, e i pari merito salgono insieme. Gli altri restano nell'elenco sotto il podio.
 - **Tempo scaduto nella modalità a turni:** chi deve rilanciare si ritira, chi deve aprire offre il minimo perché non può ritirarsi.
 - **Verdetti della rivelazione:** "Affarone!" da un guadagno del 50% sul prezzo pagato, "Bidone!" se si è pagato almeno il 50% più del valore.

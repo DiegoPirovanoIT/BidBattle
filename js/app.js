@@ -28,7 +28,9 @@ import {
   currentProduct,
   defaultPaddles,
   gameHighlights,
+  hidesScores,
   isLastRound,
+  isPricePhase,
   nextPaddle,
   nextRound,
   parseAmountToCents,
@@ -481,11 +483,18 @@ function errorLine() {
   return `<p class="error" role="alert">${esc(errorMessage)}</p>`;
 }
 
+function scoreAmount(player, shownScore, { hidden, showSpending }) {
+  if (hidden) return '<span class="amount">???</span>';
+  if (showSpending) return `<span class="amount">Speso ${money(spentCents(game, player.id))}</span>`;
+  return `<span class="amount ${deltaClass(shownScore)}">${signedScore(shownScore)}</span>`;
+}
+
 function scoreboard() {
   const auction = game.phase === 'auction' ? game.auction : null;
-  const stagedLot = revealStaged ? game.history.at(-1) : null;
+  const hidden = hidesScores(game);
+  const stagedLot = revealStaged && !hidden ? game.history.at(-1) : null;
   // Until the first price is out there is no profit to show, only what each player has spent.
-  const showSpending = revealsAtEnd(game) && game.phase !== 'reveal';
+  const showSpending = revealsAtEnd(game) && game.history.length === 0 && !hidden;
   const cards = game.players.map((player) => {
     const buying = stagedLot?.buyerId === player.id;
     const shownScore = buying ? player.score - stagedLot.scoreDelta : player.score;
@@ -505,9 +514,7 @@ function scoreboard() {
       <li class="${classes}" data-player="${player.id}">
         ${disc(player)}
         <span class="score-name">${esc(player.name)}</span>
-        ${showSpending
-          ? `<span class="amount">Speso ${money(spentCents(game, player.id))}</span>`
-          : `<span class="amount ${deltaClass(shownScore)}">${signedScore(shownScore)}</span>`}
+        ${scoreAmount(player, shownScore, { hidden, showSpending })}
         ${state ? `<span class="score-state">${state}</span>` : ''}
       </li>`;
   }).join('');
@@ -719,17 +726,30 @@ function rateNote({ currency, original }) {
     : `Euro stimati al cambio del ${date}.`;
 }
 
-function revealPanel() {
-  const lot = game.history.at(-1);
-  const { product, buyerId, priceCents, deltaCents, scoreDelta } = lot;
-  const nextLabel = revealsAtEnd(game) ? 'Prossimo prezzo' : 'Prossimo lotto';
-  const verdict = revealVerdict(lot);
-  const paid = buyerId === null ? '' : `
+function paidLine({ buyerId, priceCents }, product) {
+  if (buyerId === null) return '';
+  const buyer = playerById(buyerId);
+  return `
     <p class="paid">
-      ${disc(playerById(buyerId))}
-      <span class="paid-who">${esc(playerById(buyerId).name)} ha pagato</span>
+      ${disc(buyer)}
+      <span class="paid-who">${esc(buyer.name)} ha pagato</span>
       <strong class="paid-amount">${lotMoney(priceCents, product)} ${euroHint(priceCents, product)}</strong>
     </p>`;
+}
+
+function recallPanel() {
+  return `
+    <div class="panel">
+      <h3>Vi ricordate questo lotto?</h3>
+      ${paidLine(game.sale, currentProduct(game)) || '<p>Nessuno ha comprato questo lotto.</p>'}
+      <button class="primary" data-action="reveal" data-autofocus>Mostra prezzo</button>
+    </div>`;
+}
+
+function revealPanel() {
+  const lot = game.history.at(-1);
+  const { product, buyerId, deltaCents, scoreDelta } = lot;
+  const verdict = revealVerdict(lot);
   const outcome = buyerId === null
     ? '<p class="muted">Lotto invenduto: nessuno guadagna o perde.</p>'
     : `
@@ -746,12 +766,12 @@ function revealPanel() {
       <p class="verdict-stamp">${verdict.label}</p>
       ${boardMarkup(product.priceCents, { staged: revealStaged, mark: currencyMark(product.currency) })}
       <small class="euro-hint" data-value-estimate>${revealStaged ? '' : euroEstimate(product.priceCents, product)}</small>
-      ${paid}
+      ${paidLine(lot, product)}
       <p class="sr-only" aria-live="polite">${revealStaged ? '' : lotMoney(product.priceCents, product)}</p>
       ${outcome}
       <p class="reveal-link">${esc(source.priceNote)} ${rateNote(product)} ${link}</p>
       <div class="reveal-foot">
-        <button class="primary" data-action="next-round" data-autofocus>${isLastRound(game) ? 'Classifica finale' : nextLabel}</button>
+        <button class="primary" data-action="next-round" data-autofocus>${isLastRound(game) ? 'Classifica finale' : 'Prossimo lotto'}</button>
         <p class="skip-hint">Tocca lo schermo per saltare</p>
       </div>
     </div>`;
@@ -839,6 +859,7 @@ function finishedScreen() {
 function actionPanel() {
   if (game.phase === 'preview') return previewPanel();
   if (game.phase === 'hammer') return hammerPanel();
+  if (game.phase === 'recall') return recallPanel();
   if (game.phase === 'reveal') return revealPanel();
   if (game.auction.mode === AUCTION_MODES.TURNS) return turnPanel(game.auction);
   if (game.auction.mode === AUCTION_MODES.AUCTIONEER) return auctioneerPanel(game.auction);
@@ -855,7 +876,8 @@ function roundProgress() {
 
 function gameScreen() {
   if (game.phase === 'finished') return finishedScreen();
-  const roundWord = revealsAtEnd(game) && game.phase === 'reveal' ? 'Prezzo' : 'Round';
+  const roundWord = revealsAtEnd(game) && isPricePhase(game) ? 'Prezzo' : 'Round';
+  const lotFirst = game.phase === 'preview' || game.phase === 'recall';
   return `
     <div class="game">
       <header class="topbar">
@@ -865,7 +887,7 @@ function gameScreen() {
         <button class="ghost" data-action="quit">Esci</button>
       </header>
       ${scoreboard()}
-      <div class="stage ${game.phase === 'preview' ? '' : 'action-first'}">
+      <div class="stage ${lotFirst ? '' : 'action-first'}">
         ${productPanel(currentProduct(game))}
         ${actionPanel()}
       </div>
@@ -927,7 +949,8 @@ function startPodium() {
 function startReveal() {
   const lot = game.history.at(-1);
   const panel = root.querySelector('.reveal');
-  const buyer = lot.buyerId === null ? null : playerById(lot.buyerId);
+  // With the scores covered there is no card to update.
+  const buyer = lot.buyerId === null || hidesScores(game) ? null : playerById(lot.buyerId);
   showRunning = true;
   show = playReveal({
     panel,
