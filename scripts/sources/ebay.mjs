@@ -13,7 +13,7 @@ const PAGE_SIZE = 200;
 const SLOT_MS = 6 * 3600 * 1000;
 const CATEGORIES_PER_FAMILY = 5;
 const POOR_CATEGORY_LOTS = 12;
-const DETAILS_PER_SEARCH = 12;
+const DETAILS_PER_SEARCH = 6;
 const SPARE_SEARCHES = 10;
 const LOTS_PER_SELLER = 25;
 const MIN_LOTS = 300;
@@ -40,8 +40,9 @@ const FAMILIES = {
 
 // Precious collecting has its own searches, with no ceiling on the price. Classic
 // cars are mostly classified ads on eBay: their price is what the seller asks.
+const RETRO_CONSOLES = '(retro,"game boy",nes,"super nintendo","nintendo 64","mega drive",atari,commodore,"neo geo")';
 const LUXURY_WATCHES = '(rolex,omega,cartier,patek,audemars,breitling,"tag heuer",panerai)';
-const SPECIAL_FAMILIES = {
+export const SPECIAL_FAMILIES = {
   'Carte Pokémon': [{ category: '2536', q: 'pokemon', minPrice: 50, pages: 3 }],
   'Carte rare': [
     { category: '2536', q: '(magic,yu-gi-oh,yugioh,"one piece",lorcana)', minPrice: 50, pages: 2 },
@@ -55,6 +56,7 @@ const SPECIAL_FAMILIES = {
   'Lusso': [
     { category: '4196', minPrice: 500, pages: 2 },
     { category: '260324', q: LUXURY_WATCHES, minPrice: 500, pages: 2 },
+    { category: '7281', minPrice: 100 },
   ],
   "Auto e moto d'epoca": [
     { category: '9801', q: '(epoca,storica,asi)', minPrice: 1000, classifieds: true },
@@ -65,6 +67,51 @@ const SPECIAL_FAMILIES = {
     { category: '553', minPrice: 200 },
     { category: '20096', minPrice: 200 },
     { category: '14429', minPrice: 100 },
+  ],
+  'Meteoriti e fossili': [
+    { category: '3239', minPrice: 20 },
+    { category: '3214', minPrice: 30 },
+    { category: '3225', minPrice: 50 },
+  ],
+  'Barche': [
+    { category: '31269', minPrice: 500, classifieds: true },
+    { category: '63728', minPrice: 500, classifieds: true },
+    { category: '15266', minPrice: 500, classifieds: true },
+  ],
+  'Mezzi insoliti': [
+    { category: '122306', minPrice: 100, classifieds: true },
+    { category: '105646', minPrice: 1000, classifieds: true },
+    { category: '1295', minPrice: 300, classifieds: true },
+    { category: '9939', minPrice: 100, classifieds: true },
+  ],
+  'Sala giochi': [
+    { category: '13725', minPrice: 100, classifieds: true },
+    { category: '171918', minPrice: 100, classifieds: true },
+    { category: '13721', minPrice: 100, classifieds: true },
+    { category: '117113', minPrice: 50 },
+  ],
+  Retrogaming: [{ category: '1249', q: RETRO_CONSOLES, minPrice: 50, pages: 2 }],
+  'Vinili da collezione': [{ category: '176985', minPrice: 50, pages: 2 }],
+  'Set LEGO': [{ category: '183447', minPrice: 100, pages: 2 }],
+  'Robot e cult': [
+    { category: '19197', minPrice: 30 },
+    { category: '8675', minPrice: 50 },
+    { category: '158666', minPrice: 50 },
+  ],
+  'Tecnologia vintage': [
+    { category: '25326', minPrice: 30 },
+    { category: '11189', minPrice: 30 },
+    { category: '29832', minPrice: 50 },
+    { category: '182098', minPrice: 30 },
+  ],
+  'Cimeli sportivi': [
+    { category: '6093', minPrice: 50 },
+    { category: '33485', minPrice: 50 },
+  ],
+  Scienza: [
+    { category: '74927', minPrice: 100 },
+    { category: '71407', minPrice: 50 },
+    { category: '109646', minPrice: 50 },
   ],
 };
 
