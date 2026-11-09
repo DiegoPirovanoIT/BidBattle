@@ -1,6 +1,6 @@
 {
   "source": "groceries",
-  "generatedAt": "2026-11-04T12:14:16.296Z",
+  "generatedAt": "2026-11-09T01:44:15.250Z",
   "products": [
     {
       "id": "receipt-37997",
@@ -383,19 +383,38 @@
       "creditUrl": "https://prices.openfoodfacts.org"
     },
     {
-      "id": "receipt-142967",
-      "title": "Scontrino Lidl: 25 prodotti",
-      "description": "choco moons, High Protein Crunchy Musli, 3 x latte parzialmente scremato, Bevanda avena cacao, Biscotti cereali e mirtilli rossi, High Protein Barretta Proteica, Stracciatella Pasta filata Käse, Burrata di Andria IGP, Pesto alla genovese, Pesto Radicchio E Speck, Tortilia wrap, Dessert alla ricotta amaretto&caramello e altri 13.",
+      "id": "receipt-144190",
+      "title": "Scontrino Lidl: 16 prodotti",
+      "description": "choco moons, High Protein Crunchy Musli, High Protein Barretta Proteica, Biscotti con cereali e gocce di cioccolato, Sugo alla salsiccia, Pesto di pistacchio, Marmelata di Arancia Rossa di Sicilia I.G.P., Apricot Bio Fruit Spread, High Protein - Latte scremato UHT 80 g di proteine, 2 x Burrata di Andria IGP, Bigoli, Папарделе e altri 4.",
       "condition": "",
       "category": "",
-      "price": 49.38,
+      "price": 34.32,
+      "currency": "EUR",
+      "country": "IT",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/000/002/008/3960/front_en.79.400.jpg",
+        "https://images.openfoodfacts.org/images/products/405/648/993/6183/front_en.20.400.jpg",
+        "https://images.openfoodfacts.org/images/products/433/561/902/9651/front_it.4.400.jpg",
+        "https://images.openfoodfacts.org/images/products/405/648/909/8669/front_it.35.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
+      "id": "receipt-142967",
+      "title": "Scontrino Lidl: 26 prodotti",
+      "description": "choco moons, High Protein Crunchy Musli, 3 x latte parzialmente scremato, stracchino, Bevanda avena cacao, Biscotti cereali e mirtilli rossi, High Protein Barretta Proteica, Stracciatella Pasta filata Käse, Burrata di Andria IGP, Pesto alla genovese, Pesto Radicchio E Speck, Tortilia wrap e altri 14.",
+      "condition": "",
+      "category": "",
+      "price": 50.77,
       "currency": "EUR",
       "country": "IT",
       "images": [
         "https://images.openfoodfacts.org/images/products/000/002/008/3960/front_en.79.400.jpg",
         "https://images.openfoodfacts.org/images/products/405/648/993/6183/front_en.20.400.jpg",
         "https://images.openfoodfacts.org/images/products/405/648/963/3051/front_it.14.400.jpg",
-        "https://images.openfoodfacts.org/images/products/405/648/971/9830/front_it.39.400.jpg"
+        "https://images.openfoodfacts.org/images/products/800/267/001/0367/front_it.3.400.jpg"
       ],
       "url": null,
       "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
@@ -497,6 +516,25 @@
       "creditUrl": "https://prices.openfoodfacts.org"
     },
     {
+      "id": "receipt-136421",
+      "title": "Scontrino Coop: 6 prodotti",
+      "description": "Mais super sweet - coop - Cottu a vapore - Mais Dolce, Formaggini Parmigiano Reggiano Schmelzkäse, Scamorzine affumicate, valeriana, Il mio Dado vegetale, Riso soffiato al cioccolato.",
+      "condition": "",
+      "category": "",
+      "price": 16.21,
+      "currency": "EUR",
+      "country": "IT",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/800/112/071/0840/front_en.4.400.jpg",
+        "https://images.openfoodfacts.org/images/products/801/072/199/6812/front_en.28.400.jpg",
+        "https://images.openfoodfacts.org/images/products/801/227/300/1129/front_it.3.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/112/093/5991/front_it.3.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
       "id": "receipt-116228",
       "title": "Scontrino Superò: 6 prodotti",
       "description": "Avena Bevanda Vegetale a Base di Avena, Acqua minerale, Kefir gusto mirtillo, Kiwi Polpa Gialla, Nescafe' Classic, 6 x Tartelle cuore di mela.",
@@ -516,19 +554,19 @@
       "creditUrl": "https://prices.openfoodfacts.org"
     },
     {
-      "id": "receipt-136421",
-      "title": "Scontrino Coop: 6 prodotti",
-      "description": "Mais super sweet - coop - Cottu a vapore - Mais Dolce, Formaggini Parmigiano Reggiano Schmelzkäse, Scamorzine affumicate, valeriana, Il mio Dado vegetale, Riso soffiato al cioccolato.",
+      "id": "receipt-143703",
+      "title": "Scontrino Crai: 6 prodotti",
+      "description": "AVENA + Protein, Nesquik DUO, Muesli croccante, Le fresche Biscottate classiche, Latte intero, SolePiùDì.",
       "condition": "",
       "category": "",
-      "price": 16.21,
+      "price": 15.74,
       "currency": "EUR",
       "country": "IT",
       "images": [
-        "https://images.openfoodfacts.org/images/products/800/112/071/0840/front_en.4.400.jpg",
-        "https://images.openfoodfacts.org/images/products/801/072/199/6812/front_en.28.400.jpg",
-        "https://images.openfoodfacts.org/images/products/801/227/300/1129/front_it.3.400.jpg",
-        "https://images.openfoodfacts.org/images/products/800/112/093/5991/front_it.3.400.jpg"
+        "https://images.openfoodfacts.org/images/products/800/318/003/3921/front_it.4.400.jpg",
+        "https://images.openfoodfacts.org/images/products/761/303/157/0126/front_en.73.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/289/507/7466/front_it.3.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/140/500/0017/front_it.59.400.jpg"
       ],
       "url": null,
       "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
@@ -926,7 +964,7 @@
       "images": [
         "https://images.openfoodfacts.org/images/products/317/853/042/2733/front_fr.46.400.jpg",
         "https://images.openfoodfacts.org/images/products/336/676/004/2085/front_fr.45.400.jpg",
-        "https://images.openfoodfacts.org/images/products/800/227/004/9941/front_fr.179.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/227/004/9941/front_fr.182.400.jpg",
         "https://images.openfoodfacts.org/images/products/345/677/000/2183/front_fr.32.400.jpg"
       ],
       "url": null,
@@ -966,6 +1004,25 @@
         "https://images.openbeautyfacts.org/images/products/356/470/071/8421/front_fr.6.400.jpg",
         "https://images.openfoodfacts.org/images/products/370/015/750/0749/front_fr.31.400.jpg",
         "https://images.openfoodfacts.org/images/products/345/658/012/8868/front_fr.22.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
+      "id": "receipt-144244",
+      "title": "Scontrino Auchan: 6 prodotti",
+      "description": "Soja Bio, Champignons de paris pieds et morceaux, Crêpes bretonnes 12 x 26,25 g, Pouce chips nature lisse 200g, Haricots Verts Extra-fins, 2 x Coquillette au blé complet.",
+      "condition": "",
+      "category": "",
+      "price": 10.97,
+      "currency": "EUR",
+      "country": "FR",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/359/671/030/7555/front_fr.139.400.jpg",
+        "https://images.openfoodfacts.org/images/products/359/671/032/8727/front_fr.90.400.jpg",
+        "https://images.openfoodfacts.org/images/products/317/853/040/5774/front_fr.118.400.jpg",
+        "https://images.openfoodfacts.org/images/products/359/671/056/7768/front_fr.8.400.jpg"
       ],
       "url": null,
       "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
@@ -1059,7 +1116,7 @@
       "images": [
         "https://images.openfoodfacts.org/images/products/359/671/054/0365/front_fr.61.400.jpg",
         "https://images.openfoodfacts.org/images/products/460/179/803/0055/front_fr.70.400.jpg",
-        "https://images.openfoodfacts.org/images/products/376/004/979/4298/front_fr.229.400.jpg",
+        "https://images.openfoodfacts.org/images/products/376/004/979/4298/front_fr.239.400.jpg",
         "https://images.openfoodfacts.org/images/products/317/853/042/5291/front_fr.3.400.jpg"
       ],
       "url": null,
@@ -1270,25 +1327,6 @@
         "https://images.openfoodfacts.org/images/products/359/671/041/4765/front_fr.63.400.jpg",
         "https://images.openfoodfacts.org/images/products/359/671/053/6405/front_fr.67.400.jpg",
         "https://images.openfoodfacts.org/images/products/322/885/700/1231/front_fr.174.400.jpg"
-      ],
-      "url": null,
-      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
-      "creditUrl": "https://prices.openfoodfacts.org"
-    },
-    {
-      "id": "receipt-74423",
-      "title": "Scontrino Auchan: 5 prodotti",
-      "description": "3 x Emmental râpé, BIO*OEUFS PLEIN AIRSOLIDAIRES pour soutenir nos producteurs*issus de l'agriculture biologiqueLogo ABFR-BIO-01 / Agriculture France ou FR- BIO-10Logo AB* Conformément au mode de production biologique., Houmous - aux pois chiches, 4 Huiles riches en vitamine D, YAOURT A LA GRECQUE NATURE 4x125g.",
-      "condition": "",
-      "category": "",
-      "price": 17.79,
-      "currency": "EUR",
-      "country": "FR",
-      "images": [
-        "https://images.openfoodfacts.org/images/products/359/671/001/8987/front_fr.108.400.jpg",
-        "https://images.openfoodfacts.org/images/products/359/671/046/6078/front_fr.105.400.jpg",
-        "https://images.openfoodfacts.org/images/products/359/671/046/7815/front_fr.135.400.jpg",
-        "https://images.openfoodfacts.org/images/products/359/671/049/0639/front_fr.68.400.jpg"
       ],
       "url": null,
       "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
@@ -3025,7 +3063,7 @@
     {
       "id": "receipt-107947",
       "title": "Scontrino Netto City: 12 prodotti",
-      "description": "Marinierte Garnelen - Knoblauch & Kräuter, Sojajogurt ungesüßt, Frühlingsquark Original, Obazda m. Röstzwiebel, Harzer Roller Minis mit Edelschimmel, Obazda klassisch, Schlagsahne, Harzer Roller Minis mit Kümmel, Milram 3-Zwiebel-Quark, Backerbsen, Cremeseife Milch & Honig, Flüssigseife sanft & sensitive Nachfüllbeutel.",
+      "description": "Marinierte Garnelen - Knoblauch & Kräuter, Sojajogurt ungesüßt, Frühlingsquark Original, Obazda m. Röstzwiebel, Harzer Roller Minis mit Edelschimmel, ALDI Nord KÄSE ALPENHAIN Camembert-Creme Obazda klassisch Aus der Kühlung 1.49€ 125g Becher 1kg 11,92€ GTIN 4003751002848, Schlagsahne, Harzer Roller Minis mit Kümmel, Milram 3-Zwiebel-Quark, Backerbsen, Cremeseife Milch & Honig, Flüssigseife sanft & sensitive Nachfüllbeutel.",
       "condition": "",
       "category": "",
       "price": 13.7,
@@ -3481,7 +3519,7 @@
     {
       "id": "receipt-112107",
       "title": "Scontrino EDEKA: 9 prodotti",
-      "description": "Die Ofenfrische Pepperoni Salami, Salame Romano pizza, Cremissimo Walnuss, Die Ofenfrische Diavolo, Schlaufentragetasche, 2 x Papiertaschentücher, Sauce Hollandaise, Linsen Chips, Sour Cream, Schinken.",
+      "description": "Die Ofenfrische Pepperoni Salami, PIZZA Salame Romano, Cremissimo Walnuss, Die Ofenfrische Diavolo, Schlaufentragetasche, 2 x Papiertaschentücher, Sauce Hollandaise, Linsen Chips, Sour Cream, Schinken.",
       "condition": "",
       "category": "",
       "price": 15.11,
@@ -3747,7 +3785,7 @@
     {
       "id": "receipt-56164",
       "title": "Scontrino EDEKA: 13 prodotti",
-      "description": "2 x Aubergine, Suppengemüse, Butter, Avocado, Kl. I, angereift, Harzer Käse, 2 x Gnocchi, Joghurt Stracciatella, Landliebe Joghurt Heidelbeere,4067517001551 Joghurt mit 13,5 % Heidelbeerzubereitung, 3,8 % Fett im Milchanteil, Joghurt Aprikose, Joghurt mit 13,5 % Aprikosenzubereitung, 3,8 % Fett im Milchanteil, Dinkelmehl Type 1050, Weizenmehl Type 550, Weizenmehl, Type 405 e altri 1.",
+      "description": "2 x Aubergine, Suppengemüse, Butter, Avocado, Kl. I, angereift, Harzer Käse, 2 x Gnocchi, Joghurt Stracciatella, Landliebe Joghurt Heidelbeere,4067517001551 Joghurt mit 13,5 % Heidelbeerzubereitung, 3,8 % Fett im Milchanteil, Joghurt Aprikose, Joghurt mit 13,5 % Aprikosenzubereitung, 3,8 % Fett im Milchanteil, Dinkelmehl Type 1050, Weizenmehl Type 550, Weizenmehl Type 405 Bio e altri 1.",
       "condition": "",
       "category": "",
       "price": 19.99,

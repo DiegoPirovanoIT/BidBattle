@@ -1,6 +1,6 @@
 {
   "source": "lego",
-  "generatedAt": "2026-11-04T12:22:52.040Z",
+  "generatedAt": "2026-11-09T01:44:16.868Z",
   "products": [
     {
       "id": "lego-48423",
@@ -1293,36 +1293,6 @@
       "creditUrl": "https://brickset.com"
     },
     {
-      "id": "lego-53108",
-      "title": "Holiday House (11387)",
-      "description": "Set LEGO Icons del 2026, 1354 pezzi.",
-      "condition": "",
-      "category": "",
-      "price": 109.99,
-      "currency": "EUR",
-      "images": [
-        "https://images.brickset.com/sets/images/11387-1.jpg"
-      ],
-      "url": "https://brickset.com/sets/11387-1",
-      "credit": "Dati e immagine: Brickset",
-      "creditUrl": "https://brickset.com"
-    },
-    {
-      "id": "lego-53352",
-      "title": "Venetian Neighbourhood (11388)",
-      "description": "Set LEGO Icons del 2026, 5682 pezzi.",
-      "condition": "",
-      "category": "",
-      "price": 499.99,
-      "currency": "EUR",
-      "images": [
-        "https://images.brickset.com/sets/images/11388-1.jpg"
-      ],
-      "url": "https://brickset.com/sets/11388-1",
-      "credit": "Dati e immagine: Brickset",
-      "creditUrl": "https://brickset.com"
-    },
-    {
       "id": "lego-52991",
       "title": "Dragon Ball: Shenron & Goku (11390)",
       "description": "Set LEGO Icons del 2026, 1764 pezzi.",
@@ -1469,6 +1439,21 @@
         "https://images.brickset.com/sets/images/21373-1.jpg"
       ],
       "url": "https://brickset.com/sets/21373-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52992",
+      "title": "Godzilla (21375)",
+      "description": "Set LEGO Ideas del 2026, 5363 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 399.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/21375-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/21375-1",
       "credit": "Dati e immagine: Brickset",
       "creditUrl": "https://brickset.com"
     },
@@ -1863,21 +1848,6 @@
       "creditUrl": "https://brickset.com"
     },
     {
-      "id": "lego-52982",
-      "title": "SpongeBob SquarePants Figure (40858)",
-      "description": "Set LEGO BrickHeadz del 2026, 72 pezzi.",
-      "condition": "",
-      "category": "",
-      "price": 12.99,
-      "currency": "EUR",
-      "images": [
-        "https://images.brickset.com/sets/images/40858-1.jpg"
-      ],
-      "url": "https://brickset.com/sets/40858-1",
-      "credit": "Dati e immagine: Brickset",
-      "creditUrl": "https://brickset.com"
-    },
-    {
       "id": "lego-52983",
       "title": "Golden Age Superman and Batman (40859)",
       "description": "Set LEGO BrickHeadz del 2026, 218 pezzi.",
@@ -2009,21 +1979,6 @@
         "https://images.brickset.com/sets/images/40880-1.jpg"
       ],
       "url": "https://brickset.com/sets/40880-1",
-      "credit": "Dati e immagine: Brickset",
-      "creditUrl": "https://brickset.com"
-    },
-    {
-      "id": "lego-52989",
-      "title": "Gremlins: Gizmo and Stripe Figures (40919)",
-      "description": "Set LEGO BrickHeadz del 2026, 230 pezzi.",
-      "condition": "",
-      "category": "",
-      "price": 24.99,
-      "currency": "EUR",
-      "images": [
-        "https://images.brickset.com/sets/images/40919-1.jpg"
-      ],
-      "url": "https://brickset.com/sets/40919-1",
       "credit": "Dati e immagine: Brickset",
       "creditUrl": "https://brickset.com"
     },
@@ -2249,6 +2204,51 @@
         "https://images.brickset.com/sets/images/42672-1.jpg"
       ],
       "url": "https://brickset.com/sets/42672-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51384",
+      "title": "Family Vacation Beach Resort (42673)",
+      "description": "Set LEGO Friends del 2025, 1140 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 129.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/42673-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/42673-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52651",
+      "title": "Fun Water Park Day (42676)",
+      "description": "Set LEGO Friends del 2026, 278 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 29.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/42676-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/42676-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51734",
+      "title": "Heartlake City Bunny Hotel (42679)",
+      "description": "Set LEGO Friends del 2026, 161 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 24.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/42679-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/42679-1",
       "credit": "Dati e immagine: Brickset",
       "creditUrl": "https://brickset.com"
     }
