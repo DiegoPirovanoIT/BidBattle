@@ -1,11 +1,11 @@
 {
   "source": "games",
-  "generatedAt": "2026-11-09T01:43:28.773Z",
+  "generatedAt": "2026-11-16T02:02:21.845Z",
   "products": [
     {
       "id": "game-331996",
       "title": "Dressmaker",
-      "description": "Uscito nel 2026. Recensioni positive su Steam: 99% di 14.943.",
+      "description": "Uscito nel 2026. Recensioni positive su Steam: 99% di 15.668.",
       "condition": "",
       "category": "",
       "price": 14.99,
@@ -20,7 +20,7 @@
     {
       "id": "game-203652",
       "title": "A Short Hike",
-      "description": "Uscito nel 2019. Recensioni positive su Steam: 99% di 12.756.",
+      "description": "Uscito nel 2019. Recensioni positive su Steam: 99% di 12.763.",
       "condition": "",
       "category": "",
       "price": 7.99,
@@ -35,7 +35,7 @@
     {
       "id": "game-259057",
       "title": "Papas Freezeria Deluxe",
-      "description": "Uscito nel 2023. Recensioni positive su Steam: 99% di 9577.",
+      "description": "Uscito nel 2023. Recensioni positive su Steam: 99% di 9589.",
       "condition": "",
       "category": "",
       "price": 5.99,
@@ -50,7 +50,7 @@
     {
       "id": "game-315892",
       "title": "Creature Kitchen",
-      "description": "Uscito nel 2026. Recensioni positive su Steam: 99% di 7930.",
+      "description": "Uscito nel 2026. Recensioni positive su Steam: 99% di 7982.",
       "condition": "",
       "category": "",
       "price": 7.99,
@@ -63,24 +63,24 @@
       "creditUrl": "https://www.cheapshark.com"
     },
     {
-      "id": "game-242613",
-      "title": "Patricks Parabox",
-      "description": "Uscito nel 2022. Recensioni positive su Steam: 99% di 2287.",
+      "id": "game-283205",
+      "title": "TOEM: A Photo Adventure",
+      "description": "Recensioni positive su Steam: 99% di 3478.",
       "condition": "",
       "category": "",
       "price": 19.99,
       "currency": "USD",
       "images": [
-        "https://cdn.akamai.steamstatic.com/steam/apps/1260520/header.jpg"
+        "https://cdn.akamai.steamstatic.com/steam/apps/1307580/header.jpg"
       ],
-      "url": "https://store.steampowered.com/app/1260520",
+      "url": "https://store.steampowered.com/app/1307580",
       "credit": "Dati: CheapShark. Immagine: Steam",
       "creditUrl": "https://www.cheapshark.com"
     },
     {
       "id": "game-326995",
       "title": "The Mermaid Mask",
-      "description": "Uscito nel 2026. Recensioni positive su Steam: 99% di 2265.",
+      "description": "Uscito nel 2026. Recensioni positive su Steam: 99% di 2307.",
       "condition": "",
       "category": "",
       "price": 19.99,
@@ -93,9 +93,39 @@
       "creditUrl": "https://www.cheapshark.com"
     },
     {
+      "id": "game-242613",
+      "title": "Patricks Parabox",
+      "description": "Uscito nel 2022. Recensioni positive su Steam: 99% di 2291.",
+      "condition": "",
+      "category": "",
+      "price": 19.99,
+      "currency": "USD",
+      "images": [
+        "https://cdn.akamai.steamstatic.com/steam/apps/1260520/header.jpg"
+      ],
+      "url": "https://store.steampowered.com/app/1260520",
+      "credit": "Dati: CheapShark. Immagine: Steam",
+      "creditUrl": "https://www.cheapshark.com"
+    },
+    {
+      "id": "game-144767",
+      "title": "oO",
+      "description": "Uscito nel 2023. Recensioni positive su Steam: 99% di 2270.",
+      "condition": "",
+      "category": "",
+      "price": 9.99,
+      "currency": "USD",
+      "images": [
+        "https://cdn.akamai.steamstatic.com/steam/apps/367570/header.jpg"
+      ],
+      "url": "https://store.steampowered.com/app/367570",
+      "credit": "Dati: CheapShark. Immagine: Steam",
+      "creditUrl": "https://www.cheapshark.com"
+    },
+    {
       "id": "game-242352",
       "title": "The Upturned",
-      "description": "Uscito nel 2022. Recensioni positive su Steam: 99% di 2180.",
+      "description": "Uscito nel 2022. Recensioni positive su Steam: 99% di 2184.",
       "condition": "",
       "category": "",
       "price": 9.99,
@@ -110,7 +140,7 @@
     {
       "id": "game-150036",
       "title": "Stardew Valley",
-      "description": "Uscito nel 2016. Recensioni positive su Steam: 98% di 396.976.",
+      "description": "Uscito nel 2016. Recensioni positive su Steam: 98% di 397.344.",
       "condition": "",
       "category": "",
       "price": 14.99,
@@ -125,7 +155,7 @@
     {
       "id": "game-36",
       "title": "Portal 2",
-      "description": "Uscito nel 2011. Recensioni positive su Steam: 98% di 174.911.",
+      "description": "Uscito nel 2011. Recensioni positive su Steam: 98% di 175.030.",
       "condition": "",
       "category": "",
       "price": 9.99,
@@ -140,7 +170,7 @@
     {
       "id": "game-196149",
       "title": "Hades",
-      "description": "Uscito nel 2020. Recensioni positive su Steam: 98% di 143.306.",
+      "description": "Uscito nel 2020. Recensioni positive su Steam: 98% di 143.388.",
       "condition": "",
       "category": "",
       "price": 24.99,
@@ -155,7 +185,7 @@
     {
       "id": "game-150308",
       "title": "Factorio",
-      "description": "Uscito nel 2020. Recensioni positive su Steam: 98% di 118.873.",
+      "description": "Uscito nel 2020. Recensioni positive su Steam: 98% di 119.002.",
       "condition": "",
       "category": "",
       "price": 35,
@@ -170,7 +200,7 @@
     {
       "id": "game-281345",
       "title": "Balatro",
-      "description": "Uscito nel 2024. Recensioni positive su Steam: 98% di 105.661.",
+      "description": "Uscito nel 2024. Recensioni positive su Steam: 98% di 105.834.",
       "condition": "",
       "category": "",
       "price": 14.99,
@@ -185,10 +215,10 @@
     {
       "id": "game-199910",
       "title": "Totally Accurate Battle Simulator",
-      "description": "Uscito nel 2019. Recensioni positive su Steam: 98% di 85.286.",
+      "description": "Uscito nel 2019. Recensioni positive su Steam: 98% di 85.358.",
       "condition": "",
       "category": "",
-      "price": 19.99,
+      "price": 39.98,
       "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/508440/header.jpg"
@@ -200,7 +230,7 @@
     {
       "id": "game-82",
       "title": "Portal",
-      "description": "Uscito nel 2007. Recensioni positive su Steam: 98% di 85.208.",
+      "description": "Uscito nel 2007. Recensioni positive su Steam: 98% di 85.288.",
       "condition": "",
       "category": "",
       "price": 9.99,
@@ -215,7 +245,7 @@
     {
       "id": "game-147951",
       "title": "Slime Rancher",
-      "description": "Uscito nel 2017. Recensioni positive su Steam: 98% di 66.069.",
+      "description": "Uscito nel 2017. Recensioni positive su Steam: 98% di 66.103.",
       "condition": "",
       "category": "",
       "price": 19.99,
@@ -230,7 +260,7 @@
     {
       "id": "game-207442",
       "title": "Half-Life: Alyx",
-      "description": "Uscito nel 2020. Recensioni positive su Steam: 98% di 61.932.",
+      "description": "Uscito nel 2020. Recensioni positive su Steam: 98% di 61.954.",
       "condition": "",
       "category": "",
       "price": 59.99,
@@ -245,7 +275,7 @@
     {
       "id": "game-304135",
       "title": "DELTARUNE",
-      "description": "Uscito nel 2025. Recensioni positive su Steam: 98% di 56.365.",
+      "description": "Uscito nel 2025. Recensioni positive su Steam: 98% di 56.318.",
       "condition": "",
       "category": "",
       "price": 24.99,
@@ -260,7 +290,7 @@
     {
       "id": "game-256566",
       "title": "Pizza Tower",
-      "description": "Uscito nel 2023. Recensioni positive su Steam: 98% di 45.692.",
+      "description": "Uscito nel 2023. Recensioni positive su Steam: 98% di 45.746.",
       "condition": "",
       "category": "",
       "price": 19.99,
@@ -275,7 +305,7 @@
     {
       "id": "game-219098",
       "title": "The Henry Stickmin Collection",
-      "description": "Uscito nel 2020. Recensioni positive su Steam: 98% di 41.129.",
+      "description": "Uscito nel 2020. Recensioni positive su Steam: 98% di 41.173.",
       "condition": "",
       "category": "",
       "price": 14.99,
@@ -290,7 +320,7 @@
     {
       "id": "game-163875",
       "title": "OneShot",
-      "description": "Uscito nel 2025. Recensioni positive su Steam: 98% di 33.158.",
+      "description": "Uscito nel 2014. Recensioni positive su Steam: 98% di 33.218.",
       "condition": "",
       "category": "",
       "price": 9.99,
@@ -305,7 +335,7 @@
     {
       "id": "game-173893",
       "title": "A Hat in Time",
-      "description": "Uscito nel 2017. Recensioni positive su Steam: 98% di 29.394.",
+      "description": "Uscito nel 2017. Recensioni positive su Steam: 98% di 29.397.",
       "condition": "",
       "category": "",
       "price": 29.99,
@@ -320,7 +350,7 @@
     {
       "id": "game-259111",
       "title": "Crab Champions",
-      "description": "Uscito nel 2023. Recensioni positive su Steam: 98% di 23.259.",
+      "description": "Uscito nel 2023. Recensioni positive su Steam: 98% di 23.313.",
       "condition": "",
       "category": "",
       "price": 9.99,
@@ -335,7 +365,7 @@
     {
       "id": "game-171629",
       "title": "VTOL VR",
-      "description": "Recensioni positive su Steam: 98% di 17.169.",
+      "description": "Recensioni positive su Steam: 98% di 17.180.",
       "condition": "",
       "category": "",
       "price": 29.99,
@@ -350,10 +380,10 @@
     {
       "id": "game-290242",
       "title": "Crime Scene Cleaner",
-      "description": "Uscito nel 2024. Recensioni positive su Steam: 98% di 15.832.",
+      "description": "Uscito nel 2024. Recensioni positive su Steam: 98% di 15.868.",
       "condition": "",
       "category": "",
-      "price": 49.98,
+      "price": 29.99,
       "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1040200/header.jpg"
@@ -365,7 +395,7 @@
     {
       "id": "game-227946",
       "title": "Before Your Eyes",
-      "description": "Uscito nel 2021. Recensioni positive su Steam: 98% di 15.777.",
+      "description": "Uscito nel 2021. Recensioni positive su Steam: 98% di 15.804.",
       "condition": "",
       "category": "",
       "price": 9.99,
@@ -380,7 +410,7 @@
     {
       "id": "game-268464",
       "title": "Chants of Sennaar",
-      "description": "Uscito nel 2023. Recensioni positive su Steam: 98% di 13.460.",
+      "description": "Uscito nel 2023. Recensioni positive su Steam: 98% di 13.494.",
       "condition": "",
       "category": "",
       "price": 19.99,
@@ -395,7 +425,7 @@
     {
       "id": "game-247074",
       "title": "Neon White",
-      "description": "Uscito nel 2022. Recensioni positive su Steam: 98% di 12.778.",
+      "description": "Uscito nel 2022. Recensioni positive su Steam: 98% di 12.781.",
       "condition": "",
       "category": "",
       "price": 24.99,
@@ -410,7 +440,7 @@
     {
       "id": "game-225598",
       "title": "Wobbledogs",
-      "description": "Recensioni positive su Steam: 98% di 12.071.",
+      "description": "Recensioni positive su Steam: 98% di 12.085.",
       "condition": "",
       "category": "",
       "price": 19.99,
@@ -425,7 +455,7 @@
     {
       "id": "game-301000",
       "title": "White Knuckle",
-      "description": "Recensioni positive su Steam: 98% di 10.668.",
+      "description": "Recensioni positive su Steam: 98% di 10.754.",
       "condition": "",
       "category": "",
       "price": 16.99,
@@ -440,7 +470,7 @@
     {
       "id": "game-270563",
       "title": "Bomb Rush Cyberfunk",
-      "description": "Uscito nel 2023. Recensioni positive su Steam: 98% di 10.457.",
+      "description": "Uscito nel 2023. Recensioni positive su Steam: 98% di 10.466.",
       "condition": "",
       "category": "",
       "price": 39.99,
@@ -455,7 +485,7 @@
     {
       "id": "game-299389",
       "title": "Look Outside",
-      "description": "Uscito nel 2025. Recensioni positive su Steam: 98% di 10.157.",
+      "description": "Uscito nel 2025. Recensioni positive su Steam: 98% di 10.210.",
       "condition": "",
       "category": "",
       "price": 9.99,
@@ -470,7 +500,7 @@
     {
       "id": "game-226200",
       "title": "The Room 4: Old Sins",
-      "description": "Uscito nel 2021. Recensioni positive su Steam: 98% di 9127.",
+      "description": "Uscito nel 2021. Recensioni positive su Steam: 98% di 9137.",
       "condition": "",
       "category": "",
       "price": 8.99,
@@ -485,7 +515,7 @@
     {
       "id": "game-171870",
       "title": "West of Loathing",
-      "description": "Uscito nel 2017. Recensioni positive su Steam: 98% di 8709.",
+      "description": "Uscito nel 2017. Recensioni positive su Steam: 98% di 8710.",
       "condition": "",
       "category": "",
       "price": 10.99,
@@ -500,7 +530,7 @@
     {
       "id": "game-146431",
       "title": "Keep Talking and Nobody Explodes",
-      "description": "Uscito nel 2015. Recensioni positive su Steam: 98% di 8145.",
+      "description": "Uscito nel 2015. Recensioni positive su Steam: 98% di 8150.",
       "condition": "",
       "category": "",
       "price": 14.99,
@@ -515,7 +545,7 @@
     {
       "id": "game-251074",
       "title": "Trombone Champ",
-      "description": "Uscito nel 2022. Recensioni positive su Steam: 98% di 7192.",
+      "description": "Uscito nel 2022. Recensioni positive su Steam: 98% di 7197.",
       "condition": "",
       "category": "",
       "price": 14.99,
@@ -530,7 +560,7 @@
     {
       "id": "game-327794",
       "title": "Endacopia",
-      "description": "Uscito nel 2026. Recensioni positive su Steam: 98% di 7017.",
+      "description": "Uscito nel 2026. Recensioni positive su Steam: 98% di 7114.",
       "condition": "",
       "category": "",
       "price": 16.5,
@@ -545,7 +575,7 @@
     {
       "id": "game-250606",
       "title": "The Case of the Golden Idol",
-      "description": "Uscito nel 2022. Recensioni positive su Steam: 98% di 6634.",
+      "description": "Uscito nel 2022. Recensioni positive su Steam: 98% di 6645.",
       "condition": "",
       "category": "",
       "price": 17.99,
@@ -560,7 +590,7 @@
     {
       "id": "game-296703",
       "title": "Threefold Recital",
-      "description": "Uscito nel 2025. Recensioni positive su Steam: 98% di 5174.",
+      "description": "Uscito nel 2025. Recensioni positive su Steam: 98% di 5176.",
       "condition": "",
       "category": "",
       "price": 14.99,
@@ -605,7 +635,7 @@
     {
       "id": "game-203634",
       "title": "Kindergarten 2",
-      "description": "Uscito nel 2019. Recensioni positive su Steam: 98% di 4453.",
+      "description": "Uscito nel 2019. Recensioni positive su Steam: 98% di 4458.",
       "condition": "",
       "category": "",
       "price": 14.99,
@@ -620,7 +650,7 @@
     {
       "id": "game-230887",
       "title": "Scarlet Hollow",
-      "description": "Uscito nel 2025. Recensioni positive su Steam: 98% di 4284.",
+      "description": "Uscito nel 2025. Recensioni positive su Steam: 98% di 4306.",
       "condition": "",
       "category": "",
       "price": 29.99,
@@ -635,7 +665,7 @@
     {
       "id": "game-284515",
       "title": "Minishoot Adventures",
-      "description": "Uscito nel 2024. Recensioni positive su Steam: 98% di 4226.",
+      "description": "Uscito nel 2024. Recensioni positive su Steam: 98% di 4229.",
       "condition": "",
       "category": "",
       "price": 14.99,
@@ -650,7 +680,7 @@
     {
       "id": "game-254106",
       "title": "Lil Gator Game",
-      "description": "Uscito nel 2022. Recensioni positive su Steam: 98% di 4048.",
+      "description": "Uscito nel 2022. Recensioni positive su Steam: 98% di 4055.",
       "condition": "",
       "category": "",
       "price": 19.99,
@@ -665,7 +695,7 @@
     {
       "id": "game-284388",
       "title": "Felvidek",
-      "description": "Uscito nel 2024. Recensioni positive su Steam: 98% di 3725.",
+      "description": "Uscito nel 2024. Recensioni positive su Steam: 98% di 3733.",
       "condition": "",
       "category": "",
       "price": 10.99,
@@ -680,7 +710,7 @@
     {
       "id": "game-300458",
       "title": "Touhou Mystias Izakaya",
-      "description": "Uscito nel 2021. Recensioni positive su Steam: 98% di 3623.",
+      "description": "Uscito nel 2021. Recensioni positive su Steam: 98% di 3627.",
       "condition": "",
       "category": "",
       "price": 5.99,
@@ -689,21 +719,6 @@
         "https://cdn.akamai.steamstatic.com/steam/apps/1584090/header.jpg"
       ],
       "url": "https://store.steampowered.com/app/1584090",
-      "credit": "Dati: CheapShark. Immagine: Steam",
-      "creditUrl": "https://www.cheapshark.com"
-    },
-    {
-      "id": "game-283205",
-      "title": "TOEM: A Photo Adventure",
-      "description": "Recensioni positive su Steam: 98% di 3472.",
-      "condition": "",
-      "category": "",
-      "price": 19.99,
-      "currency": "USD",
-      "images": [
-        "https://cdn.akamai.steamstatic.com/steam/apps/1307580/header.jpg"
-      ],
-      "url": "https://store.steampowered.com/app/1307580",
       "credit": "Dati: CheapShark. Immagine: Steam",
       "creditUrl": "https://www.cheapshark.com"
     },
@@ -725,7 +740,7 @@
     {
       "id": "game-276365",
       "title": "Loddlenaut",
-      "description": "Uscito nel 2023. Recensioni positive su Steam: 98% di 3005.",
+      "description": "Uscito nel 2023. Recensioni positive su Steam: 98% di 3022.",
       "condition": "",
       "category": "",
       "price": 19.99,
@@ -740,7 +755,7 @@
     {
       "id": "game-195629",
       "title": "Epic Battle Fantasy 5",
-      "description": "Uscito nel 2018. Recensioni positive su Steam: 98% di 2861.",
+      "description": "Uscito nel 2018. Recensioni positive su Steam: 98% di 2863.",
       "condition": "",
       "category": "",
       "price": 24.99,
@@ -755,7 +770,7 @@
     {
       "id": "game-292016",
       "title": "OneShot: World Machine Edition",
-      "description": "Uscito nel 2024. Recensioni positive su Steam: 98% di 2630.",
+      "description": "Uscito nel 2024. Recensioni positive su Steam: 98% di 2642.",
       "condition": "",
       "category": "",
       "price": 9.99,
@@ -768,24 +783,9 @@
       "creditUrl": "https://www.cheapshark.com"
     },
     {
-      "id": "game-324644",
-      "title": "MOLE",
-      "description": "Uscito nel 2026. Recensioni positive su Steam: 98% di 2602.",
-      "condition": "",
-      "category": "",
-      "price": 12.99,
-      "currency": "USD",
-      "images": [
-        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4064510/49a44315e2f4f5bf302fd564287039e4663dd3e1/capsule_231x87_alt_assets_0.jpg?t=1793036499"
-      ],
-      "url": "https://store.steampowered.com/app/4064510",
-      "credit": "Dati: CheapShark. Immagine: Steam",
-      "creditUrl": "https://www.cheapshark.com"
-    },
-    {
       "id": "game-158842",
       "title": "Mad Father",
-      "description": "Uscito nel 2016. Recensioni positive su Steam: 98% di 2598.",
+      "description": "Uscito nel 2016. Recensioni positive su Steam: 98% di 2606.",
       "condition": "",
       "category": "",
       "price": 9.99,
@@ -800,7 +800,7 @@
     {
       "id": "game-294856",
       "title": "Papas Pizzeria Deluxe",
-      "description": "Uscito nel 2024. Recensioni positive su Steam: 98% di 2472.",
+      "description": "Uscito nel 2024. Recensioni positive su Steam: 98% di 2475.",
       "condition": "",
       "category": "",
       "price": 5.99,
@@ -815,7 +815,7 @@
     {
       "id": "game-252414",
       "title": "Monster Prom 3: Monster Roadtrip",
-      "description": "Uscito nel 2022. Recensioni positive su Steam: 98% di 2470.",
+      "description": "Uscito nel 2022. Recensioni positive su Steam: 98% di 2473.",
       "condition": "",
       "category": "",
       "price": 11.99,
@@ -830,7 +830,7 @@
     {
       "id": "game-302389",
       "title": "StarVaders",
-      "description": "Uscito nel 2025. Recensioni positive su Steam: 98% di 2262.",
+      "description": "Uscito nel 2025. Recensioni positive su Steam: 98% di 2269.",
       "condition": "",
       "category": "",
       "price": 24.99,
@@ -845,7 +845,7 @@
     {
       "id": "game-308208",
       "title": "Denshattack!",
-      "description": "Uscito nel 2026. Recensioni positive su Steam: 98% di 2234.",
+      "description": "Uscito nel 2026. Recensioni positive su Steam: 98% di 2246.",
       "condition": "",
       "category": "",
       "price": 19.99,
@@ -858,39 +858,9 @@
       "creditUrl": "https://www.cheapshark.com"
     },
     {
-      "id": "game-239703",
-      "title": "Sucker for Love: First Date",
-      "description": "Uscito nel 2022. Recensioni positive su Steam: 98% di 2163.",
-      "condition": "",
-      "category": "",
-      "price": 9.99,
-      "currency": "USD",
-      "images": [
-        "https://cdn.akamai.steamstatic.com/steam/apps/1574270/header.jpg"
-      ],
-      "url": "https://store.steampowered.com/app/1574270",
-      "credit": "Dati: CheapShark. Immagine: Steam",
-      "creditUrl": "https://www.cheapshark.com"
-    },
-    {
-      "id": "game-336019",
-      "title": "DevilConnection",
-      "description": "Uscito nel 2025. Recensioni positive su Steam: 98% di 2142.",
-      "condition": "",
-      "category": "",
-      "price": 16.66,
-      "currency": "USD",
-      "images": [
-        "https://cdn.akamai.steamstatic.com/steam/apps/3054820/header.jpg"
-      ],
-      "url": "https://store.steampowered.com/app/3054820",
-      "credit": "Dati: CheapShark. Immagine: Steam",
-      "creditUrl": "https://www.cheapshark.com"
-    },
-    {
       "id": "game-332097",
       "title": "Well Dweller",
-      "description": "Uscito nel 2026. Recensioni positive su Steam: 98% di 2078.",
+      "description": "Uscito nel 2026. Recensioni positive su Steam: 98% di 2191.",
       "condition": "",
       "category": "",
       "price": 19.99,
@@ -903,9 +873,24 @@
       "creditUrl": "https://www.cheapshark.com"
     },
     {
+      "id": "game-239703",
+      "title": "Sucker for Love: First Date",
+      "description": "Uscito nel 2022. Recensioni positive su Steam: 98% di 2161.",
+      "condition": "",
+      "category": "",
+      "price": 9.99,
+      "currency": "USD",
+      "images": [
+        "https://cdn.akamai.steamstatic.com/steam/apps/1574270/header.jpg"
+      ],
+      "url": "https://store.steampowered.com/app/1574270",
+      "credit": "Dati: CheapShark. Immagine: Steam",
+      "creditUrl": "https://www.cheapshark.com"
+    },
+    {
       "id": "game-39",
       "title": "Terraria",
-      "description": "Uscito nel 2011. Recensioni positive su Steam: 97% di 605.532.",
+      "description": "Uscito nel 2011. Recensioni positive su Steam: 97% di 605.867.",
       "condition": "",
       "category": "",
       "price": 9.99,
@@ -920,7 +905,7 @@
     {
       "id": "game-110",
       "title": "Garry's Mod",
-      "description": "Uscito nel 2004. Recensioni positive su Steam: 97% di 543.044.",
+      "description": "Uscito nel 2004. Recensioni positive su Steam: 97% di 543.497.",
       "condition": "",
       "category": "",
       "price": 9.99,
@@ -935,7 +920,7 @@
     {
       "id": "game-276648",
       "title": "Lethal Company",
-      "description": "Recensioni positive su Steam: 97% di 276.884.",
+      "description": "Recensioni positive su Steam: 97% di 276.948.",
       "condition": "",
       "category": "",
       "price": 9.99,
@@ -950,7 +935,7 @@
     {
       "id": "game-43",
       "title": "Left 4 Dead 2",
-      "description": "Uscito nel 2009. Recensioni positive su Steam: 97% di 234.937.",
+      "description": "Uscito nel 2009. Recensioni positive su Steam: 97% di 235.153.",
       "condition": "",
       "category": "",
       "price": 9.99,
@@ -965,7 +950,7 @@
     {
       "id": "game-196536",
       "title": "Bloons TD 6",
-      "description": "Uscito nel 2018. Recensioni positive su Steam: 97% di 232.550.",
+      "description": "Uscito nel 2018. Recensioni positive su Steam: 97% di 232.721.",
       "condition": "",
       "category": "",
       "price": 13.99,
@@ -980,7 +965,7 @@
     {
       "id": "game-144158",
       "title": "BeamNG.drive",
-      "description": "Uscito nel 2024. Recensioni positive su Steam: 97% di 214.944.",
+      "description": "Uscito nel 2024. Recensioni positive su Steam: 97% di 215.496.",
       "condition": "",
       "category": "",
       "price": 24.99,
@@ -995,7 +980,7 @@
     {
       "id": "game-299450",
       "title": "Schedule I",
-      "description": "Recensioni positive su Steam: 97% di 204.761.",
+      "description": "Recensioni positive su Steam: 97% di 205.049.",
       "condition": "",
       "category": "",
       "price": 19.99,
@@ -1010,7 +995,7 @@
     {
       "id": "game-165363",
       "title": "Hollow Knight",
-      "description": "Uscito nel 2017. Recensioni positive su Steam: 97% di 186.227.",
+      "description": "Uscito nel 2017. Recensioni positive su Steam: 97% di 186.520.",
       "condition": "",
       "category": "",
       "price": 14.99,
@@ -1025,7 +1010,7 @@
     {
       "id": "game-203431",
       "title": "People Playground",
-      "description": "Uscito nel 2019. Recensioni positive su Steam: 97% di 179.533.",
+      "description": "Uscito nel 2019. Recensioni positive su Steam: 97% di 179.609.",
       "condition": "",
       "category": "",
       "price": 9.99,
@@ -1040,7 +1025,7 @@
     {
       "id": "game-178632",
       "title": "Deep Rock Galactic",
-      "description": "Uscito nel 2020. Recensioni positive su Steam: 97% di 171.632.",
+      "description": "Uscito nel 2020. Recensioni positive su Steam: 97% di 171.705.",
       "condition": "",
       "category": "",
       "price": 29.99,
@@ -1055,7 +1040,7 @@
     {
       "id": "game-220083",
       "title": "ULTRAKILL",
-      "description": "Uscito nel 2020. Recensioni positive su Steam: 97% di 152.531.",
+      "description": "Uscito nel 2020. Recensioni positive su Steam: 97% di 152.818.",
       "condition": "",
       "category": "",
       "price": 29.99,
@@ -1070,7 +1055,7 @@
     {
       "id": "game-93389",
       "title": "Euro Truck Simulator 2",
-      "description": "Uscito nel 2013. Recensioni positive su Steam: 97% di 147.425.",
+      "description": "Uscito nel 2013. Recensioni positive su Steam: 97% di 147.843.",
       "condition": "",
       "category": "",
       "price": 19.99,
@@ -1085,7 +1070,7 @@
     {
       "id": "game-199566",
       "title": "Satisfactory",
-      "description": "Uscito nel 2024. Recensioni positive su Steam: 97% di 138.834.",
+      "description": "Uscito nel 2024. Recensioni positive su Steam: 97% di 139.022.",
       "condition": "",
       "category": "",
       "price": 39.99,
@@ -1100,7 +1085,7 @@
     {
       "id": "game-154946",
       "title": "RimWorld",
-      "description": "Uscito nel 2018. Recensioni positive su Steam: 97% di 120.508.",
+      "description": "Uscito nel 2018. Recensioni positive su Steam: 97% di 120.641.",
       "condition": "",
       "category": "",
       "price": 34.99,
@@ -1115,7 +1100,7 @@
     {
       "id": "game-310552",
       "title": "Dispatch",
-      "description": "Uscito nel 2025. Recensioni positive su Steam: 97% di 109.809.",
+      "description": "Uscito nel 2025. Recensioni positive su Steam: 97% di 109.922.",
       "condition": "",
       "category": "",
       "price": 29.99,
@@ -1130,7 +1115,7 @@
     {
       "id": "game-149344",
       "title": "American Truck Simulator",
-      "description": "Uscito nel 2016. Recensioni positive su Steam: 97% di 96.108.",
+      "description": "Uscito nel 2016. Recensioni positive su Steam: 97% di 96.257.",
       "condition": "",
       "category": "",
       "price": 19.99,
@@ -1145,7 +1130,7 @@
     {
       "id": "game-59",
       "title": "Half-Life 2",
-      "description": "Uscito nel 2004. Recensioni positive su Steam: 97% di 91.979.",
+      "description": "Uscito nel 2004. Recensioni positive su Steam: 97% di 92.115.",
       "condition": "",
       "category": "",
       "price": 9.99,
@@ -1160,7 +1145,7 @@
     {
       "id": "game-247173",
       "title": "Stray",
-      "description": "Uscito nel 2022. Recensioni positive su Steam: 97% di 80.085.",
+      "description": "Uscito nel 2022. Recensioni positive su Steam: 97% di 80.133.",
       "condition": "",
       "category": "",
       "price": 29.99,
@@ -1175,7 +1160,7 @@
     {
       "id": "game-175271",
       "title": "Slay the Spire",
-      "description": "Uscito nel 2019. Recensioni positive su Steam: 97% di 77.477.",
+      "description": "Uscito nel 2019. Recensioni positive su Steam: 97% di 77.531.",
       "condition": "",
       "category": "",
       "price": 24.99,
@@ -1190,7 +1175,7 @@
     {
       "id": "game-177485",
       "title": "Celeste",
-      "description": "Uscito nel 2018. Recensioni positive su Steam: 97% di 62.895.",
+      "description": "Uscito nel 2018. Recensioni positive su Steam: 97% di 63.003.",
       "condition": "",
       "category": "",
       "price": 19.99,
@@ -1205,7 +1190,7 @@
     {
       "id": "game-4667",
       "title": "Mount and Blade Warband",
-      "description": "Uscito nel 2010. Recensioni positive su Steam: 97% di 55.114.",
+      "description": "Uscito nel 2010. Recensioni positive su Steam: 97% di 55.124.",
       "condition": "",
       "category": "",
       "price": 19.99,
@@ -1220,7 +1205,7 @@
     {
       "id": "game-224533",
       "title": "OMORI",
-      "description": "Uscito nel 2020. Recensioni positive su Steam: 97% di 54.706.",
+      "description": "Uscito nel 2020. Recensioni positive su Steam: 97% di 54.753.",
       "condition": "",
       "category": "",
       "price": 19.99,
@@ -1235,7 +1220,7 @@
     {
       "id": "game-169019",
       "title": "Ravenfield",
-      "description": "Recensioni positive su Steam: 97% di 46.669.",
+      "description": "Recensioni positive su Steam: 97% di 46.689.",
       "condition": "",
       "category": "",
       "price": 17.99,
@@ -1250,7 +1235,7 @@
     {
       "id": "game-89995",
       "title": "Castle Crashers",
-      "description": "Uscito nel 2012. Recensioni positive su Steam: 97% di 46.593.",
+      "description": "Uscito nel 2012. Recensioni positive su Steam: 97% di 46.627.",
       "condition": "",
       "category": "",
       "price": 14.99,
@@ -1265,7 +1250,7 @@
     {
       "id": "game-216932",
       "title": "Persona 4 Golden",
-      "description": "Uscito nel 2020. Recensioni positive su Steam: 97% di 46.188.",
+      "description": "Uscito nel 2020. Recensioni positive su Steam: 97% di 46.201.",
       "condition": "",
       "category": "",
       "price": 19.99,
@@ -1280,7 +1265,7 @@
     {
       "id": "game-103444",
       "title": "POSTAL 2",
-      "description": "Uscito nel 2003. Recensioni positive su Steam: 97% di 43.940.",
+      "description": "Uscito nel 2003. Recensioni positive su Steam: 97% di 43.986.",
       "condition": "",
       "category": "",
       "price": 9.99,
@@ -1295,7 +1280,7 @@
     {
       "id": "game-88611",
       "title": "Dishonored",
-      "description": "Uscito nel 2012. Recensioni positive su Steam: 97% di 40.138.",
+      "description": "Uscito nel 2012. Recensioni positive su Steam: 97% di 40.164.",
       "condition": "",
       "category": "",
       "price": 9.99,
@@ -1310,7 +1295,7 @@
     {
       "id": "game-100587",
       "title": "Papers, Please",
-      "description": "Uscito nel 2013. Recensioni positive su Steam: 97% di 39.854.",
+      "description": "Uscito nel 2013. Recensioni positive su Steam: 97% di 39.887.",
       "condition": "",
       "category": "",
       "price": 9.99,
@@ -1325,7 +1310,7 @@
     {
       "id": "game-229961",
       "title": "PowerWash Simulator",
-      "description": "Uscito nel 2022. Recensioni positive su Steam: 97% di 38.635.",
+      "description": "Uscito nel 2022. Recensioni positive su Steam: 97% di 38.649.",
       "condition": "",
       "category": "",
       "price": 24.99,
@@ -1340,7 +1325,7 @@
     {
       "id": "game-88166",
       "title": "South Park: The Stick of Truth",
-      "description": "Uscito nel 2014. Recensioni positive su Steam: 97% di 31.117.",
+      "description": "Uscito nel 2014. Recensioni positive su Steam: 97% di 31.151.",
       "condition": "",
       "category": "",
       "price": 29.99,
@@ -1355,7 +1340,7 @@
     {
       "id": "game-476",
       "title": "Star Wars Empire at War: Gold Pack",
-      "description": "Uscito nel 2007. Recensioni positive su Steam: 97% di 26.945.",
+      "description": "Uscito nel 2007. Recensioni positive su Steam: 97% di 26.960.",
       "condition": "",
       "category": "",
       "price": 19.99,
@@ -1368,24 +1353,9 @@
       "creditUrl": "https://www.cheapshark.com"
     },
     {
-      "id": "game-295673",
-      "title": "MiSide",
-      "description": "Uscito nel 2024. Recensioni positive su Steam: 97% di 26.312.",
-      "condition": "",
-      "category": "",
-      "price": 14.99,
-      "currency": "USD",
-      "images": [
-        "https://cdn.akamai.steamstatic.com/steam/apps/2527500/header.jpg"
-      ],
-      "url": "https://store.steampowered.com/app/2527500",
-      "credit": "Dati: CheapShark. Immagine: Steam",
-      "creditUrl": "https://www.cheapshark.com"
-    },
-    {
       "id": "game-289982",
       "title": "Fields of Mistria",
-      "description": "Uscito nel 2026. Recensioni positive su Steam: 97% di 26.280.",
+      "description": "Uscito nel 2026. Recensioni positive su Steam: 97% di 26.384.",
       "condition": "",
       "category": "",
       "price": 13.99,
@@ -1398,9 +1368,24 @@
       "creditUrl": "https://www.cheapshark.com"
     },
     {
+      "id": "game-295673",
+      "title": "MiSide",
+      "description": "Uscito nel 2024. Recensioni positive su Steam: 97% di 26.343.",
+      "condition": "",
+      "category": "",
+      "price": 14.99,
+      "currency": "USD",
+      "images": [
+        "https://cdn.akamai.steamstatic.com/steam/apps/2527500/header.jpg"
+      ],
+      "url": "https://store.steampowered.com/app/2527500",
+      "credit": "Dati: CheapShark. Immagine: Steam",
+      "creditUrl": "https://www.cheapshark.com"
+    },
+    {
       "id": "game-210096",
       "title": "The Walking Dead",
-      "description": "Recensioni positive su Steam: 97% di 25.193.",
+      "description": "Recensioni positive su Steam: 97% di 25.225.",
       "condition": "",
       "category": "",
       "price": 14.99,
@@ -1415,7 +1400,7 @@
     {
       "id": "game-109498",
       "title": "BattleBlock Theater",
-      "description": "Uscito nel 2014. Recensioni positive su Steam: 97% di 23.680.",
+      "description": "Uscito nel 2014. Recensioni positive su Steam: 97% di 23.688.",
       "condition": "",
       "category": "",
       "price": 14.99,
@@ -1430,7 +1415,7 @@
     {
       "id": "game-200248",
       "title": "Katana ZERO",
-      "description": "Uscito nel 2019. Recensioni positive su Steam: 97% di 22.847.",
+      "description": "Uscito nel 2019. Recensioni positive su Steam: 97% di 22.858.",
       "condition": "",
       "category": "",
       "price": 14.99,
@@ -1445,7 +1430,7 @@
     {
       "id": "game-151505",
       "title": "Hot Dogs, Horseshoes and Hand Grenades",
-      "description": "Uscito nel 2016. Recensioni positive su Steam: 97% di 19.788.",
+      "description": "Uscito nel 2016. Recensioni positive su Steam: 97% di 19.801.",
       "condition": "",
       "category": "",
       "price": 19.99,
@@ -1460,7 +1445,7 @@
     {
       "id": "game-101913",
       "title": "The Wolf Among Us",
-      "description": "Uscito nel 2013. Recensioni positive su Steam: 97% di 19.252.",
+      "description": "Uscito nel 2013. Recensioni positive su Steam: 97% di 19.255.",
       "condition": "",
       "category": "",
       "price": 14.99,
@@ -1475,10 +1460,10 @@
     {
       "id": "game-218012",
       "title": "Wobbly Life",
-      "description": "Uscito nel 2025. Recensioni positive su Steam: 97% di 18.542.",
+      "description": "Uscito nel 2025. Recensioni positive su Steam: 97% di 18.588.",
       "condition": "",
       "category": "",
-      "price": 24.99,
+      "price": 30.98,
       "currency": "USD",
       "images": [
         "https://cdn.akamai.steamstatic.com/steam/apps/1211020/header.jpg"
@@ -1490,7 +1475,7 @@
     {
       "id": "game-278552",
       "title": "Bopl Battle",
-      "description": "Uscito nel 2023. Recensioni positive su Steam: 97% di 17.375.",
+      "description": "Uscito nel 2023. Recensioni positive su Steam: 97% di 17.425.",
       "condition": "",
       "category": "",
       "price": 9.99,
@@ -1505,7 +1490,7 @@
     {
       "id": "game-172028",
       "title": "DUSK",
-      "description": "Uscito nel 2018. Recensioni positive su Steam: 97% di 17.091.",
+      "description": "Uscito nel 2018. Recensioni positive su Steam: 97% di 17.094.",
       "condition": "",
       "category": "",
       "price": 19.99,
@@ -1518,24 +1503,9 @@
       "creditUrl": "https://www.cheapshark.com"
     },
     {
-      "id": "game-304398",
-      "title": "PRAGMATA",
-      "description": "Uscito nel 2026. Recensioni positive su Steam: 97% di 16.571.",
-      "condition": "",
-      "category": "",
-      "price": 59.99,
-      "currency": "USD",
-      "images": [
-        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3357650/3e7cf55cf72a980ac94cf45d4212e8f0cb566f7f/capsule_231x87.jpg?t=1791454600"
-      ],
-      "url": "https://store.steampowered.com/app/3357650",
-      "credit": "Dati: CheapShark. Immagine: Steam",
-      "creditUrl": "https://www.cheapshark.com"
-    },
-    {
       "id": "game-256511",
       "title": "Hi-Fi RUSH",
-      "description": "Uscito nel 2023. Recensioni positive su Steam: 97% di 16.310.",
+      "description": "Uscito nel 2023. Recensioni positive su Steam: 97% di 16.315.",
       "condition": "",
       "category": "",
       "price": 29.99,
@@ -1550,7 +1520,7 @@
     {
       "id": "game-204818",
       "title": "The Walking Dead: The Telltale Definitive Series",
-      "description": "Uscito nel 2019. Recensioni positive su Steam: 97% di 14.231.",
+      "description": "Uscito nel 2019. Recensioni positive su Steam: 97% di 14.359.",
       "condition": "",
       "category": "",
       "price": 49.99,
@@ -1565,7 +1535,7 @@
     {
       "id": "game-268784",
       "title": "Pseudoregalia",
-      "description": "Uscito nel 2023. Recensioni positive su Steam: 97% di 14.206.",
+      "description": "Uscito nel 2023. Recensioni positive su Steam: 97% di 14.235.",
       "condition": "",
       "category": "",
       "price": 5.99,
@@ -1580,7 +1550,7 @@
     {
       "id": "game-291712",
       "title": "Tiny Glade",
-      "description": "Uscito nel 2024. Recensioni positive su Steam: 97% di 14.090.",
+      "description": "Uscito nel 2024. Recensioni positive su Steam: 97% di 14.118.",
       "condition": "",
       "category": "",
       "price": 14.99,
@@ -1595,7 +1565,7 @@
     {
       "id": "game-187803",
       "title": "Just Shapes and Beats",
-      "description": "Uscito nel 2018. Recensioni positive su Steam: 97% di 13.592.",
+      "description": "Uscito nel 2018. Recensioni positive su Steam: 97% di 13.601.",
       "condition": "",
       "category": "",
       "price": 19.99,
@@ -1610,7 +1580,7 @@
     {
       "id": "game-199412",
       "title": "Baba Is You",
-      "description": "Uscito nel 2019. Recensioni positive su Steam: 97% di 12.739.",
+      "description": "Uscito nel 2019. Recensioni positive su Steam: 97% di 12.747.",
       "condition": "",
       "category": "",
       "price": 14.99,
@@ -1625,7 +1595,7 @@
     {
       "id": "game-231509",
       "title": "Doki Doki Literature Club Plus!",
-      "description": "Uscito nel 2021. Recensioni positive su Steam: 97% di 11.399.",
+      "description": "Uscito nel 2021. Recensioni positive su Steam: 97% di 11.423.",
       "condition": "",
       "category": "",
       "price": 14.99,
@@ -1640,7 +1610,7 @@
     {
       "id": "game-144246",
       "title": "Duck Game",
-      "description": "Uscito nel 2015. Recensioni positive su Steam: 97% di 11.101.",
+      "description": "Uscito nel 2015. Recensioni positive su Steam: 97% di 11.103.",
       "condition": "",
       "category": "",
       "price": 12.99,
@@ -1655,7 +1625,7 @@
     {
       "id": "game-238585",
       "title": "Mon Bazou",
-      "description": "Uscito nel 2025. Recensioni positive su Steam: 97% di 11.016.",
+      "description": "Uscito nel 2025. Recensioni positive su Steam: 97% di 11.036.",
       "condition": "",
       "category": "",
       "price": 15.99,
@@ -1670,7 +1640,7 @@
     {
       "id": "game-290488",
       "title": "Tactical Breach Wizards",
-      "description": "Uscito nel 2024. Recensioni positive su Steam: 97% di 10.553.",
+      "description": "Uscito nel 2024. Recensioni positive su Steam: 97% di 10.576.",
       "condition": "",
       "category": "",
       "price": 19.99,
@@ -1685,7 +1655,7 @@
     {
       "id": "game-199403",
       "title": "Phoenix Wright: Ace Attorney Trilogy",
-      "description": "Uscito nel 2019. Recensioni positive su Steam: 97% di 10.378.",
+      "description": "Uscito nel 2019. Recensioni positive su Steam: 97% di 10.400.",
       "condition": "",
       "category": "",
       "price": 29.99,
@@ -1700,7 +1670,7 @@
     {
       "id": "game-203596",
       "title": "WolfQuest: Anniversary Edition",
-      "description": "Recensioni positive su Steam: 97% di 10.278.",
+      "description": "Recensioni positive su Steam: 97% di 10.302.",
       "condition": "",
       "category": "",
       "price": 29.99,
@@ -1715,7 +1685,7 @@
     {
       "id": "game-288608",
       "title": "Until Then",
-      "description": "Uscito nel 2024. Recensioni positive su Steam: 97% di 9747.",
+      "description": "Uscito nel 2024. Recensioni positive su Steam: 97% di 9770.",
       "condition": "",
       "category": "",
       "price": 19.99,
@@ -1730,7 +1700,7 @@
     {
       "id": "game-219036",
       "title": "There Is No Game : Wrong Dimension",
-      "description": "Uscito nel 2020. Recensioni positive su Steam: 97% di 9742.",
+      "description": "Uscito nel 2020. Recensioni positive su Steam: 97% di 9752.",
       "condition": "",
       "category": "",
       "price": 12.99,
@@ -1745,7 +1715,7 @@
     {
       "id": "game-284696",
       "title": "Spirit City: Lofi Sessions",
-      "description": "Uscito nel 2024. Recensioni positive su Steam: 97% di 9224.",
+      "description": "Uscito nel 2024. Recensioni positive su Steam: 97% di 9246.",
       "condition": "",
       "category": "",
       "price": 11.99,
@@ -1760,13 +1730,13 @@
     {
       "id": "game-321575",
       "title": "Dead as Disco",
-      "description": "Recensioni positive su Steam: 97% di 8895.",
+      "description": "Recensioni positive su Steam: 97% di 8964.",
       "condition": "",
       "category": "",
       "price": 24.99,
       "currency": "USD",
       "images": [
-        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3404260/c047bcb51618b08b5764cc3a5c15f1b50511e4ee/capsule_231x87.jpg?t=1794001015"
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3404260/c047bcb51618b08b5764cc3a5c15f1b50511e4ee/capsule_231x87.jpg?t=1794248455"
       ],
       "url": "https://store.steampowered.com/app/3404260",
       "credit": "Dati: CheapShark. Immagine: Steam",
@@ -1775,13 +1745,13 @@
     {
       "id": "game-328461",
       "title": "IRON NEST: Heavy Turret Simulator",
-      "description": "Uscito nel 2026. Recensioni positive su Steam: 97% di 8427.",
+      "description": "Uscito nel 2026. Recensioni positive su Steam: 97% di 8534.",
       "condition": "",
       "category": "",
       "price": 19.99,
       "currency": "USD",
       "images": [
-        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2950790/bf03649fac670faa45fa4fad684c43a3aeda04b3/capsule_231x87_alt_assets_1.jpg?t=1793491660"
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2950790/922472560f653fd897313ab7a10dd86b018d373f/capsule_231x87.jpg?t=1793491660"
       ],
       "url": "https://store.steampowered.com/app/2950790",
       "credit": "Dati: CheapShark. Immagine: Steam",
@@ -1790,7 +1760,7 @@
     {
       "id": "game-98008",
       "title": "Gunpoint",
-      "description": "Uscito nel 2013. Recensioni positive su Steam: 97% di 8241.",
+      "description": "Uscito nel 2013. Recensioni positive su Steam: 97% di 8244.",
       "condition": "",
       "category": "",
       "price": 9.99,
@@ -1799,6 +1769,36 @@
         "https://cdn.akamai.steamstatic.com/steam/apps/206190/header.jpg"
       ],
       "url": "https://store.steampowered.com/app/206190",
+      "credit": "Dati: CheapShark. Immagine: Steam",
+      "creditUrl": "https://www.cheapshark.com"
+    },
+    {
+      "id": "game-238526",
+      "title": "Milk outside a bag of milk outside a bag of milk",
+      "description": "Uscito nel 2021. Recensioni positive su Steam: 97% di 8219.",
+      "condition": "",
+      "category": "",
+      "price": 8.99,
+      "currency": "USD",
+      "images": [
+        "https://cdn.akamai.steamstatic.com/steam/apps/1604000/header.jpg"
+      ],
+      "url": "https://store.steampowered.com/app/1604000",
+      "credit": "Dati: CheapShark. Immagine: Steam",
+      "creditUrl": "https://www.cheapshark.com"
+    },
+    {
+      "id": "game-216881",
+      "title": "Baldis Basics Plus",
+      "description": "Uscito nel 2020. Recensioni positive su Steam: 97% di 7758.",
+      "condition": "",
+      "category": "",
+      "price": 9.99,
+      "currency": "USD",
+      "images": [
+        "https://cdn.akamai.steamstatic.com/steam/apps/1275890/header.jpg"
+      ],
+      "url": "https://store.steampowered.com/app/1275890",
       "credit": "Dati: CheapShark. Immagine: Steam",
       "creditUrl": "https://www.cheapshark.com"
     }

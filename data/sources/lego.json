@@ -1,6 +1,6 @@
 {
   "source": "lego",
-  "generatedAt": "2026-11-09T01:44:16.868Z",
+  "generatedAt": "2026-11-16T02:03:19.628Z",
   "products": [
     {
       "id": "lego-48423",
@@ -1338,21 +1338,6 @@
       "creditUrl": "https://brickset.com"
     },
     {
-      "id": "lego-51649",
-      "title": "New York City – The Big Apple (21066)",
-      "description": "Set LEGO Architecture del 2026, 1465 pezzi.",
-      "condition": "",
-      "category": "",
-      "price": 139.99,
-      "currency": "EUR",
-      "images": [
-        "https://images.brickset.com/sets/images/21066-1.jpg"
-      ],
-      "url": "https://brickset.com/sets/21066-1",
-      "credit": "Dati e immagine: Brickset",
-      "creditUrl": "https://brickset.com"
-    },
-    {
       "id": "lego-51650",
       "title": "Tower Bridge (21067)",
       "description": "Set LEGO Architecture del 2026, 3745 pezzi.",
@@ -1863,21 +1848,6 @@
       "creditUrl": "https://brickset.com"
     },
     {
-      "id": "lego-53192",
-      "title": "Holiday Ornament Selection 2 (40862)",
-      "description": "Set LEGO Seasonal del 2026, 179 pezzi.",
-      "condition": "",
-      "category": "",
-      "price": 12.99,
-      "currency": "EUR",
-      "images": [
-        "https://images.brickset.com/sets/images/40862-1.jpg"
-      ],
-      "url": "https://brickset.com/sets/40862-1",
-      "credit": "Dati e immagine: Brickset",
-      "creditUrl": "https://brickset.com"
-    },
-    {
       "id": "lego-52993",
       "title": "Buddy the Elf (40865)",
       "description": "Set LEGO Seasonal del 2026, 713 pezzi.",
@@ -1889,21 +1859,6 @@
         "https://images.brickset.com/sets/images/40865-1.jpg"
       ],
       "url": "https://brickset.com/sets/40865-1",
-      "credit": "Dati e immagine: Brickset",
-      "creditUrl": "https://brickset.com"
-    },
-    {
-      "id": "lego-53193",
-      "title": "Santa's Holiday Sleigh Adventure (40866)",
-      "description": "Set LEGO Seasonal del 2026, 187 pezzi.",
-      "condition": "",
-      "category": "",
-      "price": 29.99,
-      "currency": "EUR",
-      "images": [
-        "https://images.brickset.com/sets/images/40866-1.jpg"
-      ],
-      "url": "https://brickset.com/sets/40866-1",
       "credit": "Dati e immagine: Brickset",
       "creditUrl": "https://brickset.com"
     },
@@ -2249,6 +2204,51 @@
         "https://images.brickset.com/sets/images/42679-1.jpg"
       ],
       "url": "https://brickset.com/sets/42679-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52652",
+      "title": "Nature Glamping Cabin (42682)",
+      "description": "Set LEGO Friends del 2026, 295 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 24.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/42682-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/42682-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51738",
+      "title": "Heartlake City Fashion Show (42685)",
+      "description": "Set LEGO Friends del 2026, 410 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 49.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/42685-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/42685-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51739",
+      "title": "Fun Indoor Playground (42686)",
+      "description": "Set LEGO Friends del 2026, 668 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 59.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/42686-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/42686-1",
       "credit": "Dati e immagine: Brickset",
       "creditUrl": "https://brickset.com"
     }

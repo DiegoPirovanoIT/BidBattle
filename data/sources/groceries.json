@@ -1,6 +1,6 @@
 {
   "source": "groceries",
-  "generatedAt": "2026-11-09T01:44:15.250Z",
+  "generatedAt": "2026-11-16T02:03:18.246Z",
   "products": [
     {
       "id": "receipt-37997",
@@ -440,6 +440,25 @@
       "creditUrl": "https://prices.openfoodfacts.org"
     },
     {
+      "id": "receipt-144438",
+      "title": "Scontrino Conad Superstore: 10 prodotti",
+      "description": "6 x Acqua Naturale Conad, Melr, Fiocchi grano saraceno, Crostino dorato con farina integrale, Fiocchi di avena, Latte intero a lunga conservazione, marmelade citron, Marmellata di cedri di Sicilia, 2 x Latte UHT parzialmente scremato, Marmellata di Arancia Rossa di Sicilia I.G.P..",
+      "condition": "",
+      "category": "",
+      "price": 27.4,
+      "currency": "EUR",
+      "country": "IT",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/800/317/001/6323/front_fr.25.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/317/006/5154/front_it.3.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/371/201/0321/front_en.5.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/027/070/6840/front_it.43.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
       "id": "receipt-7966",
       "title": "Scontrino Lidl: 11 prodotti",
       "description": "olive nere denocciolate, Red Kidney Beans, Fagioli Borlotti, Pasta di semola, CousCous, Riso Roma, Spaghetti, Passata di pomodoro, gnocchi di patate, Gorgonzola, Mix Grattugiato Formaggio.",
@@ -516,19 +535,19 @@
       "creditUrl": "https://prices.openfoodfacts.org"
     },
     {
-      "id": "receipt-136421",
-      "title": "Scontrino Coop: 6 prodotti",
-      "description": "Mais super sweet - coop - Cottu a vapore - Mais Dolce, Formaggini Parmigiano Reggiano Schmelzkäse, Scamorzine affumicate, valeriana, Il mio Dado vegetale, Riso soffiato al cioccolato.",
+      "id": "receipt-143703",
+      "title": "Scontrino Crai: 6 prodotti",
+      "description": "AVENA + Protein, Nesquik DUO, Muesli croccante, Le fresche Biscottate classiche, Latte intero, SolePiùDì.",
       "condition": "",
       "category": "",
-      "price": 16.21,
+      "price": 15.74,
       "currency": "EUR",
       "country": "IT",
       "images": [
-        "https://images.openfoodfacts.org/images/products/800/112/071/0840/front_en.4.400.jpg",
-        "https://images.openfoodfacts.org/images/products/801/072/199/6812/front_en.28.400.jpg",
-        "https://images.openfoodfacts.org/images/products/801/227/300/1129/front_it.3.400.jpg",
-        "https://images.openfoodfacts.org/images/products/800/112/093/5991/front_it.3.400.jpg"
+        "https://images.openfoodfacts.org/images/products/800/318/003/3921/front_it.4.400.jpg",
+        "https://images.openfoodfacts.org/images/products/761/303/157/0126/front_en.73.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/289/507/7466/front_it.3.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/140/500/0017/front_it.59.400.jpg"
       ],
       "url": null,
       "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
@@ -554,19 +573,57 @@
       "creditUrl": "https://prices.openfoodfacts.org"
     },
     {
-      "id": "receipt-143703",
-      "title": "Scontrino Crai: 6 prodotti",
-      "description": "AVENA + Protein, Nesquik DUO, Muesli croccante, Le fresche Biscottate classiche, Latte intero, SolePiùDì.",
+      "id": "receipt-136421",
+      "title": "Scontrino Coop: 6 prodotti",
+      "description": "Mais super sweet - coop - Cottu a vapore - Mais Dolce, Formaggini Parmigiano Reggiano Schmelzkäse, Scamorzine affumicate, valeriana, Il mio Dado vegetale, Riso soffiato al cioccolato.",
       "condition": "",
       "category": "",
-      "price": 15.74,
+      "price": 16.21,
       "currency": "EUR",
       "country": "IT",
       "images": [
-        "https://images.openfoodfacts.org/images/products/800/318/003/3921/front_it.4.400.jpg",
-        "https://images.openfoodfacts.org/images/products/761/303/157/0126/front_en.73.400.jpg",
-        "https://images.openfoodfacts.org/images/products/800/289/507/7466/front_it.3.400.jpg",
-        "https://images.openfoodfacts.org/images/products/800/140/500/0017/front_it.59.400.jpg"
+        "https://images.openfoodfacts.org/images/products/800/112/071/0840/front_en.4.400.jpg",
+        "https://images.openfoodfacts.org/images/products/801/072/199/6812/front_en.28.400.jpg",
+        "https://images.openfoodfacts.org/images/products/801/227/300/1129/front_it.3.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/112/093/5991/front_it.3.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
+      "id": "receipt-144869",
+      "title": "Scontrino Centre Commercial E.Leclerc: 5 prodotti",
+      "description": "Baguette céréales, Amandine aux poires, Mille feuille fondant, Twix Top, Bœuf bourguignon et pâtes conchiglie.",
+      "condition": "",
+      "category": "",
+      "price": 14.86,
+      "currency": "EUR",
+      "country": "FR",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/328/966/852/1400/front_fr.13.400.jpg",
+        "https://images.openfoodfacts.org/images/products/345/658/012/8066/front_fr.90.400.jpg",
+        "https://images.openfoodfacts.org/images/products/021/626/302/6170/front_fr.3.400.jpg",
+        "https://images.openfoodfacts.org/images/products/590/095/131/2038/front_en.3.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
+      "id": "receipt-144592",
+      "title": "Scontrino Centre Commercial E.Leclerc: 5 prodotti",
+      "description": "Rougail saucisse - riz aux lentilles, Choco Moo'elleux, Brownie double chocolat, Mille feuille vanille, Eau Pétillante.",
+      "condition": "",
+      "category": "",
+      "price": 14.87,
+      "currency": "EUR",
+      "country": "FR",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/336/676/005/0271/front_fr.43.400.jpg",
+        "https://images.openfoodfacts.org/images/products/762/221/059/0701/front_en.33.400.jpg",
+        "https://images.openfoodfacts.org/images/products/506/097/186/2132/front_en.3.400.jpg",
+        "https://images.openfoodfacts.org/images/products/020/220/401/9615/front_en.4.400.jpg"
       ],
       "url": null,
       "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
@@ -632,7 +689,7 @@
     {
       "id": "receipt-133617",
       "title": "Scontrino Centre Commercial E.Leclerc: 7 prodotti",
-      "description": "Poisson à l'andalouse riz safrané aux petits légumes, La madeleine classique, Eau gazeuse Perrier, Mars Minis, Feuilleté de Mousse Vanille, 2fresh double fraîcheur, Poisson à l'andalouse riz safrané aux petits légumes.",
+      "description": "Poisson à l'andalouse riz safrané aux petits légumes, La madeleine classique, PERRIER eau minérale naturelle gazeuse 6 x 50cl, Mars Minis, Feuilleté de Mousse Vanille, 2fresh double fraîcheur, Poisson à l'andalouse riz safrané aux petits légumes.",
       "condition": "",
       "category": "",
       "price": 21.74,
@@ -972,25 +1029,6 @@
       "creditUrl": "https://prices.openfoodfacts.org"
     },
     {
-      "id": "receipt-59480",
-      "title": "Scontrino Centre Commercial E.Leclerc: 5 prodotti",
-      "description": "Les pépites Eclats de chocolat, Collection inspirée, Pro+ Yaourt à Boire Stracciatella, Ruban Réparation Toilé Argent, Eau minérale naturelle.",
-      "condition": "",
-      "category": "",
-      "price": 13.44,
-      "currency": "EUR",
-      "country": "FR",
-      "images": [
-        "https://images.openfoodfacts.org/images/products/347/286/040/9090/front_fr.62.400.jpg",
-        "https://images.openfoodfacts.org/images/products/356/470/654/3515/front_fr.21.400.jpg",
-        "https://images.openfoodfacts.org/images/products/302/329/006/9226/front_fr.76.400.jpg",
-        "https://images.openproductsfacts.org/images/products/376/011/274/5561/front_fr.7.400.jpg"
-      ],
-      "url": null,
-      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
-      "creditUrl": "https://prices.openfoodfacts.org"
-    },
-    {
       "id": "receipt-65610",
       "title": "Scontrino Centre Commercial E.Leclerc: 6 prodotti",
       "description": "Mix-ins White chocolate dessert + Reese's peanut butter chips, Shampooing extra-doux Fleur de tilleul, Pomme verte, Madeleine, Moelleux aux cerises, La Paëlla Valenciana, poulet rôti, chorizo et fruits de mer, Eau Minérale Naturelle Pétillante.",
@@ -1012,7 +1050,7 @@
     {
       "id": "receipt-144244",
       "title": "Scontrino Auchan: 6 prodotti",
-      "description": "Soja Bio, Champignons de paris pieds et morceaux, Crêpes bretonnes 12 x 26,25 g, Pouce chips nature lisse 200g, Haricots Verts Extra-fins, 2 x Coquillette au blé complet.",
+      "description": "Soja Bio, Champignons de paris pieds et morceaux, Crêpes bretonnes, Pouce chips nature lisse 200g, Haricots Verts Extra-fins, 2 x Coquillette au blé complet.",
       "condition": "",
       "category": "",
       "price": 10.97,
@@ -1116,7 +1154,7 @@
       "images": [
         "https://images.openfoodfacts.org/images/products/359/671/054/0365/front_fr.61.400.jpg",
         "https://images.openfoodfacts.org/images/products/460/179/803/0055/front_fr.70.400.jpg",
-        "https://images.openfoodfacts.org/images/products/376/004/979/4298/front_fr.239.400.jpg",
+        "https://images.openfoodfacts.org/images/products/376/004/979/4298/front_fr.242.400.jpg",
         "https://images.openfoodfacts.org/images/products/317/853/042/5291/front_fr.3.400.jpg"
       ],
       "url": null,
@@ -1308,25 +1346,6 @@
         "https://images.openfoodfacts.org/images/products/800/334/009/7244/front_fr.17.400.jpg",
         "https://images.openbeautyfacts.org/images/products/871/895/171/6353/front_fr.15.400.jpg",
         "https://images.openfoodfacts.org/images/products/619/404/910/0105/front_en.129.400.jpg"
-      ],
-      "url": null,
-      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
-      "creditUrl": "https://prices.openfoodfacts.org"
-    },
-    {
-      "id": "receipt-77438",
-      "title": "Scontrino Auchan: 6 prodotti",
-      "description": "Chouchou, YAOURT A LA GRECQUE NATURE 4x125g, 2 x Pesto verde, Harrys brioche tressee nature au sucre perle sans additifs 500g, Dattes Deglet Nour, Sucre en poudre.",
-      "condition": "",
-      "category": "",
-      "price": 16.06,
-      "currency": "EUR",
-      "country": "FR",
-      "images": [
-        "https://images.openfoodfacts.org/images/products/350/249/002/5121/front_fr.61.400.jpg",
-        "https://images.openfoodfacts.org/images/products/359/671/041/4765/front_fr.63.400.jpg",
-        "https://images.openfoodfacts.org/images/products/359/671/053/6405/front_fr.67.400.jpg",
-        "https://images.openfoodfacts.org/images/products/322/885/700/1231/front_fr.174.400.jpg"
       ],
       "url": null,
       "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
@@ -1884,6 +1903,25 @@
       "creditUrl": "https://prices.openfoodfacts.org"
     },
     {
+      "id": "receipt-144780",
+      "title": "Scontrino Whole Foods Market: 5 prodotti",
+      "description": "4 x Clear Mind, Elderberry Ginger, 2 x PINOT SAGE ACTIVE CULTURE PROBIOTIC TEA, 2 x GINGER LOVE, 365 everyday value, organic capers.",
+      "condition": "",
+      "category": "",
+      "price": 44.34,
+      "currency": "USD",
+      "country": "US",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/085/110/700/3001/front_en.88.400.jpg",
+        "https://images.openfoodfacts.org/images/products/081/861/702/3707/front_en.9.400.jpg",
+        "https://images.openfoodfacts.org/images/products/086/482/000/0110/front_en.6.400.jpg",
+        "https://images.openfoodfacts.org/images/products/081/861/702/5787/front_en.3.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
       "id": "receipt-118976",
       "title": "Scontrino Whole Foods Market: 5 prodotti",
       "description": "Malted Cookie Dough Shake French Ice Cream, House Coffee, 2 x Baling soda, Bluberries, Sicilian Pistachio French Ice Cream.",
@@ -1979,6 +2017,25 @@
       "creditUrl": "https://prices.openfoodfacts.org"
     },
     {
+      "id": "receipt-145161",
+      "title": "Scontrino Delhaize: 28 prodotti",
+      "description": "Bio Half-fat Milk, Bière bio sans alcool, Bière bio sans alcool, Bio Olio extra vergine Di olivia, Super Fruit, Risotto&paella rice, Bière bio sans alcool, Spruiten, Spruiten, Saucisse Polonaise, Krab salade, il gran panettone e altri 16.",
+      "condition": "",
+      "category": "",
+      "price": 121.36,
+      "currency": "EUR",
+      "country": "BE",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/540/011/955/3650/front_en.7.400.jpg",
+        "https://images.openfoodfacts.org/images/products/540/700/676/0436/front_fr.4.400.jpg",
+        "https://images.openfoodfacts.org/images/products/540/700/676/0436/front_fr.4.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/247/002/3352/front_fr.56.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
       "id": "receipt-140138",
       "title": "Scontrino Delhaize: 24 prodotti",
       "description": "Taras Boulba, Riz Basmati, Taras Boulba, Oignons Jaunes, Bio Half-fat Milk, Bio Barista - Biologische schuimbare haverdrank, Bio Barista - Biologische schuimbare haverdrank, Duvel Triple Hop Citra Belgian IPA, Mélange de Noix Pepita, Bio yoghurt boordevol aardbeien, Joghurt Greek Style, Mélange de Noix Pepita e altri 12.",
@@ -1989,7 +2046,7 @@
       "country": "BE",
       "images": [
         "https://images.openfoodfacts.org/images/products/542/502/902/0016/front_fr.6.400.jpg",
-        "https://images.openfoodfacts.org/images/products/501/115/763/0274/front_fr.46.400.jpg",
+        "https://images.openfoodfacts.org/images/products/501/115/763/0274/front_nl.66.400.jpg",
         "https://images.openfoodfacts.org/images/products/542/502/902/0016/front_fr.6.400.jpg",
         "https://images.openfoodfacts.org/images/products/540/011/239/5806/front_fr.4.400.jpg"
       ],
@@ -2121,7 +2178,7 @@
       "currency": "EUR",
       "country": "BE",
       "images": [
-        "https://images.openfoodfacts.org/images/products/501/115/763/0274/front_fr.46.400.jpg",
+        "https://images.openfoodfacts.org/images/products/501/115/763/0274/front_nl.66.400.jpg",
         "https://images.openfoodfacts.org/images/products/540/011/301/7332/front_fr.4.400.jpg",
         "https://images.openfoodfacts.org/images/products/540/011/301/7332/front_fr.4.400.jpg",
         "https://images.openfoodfacts.org/images/products/541/480/700/7820/front_fr.3.400.jpg"
@@ -2179,7 +2236,7 @@
       "country": "BE",
       "images": [
         "https://images.openfoodfacts.org/images/products/540/011/301/7332/front_fr.4.400.jpg",
-        "https://images.openfoodfacts.org/images/products/501/115/763/0274/front_fr.46.400.jpg",
+        "https://images.openfoodfacts.org/images/products/501/115/763/0274/front_nl.66.400.jpg",
         "https://images.openfoodfacts.org/images/products/541/480/700/8360/front_en.14.400.jpg",
         "https://images.openfoodfacts.org/images/products/543/000/395/1002/front_en.3.400.jpg"
       ],
@@ -2277,44 +2334,6 @@
         "https://images.openfoodfacts.org/images/products/739/437/662/1680/front_en.10.400.jpg",
         "https://images.openfoodfacts.org/images/products/540/011/955/3650/front_en.7.400.jpg",
         "https://images.openfoodfacts.org/images/products/739/437/662/1680/front_en.10.400.jpg"
-      ],
-      "url": null,
-      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
-      "creditUrl": "https://prices.openfoodfacts.org"
-    },
-    {
-      "id": "receipt-69602",
-      "title": "Scontrino Delhaize: 14 prodotti",
-      "description": "Thrive Play Beer to Refresh, Stouterik, Stouterik, Peak Protein Alcohol-Free Beer, BMX IPA, Grano armando penna, Amande Blanche En Poudre, Galettes de riz au chocolat au lait, bio, Galettes de riz au chocolat au lait, bio, BMX IPA, Galettes de riz au chocolat au lait, bio, Dozen Free Range Bio Eggs e altri 2.",
-      "condition": "",
-      "category": "",
-      "price": 50.5,
-      "currency": "EUR",
-      "country": "BE",
-      "images": [
-        "https://images.openfoodfacts.org/images/products/543/000/395/1002/front_en.3.400.jpg",
-        "https://images.openfoodfacts.org/images/products/542/502/902/0047/front_fr.3.400.jpg",
-        "https://images.openfoodfacts.org/images/products/542/502/902/0047/front_fr.3.400.jpg",
-        "https://images.openfoodfacts.org/images/products/541/998/031/6653/front_en.6.400.jpg"
-      ],
-      "url": null,
-      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
-      "creditUrl": "https://prices.openfoodfacts.org"
-    },
-    {
-      "id": "receipt-67894",
-      "title": "Scontrino Delhaize: 8 prodotti",
-      "description": "Ukrainian Pickled Salad, Olives Noires, Olives Noires, Oven baked original chips, Antikal Original Spray 800 ML, Groene Olijven / Olives Vertes, Bio Lentils, Risotto&paella rice.",
-      "condition": "",
-      "category": "",
-      "price": 16.92,
-      "currency": "EUR",
-      "country": "BE",
-      "images": [
-        "https://images.openfoodfacts.org/images/products/590/200/900/0805/front_en.6.400.jpg",
-        "https://images.openfoodfacts.org/images/products/540/011/758/4106/front_en.4.400.jpg",
-        "https://images.openfoodfacts.org/images/products/540/011/758/4106/front_en.4.400.jpg",
-        "https://images.openfoodfacts.org/images/products/871/039/816/0829/front_en.60.400.jpg"
       ],
       "url": null,
       "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
@@ -2833,25 +2852,6 @@
       "creditUrl": "https://prices.openfoodfacts.org"
     },
     {
-      "id": "receipt-59055",
-      "title": "Scontrino Costco: 7 prodotti",
-      "description": "Organic Blackberries, Honeycrisp, Certified Organic Bananas, Organic Creamy Almond Butter, Organic roasted chestnuts, Farine d'amande blanchie - Mouture ultrafine, Organic Chicken Bone Broth.",
-      "condition": "",
-      "category": "",
-      "price": 56.63,
-      "currency": "USD",
-      "country": "US",
-      "images": [
-        "https://images.openfoodfacts.org/images/products/074/183/993/0105/front_en.9.400.jpg",
-        "https://images.openfoodfacts.org/images/products/064/312/697/1962/front_en.3.400.jpg",
-        "https://images.openfoodfacts.org/images/products/019/663/382/9795/front_en.29.400.jpg",
-        "https://images.openfoodfacts.org/images/products/079/471/100/1349/front_fr.11.400.jpg"
-      ],
-      "url": null,
-      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
-      "creditUrl": "https://prices.openfoodfacts.org"
-    },
-    {
       "id": "receipt-139960",
       "title": "Scontrino Netto City: 6 prodotti",
       "description": "2 x Frische Vollmilch, Buttermilchdessert Rhabarber, Maasdamer, Marinierte Garnelen - Knoblauch & Kräuter, Fitnessbrot mit 5 % Ölsaaten, Tafeläpfel, Gala, Kl. II.",
@@ -2949,7 +2949,7 @@
     {
       "id": "receipt-122539",
       "title": "Scontrino Netto City: 8 prodotti",
-      "description": "2 x Frische Vollmilch, 2 x Münchner Hell Alkoholfrei, Essig-Essenz, 24,9 % Säure, Milchreis, Schoko, Filterkaffee, Cornflakes, 2 x Maultaschen traditionell schwäbisch, Mineralwasser Medium.",
+      "description": "2 x Frische Vollmilch, 2 x Münchner Hell Alkoholfrei, Essig-Essenz, 24,9 % Säure, Milchreis, Schoko, Filterkaffee, Cornflakes, 2 x 4x Maultaschen traditionell schwäbisch, Mineralwasser Medium.",
       "condition": "",
       "category": "",
       "price": 16.63,
@@ -3195,11 +3195,11 @@
     },
     {
       "id": "receipt-66461",
-      "title": "Scontrino Netto City: 13 prodotti",
-      "description": "Naturradler, Bio-Möhren, Äpfel rot, Toffifee 15er, Nudeln - Korkenzieher, Schloss Export, 2 x Grüner Tee natur, 2 x Frühstücksfleisch, Minz-Mix, Kräutertee Melisse-Pfefferminze, Feiner Zucker Raffinade, Haferflocken Blütenzart, Kernige Haferflocken e altri 1.",
+      "title": "Scontrino Netto City: 14 prodotti",
+      "description": "Naturradler, Bio-Möhren, Äpfel rot, Toffifee 15er, Nudeln - Korkenzieher, Schloss Export, 2 x Grüner Tee natur, 2 x Frühstücksfleisch, Minz-Mix, Kräutertee Melisse-Pfefferminze, Feiner Zucker Raffinade, Haferflocken Blütenzart, Kernige Haferflocken e altri 2.",
       "condition": "",
       "category": "",
-      "price": 17.38,
+      "price": 19.07,
       "currency": "EUR",
       "country": "DE",
       "images": [
@@ -3500,7 +3500,7 @@
     {
       "id": "receipt-120096",
       "title": "Scontrino EDEKA: 7 prodotti",
-      "description": "Zitronensaft aus Zitronensaftkonzentrat, Cola Mix, Paulaner Spezi, Erdbeere-Vanille Konfitüre, Rotes Johannisbeer Gelee Konfitüre, Papiertaschentücher, Papiertaschentücher (4-lagig, 30 Pack à 10 Stück).",
+      "description": "Zitronensaft aus Zitronensaftkonzentrat, Cola Mix, EDEKA hayunga Paulaner Spezi 1x Flaschen à 0.5 Liter Kiste je (1 Liter 1.00€) zzgl. ??? € Pfand 1l 1.00€, Erdbeere-Vanille Konfitüre, Rotes Johannisbeer Gelee Konfitüre, Papiertaschentücher, Papiertaschentücher (4-lagig, 30 Pack à 10 Stück).",
       "condition": "",
       "category": "",
       "price": 14.29,
@@ -3795,7 +3795,7 @@
         "https://images.openfoodfacts.org/images/products/426/012/531/7940/front_de.3.400.jpg",
         "https://images.openfoodfacts.org/images/products/426/020/912/0084/front_de.3.400.jpg",
         "https://images.openfoodfacts.org/images/products/431/159/646/0151/front_de.108.400.jpg",
-        "https://images.openfoodfacts.org/images/products/431/153/221/6491/front_de.3.400.jpg"
+        "https://images.openfoodfacts.org/images/products/431/153/221/6491/front_de.12.400.jpg"
       ],
       "url": null,
       "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
