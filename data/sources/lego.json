@@ -1,6 +1,6 @@
 {
   "source": "lego",
-  "generatedAt": "2026-11-16T02:03:19.628Z",
+  "generatedAt": "2026-11-23T02:44:32.242Z",
   "products": [
     {
       "id": "lego-48423",
@@ -1353,21 +1353,6 @@
       "creditUrl": "https://brickset.com"
     },
     {
-      "id": "lego-51158",
-      "title": "The Parrot Houses (21282)",
-      "description": "Set LEGO Minecraft del 2025, 535 pezzi.",
-      "condition": "",
-      "category": "",
-      "price": 69.99,
-      "currency": "EUR",
-      "images": [
-        "https://images.brickset.com/sets/images/21282-1.jpg"
-      ],
-      "url": "https://brickset.com/sets/21282-1",
-      "credit": "Dati e immagine: Brickset",
-      "creditUrl": "https://brickset.com"
-    },
-    {
       "id": "lego-51763",
       "title": "Floating Sea Otters (21366)",
       "description": "Set LEGO Ideas del 2026, 1234 pezzi.",
@@ -1394,21 +1379,6 @@
         "https://images.brickset.com/sets/images/21370-1.jpg"
       ],
       "url": "https://brickset.com/sets/21370-1",
-      "credit": "Dati e immagine: Brickset",
-      "creditUrl": "https://brickset.com"
-    },
-    {
-      "id": "lego-53191",
-      "title": "Wallace & Gromit (21371)",
-      "description": "Set LEGO Ideas del 2026, 1038 pezzi.",
-      "condition": "",
-      "category": "",
-      "price": 99.99,
-      "currency": "EUR",
-      "images": [
-        "https://images.brickset.com/sets/images/21371-1.jpg"
-      ],
-      "url": "https://brickset.com/sets/21371-1",
       "credit": "Dati e immagine: Brickset",
       "creditUrl": "https://brickset.com"
     },
@@ -1454,21 +1424,6 @@
         "https://images.brickset.com/sets/images/21582-1.jpg"
       ],
       "url": "https://brickset.com/sets/21582-1",
-      "credit": "Dati e immagine: Brickset",
-      "creditUrl": "https://brickset.com"
-    },
-    {
-      "id": "lego-51766",
-      "title": "Chicken Farm (21585)",
-      "description": "Set LEGO Minecraft del 2026, 233 pezzi.",
-      "condition": "",
-      "category": "",
-      "price": 19.99,
-      "currency": "EUR",
-      "images": [
-        "https://images.brickset.com/sets/images/21585-1.jpg"
-      ],
-      "url": "https://brickset.com/sets/21585-1",
       "credit": "Dati e immagine: Brickset",
       "creditUrl": "https://brickset.com"
     },
@@ -1833,21 +1788,6 @@
       "creditUrl": "https://brickset.com"
     },
     {
-      "id": "lego-52983",
-      "title": "Golden Age Superman and Batman (40859)",
-      "description": "Set LEGO BrickHeadz del 2026, 218 pezzi.",
-      "condition": "",
-      "category": "",
-      "price": 24.99,
-      "currency": "EUR",
-      "images": [
-        "https://images.brickset.com/sets/images/40859-1.jpg"
-      ],
-      "url": "https://brickset.com/sets/40859-1",
-      "credit": "Dati e immagine: Brickset",
-      "creditUrl": "https://brickset.com"
-    },
-    {
       "id": "lego-52993",
       "title": "Buddy the Elf (40865)",
       "description": "Set LEGO Seasonal del 2026, 713 pezzi.",
@@ -1994,21 +1934,6 @@
         "https://images.brickset.com/sets/images/42231-1.jpg"
       ],
       "url": "https://brickset.com/sets/42231-1",
-      "credit": "Dati e immagine: Brickset",
-      "creditUrl": "https://brickset.com"
-    },
-    {
-      "id": "lego-52545",
-      "title": "Dodge Viper GTS-R (42234)",
-      "description": "Set LEGO Technic del 2026, 805 pezzi.",
-      "condition": "",
-      "category": "",
-      "price": 64.99,
-      "currency": "EUR",
-      "images": [
-        "https://images.brickset.com/sets/images/42234-1.jpg"
-      ],
-      "url": "https://brickset.com/sets/42234-1",
       "credit": "Dati e immagine: Brickset",
       "creditUrl": "https://brickset.com"
     },
@@ -2249,6 +2174,81 @@
         "https://images.brickset.com/sets/images/42686-1.jpg"
       ],
       "url": "https://brickset.com/sets/42686-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51741",
+      "title": "Horse Stable and Riding Academy (42688)",
+      "description": "Set LEGO Friends del 2026, 735 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 79.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/42688-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/42688-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51742",
+      "title": "Heartlake City Friends Club House (42689)",
+      "description": "Set LEGO Friends del 2026, 794 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 89.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/42689-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/42689-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-52655",
+      "title": "Pizza Truck (42694)",
+      "description": "Set LEGO Friends del 2026, 190 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 14.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/42694-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/42694-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51745",
+      "title": "Horse & Baby Foal Trailer (42695)",
+      "description": "Set LEGO Friends del 2026, 279 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 29.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/42695-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/42695-1",
+      "credit": "Dati e immagine: Brickset",
+      "creditUrl": "https://brickset.com"
+    },
+    {
+      "id": "lego-51746",
+      "title": "Animal Vet Clinic (42696)",
+      "description": "Set LEGO Friends del 2026, 141 pezzi.",
+      "condition": "",
+      "category": "",
+      "price": 29.99,
+      "currency": "EUR",
+      "images": [
+        "https://images.brickset.com/sets/images/42696-1.jpg"
+      ],
+      "url": "https://brickset.com/sets/42696-1",
       "credit": "Dati e immagine: Brickset",
       "creditUrl": "https://brickset.com"
     }

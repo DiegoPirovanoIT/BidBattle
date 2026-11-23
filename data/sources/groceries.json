@@ -1,6 +1,6 @@
 {
   "source": "groceries",
-  "generatedAt": "2026-11-16T02:03:18.246Z",
+  "generatedAt": "2026-11-23T02:44:31.401Z",
   "products": [
     {
       "id": "receipt-37997",
@@ -480,7 +480,7 @@
     {
       "id": "receipt-123603",
       "title": "Scontrino Aldi: 5 prodotti",
-      "description": "le classiche croccanti dorate, 3 x tasty noodles, Gyoza Vegetables, MIX - Yogurt Bianco Più Fiocchi al Cioccolato, 4 x Monster Energy Ultra.",
+      "description": "le classiche croccanti dorate, 3 x tasty noodles, Gyoza Vegetables, .MIX - Yogurt Bianco Più Fiocchi al Cioccolato, 4 x Monster Energy Ultra.",
       "condition": "",
       "category": "",
       "price": 15,
@@ -516,25 +516,6 @@
       "creditUrl": "https://prices.openfoodfacts.org"
     },
     {
-      "id": "receipt-118435",
-      "title": "Scontrino Il Gigante: 5 prodotti",
-      "description": "Lasagne gluten free, Meisterbäckers Mehrkorn, Le Bio Croccanti Risette 100% Riso, Le Bio Croccanti Risette Riso e Mais, Grano saraceno Senza Glutine.",
-      "condition": "",
-      "category": "",
-      "price": 11.32,
-      "currency": "EUR",
-      "country": "IT",
-      "images": [
-        "https://images.openfoodfacts.org/images/products/800/991/500/8714/front_en.29.400.jpg",
-        "https://images.openfoodfacts.org/images/products/800/869/802/7424/front_de.55.400.jpg",
-        "https://images.openfoodfacts.org/images/products/800/186/035/5028/front_it.72.400.jpg",
-        "https://images.openfoodfacts.org/images/products/800/186/025/9869/front_it.32.400.jpg"
-      ],
-      "url": null,
-      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
-      "creditUrl": "https://prices.openfoodfacts.org"
-    },
-    {
       "id": "receipt-143703",
       "title": "Scontrino Crai: 6 prodotti",
       "description": "AVENA + Protein, Nesquik DUO, Muesli croccante, Le fresche Biscottate classiche, Latte intero, SolePiùDì.",
@@ -548,6 +529,25 @@
         "https://images.openfoodfacts.org/images/products/761/303/157/0126/front_en.73.400.jpg",
         "https://images.openfoodfacts.org/images/products/800/289/507/7466/front_it.3.400.jpg",
         "https://images.openfoodfacts.org/images/products/800/140/500/0017/front_it.59.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
+      "id": "receipt-118435",
+      "title": "Scontrino Il Gigante: 5 prodotti",
+      "description": "Lasagne gluten free, Meisterbäckers Mehrkorn, Le Bio Croccanti Risette 100% Riso, Le Bio Croccanti Risette Riso e Mais, Grano saraceno Senza Glutine.",
+      "condition": "",
+      "category": "",
+      "price": 11.32,
+      "currency": "EUR",
+      "country": "IT",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/800/991/500/8714/front_en.29.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/869/802/7424/front_de.55.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/186/035/5028/front_it.72.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/186/025/9869/front_it.32.400.jpg"
       ],
       "url": null,
       "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
@@ -698,7 +698,7 @@
       "images": [
         "https://images.openfoodfacts.org/images/products/316/635/296/7037/front_fr.125.400.jpg",
         "https://images.openfoodfacts.org/images/products/370/015/750/0695/front_fr.37.400.jpg",
-        "https://images.openfoodfacts.org/images/products/317/973/000/5306/front_fr.38.400.jpg",
+        "https://images.openfoodfacts.org/images/products/317/973/000/5306/front_fr.47.400.jpg",
         "https://images.openfoodfacts.org/images/products/500/015/956/2294/front_fr.31.400.jpg"
       ],
       "url": null,
@@ -1021,7 +1021,7 @@
       "images": [
         "https://images.openfoodfacts.org/images/products/317/853/042/2733/front_fr.46.400.jpg",
         "https://images.openfoodfacts.org/images/products/336/676/004/2085/front_fr.45.400.jpg",
-        "https://images.openfoodfacts.org/images/products/800/227/004/9941/front_fr.182.400.jpg",
+        "https://images.openfoodfacts.org/images/products/800/227/004/9941/front_fr.187.400.jpg",
         "https://images.openfoodfacts.org/images/products/345/677/000/2183/front_fr.32.400.jpg"
       ],
       "url": null,
@@ -1135,7 +1135,7 @@
       "images": [
         "https://images.openfoodfacts.org/images/products/359/671/001/6112/front_fr.138.400.jpg",
         "https://images.openfoodfacts.org/images/products/800/030/031/2102/front_fr.154.400.jpg",
-        "https://images.openfoodfacts.org/images/products/322/885/700/1231/front_fr.174.400.jpg",
+        "https://images.openfoodfacts.org/images/products/322/885/700/1231/front_fr.177.400.jpg",
         "https://images.openfoodfacts.org/images/products/330/274/004/7404/front_en.576.400.jpg"
       ],
       "url": null,
@@ -1164,7 +1164,7 @@
     {
       "id": "receipt-110070",
       "title": "Scontrino Auchan: 7 prodotti",
-      "description": "Taboulé oriental, Tortellini Ricotta Épinards, Emmental, Cacahuètes grillées et salées, Sésame, Sésame, Chips saveur truffe noire.",
+      "description": "Taboulé oriental, Tortellini Ricotta Épinards, Emmental, Cacahuètes grillées et salées, Sésame, Sésame, Chips Gourmet Truffe Noire.",
       "condition": "",
       "category": "",
       "price": 11.65,
@@ -1182,11 +1182,11 @@
     },
     {
       "id": "receipt-108799",
-      "title": "Scontrino Auchan: 9 prodotti",
-      "description": "Talc en poudre, BIO*OEUFS PLEIN AIRSOLIDAIRES pour soutenir nos producteurs*issus de l'agriculture biologiqueLogo ABFR-BIO-01 / Agriculture France ou FR- BIO-10Logo AB* Conformément au mode de production biologique., 2 x Concassé de tomate au jus, Pâte à tartiner Noisettes et Cacao Bio et équitable, 4 Huiles riches en vitamine D, Lait demi-écrémé UHT, Pesto verde, Dattes d’Algérie, Crème entière fluide30% mat. gr..",
+      "title": "Scontrino Auchan: 8 prodotti",
+      "description": "Talc en poudre, BIO*OEUFS PLEIN AIRSOLIDAIRES pour soutenir nos producteurs*issus de l'agriculture biologiqueLogo ABFR-BIO-01 / Agriculture France ou FR- BIO-10Logo AB* Conformément au mode de production biologique., 2 x Concassé de tomate au jus, Pâte à tartiner Noisettes et Cacao Bio et équitable, 4 Huiles riches en vitamine D, Pesto verde, Dattes d’Algérie, Crème entière fluide30% mat. gr..",
       "condition": "",
       "category": "",
-      "price": 25.79,
+      "price": 24.52,
       "currency": "EUR",
       "country": "FR",
       "images": [
@@ -1239,18 +1239,18 @@
     },
     {
       "id": "receipt-104381",
-      "title": "Scontrino Auchan: 7 prodotti",
-      "description": "Les Crozets aux Noix du Dauphiné, Lait demi-écrémé UHT, Wrap poulet rôti sauce cesar, Pains au lait, Mon moment fromager, Maasdam, Gouda.",
+      "title": "Scontrino Auchan: 6 prodotti",
+      "description": "Les Crozets aux Noix du Dauphiné, Wrap poulet rôti sauce cesar, Pains au lait, Mon moment fromager, Maasdam, Gouda.",
       "condition": "",
       "category": "",
-      "price": 15.14,
+      "price": 13.87,
       "currency": "EUR",
       "country": "FR",
       "images": [
         "https://images.openfoodfacts.org/images/products/325/297/000/9560/front_fr.27.400.jpg",
-        "https://images.openfoodfacts.org/images/products/324/834/005/4063/front_fr.193.400.jpg",
         "https://images.openfoodfacts.org/images/products/359/671/054/8378/front_fr.44.400.jpg",
-        "https://images.openfoodfacts.org/images/products/325/654/000/0698/front_fr.201.400.jpg"
+        "https://images.openfoodfacts.org/images/products/325/654/000/0698/front_fr.201.400.jpg",
+        "https://images.openfoodfacts.org/images/products/359/671/052/4501/front_fr.54.400.jpg"
       ],
       "url": null,
       "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
@@ -1277,18 +1277,18 @@
     },
     {
       "id": "receipt-93738",
-      "title": "Scontrino Auchan: 6 prodotti",
-      "description": "Figolu, Pruneaux d’agen dénoyautés, Lait demi-écrémé UHT, Crème entière fluide30% mat. gr., Petit beurre, 2 x Emmental râpé.",
+      "title": "Scontrino Auchan: 5 prodotti",
+      "description": "Figolu, Pruneaux d’agen dénoyautés, Crème entière fluide30% mat. gr., Petit beurre, 2 x Emmental râpé.",
       "condition": "",
       "category": "",
-      "price": 13.77,
+      "price": 12.5,
       "currency": "EUR",
       "country": "FR",
       "images": [
         "https://images.openfoodfacts.org/images/products/762/220/113/3337/front_en.122.400.jpg",
         "https://images.openfoodfacts.org/images/products/843/517/705/7625/front_fr.23.400.jpg",
-        "https://images.openfoodfacts.org/images/products/324/834/005/4063/front_fr.193.400.jpg",
-        "https://images.openfoodfacts.org/images/products/359/671/041/8367/front_fr.64.400.jpg"
+        "https://images.openfoodfacts.org/images/products/359/671/041/8367/front_fr.64.400.jpg",
+        "https://images.openfoodfacts.org/images/products/359/671/019/8153/front_fr.107.400.jpg"
       ],
       "url": null,
       "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
@@ -2190,7 +2190,7 @@
     {
       "id": "receipt-98960",
       "title": "Scontrino Delhaize: 15 prodotti",
-      "description": "Bio Fresh Green Pesto, No-Chick all curry salad, Bio Olio extra vergine Di olivia, Dettol Hydrating Wasgel Aloë Vera Navulling 500 ml, Snackpaprika poivron snack, Total Active Prévention, Recharge gel douche Zéro% Tous types de peaux, kip curry poulet curry, Mélange de noix et de pistaches, Tarte frangipane, Croky bolognese, Bertagni Fire Roasted Tomato, Mozzarella And Basil Ravioli e altri 3.",
+      "description": "Bio Fresh Green Pesto, No-Chick all curry salad, Bio Olio extra vergine Di olivia, Dettol Hydrating Wasgel Aloë Vera Navulling 500 ml, Snackpaprika poivron snack, Total Active Prévention, Recharge gel douche Zéro% Tous types de peaux, Délio Kip curry bel, Mélange de noix et de pistaches, Tarte frangipane, Croky bolognese, Bertagni Fire Roasted Tomato, Mozzarella And Basil Ravioli e altri 3.",
       "condition": "",
       "category": "",
       "price": 76.89,
@@ -2334,6 +2334,25 @@
         "https://images.openfoodfacts.org/images/products/739/437/662/1680/front_en.10.400.jpg",
         "https://images.openfoodfacts.org/images/products/540/011/955/3650/front_en.7.400.jpg",
         "https://images.openfoodfacts.org/images/products/739/437/662/1680/front_en.10.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
+      "id": "receipt-144964",
+      "title": "Scontrino Costco: 7 prodotti",
+      "description": "Organic roasted chestnuts, Mango Tapioca Pudding, Organic Sprouted Pumpkin Seeds Sea Salt, Honeycrisp, Wellness Smoothie Acai Berry, Rambutan, Organic Walnuts.",
+      "condition": "",
+      "category": "",
+      "price": 74.23,
+      "currency": "USD",
+      "country": "US",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/079/471/100/1349/front_fr.11.400.jpg",
+        "https://images.openfoodfacts.org/images/products/081/003/230/0463/front_en.125.400.jpg",
+        "https://images.openfoodfacts.org/images/products/074/183/993/0105/front_en.9.400.jpg",
+        "https://images.openfoodfacts.org/images/products/081/312/102/4387/front_en.19.400.jpg"
       ],
       "url": null,
       "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
@@ -2833,19 +2852,57 @@
       "creditUrl": "https://prices.openfoodfacts.org"
     },
     {
-      "id": "receipt-60297",
-      "title": "Scontrino Costco: 11 prodotti",
-      "description": "Prawn Hacao with Soy Ginger Sauce, Thai Yellow Curry, Variety Pack A New Kind of Soda, Lassi Yogurt Drink, Mango, Baby Bok Choy, Organic peeled garlic, Shine Muscat, Medjool Dates, Organic Chicken Bone Broth, Jumbo Shingo Pears, Kiwifruit.",
+      "id": "receipt-145996",
+      "title": "Scontrino Netto City: 14 prodotti",
+      "description": "2 x Münchner Hell Alkoholfrei, Frische Vollmilch, 2 x Münchner Hell Alkoholfrei, Grüne Jalapeños in Scheiben, feurig scharf, Silberzwiebeln, Frische Vollmilch, Mais Kölbchen, Bayerischer Limburger, Harzer Roller Minis mit Edelschimmel, Gewürzgurken, Heißer Käsegenuss Kräuter, Camembert mild & cremig e altri 2.",
       "condition": "",
       "category": "",
-      "price": 132.99,
-      "currency": "USD",
-      "country": "US",
+      "price": 23.96,
+      "currency": "EUR",
+      "country": "DE",
       "images": [
-        "https://images.openfoodfacts.org/images/products/087/797/100/5286/front_en.32.400.jpg",
-        "https://images.openfoodfacts.org/images/products/085/006/263/9270/front_en.11.400.jpg",
-        "https://images.openfoodfacts.org/images/products/079/625/230/0295/front_en.3.400.jpg",
-        "https://images.openfoodfacts.org/images/products/080/394/430/3806/front_en.3.400.jpg"
+        "https://images.openfoodfacts.org/images/products/406/660/023/1011/front_de.3.400.jpg",
+        "https://images.openfoodfacts.org/images/products/431/626/869/8849/front_en.7.400.jpg",
+        "https://images.openfoodfacts.org/images/products/406/660/023/1011/front_de.3.400.jpg",
+        "https://images.openfoodfacts.org/images/products/431/626/861/9967/front_de.3.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
+      "id": "receipt-145479",
+      "title": "Scontrino Netto City: 5 prodotti",
+      "description": "Rispentomaten Klasse I, 3 x Recycling-Toilettenpapier, 3-lagig, 2 x Kaffee - Eduscho 'Lieblingskaffee', 2 x Münchner Hell Alkoholfrei, Erdnussriegel, Peanuts in Caramel.",
+      "condition": "",
+      "category": "",
+      "price": 24.29,
+      "currency": "EUR",
+      "country": "DE",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/431/626/865/5927/front_de.12.400.jpg",
+        "https://images.openbeautyfacts.org/images/products/431/159/602/1789/front_de.5.400.jpg",
+        "https://images.openfoodfacts.org/images/products/406/144/529/3514/front_de.9.400.jpg",
+        "https://images.openfoodfacts.org/images/products/406/660/023/1011/front_de.3.400.jpg"
+      ],
+      "url": null,
+      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
+      "creditUrl": "https://prices.openfoodfacts.org"
+    },
+    {
+      "id": "receipt-145207",
+      "title": "Scontrino Netto City: 9 prodotti",
+      "description": "Frische Vollmilch, Jodsalz mit Fluorid, Gewürze - Senf - Delikatess-Senf  Mittelscharf, Haferbrot, Das Pure, Gemüse-Kichererbsen, Haferbrot, Das Pure, Banane-Dattel-Zimt, Sahnepudding mit Vollmilchschokolade, 86 % Sahne, Schupfnudeln, Radieschen aus Italien, Kartoffeln.",
+      "condition": "",
+      "category": "",
+      "price": 11.84,
+      "currency": "EUR",
+      "country": "DE",
+      "images": [
+        "https://images.openfoodfacts.org/images/products/431/626/869/8849/front_en.7.400.jpg",
+        "https://images.openfoodfacts.org/images/products/431/626/836/2443/front_de.63.400.jpg",
+        "https://images.openfoodfacts.org/images/products/431/626/804/4684/front_de.32.400.jpg",
+        "https://images.openfoodfacts.org/images/products/431/159/602/4469/front_de.4.400.jpg"
       ],
       "url": null,
       "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
@@ -2975,7 +3032,7 @@
       "currency": "EUR",
       "country": "DE",
       "images": [
-        "https://images.openfoodfacts.org/images/products/431/626/865/1332/front_de.5.400.jpg",
+        "https://images.openfoodfacts.org/images/products/431/626/865/1332/front_de.14.400.jpg",
         "https://images.openfoodfacts.org/images/products/000/004/240/0103/front_de.3.400.jpg",
         "https://images.openfoodfacts.org/images/products/431/626/869/8849/front_en.7.400.jpg",
         "https://images.openfoodfacts.org/images/products/431/626/855/7948/front_de.45.400.jpg"
@@ -3213,63 +3270,6 @@
       "creditUrl": "https://prices.openfoodfacts.org"
     },
     {
-      "id": "receipt-61895",
-      "title": "Scontrino Netto City: 9 prodotti",
-      "description": "Frische Vollmilch, Back Camembert mot Wildpreiselbeer Dip, Harzer Roller Minis mit Kümmel, Geflügel-Paprikafleischwurst, Maiskölbchen, Tafeläpfel, Sorte Elstar, Kl. II, Juicy Dates, Premium Quality, Spargel, grün, Brokkoli, Kl. I.",
-      "condition": "",
-      "category": "",
-      "price": 18.52,
-      "currency": "EUR",
-      "country": "DE",
-      "images": [
-        "https://images.openfoodfacts.org/images/products/431/626/869/8849/front_en.7.400.jpg",
-        "https://images.openfoodfacts.org/images/products/431/626/847/6119/front_de.41.400.jpg",
-        "https://images.openfoodfacts.org/images/products/000/004/201/2979/front_de.27.400.jpg",
-        "https://images.openfoodfacts.org/images/products/400/933/507/7486/front_de.12.400.jpg"
-      ],
-      "url": null,
-      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
-      "creditUrl": "https://prices.openfoodfacts.org"
-    },
-    {
-      "id": "receipt-61304",
-      "title": "Scontrino Netto City: 9 prodotti",
-      "description": "Frische fettarme Milch, 1,5 % Fett, Vollmilch frische 3,8 % Fett, Schottischer Räucherlachs in Scheiben, Marinierte Garnelen, Zitrone & Pfeffer, 2 x Schlagsahne, 2 x Milchreis, Schoko, Grüner Tee natur, Brokkoli, Bio-Knoblauch.",
-      "condition": "",
-      "category": "",
-      "price": 12.8,
-      "currency": "EUR",
-      "country": "DE",
-      "images": [
-        "https://images.openfoodfacts.org/images/products/431/626/869/8825/front_de.7.400.jpg",
-        "https://images.openfoodfacts.org/images/products/431/626/869/4254/front_de.33.400.jpg",
-        "https://images.openfoodfacts.org/images/products/431/626/872/3749/front_de.5.400.jpg",
-        "https://images.openfoodfacts.org/images/products/000/004/239/4518/front_en.12.400.jpg"
-      ],
-      "url": null,
-      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
-      "creditUrl": "https://prices.openfoodfacts.org"
-    },
-    {
-      "id": "receipt-60816",
-      "title": "Scontrino Netto City: 8 prodotti",
-      "description": "2 x Vollmilch frische 3,8 % Fett, Harzer Roller Minis mit Kümmel, Bergkäse aus Heumilch, Bergbauern-Emmentaler, 2 x Toilettenpapier Recycling, Kaki, Kl. I, Trauben, hell, kernlos, Äpfel rot.",
-      "condition": "",
-      "category": "",
-      "price": 19.7,
-      "currency": "EUR",
-      "country": "DE",
-      "images": [
-        "https://images.openfoodfacts.org/images/products/431/626/869/4254/front_de.33.400.jpg",
-        "https://images.openfoodfacts.org/images/products/000/004/201/2979/front_de.27.400.jpg",
-        "https://images.openfoodfacts.org/images/products/426/005/239/4359/front_de.3.400.jpg",
-        "https://images.openfoodfacts.org/images/products/426/005/239/2041/front_de.17.400.jpg"
-      ],
-      "url": null,
-      "credit": "Prezzi: Open Prices (ODbL). Foto: Open Food Facts (CC BY-SA)",
-      "creditUrl": "https://prices.openfoodfacts.org"
-    },
-    {
       "id": "receipt-141204",
       "title": "Scontrino Maxi ICA Stormarknad: 16 prodotti",
       "description": "2 x Veganska skivor med smak av cheddar, ICA Basic Chilinötter, 3 x Choklad Havredryck, Havregryn med fiber, Heavenly Chocolate, 4 x Hummus / Tomaatti & yrttitäyte, ICA Basic Jordnötter, Vegetarisk krögarpytt, Bistro Lantbröd, Potatis Klyftor med skal, Rasker Fullkorn, Gelato Sandwich Vegansk, 8stk, 320 g e altri 4.",
@@ -3500,7 +3500,7 @@
     {
       "id": "receipt-120096",
       "title": "Scontrino EDEKA: 7 prodotti",
-      "description": "Zitronensaft aus Zitronensaftkonzentrat, Cola Mix, EDEKA hayunga Paulaner Spezi 1x Flaschen à 0.5 Liter Kiste je (1 Liter 1.00€) zzgl. ??? € Pfand 1l 1.00€, Erdbeere-Vanille Konfitüre, Rotes Johannisbeer Gelee Konfitüre, Papiertaschentücher, Papiertaschentücher (4-lagig, 30 Pack à 10 Stück).",
+      "description": "Zitronensaft aus Zitronensaftkonzentrat, Cola Mix, Paulaner Spezi 0.5 Liter, Erdbeere-Vanille Konfitüre, Rotes Johannisbeer Gelee Konfitüre, Papiertaschentücher, Papiertaschentücher (4-lagig, 30 Pack à 10 Stück).",
       "condition": "",
       "category": "",
       "price": 14.29,
@@ -3690,7 +3690,7 @@
     {
       "id": "receipt-60823",
       "title": "Scontrino EDEKA: 6 prodotti",
-      "description": "Thanninger Freiheit 10 Eier, Nugat, Rum Trauben Nuss Schokolade, Marzipan, Fondue Classic, Spitzpaprika, rot, Kl. I.",
+      "description": "Thanninger Freiheit 10 Eier, Nugat, Rum Trauben Nuss Schokolade, Schokolade, Fondue Classic, Spitzpaprika, rot, Kl. I.",
       "condition": "",
       "category": "",
       "price": 11.7,
@@ -3728,7 +3728,7 @@
     {
       "id": "receipt-58516",
       "title": "Scontrino EDEKA: 13 prodotti",
-      "description": "Äpfel Elstar, Kl. I, 3 x Vollbier Hell, 2 x Hefe, Schlagsahne, Almighurt, Joghurt nach griechischer Art, 9,7 % Fett, 2 x Almighurt, Bircher Müsli, Almighurt, Mango-Orange, 3 x Tomatenmark-Oro di Parma Tomatenmark mit Knoblauch 200g, Mmmax Mandel Karamell, Batterien, LR03 AAA, Alkaline, Linsen Chips, Sour Cream, Speisekartoffeln, Belana, festkochend e altri 1.",
+      "description": "Äpfel Elstar, Kl. I, 3 x Vollbier Hell, 2 x Hefe, Schlagsahne, Almighurt, Joghurt nach griechischer Art, 9,7 % Fett, 2 x Almighurt, Bircher Müsli, Almighurt, Mango-Orange, 3 x Tomatenmark, Mmmax Mandel Karamell, Batterien, LR03 AAA, Alkaline, Linsen Chips, Sour Cream, Speisekartoffeln, Belana, festkochend e altri 1.",
       "condition": "",
       "category": "",
       "price": 24.71,
