@@ -1,714 +1,14 @@
 {
   "source": "surplus",
-  "generatedAt": "2026-11-25T04:53:20.909Z",
+  "generatedAt": "2026-11-26T04:08:42.846Z",
   "products": [
-    {
-      "id": "gsa-3-1-QSC-I-27-085-001",
-      "title": "Honda-75040 Generator",
-      "description": "Messo all'asta da Department of the Army, a North Little Rock (AR).",
-      "condition": "",
-      "category": "Macchinari",
-      "price": 245,
-      "currency": "USD",
-      "images": [
-        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27085001.jpg"
-      ],
-      "url": "https://www.gsaauctions.gov/auctions/preview/383439",
-      "credit": "Dati e foto: GSA Auctions, governo USA",
-      "creditUrl": "https://www.gsaauctions.gov",
-      "auction": {
-        "startsAt": "2026-11-18",
-        "endsAt": "2026-11-25",
-        "bidders": 3
-      }
-    },
-    {
-      "id": "gsa-3-1-QSC-I-27-085-003",
-      "title": "JLG 41AM Vertical lift",
-      "description": "Messo all'asta da Corps of Engineers, Civil, a Manhattan (KS).",
-      "condition": "",
-      "category": "Varie",
-      "price": 600,
-      "currency": "USD",
-      "images": [
-        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27085003.jpg"
-      ],
-      "url": "https://www.gsaauctions.gov/auctions/preview/383472",
-      "credit": "Dati e foto: GSA Auctions, governo USA",
-      "creditUrl": "https://www.gsaauctions.gov",
-      "auction": {
-        "startsAt": "2026-11-18",
-        "endsAt": "2026-11-25",
-        "bidders": 4
-      }
-    },
-    {
-      "id": "gsa-3-1-QSC-I-27-085-006",
-      "title": "DR Field & Brush Mower Pro Max 52T, 22HP Tow Behind",
-      "description": "Messo all'asta da Corps of Engineers, Civil, a Manhattan (KS).",
-      "condition": "",
-      "category": "Macchinari",
-      "price": 219,
-      "currency": "USD",
-      "images": [
-        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27085006.jpg"
-      ],
-      "url": "https://www.gsaauctions.gov/auctions/preview/383474",
-      "credit": "Dati e foto: GSA Auctions, governo USA",
-      "creditUrl": "https://www.gsaauctions.gov",
-      "auction": {
-        "startsAt": "2026-11-18",
-        "endsAt": "2026-11-25",
-        "bidders": 3
-      }
-    },
-    {
-      "id": "gsa-3-1-QSC-I-27-085-007",
-      "title": "DR Field & Brush Mower Pro XL-30, 20HP",
-      "description": "Messo all'asta da Corps of Engineers, Civil, a Manhattan (KS).",
-      "condition": "",
-      "category": "Macchinari",
-      "price": 557,
-      "currency": "USD",
-      "images": [
-        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27085007.jpg"
-      ],
-      "url": "https://www.gsaauctions.gov/auctions/preview/383475",
-      "credit": "Dati e foto: GSA Auctions, governo USA",
-      "creditUrl": "https://www.gsaauctions.gov",
-      "auction": {
-        "startsAt": "2026-11-18",
-        "endsAt": "2026-11-25",
-        "bidders": 3
-      }
-    },
-    {
-      "id": "gsa-4-1-QSC-V-27-003-002",
-      "title": "2017 Dodge Charger",
-      "description": "Messo all'asta da Drug Enforcement Administration, a PHOENIX (AZ).",
-      "condition": "",
-      "category": "Veicoli",
-      "price": 4905,
-      "currency": "USD",
-      "images": [
-        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCV27003002.jpg"
-      ],
-      "url": "https://www.gsaauctions.gov/auctions/preview/383573",
-      "credit": "Dati e foto: GSA Auctions, governo USA",
-      "creditUrl": "https://www.gsaauctions.gov",
-      "auction": {
-        "startsAt": "2026-11-18",
-        "endsAt": "2026-11-25",
-        "bidders": 12
-      }
-    },
-    {
-      "id": "gsa-3-1-QSC-I-27-078-003",
-      "title": "Bruel Kjaer Type 2610 Measuring Amplifiers (2)",
-      "description": "Messo all'asta da Department of Labor, a SANDY (UT).",
-      "condition": "",
-      "category": "Varie",
-      "price": 130,
-      "currency": "USD",
-      "images": [
-        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27078003.jpg"
-      ],
-      "url": "https://www.gsaauctions.gov/auctions/preview/383631",
-      "credit": "Dati e foto: GSA Auctions, governo USA",
-      "creditUrl": "https://www.gsaauctions.gov",
-      "auction": {
-        "startsAt": "2026-11-18",
-        "endsAt": "2026-11-25",
-        "bidders": 3
-      }
-    },
-    {
-      "id": "gsa-3-1-QSC-I-27-078-005",
-      "title": "2019 Haulmark Passport Enclosed Trailer",
-      "description": "Messo all'asta da Natural Resources Conservation Service, a TEMPLE (TX).",
-      "condition": "",
-      "category": "Veicoli",
-      "price": 1251,
-      "currency": "USD",
-      "images": [
-        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27078005.jpg"
-      ],
-      "url": "https://www.gsaauctions.gov/auctions/preview/383633",
-      "credit": "Dati e foto: GSA Auctions, governo USA",
-      "creditUrl": "https://www.gsaauctions.gov",
-      "auction": {
-        "startsAt": "2026-11-18",
-        "endsAt": "2026-11-25",
-        "bidders": 8
-      }
-    },
-    {
-      "id": "gsa-3-1-QSC-I-27-078-008",
-      "title": "Assorted Measurement Instruments and misc. Electronic Equipment (18)",
-      "description": "Messo all'asta da Department of Labor, a SANDY (UT).",
-      "condition": "",
-      "category": "Macchinari",
-      "price": 163,
-      "currency": "USD",
-      "images": [
-        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27078008.jpg"
-      ],
-      "url": "https://www.gsaauctions.gov/auctions/preview/383635",
-      "credit": "Dati e foto: GSA Auctions, governo USA",
-      "creditUrl": "https://www.gsaauctions.gov",
-      "auction": {
-        "startsAt": "2026-11-18",
-        "endsAt": "2026-11-25",
-        "bidders": 3
-      }
-    },
-    {
-      "id": "gsa-3-1-QSC-I-27-078-010",
-      "title": "Audio Precision ATS-1 Audio Test System",
-      "description": "Messo all'asta da Department of Labor, a SANDY (UT).",
-      "condition": "",
-      "category": "Varie",
-      "price": 457,
-      "currency": "USD",
-      "images": [
-        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27078010.jpg"
-      ],
-      "url": "https://www.gsaauctions.gov/auctions/preview/383637",
-      "credit": "Dati e foto: GSA Auctions, governo USA",
-      "creditUrl": "https://www.gsaauctions.gov",
-      "auction": {
-        "startsAt": "2026-11-18",
-        "endsAt": "2026-11-25",
-        "bidders": 3
-      }
-    },
-    {
-      "id": "gsa-3-1-QSC-I-27-078-011",
-      "title": "Rohde & Schwarz FSP38 Spectrum Analyzer",
-      "description": "Messo all'asta da Department of Labor, a SANDY (UT).",
-      "condition": "",
-      "category": "Varie",
-      "price": 3555,
-      "currency": "USD",
-      "images": [
-        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27078011.jpg"
-      ],
-      "url": "https://www.gsaauctions.gov/auctions/preview/383638",
-      "credit": "Dati e foto: GSA Auctions, governo USA",
-      "creditUrl": "https://www.gsaauctions.gov",
-      "auction": {
-        "startsAt": "2026-11-18",
-        "endsAt": "2026-11-25",
-        "bidders": 3
-      }
-    },
-    {
-      "id": "gsa-3-1-QSC-I-27-078-012",
-      "title": "Agilent Technologies E8663B Analog Signal Generator",
-      "description": "Messo all'asta da Department of Labor, a SANDY (UT).",
-      "condition": "",
-      "category": "Macchinari",
-      "price": 3124,
-      "currency": "USD",
-      "images": [
-        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27078012.jpg"
-      ],
-      "url": "https://www.gsaauctions.gov/auctions/preview/383639",
-      "credit": "Dati e foto: GSA Auctions, governo USA",
-      "creditUrl": "https://www.gsaauctions.gov",
-      "auction": {
-        "startsAt": "2026-11-18",
-        "endsAt": "2026-11-25",
-        "bidders": 3
-      }
-    },
-    {
-      "id": "gsa-3-1-QSC-I-27-078-013",
-      "title": "Agilent Technologies 6490A Triple Quad LC/MS System",
-      "description": "Messo all'asta da Environmental Protection Agency, a HOUSTON (TX).",
-      "condition": "",
-      "category": "Varie",
-      "price": 28162,
-      "currency": "USD",
-      "images": [
-        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27078013.jpg"
-      ],
-      "url": "https://www.gsaauctions.gov/auctions/preview/383640",
-      "credit": "Dati e foto: GSA Auctions, governo USA",
-      "creditUrl": "https://www.gsaauctions.gov",
-      "auction": {
-        "startsAt": "2026-11-18",
-        "endsAt": "2026-11-25",
-        "bidders": 4
-      }
-    },
-    {
-      "id": "gsa-3-1-QSC-I-27-078-024",
-      "title": "2021 Ford F-150 Police Responder 4x4 Pickup Truck",
-      "description": "Messo all'asta da Fish and Wildlife Service, a Commerce City (CO).",
-      "condition": "",
-      "category": "Veicoli",
-      "price": 10958,
-      "currency": "USD",
-      "images": [
-        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27078024.jpg"
-      ],
-      "url": "https://www.gsaauctions.gov/auctions/preview/383649",
-      "credit": "Dati e foto: GSA Auctions, governo USA",
-      "creditUrl": "https://www.gsaauctions.gov",
-      "auction": {
-        "startsAt": "2026-11-18",
-        "endsAt": "2026-11-25",
-        "bidders": 3
-      }
-    },
-    {
-      "id": "gsa-3-1-QSC-I-27-087-003",
-      "title": "2007 Ford Ranger",
-      "description": "Messo all'asta da National Park Service, a Springdale (UT).",
-      "condition": "",
-      "category": "Veicoli",
-      "price": 3020,
-      "currency": "USD",
-      "images": [
-        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27087003.jpg"
-      ],
-      "url": "https://www.gsaauctions.gov/auctions/preview/383656",
-      "credit": "Dati e foto: GSA Auctions, governo USA",
-      "creditUrl": "https://www.gsaauctions.gov",
-      "auction": {
-        "startsAt": "2026-11-18",
-        "endsAt": "2026-11-25",
-        "bidders": 6
-      }
-    },
-    {
-      "id": "gsa-3-1-QSC-I-27-087-004",
-      "title": "2002 Chevrolet Silverado",
-      "description": "Messo all'asta da National Park Service, a Springdale (UT).",
-      "condition": "",
-      "category": "Veicoli",
-      "price": 3466,
-      "currency": "USD",
-      "images": [
-        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27087004.jpg"
-      ],
-      "url": "https://www.gsaauctions.gov/auctions/preview/383657",
-      "credit": "Dati e foto: GSA Auctions, governo USA",
-      "creditUrl": "https://www.gsaauctions.gov",
-      "auction": {
-        "startsAt": "2026-11-18",
-        "endsAt": "2026-11-25",
-        "bidders": 7
-      }
-    },
-    {
-      "id": "gsa-3-1-QSC-I-27-087-005",
-      "title": "Case Trailer",
-      "description": "Messo all'asta da Bureau of Indian Affairs, a FORT DUCHESNE (UT).",
-      "condition": "",
-      "category": "Veicoli",
-      "price": 125,
-      "currency": "USD",
-      "images": [
-        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27087005.jpg"
-      ],
-      "url": "https://www.gsaauctions.gov/auctions/preview/383658",
-      "credit": "Dati e foto: GSA Auctions, governo USA",
-      "creditUrl": "https://www.gsaauctions.gov",
-      "auction": {
-        "startsAt": "2026-11-18",
-        "endsAt": "2026-11-25",
-        "bidders": 4
-      }
-    },
-    {
-      "id": "gsa-3-1-QSC-I-27-087-012",
-      "title": "2010 Ford F-350",
-      "description": "Messo all'asta da National Park Service, a MOOSE (WY).",
-      "condition": "",
-      "category": "Veicoli",
-      "price": 2051,
-      "currency": "USD",
-      "images": [
-        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27087012.jpg"
-      ],
-      "url": "https://www.gsaauctions.gov/auctions/preview/383663",
-      "credit": "Dati e foto: GSA Auctions, governo USA",
-      "creditUrl": "https://www.gsaauctions.gov",
-      "auction": {
-        "startsAt": "2026-11-18",
-        "endsAt": "2026-11-25",
-        "bidders": 4
-      }
-    },
-    {
-      "id": "gsa-3-1-QSC-I-27-087-013",
-      "title": "2012 Ford F-250",
-      "description": "Messo all'asta da National Park Service, a MOOSE (WY).",
-      "condition": "",
-      "category": "Veicoli",
-      "price": 6920,
-      "currency": "USD",
-      "images": [
-        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27087013.jpg"
-      ],
-      "url": "https://www.gsaauctions.gov/auctions/preview/383664",
-      "credit": "Dati e foto: GSA Auctions, governo USA",
-      "creditUrl": "https://www.gsaauctions.gov",
-      "auction": {
-        "startsAt": "2026-11-18",
-        "endsAt": "2026-11-25",
-        "bidders": 4
-      }
-    },
-    {
-      "id": "gsa-3-1-QSC-I-27-087-014",
-      "title": "2013 Chevrolet Silverado",
-      "description": "Messo all'asta da Bureau of Land Management, a MEEKER (CO).",
-      "condition": "",
-      "category": "Veicoli",
-      "price": 11136,
-      "currency": "USD",
-      "images": [
-        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27087014.jpg"
-      ],
-      "url": "https://www.gsaauctions.gov/auctions/preview/383665",
-      "credit": "Dati e foto: GSA Auctions, governo USA",
-      "creditUrl": "https://www.gsaauctions.gov",
-      "auction": {
-        "startsAt": "2026-11-18",
-        "endsAt": "2026-11-25",
-        "bidders": 4
-      }
-    },
-    {
-      "id": "gsa-3-1-QSC-I-27-087-015",
-      "title": "2017 Ford F-550 Helitack",
-      "description": "Messo all'asta da Bureau of Land Management, a DENVER (CO).",
-      "condition": "",
-      "category": "Veicoli",
-      "price": 7521,
-      "currency": "USD",
-      "images": [
-        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27087015.jpg"
-      ],
-      "url": "https://www.gsaauctions.gov/auctions/preview/383666",
-      "credit": "Dati e foto: GSA Auctions, governo USA",
-      "creditUrl": "https://www.gsaauctions.gov",
-      "auction": {
-        "startsAt": "2026-11-18",
-        "endsAt": "2026-11-25",
-        "bidders": 10
-      }
-    },
-    {
-      "id": "gsa-3-1-QSC-I-27-087-016",
-      "title": "2017 Dodge Ram 3500",
-      "description": "Messo all'asta da Bureau of Land Management, a GRAND JUNCTION (CO).",
-      "condition": "",
-      "category": "Veicoli",
-      "price": 17520,
-      "currency": "USD",
-      "images": [
-        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27087016.jpg"
-      ],
-      "url": "https://www.gsaauctions.gov/auctions/preview/383667",
-      "credit": "Dati e foto: GSA Auctions, governo USA",
-      "creditUrl": "https://www.gsaauctions.gov",
-      "auction": {
-        "startsAt": "2026-11-18",
-        "endsAt": "2026-11-25",
-        "bidders": 8
-      }
-    },
-    {
-      "id": "gsa-3-1-QSC-I-27-087-017",
-      "title": "2015 Jeep Cherokee",
-      "description": "Messo all'asta da Bureau of Land Management, a MONTROSE (CO).",
-      "condition": "",
-      "category": "Veicoli",
-      "price": 4125,
-      "currency": "USD",
-      "images": [
-        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27087017.jpg"
-      ],
-      "url": "https://www.gsaauctions.gov/auctions/preview/383668",
-      "credit": "Dati e foto: GSA Auctions, governo USA",
-      "creditUrl": "https://www.gsaauctions.gov",
-      "auction": {
-        "startsAt": "2026-11-18",
-        "endsAt": "2026-11-25",
-        "bidders": 7
-      }
-    },
-    {
-      "id": "gsa-3-1-QSC-I-27-087-018",
-      "title": "2020 Ford F-150",
-      "description": "Messo all'asta da Bureau of Land Management, a MONTROSE (CO).",
-      "condition": "",
-      "category": "Veicoli",
-      "price": 10216,
-      "currency": "USD",
-      "images": [
-        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27087018.jpg"
-      ],
-      "url": "https://www.gsaauctions.gov/auctions/preview/383669",
-      "credit": "Dati e foto: GSA Auctions, governo USA",
-      "creditUrl": "https://www.gsaauctions.gov",
-      "auction": {
-        "startsAt": "2026-11-18",
-        "endsAt": "2026-11-25",
-        "bidders": 11
-      }
-    },
-    {
-      "id": "gsa-3-1-QSC-I-27-087-019",
-      "title": "2014 Ford F-550 Fire Engine",
-      "description": "Messo all'asta da Bureau of Land Management, a MEEKER (CO).",
-      "condition": "",
-      "category": "Veicoli",
-      "price": 8500,
-      "currency": "USD",
-      "images": [
-        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27087019.jpg"
-      ],
-      "url": "https://www.gsaauctions.gov/auctions/preview/383670",
-      "credit": "Dati e foto: GSA Auctions, governo USA",
-      "creditUrl": "https://www.gsaauctions.gov",
-      "auction": {
-        "startsAt": "2026-11-18",
-        "endsAt": "2026-11-25",
-        "bidders": 10
-      }
-    },
-    {
-      "id": "gsa-3-1-QSC-I-27-090-002",
-      "title": "Yale Forklift",
-      "description": "Messo all'asta da Federal Aviation Administration, a OKLAHOMA CITY (OK).",
-      "condition": "",
-      "category": "Macchinari",
-      "price": 258,
-      "currency": "USD",
-      "images": [
-        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27090002.jpg"
-      ],
-      "url": "https://www.gsaauctions.gov/auctions/preview/383726",
-      "credit": "Dati e foto: GSA Auctions, governo USA",
-      "creditUrl": "https://www.gsaauctions.gov",
-      "auction": {
-        "startsAt": "2026-11-18",
-        "endsAt": "2026-11-25",
-        "bidders": 4
-      }
-    },
-    {
-      "id": "gsa-3-1-QSC-I-27-090-003",
-      "title": "Computers",
-      "description": "Messo all'asta da Federal Aviation Administration, a OKLAHOMA CITY (OK).",
-      "condition": "",
-      "category": "Elettronica",
-      "price": 2106,
-      "currency": "USD",
-      "images": [
-        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27090003.jpg"
-      ],
-      "url": "https://www.gsaauctions.gov/auctions/preview/383727",
-      "credit": "Dati e foto: GSA Auctions, governo USA",
-      "creditUrl": "https://www.gsaauctions.gov",
-      "auction": {
-        "startsAt": "2026-11-18",
-        "endsAt": "2026-11-25",
-        "bidders": 4
-      }
-    },
-    {
-      "id": "gsa-3-1-QSC-I-27-090-004",
-      "title": "Shop Tools",
-      "description": "Messo all'asta da Federal Aviation Administration, a OKLAHOMA CITY (OK).",
-      "condition": "",
-      "category": "Varie",
-      "price": 101,
-      "currency": "USD",
-      "images": [
-        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27090004.jpg"
-      ],
-      "url": "https://www.gsaauctions.gov/auctions/preview/383728",
-      "credit": "Dati e foto: GSA Auctions, governo USA",
-      "creditUrl": "https://www.gsaauctions.gov",
-      "auction": {
-        "startsAt": "2026-11-18",
-        "endsAt": "2026-11-25",
-        "bidders": 3
-      }
-    },
-    {
-      "id": "gsa-1-1-QSC-I-27-057-024",
-      "title": "Lot of Cameras, Tools, Pumps, and Accessories",
-      "description": "Messo all'asta da Department of Energy, a WEST VALLEY (NY).",
-      "condition": "",
-      "category": "Macchinari",
-      "price": 145,
-      "currency": "USD",
-      "images": [
-        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27057024.jpg"
-      ],
-      "url": "https://www.gsaauctions.gov/auctions/preview/383767",
-      "credit": "Dati e foto: GSA Auctions, governo USA",
-      "creditUrl": "https://www.gsaauctions.gov",
-      "auction": {
-        "startsAt": "2026-11-18",
-        "endsAt": "2026-11-25",
-        "bidders": 4
-      }
-    },
-    {
-      "id": "gsa-1-1-QSC-I-27-057-044",
-      "title": "Bundle Telemedicine items",
-      "description": "Messo all'asta da Department of Medicine and Surgery, a CAROLINA (PR).",
-      "condition": "",
-      "category": "Varie",
-      "price": 60,
-      "currency": "USD",
-      "images": [
-        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27057044.jpg"
-      ],
-      "url": "https://www.gsaauctions.gov/auctions/preview/383780",
-      "credit": "Dati e foto: GSA Auctions, governo USA",
-      "creditUrl": "https://www.gsaauctions.gov",
-      "auction": {
-        "startsAt": "2026-11-18",
-        "endsAt": "2026-11-25",
-        "bidders": 3
-      }
-    },
-    {
-      "id": "gsa-1-1-QSC-I-27-057-046",
-      "title": "OPHTHALMOSCOPE/OTOSCOPES",
-      "description": "Messo all'asta da Department of Medicine and Surgery, a CAROLINA (PR).",
-      "condition": "",
-      "category": "Varie",
-      "price": 45,
-      "currency": "USD",
-      "images": [
-        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27057046.jpg"
-      ],
-      "url": "https://www.gsaauctions.gov/auctions/preview/383782",
-      "credit": "Dati e foto: GSA Auctions, governo USA",
-      "creditUrl": "https://www.gsaauctions.gov",
-      "auction": {
-        "startsAt": "2026-11-18",
-        "endsAt": "2026-11-25",
-        "bidders": 4
-      }
-    },
-    {
-      "id": "gsa-1-1-QSC-I-27-057-066",
-      "title": "ZEISS HUMPHREY FIELD ANALYZER 3",
-      "description": "Messo all'asta da Department of Medicine and Surgery, a LEEDS (MA).",
-      "condition": "",
-      "category": "Varie",
-      "price": 5105,
-      "currency": "USD",
-      "images": [
-        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27057066.jpg"
-      ],
-      "url": "https://www.gsaauctions.gov/auctions/preview/383802",
-      "credit": "Dati e foto: GSA Auctions, governo USA",
-      "creditUrl": "https://www.gsaauctions.gov",
-      "auction": {
-        "startsAt": "2026-11-18",
-        "endsAt": "2026-11-25",
-        "bidders": 4
-      }
-    },
-    {
-      "id": "gsa-1-1-QSC-I-27-057-076",
-      "title": "ZEISS CIRRUS 5000",
-      "description": "Messo all'asta da Department of Medicine and Surgery, a SINKING SPRING (PA).",
-      "condition": "",
-      "category": "Varie",
-      "price": 8505,
-      "currency": "USD",
-      "images": [
-        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27057076.jpg"
-      ],
-      "url": "https://www.gsaauctions.gov/auctions/preview/383808",
-      "credit": "Dati e foto: GSA Auctions, governo USA",
-      "creditUrl": "https://www.gsaauctions.gov",
-      "auction": {
-        "startsAt": "2026-11-18",
-        "endsAt": "2026-11-25",
-        "bidders": 5
-      }
-    },
-    {
-      "id": "gsa-1-1-QSC-I-27-057-077",
-      "title": "HUMPHREY FIELD ANALYZER",
-      "description": "Messo all'asta da Department of Medicine and Surgery, a SINKING SPRING (PA).",
-      "condition": "",
-      "category": "Varie",
-      "price": 6105,
-      "currency": "USD",
-      "images": [
-        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27057077.jpg"
-      ],
-      "url": "https://www.gsaauctions.gov/auctions/preview/383809",
-      "credit": "Dati e foto: GSA Auctions, governo USA",
-      "creditUrl": "https://www.gsaauctions.gov",
-      "auction": {
-        "startsAt": "2026-11-18",
-        "endsAt": "2026-11-25",
-        "bidders": 4
-      }
-    },
-    {
-      "id": "gsa-1-1-QSC-I-27-057-083",
-      "title": "Ventilators and BiPAPs",
-      "description": "Messo all'asta da Department of Medicine and Surgery, a GAINESVILLE (FL).",
-      "condition": "",
-      "category": "Varie",
-      "price": 6755,
-      "currency": "USD",
-      "images": [
-        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27057083.jpg"
-      ],
-      "url": "https://www.gsaauctions.gov/auctions/preview/383815",
-      "credit": "Dati e foto: GSA Auctions, governo USA",
-      "creditUrl": "https://www.gsaauctions.gov",
-      "auction": {
-        "startsAt": "2026-11-18",
-        "endsAt": "2026-11-25",
-        "bidders": 3
-      }
-    },
-    {
-      "id": "gsa-1-1-QSC-I-27-057-089",
-      "title": "Misc Medical Care Parts",
-      "description": "Messo all'asta da Department of Medicine and Surgery, a SALISBURY (NC).",
-      "condition": "",
-      "category": "Varie",
-      "price": 782,
-      "currency": "USD",
-      "images": [
-        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27057089.jpg"
-      ],
-      "url": "https://www.gsaauctions.gov/auctions/preview/383821",
-      "credit": "Dati e foto: GSA Auctions, governo USA",
-      "creditUrl": "https://www.gsaauctions.gov",
-      "auction": {
-        "startsAt": "2026-11-18",
-        "endsAt": "2026-11-25",
-        "bidders": 3
-      }
-    },
     {
       "id": "gsa-3-1-QSC-I-27-084-025",
       "title": "Philips Ultrasound",
       "description": "Messo all'asta da Department of Health and Human Services, a Aurora (CO).",
       "condition": "",
       "category": "Varie",
-      "price": 1210,
+      "price": 2085,
       "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27084025.jpg"
@@ -719,7 +19,7 @@
       "auction": {
         "startsAt": "2026-11-20",
         "endsAt": "2026-11-27",
-        "bidders": 3
+        "bidders": 5
       }
     },
     {
@@ -808,7 +108,7 @@
       "description": "Messo all'asta da Small Business Administration, a FORT WORTH (TX).",
       "condition": "",
       "category": "Elettronica",
-      "price": 295,
+      "price": 585,
       "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27084018.jpg"
@@ -819,7 +119,27 @@
       "auction": {
         "startsAt": "2026-11-20",
         "endsAt": "2026-11-27",
-        "bidders": 4
+        "bidders": 5
+      }
+    },
+    {
+      "id": "gsa-2-1-QSC-I-27-072-001",
+      "title": "2002 Chevrolet Trailblazer",
+      "description": "Messo all'asta da National Park Service, a Oneida (TN).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 450,
+      "currency": "USD",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/21QSCI27072001.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/383673",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-11-20",
+        "endsAt": "2026-11-27",
+        "bidders": 3
       }
     },
     {
@@ -868,7 +188,7 @@
       "description": "Messo all'asta da Fish and Wildlife Service, a McBee (SC).",
       "condition": "",
       "category": "Veicoli",
-      "price": 9450,
+      "price": 9650,
       "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/21QSCI27072008.jpg"
@@ -908,7 +228,7 @@
       "description": "Messo all'asta da Fish and Wildlife Service, a Homosassa (FL).",
       "condition": "",
       "category": "Veicoli",
-      "price": 2900,
+      "price": 4100,
       "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/21QSCI27072018.jpg"
@@ -923,12 +243,32 @@
       }
     },
     {
+      "id": "gsa-2-1-QSC-I-27-072-020",
+      "title": "Fiberglass Boat",
+      "description": "Messo all'asta da Department of the Army, a Dennis (MS).",
+      "condition": "",
+      "category": "Barche",
+      "price": 525,
+      "currency": "USD",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/21QSCI27072020.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/383687",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-11-20",
+        "endsAt": "2026-11-27",
+        "bidders": 3
+      }
+    },
+    {
       "id": "gsa-2-1-QSC-I-27-072-021",
       "title": "2006 WELLS CARGO  Enclosed Trailer",
       "description": "Messo all'asta da Fish and Wildlife Service, a Grenada (MS).",
       "condition": "",
       "category": "Veicoli",
-      "price": 1800,
+      "price": 2200,
       "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/21QSCI27072021.jpg"
@@ -939,7 +279,7 @@
       "auction": {
         "startsAt": "2026-11-20",
         "endsAt": "2026-11-27",
-        "bidders": 4
+        "bidders": 5
       }
     },
     {
@@ -963,12 +303,52 @@
       }
     },
     {
+      "id": "gsa-2-1-QSC-I-27-072-024",
+      "title": "Invader Marine Natrix Boat & Trailer",
+      "description": "Messo all'asta da Department of the Army, a Dennis (MS).",
+      "condition": "",
+      "category": "Barche",
+      "price": 600,
+      "currency": "USD",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/21QSCI27072024.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/383691",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-11-20",
+        "endsAt": "2026-11-27",
+        "bidders": 3
+      }
+    },
+    {
+      "id": "gsa-2-1-QSC-I-27-072-026",
+      "title": "AIRCRAFT PARTS",
+      "description": "Messo all'asta da Federal Aviation Administration, a EGG HARBOR TOWNSHIP (NJ).",
+      "condition": "",
+      "category": "Aerei",
+      "price": 50225,
+      "currency": "USD",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/21QSCI27072026.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/383696",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-11-20",
+        "endsAt": "2026-11-27",
+        "bidders": 3
+      }
+    },
+    {
       "id": "gsa-2-1-QSC-I-27-071-001",
       "title": "2012 Ford Escape",
       "description": "Messo all'asta da Fish and Wildlife Service, a Warm Springs (GA).",
       "condition": "",
       "category": "Veicoli",
-      "price": 3500,
+      "price": 4200,
       "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/21QSCI27071001.jpg"
@@ -979,7 +359,7 @@
       "auction": {
         "startsAt": "2026-11-20",
         "endsAt": "2026-11-27",
-        "bidders": 9
+        "bidders": 10
       }
     },
     {
@@ -988,7 +368,7 @@
       "description": "Messo all'asta da Department of the Army, a PITTSBURGH (PA).",
       "condition": "",
       "category": "Veicoli",
-      "price": 275,
+      "price": 350,
       "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/21QSCI27071003.jpg"
@@ -999,7 +379,7 @@
       "auction": {
         "startsAt": "2026-11-20",
         "endsAt": "2026-11-27",
-        "bidders": 3
+        "bidders": 4
       }
     },
     {
@@ -1068,7 +448,7 @@
       "description": "Messo all'asta da Fish and Wildlife Service, a Guys Mills (PA).",
       "condition": "",
       "category": "Veicoli",
-      "price": 7754,
+      "price": 8800,
       "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/21QSCI27071009.jpg"
@@ -1079,7 +459,7 @@
       "auction": {
         "startsAt": "2026-11-20",
         "endsAt": "2026-11-27",
-        "bidders": 6
+        "bidders": 7
       }
     },
     {
@@ -1103,12 +483,32 @@
       }
     },
     {
+      "id": "gsa-2-1-QSC-I-27-071-012",
+      "title": "SNOWBLOWER",
+      "description": "Messo all'asta da Department of the Army, a Barre (MA).",
+      "condition": "",
+      "category": "Varie",
+      "price": 165,
+      "currency": "USD",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/21QSCI27071012.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/383708",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-11-20",
+        "endsAt": "2026-11-27",
+        "bidders": 3
+      }
+    },
+    {
       "id": "gsa-2-1-QSC-I-27-071-013",
       "title": "2008 CHEVROLET EXPRESS",
       "description": "Messo all'asta da Board of Trustees, a Suitland (MD).",
       "condition": "",
       "category": "Veicoli",
-      "price": 4477,
+      "price": 4700,
       "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/21QSCI27071013.jpg"
@@ -1119,7 +519,7 @@
       "auction": {
         "startsAt": "2026-11-20",
         "endsAt": "2026-11-27",
-        "bidders": 10
+        "bidders": 11
       }
     },
     {
@@ -1208,7 +608,7 @@
       "description": "Messo all'asta da Fish and Wildlife Service, a Onalaska (WI).",
       "condition": "",
       "category": "Veicoli",
-      "price": 1100,
+      "price": 1450,
       "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/21QSCI27071018.jpg"
@@ -1219,7 +619,7 @@
       "auction": {
         "startsAt": "2026-11-20",
         "endsAt": "2026-11-27",
-        "bidders": 5
+        "bidders": 6
       }
     },
     {
@@ -1288,7 +688,7 @@
       "description": "Messo all'asta da National Park Service, a Bar Harbor (ME).",
       "condition": "",
       "category": "Macchinari",
-      "price": 2385,
+      "price": 3355,
       "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/21QSCI27071025.jpg"
@@ -1303,12 +703,72 @@
       }
     },
     {
+      "id": "gsa-3-1-QSC-I-27-091-008",
+      "title": "14MM Ropetex 6 GAL RHO Ropes (3)",
+      "description": "Messo all'asta da Federal Supply Service, Personal Property Centers, a TOPEKA (KS).",
+      "condition": "",
+      "category": "Varie",
+      "price": 82,
+      "currency": "USD",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27091008.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/383831",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-11-20",
+        "endsAt": "2026-11-27",
+        "bidders": 3
+      }
+    },
+    {
+      "id": "gsa-3-1-QSC-I-27-091-012",
+      "title": "Various Tires (13)",
+      "description": "Messo all'asta da Federal Supply Service, Personal Property Centers, a TOPEKA (KS).",
+      "condition": "",
+      "category": "Varie",
+      "price": 339,
+      "currency": "USD",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27091012.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/383835",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-11-20",
+        "endsAt": "2026-11-27",
+        "bidders": 5
+      }
+    },
+    {
+      "id": "gsa-2-1-QSC-I-27-065-001",
+      "title": "8.8L Engine",
+      "description": "Messo all'asta da DHS, Customs and Border Protection, a ST AUGUSTINE (FL).",
+      "condition": "",
+      "category": "Varie",
+      "price": 1575,
+      "currency": "USD",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/21QSCI27065001.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/383978",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-11-20",
+        "endsAt": "2026-11-27",
+        "bidders": 3
+      }
+    },
+    {
       "id": "gsa-2-1-QSC-I-27-065-003",
       "title": "6.2L Engine",
       "description": "Messo all'asta da DHS, Customs and Border Protection, a ST AUGUSTINE (FL).",
       "condition": "",
       "category": "Varie",
-      "price": 1275,
+      "price": 1625,
       "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/21QSCI27065003.jpg"
@@ -1319,7 +779,7 @@
       "auction": {
         "startsAt": "2026-11-20",
         "endsAt": "2026-11-27",
-        "bidders": 3
+        "bidders": 4
       }
     },
     {
@@ -1328,7 +788,7 @@
       "description": "Messo all'asta da Federal Law Enforcement Training Center, Glynco, GA, a Brunswick (GA).",
       "condition": "",
       "category": "Varie",
-      "price": 807,
+      "price": 2200,
       "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/21QSCI27065013.jpg"
@@ -1339,7 +799,7 @@
       "auction": {
         "startsAt": "2026-11-20",
         "endsAt": "2026-11-27",
-        "bidders": 3
+        "bidders": 4
       }
     },
     {
@@ -1383,6 +843,26 @@
       }
     },
     {
+      "id": "gsa-2-1-QSC-I-27-065-025",
+      "title": "Ameriqual Regular Standard Meals",
+      "description": "Messo all'asta da Federal Emergency Management Agency (FEMA) Headquarters, a CAYEY (PR).",
+      "condition": "",
+      "category": "Varie",
+      "price": 325,
+      "currency": "USD",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/21QSCI27065025.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/384002",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-11-20",
+        "endsAt": "2026-11-27",
+        "bidders": 3
+      }
+    },
+    {
       "id": "gsa-2-1-QSC-I-27-065-028",
       "title": "Computer Laptops",
       "description": "Messo all'asta da Federal Emergency Management Agency (FEMA) Headquarters, a BAYAMON (PR).",
@@ -1408,7 +888,7 @@
       "description": "Messo all'asta da Oak Ridge Operations Office {PBS space (Rent) only}, a oak ridge (TN).",
       "condition": "",
       "category": "Varie",
-      "price": 520,
+      "price": 1000,
       "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27054001.jpg"
@@ -1419,7 +899,7 @@
       "auction": {
         "startsAt": "2026-11-20",
         "endsAt": "2026-11-27",
-        "bidders": 3
+        "bidders": 4
       }
     },
     {
@@ -1428,7 +908,7 @@
       "description": "Messo all'asta da Department of Veterans Affairs, a perry point (MD).",
       "condition": "",
       "category": "Varie",
-      "price": 2510,
+      "price": 3511,
       "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27056002.jpg"
@@ -1439,7 +919,7 @@
       "auction": {
         "startsAt": "2026-11-20",
         "endsAt": "2026-11-27",
-        "bidders": 5
+        "bidders": 6
       }
     },
     {
@@ -1460,6 +940,26 @@
         "startsAt": "2026-11-20",
         "endsAt": "2026-11-27",
         "bidders": 6
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-056-006",
+      "title": "Plum Case Communication Devices",
+      "description": "Messo all'asta da Department of Veterans Affairs, a CAROLINA (PR).",
+      "condition": "",
+      "category": "Varie",
+      "price": 80,
+      "currency": "USD",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27056006.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/384029",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-11-20",
+        "endsAt": "2026-11-27",
+        "bidders": 3
       }
     },
     {
@@ -1528,7 +1028,7 @@
       "description": "Messo all'asta da Department of Veterans Affairs, a CAROLINA (PR).",
       "condition": "",
       "category": "Elettronica",
-      "price": 110,
+      "price": 190,
       "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27056013.jpg"
@@ -1568,7 +1068,7 @@
       "description": "Messo all'asta da Department of Medicine and Surgery, a SALEM (VA).",
       "condition": "",
       "category": "Elettronica",
-      "price": 1000,
+      "price": 1020,
       "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27056028.jpg"
@@ -1579,7 +1079,7 @@
       "auction": {
         "startsAt": "2026-11-20",
         "endsAt": "2026-11-27",
-        "bidders": 4
+        "bidders": 5
       }
     },
     {
@@ -1588,7 +1088,7 @@
       "description": "Messo all'asta da Department of Medicine and Surgery, a BAY PINES (FL).",
       "condition": "",
       "category": "Varie",
-      "price": 565,
+      "price": 1210,
       "currency": "USD",
       "images": [
         "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27056030.jpg"
@@ -1599,6 +1099,506 @@
       "auction": {
         "startsAt": "2026-11-20",
         "endsAt": "2026-11-27",
+        "bidders": 4
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-056-032",
+      "title": "NUSTEP RECUMBENT TRAINER",
+      "description": "Messo all'asta da Department of Medicine and Surgery, a JACKSON (MS).",
+      "condition": "",
+      "category": "Varie",
+      "price": 500,
+      "currency": "USD",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27056032.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/384055",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-11-20",
+        "endsAt": "2026-11-27",
+        "bidders": 5
+      }
+    },
+    {
+      "id": "gsa-4-1-QSC-I-27-024-004",
+      "title": "THERMAL BARCODE PRINTERS & DOCUMENT SCANNERS",
+      "description": "Messo all'asta da Department of Medicine and Surgery, a Beaverton (OR).",
+      "condition": "",
+      "category": "Elettronica",
+      "price": 2792,
+      "currency": "USD",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/41QSCI27024004.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/384073",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-11-20",
+        "endsAt": "2026-11-27",
+        "bidders": 3
+      }
+    },
+    {
+      "id": "gsa-1-1-QSC-I-27-074-002",
+      "title": "PRECISION DATA AC UNITS",
+      "description": "Messo all'asta da Defense Contract Management Agency - Local, a Cleveland (OH).",
+      "condition": "",
+      "category": "Varie",
+      "price": 1121,
+      "currency": "USD",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/11QSCI27074002.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/384314",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-11-23",
+        "endsAt": "2026-11-27",
+        "bidders": 3
+      }
+    },
+    {
+      "id": "gsa-2-1-QSC-I-27-070-001",
+      "title": "Inconel 625 Scrap",
+      "description": "Messo all'asta da Department of the Army, a Anniston (AL).",
+      "condition": "",
+      "category": "Varie",
+      "price": 81051,
+      "currency": "USD",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/21QSCI27070001.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/383258",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-11-13",
+        "endsAt": "2026-11-28",
+        "bidders": 9
+      }
+    },
+    {
+      "id": "gsa-3-1-QSC-I-27-089-005",
+      "title": "Olympus CV-170 Colposcope with a Sony Print",
+      "description": "Messo all'asta da Department of Medicine and Surgery, a BILLINGS (MT).",
+      "condition": "",
+      "category": "Varie",
+      "price": 2254,
+      "currency": "USD",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27089005.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/383948",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-11-23",
+        "endsAt": "2026-11-30",
+        "bidders": 4
+      }
+    },
+    {
+      "id": "gsa-3-1-QSC-I-27-089-014",
+      "title": "19 Zebra Printers",
+      "description": "Messo all'asta da Department of Veterans Affairs, a COLUMBIA (MO).",
+      "condition": "",
+      "category": "Elettronica",
+      "price": 125,
+      "currency": "USD",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27089014.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/383954",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-11-23",
+        "endsAt": "2026-11-30",
+        "bidders": 4
+      }
+    },
+    {
+      "id": "gsa-3-1-QSC-I-27-089-015",
+      "title": "19 Zebra Printers",
+      "description": "Messo all'asta da Department of Veterans Affairs, a COLUMBIA (MO).",
+      "condition": "",
+      "category": "Elettronica",
+      "price": 60,
+      "currency": "USD",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27089015.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/383955",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-11-23",
+        "endsAt": "2026-11-30",
+        "bidders": 4
+      }
+    },
+    {
+      "id": "gsa-3-1-QSC-I-27-089-016",
+      "title": "19 Zebra Printers",
+      "description": "Messo all'asta da Department of Veterans Affairs, a COLUMBIA (MO).",
+      "condition": "",
+      "category": "Elettronica",
+      "price": 60,
+      "currency": "USD",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27089016.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/383956",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-11-23",
+        "endsAt": "2026-11-30",
+        "bidders": 4
+      }
+    },
+    {
+      "id": "gsa-3-1-QSC-I-27-089-022",
+      "title": "2019 Polaris Ranger 500",
+      "description": "Messo all'asta da Department of Medicine and Surgery, a POPLAR BLUFF (MO).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 700,
+      "currency": "USD",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27089022.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/383958",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-11-23",
+        "endsAt": "2026-11-30",
+        "bidders": 3
+      }
+    },
+    {
+      "id": "gsa-3-1-QSC-I-27-089-029",
+      "title": "Kinesis One Complete Exerciser",
+      "description": "Messo all'asta da Department of Medicine and Surgery, a Grand Island (NE).",
+      "condition": "",
+      "category": "Varie",
+      "price": 1895,
+      "currency": "USD",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27089029.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/383963",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-11-23",
+        "endsAt": "2026-11-30",
+        "bidders": 3
+      }
+    },
+    {
+      "id": "gsa-3-1-QSC-I-27-089-035",
+      "title": "Kubota Skid Steer",
+      "description": "Messo all'asta da Department of Medicine and Surgery, a FORT MEADE (SD).",
+      "condition": "",
+      "category": "Varie",
+      "price": 11005,
+      "currency": "USD",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27089035.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/383969",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-11-23",
+        "endsAt": "2026-11-30",
+        "bidders": 7
+      }
+    },
+    {
+      "id": "gsa-3-1-QSC-I-27-089-036",
+      "title": "Toro Turf Sweeper 4800",
+      "description": "Messo all'asta da Department of Medicine and Surgery, a FORT MEADE (SD).",
+      "condition": "",
+      "category": "Varie",
+      "price": 25,
+      "currency": "USD",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27089036.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/383970",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-11-23",
+        "endsAt": "2026-11-30",
+        "bidders": 3
+      }
+    },
+    {
+      "id": "gsa-3-1-QSC-I-27-089-039",
+      "title": "Bobcat Snowblower",
+      "description": "Messo all'asta da Department of Memorial Affairs, a Ft Meade (SD).",
+      "condition": "",
+      "category": "Varie",
+      "price": 1160,
+      "currency": "USD",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27089039.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/383973",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-11-23",
+        "endsAt": "2026-11-30",
+        "bidders": 5
+      }
+    },
+    {
+      "id": "gsa-3-1-QSC-I-27-089-040",
+      "title": "2 Hustler Mowers",
+      "description": "Messo all'asta da Department of Memorial Affairs, a Ft Meade (SD).",
+      "condition": "",
+      "category": "Macchinari",
+      "price": 85,
+      "currency": "USD",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27089040.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/383974",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-11-23",
+        "endsAt": "2026-11-30",
+        "bidders": 5
+      }
+    },
+    {
+      "id": "gsa-3-1-QSC-I-27-089-041",
+      "title": "Miscellaneous Equipment",
+      "description": "Messo all'asta da Department of Memorial Affairs, a Ft Meade (SD).",
+      "condition": "",
+      "category": "Macchinari",
+      "price": 2575,
+      "currency": "USD",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27089041.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/383975",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-11-23",
+        "endsAt": "2026-11-30",
+        "bidders": 8
+      }
+    },
+    {
+      "id": "gsa-3-1-QSC-I-27-072-004",
+      "title": "Apple Mac Pro Desktops",
+      "description": "Messo all'asta da Office of the Chief Information Officer, a Fort Worth (TX).",
+      "condition": "",
+      "category": "Elettronica",
+      "price": 235,
+      "currency": "USD",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27072004.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/384221",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-11-23",
+        "endsAt": "2026-11-30",
+        "bidders": 4
+      }
+    },
+    {
+      "id": "gsa-3-1-QSC-I-27-072-005",
+      "title": "2020 Chevrolet Silverado K1500",
+      "description": "Messo all'asta da Natural Resources Conservation Service, a CEDAR CITY (UT).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 13225,
+      "currency": "USD",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27072005.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/384222",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-11-23",
+        "endsAt": "2026-11-30",
+        "bidders": 6
+      }
+    },
+    {
+      "id": "gsa-3-1-QSC-I-27-072-007",
+      "title": "2020 Ski-Doo Summit SP 850 Snowmobile",
+      "description": "Messo all'asta da Forest Service, a SALT LAKE CITY (UT).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 2550,
+      "currency": "USD",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27072007.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/384223",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-11-23",
+        "endsAt": "2026-11-30",
+        "bidders": 5
+      }
+    },
+    {
+      "id": "gsa-3-1-QSC-I-27-072-008",
+      "title": "2020 Ski-Doo Summit SP 850 Snowmobile",
+      "description": "Messo all'asta da Forest Service, a SALT LAKE CITY (UT).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 1526,
+      "currency": "USD",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27072008.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/384224",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-11-23",
+        "endsAt": "2026-11-30",
+        "bidders": 4
+      }
+    },
+    {
+      "id": "gsa-3-1-QSC-I-27-072-009",
+      "title": "2020 Snowmobile",
+      "description": "Messo all'asta da Forest Service, a SALT LAKE CITY (UT).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 2525,
+      "currency": "USD",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27072009.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/384225",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-11-23",
+        "endsAt": "2026-11-30",
+        "bidders": 5
+      }
+    },
+    {
+      "id": "gsa-3-1-QSC-I-27-072-035",
+      "title": "1987 Chevrolet Pickup Truck",
+      "description": "Messo all'asta da Forest Service, a LEBANON (MO).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 700,
+      "currency": "USD",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27072035.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/384247",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-11-23",
+        "endsAt": "2026-11-30",
+        "bidders": 5
+      }
+    },
+    {
+      "id": "gsa-3-1-QSC-I-27-072-047",
+      "title": "2020 Polaris UTV",
+      "description": "Messo all'asta da Forest Service, a Cedar City (UT).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 3525,
+      "currency": "USD",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27072047.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/384249",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-11-23",
+        "endsAt": "2026-11-30",
+        "bidders": 6
+      }
+    },
+    {
+      "id": "gsa-3-1-QSC-I-27-072-048",
+      "title": "2014 Mack Dump Truck",
+      "description": "Messo all'asta da Forest Service, a Cedar City (UT).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 13850,
+      "currency": "USD",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27072048.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/384250",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-11-23",
+        "endsAt": "2026-11-30",
+        "bidders": 8
+      }
+    },
+    {
+      "id": "gsa-3-1-QSC-I-27-072-049",
+      "title": "2018 Dodge Ram 2500",
+      "description": "Messo all'asta da Forest Service, a Cedar City (UT).",
+      "condition": "",
+      "category": "Veicoli",
+      "price": 19100,
+      "currency": "USD",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27072049.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/384251",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-11-23",
+        "endsAt": "2026-11-30",
+        "bidders": 6
+      }
+    },
+    {
+      "id": "gsa-3-1-QSC-I-27-072-051",
+      "title": "Dell Latitude 5420 Laptops",
+      "description": "Messo all'asta da Bureau of Land Management, a KREMMLING (CO).",
+      "condition": "",
+      "category": "Elettronica",
+      "price": 210,
+      "currency": "USD",
+      "images": [
+        "https://www.ppms.gov/gw/auction/ppms/api/v1/auction/image/31QSCI27072051.jpg"
+      ],
+      "url": "https://www.gsaauctions.gov/auctions/preview/384253",
+      "credit": "Dati e foto: GSA Auctions, governo USA",
+      "creditUrl": "https://www.gsaauctions.gov",
+      "auction": {
+        "startsAt": "2026-11-23",
+        "endsAt": "2026-11-30",
         "bidders": 3
       }
     }
